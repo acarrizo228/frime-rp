@@ -1,0 +1,5 @@
+/logs/*
+server-log.txt
+/gamemodes/new.amx
+/gamemodes/mysql.log
+server_log.txt
