@@ -53,8 +53,8 @@ native 		IsValidVehicle(vehicleid);
 #define 	KEY_NUM4								(8192)
 #define 	KEY_NUM6 								(16384)
 
-#define		MAX_TELEPORTS                       	44
-#define 	MAX_ACTORSS 							36
+#define		MAX_TELEPORTS                       	56
+#define 	MAX_ACTORSS 							34
 #define 	MAX_ADVERT_COUNT 						35
 #define 	RES_CAR_TIME    						1800
 
@@ -116,8 +116,6 @@ new 		SELECT_SERVER = 1;
 #define VEHICLE_STATE_VELIK 2
 #define VEHICLE_STATE_PLANE 3
 #define VEHICLE_STATE_BOAT  4
-
-#define MAX_ORG_SKIN 15
 
 #define VEHICLE_TYPE_NONE 0
 #define VEHICLE_TYPE_PLAYER 1
@@ -1528,21 +1526,21 @@ new ArendInfo[][aInfo] =
 	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 491, 2100 ,533.1170, -1278.3557, 17.0001, 220.0000,-1,-1,68 }, // Авторынок ЛС 5
 	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 410, 1000 ,529.7689, -1280.4216, 16.9001, 220.0000,-1,-1,68 }, // Авторынок ЛС 6
 
-	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 496, 3100 ,1645.9702,-1697.8572,20.1046,269.5302,-1,-1,69 }, // Авторынок СФ 1
-	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 603, 9100 ,1645.9702,-1703.5476,20.1046,269.5302,-1,-1,69 }, // Авторынок СФ 2
-	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 405, 4200 ,1645.9702,-1706.9099,20.1046,269.5302,-1,-1,69 }, // Авторынок СФ 3
-	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 533, 5200 ,1672.1093,-1693.9724,20.1114,90.0906,-1,-1,69 }, // Авторынок СФ 4
-	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 558, 7100 ,1672.1093,-1698.8726,20.1114,90.0906,-1,-1,69 }, // Авторынок СФ 5
-	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 566, 4900 ,1672.1093,-1704.1498,20.1114,90.0906,-1,-1,69 }, // Авторынок СФ 6
-	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 589, 8200 ,1672.1093,-1709.4581,20.1114,90.0906,-1,-1,69 }, // Авторынок СФ 7
-	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 579, 7600 ,1672.1093,-1717.9846,20.1114,90.0906,-1,-1,69 }, // Авторынок СФ 8
+	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 496, 3100 ,-1974.8362, 304.6295, 34.8882, 180.0000,-1,-1,69 }, // Авторынок СФ 1
+	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 603, 9100 ,-1969.8870, 304.8717, 35.0099, 180.0000,-1,-1,69 }, // Авторынок СФ 2
+	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 405, 4200 ,-1990.2765, 268.6406, 35.0523, 302.6477,-1,-1,69 }, // Авторынок СФ 3
+	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 533, 5200 ,-1990.7843, 261.6671, 34.8903, 305.8713,-1,-1,69 }, // Авторынок СФ 4
+	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 558, 7100 ,-1991.5657, 255.2777, 34.8033, 303.7885,-1,-1,69 }, // Авторынок СФ 5
+	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 566, 4900 ,-1990.5830, 248.7883, 34.9516, 297.9163,-1,-1,69 }, // Авторынок СФ 6
+	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 589, 8200 ,-1984.7192, 242.3710, 34.8346, 0.0000,-1,-1,69 }, // Авторынок СФ 7
+	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 579, 7600 ,-1978.6296, 242.8808, 35.0709, 0.0000,-1,-1,69 }, // Авторынок СФ 8
 	
-	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 480, 17300 ,1131.0605,-1699.1357,13.2845,0.5530,-1,-1,70 }, // Авторынок ЛВ 1
-	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 434, 22000 ,1134.7246,-1699.1388,13.4091,0.5530,-1,-1,70 }, // Авторынок ЛВ 2
-	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 541, 35000 ,1138.1112,-1699.1042,13.5237,0.5530,-1,-1,70 }, // Авторынок ЛВ 3
-	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 562, 18800 ,1130.9841,-1670.9011,13.2760,269.1232,-1,-1,70 }, // Авторынок ЛВ 4
-	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 602, 8000 ,1131.1963,-1676.0873,13.2875,269.1255,-1,-1,70 }, // Авторынок ЛВ 5
-	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 560, 22200 ,1131.1379,-1679.9021,13.2910,269.1265,-1,-1,70 } // Авторынок ЛВ 6
+	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 480, 17300 ,2113.7048, 1398.2725, 10.5959, 180.0000,-1,-1,70 }, // Авторынок ЛВ 1
+	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 434, 22000 ,2119.8660, 1398.3364, 10.7829, 180.0000,-1,-1,70 }, // Авторынок ЛВ 2
+	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 541, 35000 ,2126.3828, 1398.0538, 10.4396, 180.0000,-1,-1,70 }, // Авторынок ЛВ 3
+	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 562, 18800 ,2132.8091, 1398.4464, 10.4771, 180.0000,-1,-1,70 }, // Авторынок ЛВ 4
+	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 602, 8000 ,2139.0806, 1398.1453, 10.6202, 180.0000,-1,-1,70 }, // Авторынок ЛВ 5
+	{ INVALID_VEHICLE_ID, INVALID_PLAYER_ID, 560, 22200 ,2145.6101, 1398.2130, 10.5196, 180.0000,-1,-1,70 } // Авторынок ЛВ 6
 };
 
 new Float:med_heal[12][4]={
@@ -2189,9 +2187,18 @@ enum fracspawn {
 new Float:gFractionSpawn[MAX_FRACTIONS][fracspawn] = {//saneka
 	{0,0,TEAM_HIT_COLOR,0.0,0.0,0.0,0.0},
 	{99,40,0x110CE7FF,1376.2949,1061.4469,1626.4896,27.7764}, //LSPD
+	{99,41,0x110CE7FF,1376.2949,1061.4469,1626.4896,27.7764}, //SFPD
+	{99,42,0x110CE7FF,1376.2949,1061.4469,1626.4896,27.7764}, //LVPD
+	{75,43,0x313131AA,1473.0166,249.0210,1013.5359,315.8087}, //FBI
 	{77,44,0x114D71FF,-1333.0955,1929.1984,1087.7546,89.6277}, //mayor
+	{87,59,0x5aa652FF,250.4903,108.3510,1024.3394,200.4394}, //ArmySf
+	{87,60,0x5aa652FF,250.4903,108.3510,1024.3394,200.4394}, //ArmyLV
 	{93,20,0xA52A2AFF,2174.6411,578.7777,1080.4542,270.2591}, //Medics Ls
+	{93,21,0xA52A2AFF,2174.6411,578.7777,1080.4542,270.2591}, //Medics Sf
+	{93,22,0xA52A2AFF,2174.6411,578.7777,1080.4542,270.2591}, //Medics Lv
 	{74,10,0x40848BAA,759.5918,-1505.2585,1417.8119,207.1667}, // LSn
+	{74,11,0x40848BAA,759.5918,-1505.2585,1417.8119,207.1667},//SFn
+	{74,12,0x40848BAA,759.5918,-1505.2585,1417.8119,207.1667},//LVn
 	{76,45,0x139BECFF,-1228.5905,1564.6755,1114.0768,356.5507},//Instructors
 	{73,49,0xDDA701FF,-1786.3325,-642.9802,1001.0900,115.2369},//LCN
 	{73,50,COLOR_REDD,-1786.3325,-642.9802,1001.0900,115.2369},//Yakuza
@@ -4562,11 +4569,20 @@ enum TPList {
 }
 new TPLIST[MAX_TELEPORTS][TPList] = {
  	{""P"[POLICE]"W" Полиция LS", 				{1540.0491,-1676.1680,13.2146},0},
+	{""P"[POLICE]"W" Полиция SF", 				{-1629.0847,726.1740,14.1306},0},
+	{""P"[POLICE]"W" Полиция LV", 				{2285.9685,2420.4519,10.4922},0},
+	{""P"[POLICE]"W" ФБР",						{-1978.8849,-1012.8095,32.1719},0},
+	{""P"[ARMY]"W" Армия ЛВ", 				{308.7944,1896.6123,17.6406},0},
+	{""P"[ARMY]"W" Армия СФ", 				{-1533.1841,488.2717,7.1797},0},
 	{""P"[MAYOR]"W" Мэрия ЛС",				{1481.2506,-1739.8961,13.5469},0},
 	{""P"[MAYOR]"W" Белый дом",				{1136.0038,-2037.0396,69.0078},0},
 	{""P"[AUTOSCHOOL]"W" Автошкола",				{747.1070,-1385.3630,13.7700},0},
 	{""P"[MEDICS]"W" Больница ЛС", 			{1177.6864,-1323.2448,14.0830},0},
+	{""P"[MEDICS]"W" Больница СФ", 			{-2666.6680,580.7857,14.4609},0},
+	{""P"[MEDICS]"W" Больница ЛВ", 			{1641.8849,1833.5286,10.8508},0},
 	{""P"[СМИ]"W" Радиоцентр ЛС", 			{1578.6501,-1326.6104,16.4844},0},
+	{""P"[СМИ]"W" Радиоцентр СФ", 			{-2522.5120,-613.8146,132.5625},0},
+	{""P"[СМИ]"W" Радиоцентр ЛВ", 			{2642.6973,1172.9144,10.8203},0},
 	{""P"[MAFIA]"W" Итальянская мафия", 		{1450.4951,750.6007,11.0234},0},
 	{""P"[MAFIA]"W" Японская мафия",			{2630.8684,1824.2241,11.0234},0},
 	{""P"[MAFIA]"W" Русская мафия",			{943.2179,1732.5566,8.8516},0},
@@ -4576,35 +4592,38 @@ new TPLIST[MAX_TELEPORTS][TPList] = {
 	{""P"[GANG]"W" Aztecas Gang",			{1677.8265,-2117.4241,13.5469},0},
 	{""P"[GANG]"W" Rifa Gang",				{2730.9592,-1952.6282,13.5394},0},
 	{"Оружейный завод",			{2680.7827,-2405.3203,13.4907},1},
-	{"Нефтезавод",				{-1038.4648,-595.8793,32.0078},1},
+	{"Нефтезавод",				{273.7452,1417.4165,10.4462},1},
 	{"Яблочный сад",			{-116.4320,-0.3284,3.1094},1},
 	{"Рыбалка",					{-403.6830,-433.3349,16.2312},1},
 	{"Лесопилка",				{-502.3524,-1571.3837,10.3160},1},
-	{"Развозчики продуктов",	{-21.2761,-352.0749,5.4297},1},
+	{"Развозчики продуктов",	{1144.7769,1975.1379,10.8203},1},
 	{"Развозчики топлива",		{-21.2761,-352.0749,5.4297},1},
 	{"ЖД Los Santos", 			{1805.0404,-1908.3304,13.3983},2},
 	{"ЖД San Fierro", 			{-1994.0475,100.2056,27.5391},2},
 	{"ЖД Las-Venturas", 		{2827.3931,1255.9264,10.7685},2},
 	{"Банк ЛС",					{1689.6176,-1343.5171,17.4297},3},
-	{"Банк БЛУБЕРИ",					{207.8649,-61.6911,1.9766},3},
-	{"Банк ПК",					{2303.8328,-16.2453,26.4844},3},
+	{"Банк СФ",					{-2354.6326,493.4315,30.9022},3},
+	{"Банк ЛВ",					{2577.5327,1322.0800,10.8203},3},
 	{"Транспортная компания 1",	{-60.0147,-1124.5425,1.0781},4},
 	{"Транспортная компания 2",	{-488.5891,-524.2830,25.5178},4},
 	{"Транспортная компания 3",	{136.0157,-247.9421,1.5781},4},
 	{"Загрузка Оружейный завод",{2653.8486,-2387.8660,13.6328},4},
-	{"Загрузка Нефтезавод",		{-1048.6555,-609.4244,32.0078},4},
-	{"Разгрузка в деревне",		{1340.6106,332.1387,19.9806},4},
+	{"Загрузка Нефтезавод",		{253.3007,1396.0299,10.5859},4},
+	{"Разгрузка Порт СФ",		{-1744.4447,149.4602,3.5496},4},
 	{"Разгрузка Порт ЛС",		{2616.7119,-2226.7627,13.381},4},
 	{"Разгрузка Оружейный завод",{2687.9753,-2480.1912,13.5008},4},
 	{"Таксопарк ЛС",			{1072.7596,-1768.8920,13.3602},5},
+	{"Таксопарк СФ",			{-2182.2236,291.4850,35.1291},5},
+	{"Таксопарк ЛВ",			{2490.6318,1346.1738,10.8276},5},
 	{"Гетто", 					{2201.2886,-1703.4170,13.5396},6},
 	{"Форт карсон", 			{91.6006,1182.4490,21.1174},6},
 	{"ЛС-СФ Шоссе",				{-110.4161,-1140.6246,1.6458},6},
-	{"Казино",					{1223.0482,-1129.8281,23.9962},6},
+	{"Казино",					{2163.6824,2160.8635,10.8203},6},
 	{"Компьютерный клуб",		{1022.6423,-1129.9634,23.8705},6},
 	{"Дуэли",					{2194.3650,-2278.3823,13.5469},6},
 	{"Центр Развлечений",		{2221.6672,1837.3550,10.8203},6},
-	{"Черный рынок",			{2310.7986,-1218.1053,24.0008},6}
+	{"Черный рынок",			{2310.7986,-1218.1053,24.0008},6},
+	{"Военкомат",				{-316.6047,1060.1151,19.7422},6}
 };
 enum INTlist {
 	iID,
@@ -4932,24 +4951,6 @@ new Text3D:gMenu[5],
 	Text3D:mMenu[3],
 	Text3D:gHealth[5];
 
-new fSpawnText[MAX_FRACTIONS][1024] = {
-	"ф ф!",
-	"Скоро будет!",
-	"Скоро будет!",
-	"Скоро будет!",
-	"Скоро будет!",
-	"Скоро будет!",
-	"Скоро будет!",
-	"Скоро будет!",
-	"Скоро будет!",
-	"Скоро будет!",
-	"Скоро будет!",
-	"Скоро будет!",
-	"Скоро будет!",
-	"Скоро будет!",
-	"Скоро будет!"
-};
-
 new engine,
 	lights,
 	alarm,
@@ -4989,7 +4990,7 @@ new house_car[MAX_PLAYERS][2],
 
 new WantNickChange[MAX_PLAYERS][MAX_PLAYER_NAME];
 
-new Text:LOGO[10];
+new Text:TDEditor_TD[5];
 
 new HealOffer[MAX_PLAYERS],
 	HealPrice[MAX_PLAYERS];
@@ -5059,10 +5060,10 @@ new gTeleportsToD[TP_COUNT][enter_info] = { //saneka
 	/*45*/{"Выход на улицу",-1229.4524,1590.5923,1112.6555,76,45,747.2728,-1380.5107,14.2039,177.8809,0,0},//АШ
 	/*46*/{"Банк г.ЛС",1684.5287,-1343.3507,17.4368,0,0,190.0802,-262.0420,1000.9766,182.5581,78,46},//БАНК ЛС
 	/*47*/{"Выход на улицу",190.0132,-260.5435,1000.9766,78,46,1686.0278,-1343.3999,17.4316,268.1222,0,0},//БАНК ЛС
-	/*48*/{"Банк д. Блубери",207.8649,-61.6911,1.9766,0,0,190.0802,-262.0420,1000.9766,182.5581,78,47},//БАНК СФ
-	/*49*/{"Выход на улицу",190.0132,-260.5435,1000.9766,78,47,210.8649,-61.6911,1.9766,76.5903,0,0},//БАНК СФ
-	/*50*/{"Банк д. ПК",2303.8328,-16.2453,26.4844,0,0,190.0802,-262.0420,1000.9766,182.5581,78,48},//БАНК ЛВ
-	/*51*/{"Выход на улицу",190.0132,-260.5435,1000.9766,78,48,2308.8328,-16.2453,26.4844,181.1994,0,0},//БАНК ЛВ
+	/*48*/{"Банк г.СФ",-2351.1323,492.5963,30.8144,0,0,190.0802,-262.0420,1000.9766,182.5581,78,47},//БАНК СФ
+	/*49*/{"Выход на улицу",190.0132,-260.5435,1000.9766,78,47,-2352.5913,492.9442,30.8510,76.5903,0,0},//БАНК СФ
+	/*50*/{"Банк г.ЛВ",2577.4541,1325.8289,10.8203,0,0,190.0802,-262.0420,1000.9766,182.5581,78,48},//БАНК ЛВ
+	/*51*/{"Выход на улицу",190.0132,-260.5435,1000.9766,78,48,2577.4856,1324.3292,10.8203,181.1994,0,0},//БАНК ЛВ
 	/*52*/{"Итальянская мафия",1455.8739,751.0579,11.0234,0,0,-1814.9398,-646.3951,1001.0999,269.3521,73,49},//LCN
 	/*53*/{"Выход на улицу",-1816.4397,-646.3781,1001.0999,73,49,1454.3873,750.8578,11.0234,97.6668,0,0},//LCN
 	/*54*/{"Японская мафия",2634.7048,1824.2144,11.0161,0,0,-1814.9398,-646.3951,1001.0999,269.3521,73,50},//Yakuza
@@ -5087,8 +5088,8 @@ new gTeleportsToD[TP_COUNT][enter_info] = { //saneka
 	/*73*/{"Выход на улицу",1749.4713,1383.0963,1095.3185,83,57,1124.5255,-2036.9797,69.8839,268.5813,0,0},//белый дом
 	/*74*/{"Центр развлечений",2227.2017,1837.1248,10.8203,0,0,833.0818,7.3694,1004.1797,92.8519,3,200},//центр развлечений
 	/*75*/{"Выход на улицу",834.6312,7.3997,1004.1870,3,200,2225.7490,1837.1133,10.8203,93.2120,0,0},//центр развлечений
-	/*76*/{"Казино",1223.0482,-1129.8281,23.9962,0,0,2058.7952,1713.0632,1113.7751,264.9474,88,58},//казино
-	/*77*/{"Выход на улицу",2057.3010,1713.1953,1113.7751,88,58,1222.9508,-1134.3561,23.4701,184.1661,0,0},//казино
+	/*76*/{"Казино",2166.0955,2165.0505,10.8203,0,0,2058.7952,1713.0632,1113.7751,264.9474,88,58},//казино
+	/*77*/{"Выход на улицу",2057.3010,1713.1953,1113.7751,88,58,2165.5325,2163.6602,10.8203,157.9600,0,0},//казино
 	/*78*/{"Казарма",-1373.0016,498.9899,11.1953,0,0,252.6794,103.3473,1024.3394,358.6109,87,59},//казарма армия сф
 	/*79*/{"Выход на улицу",252.6430,101.8477,1024.3394,87,59,-1371.5020,499.0244,11.1953,271.3166,0,0},//казарма армия сф
 	/*80*/{"Казарма",220.0600,1826.5244,18.3659,0,0,252.6794,103.3473,1024.3394,358.6109,87,60},//казарма армия лв
@@ -5542,7 +5543,6 @@ enum pInfo {
 	pLeader,
 	pMember,
 	pRank,
-	pRankExp,
 	pSkin,
 	pJob,
 	pFracSkin,
@@ -5797,7 +5797,13 @@ stock SendMafia(color,const str[]) {
 	}
 	return 1;
 }
-
+stock SendArmy(color,const str[]) {
+	foreach(new x:Player) {
+		if(!TI[x][tLogin] ||  AntiCheatIsKickedWithDesync(x)) continue;
+		if(IsAArm(x)) SendClientMessage(x,color,str);
+	}
+	return 1;
+}
 stock SendCop(color,const str[]) {
 	foreach(new x:Player) {
 		if(!TI[x][tLogin] ||  AntiCheatIsKickedWithDesync(x)) continue;
@@ -5930,43 +5936,33 @@ enum _fInfo {
 	fPoints,
 	fRating
 }
-new FI[MAX_FRACTIONS + 1][_fInfo];
-new	gFractionSkinMan[MAX_FRACTIONS][MAX_ORG_SKIN] = {
-	{0,0,0,0,0,0,0,0,0,0}, //Defence
-	{281,280,284,282,285,303,286,163,164,165,166,288,283,0,0}, //LSPD
-	{255,57,71,187,147,150,0,0,0,0,0,0,0,0,0}, //MAYOR
-	{276,275,274,70,219,308,0,0,0,0,0,0,0,0,0}, //MEDICS LS
-	{188,170,217,261,211,0,0,0,0,0,0,0,0,0,0}, //LS News
-	{59,185,240,148,0,0,0,0,0,0,0,0,0,0,0}, //Instructors
-	{124,223,127,113,214,0,0,0,0,0,0,0,0,0,0}, //LCN
-	{117,118,123,186,120,169,0,0,0,0,0,0,0,0,0}, //Yakuza
-	{112,111,126,125,272,216,0,0,0,0,0,0,0,0,0}, //RM
-	{103,102,104,195,0,0,0,0,0,0,0,0,0,0,0}, //Ballas
-	{108,109,110,56,0,0,0,0,0,0,0,0,0,0,0}, //Vagos
-	{105,106,107,269,271,270,65,0,0,0,0,0,0,0,0}, //Grove
-	{48,114,116,115,41,0,0,0,0,0,0,0,0,0,0}, //Aztec
-	{175,174,173,273,226,0,0,0,0,0,0,0,0,0,0}, //Rifa
-	{255,98,57,163,228,305,304,17,76,0,0,0,0,0,0} //WH
-};
-
-new gFractionSkinGirl[MAX_FRACTIONS][MAX_ORG_SKIN] = {
-	{0,0,0,0,0,0,0,0,0,0}, //Defence
-	{191,307,306,285,76,141,0,0,0,0,0,0,0,0,0}, //LSPD
-	{255,57,71,187,147,150,0,0,0,0,0,0,0,0,0}, //MAYOR
-	{276,275,274,70,219,308,0,0,0,0,0,0,0,0,0}, //MEDICS LS
-	{188,170,217,261,211,0,0,0,0,0,0,0,0,0,0}, //LS News
-	{59,185,240,148,0,0,0,0,0,0,0,0,0,0,0}, //Instructors
-	{124,223,127,113,214,0,0,0,0,0,0,0,0,0,0}, //LCN
-	{117,118,123,186,120,169,0,0,0,0,0,0,0,0,0}, //Yakuza
-	{112,111,126,125,272,216,0,0,0,0,0,0,0,0,0}, //RM
-	{103,102,104,195,0,0,0,0,0,0,0,0,0,0,0}, //Ballas
-	{108,109,110,56,0,0,0,0,0,0,0,0,0,0,0}, //Vagos
-	{105,106,107,269,271,270,65,0,0,0,0,0,0,0,0}, //Grove
-	{48,114,116,115,41,0,0,0,0,0,0,0,0,0,0}, //Aztec
-	{175,174,173,273,226,0,0,0,0,0,0,0,0,0,0}, //Rifa
-	{255,98,57,163,228,305,304,17,76,0,0,0,0,0,0} //WH
-};
-
+new FI[MAX_FRACTIONS + 1][_fInfo],
+	gFractionSkin[MAX_FRACTIONS][10] = {
+		{0,0,0,0,0,0,0,0,0,0}, //Defence
+		{281,280,284,282,285,303,288,283,306,309}, //LSPD
+		{281,280,284,282,285,303,288,283,306,309}, //SFPD
+		{281,280,284,282,285,303,288,283,306,309}, //LVPD
+		{286,163,164,165,166,141,0,0,0,0}, //FBI
+		{255,57,71,187,147,150,0,0,0,0}, //MAYOR
+		{287,179,311,61,255,191,0,0,0,0}, //ARMY
+		{287,179,311,61,255,191,0,0,0,0}, //ARMY
+		{276,275,274,70,219,308,0,0,0,0}, //MEDICS LS
+		{276,275,274,70,219,308,0,0,0,0}, //MEDICS SF
+		{276,275,274,70,219,308,0,0,0,0}, //MEDICS LV
+		{188,170,217,261,211,0,0,0,0,0}, //LS News
+		{188,170,217,261,211,0,0,0,0,0}, //SF News
+		{188,170,217,261,211,0,0,0,0,0}, //LV News
+		{59,185,240,148,0,0,0,0,0,0}, //Instructors
+		{124,223,127,113,214,0,0,0,0,0}, //LCN
+		{117,118,123,186,120,169,0,0,0,0}, //Yakuza
+		{112,111,126,125,272,216,0,0,0,0}, //RM
+		{103,102,104,195,0,0,0,0,0,0}, //Ballas
+		{108,109,110,56,0,0,0,0,0,0}, //Vagos
+		{105,106,107,269,271,270,65,0,0,0}, //Grove
+		{48,114,116,115,41,0,0,0,0,0}, //Aztec
+		{175,174,173,273,226,0,0,0,0,0}, //Rifa
+		{255,98,57,163,228,305,304,17,76,0} //WH
+	};
 new f_diplomacy[8][8] ;
 enum Vacancy {
 	VacancyCreator,
@@ -6858,11 +6854,11 @@ new tk_car[3][2] = {
 	{515,15000}
 };
 new Float:tk_wood[5][4] = {
-	{-1017.1034,-652.2915,32.0078, 0.8299},
-	{-1025.8331,-668.5312,32.0078,271.9005},
-	{-1008.5369,-668.8942,32.0078,89.9566},
-	{-1008.6564,-653.7628,32.0078,89.7476},
-	{-1008.6647,-643.4935,32.0078,92.6770}
+	{260.9107, 1359.6311, 11.5590, 0.0000},
+	{266.4707, 1359.6311, 11.5590, 0.0000},
+	{272.0701, 1359.6311, 11.5590, 0.0000},
+	{277.6099, 1359.6311, 11.5590, 0.0000},
+	{283.4688, 1359.6311, 11.5590, 0.0000}
 };
 new Float:tk_gun[5][4] = {
 	{2638.3792,-2377.5378,14.6545,179.6357},// 1
@@ -7223,30 +7219,9 @@ new QI[MAX_QUESTS][QuestInfo] = {
 	{"Провокатор",""G"Время последнего задания!\nСпровоцируй войну за территорию с другой бандой.\nСтань лучшим провокатором своей банды!\n\n"ORANGE"Задача: Спровоцировать войну за территорию\n"P"Награда: "GREEN"$20000",1}
 };
 new QuestProgress[MAX_PLAYERS][MAX_QUESTS];
-new QuestProgressMats[MAX_PLAYERS];
 new QuestShow[MAX_PLAYERS][MAX_QUESTS];
 new AcceptQuest[MAX_PLAYERS][MAX_QUESTS];
 new QuestClick[MAX_PLAYERS];
-
-enum KvestInfo {
-	KvestName[64],
-	KvestText[1024],
-	KvestExp,
-	KvestMoney
-}
-new LSPDKvest[3][KvestInfo] = {
-	{"ГЏГҐГ°ГҐГўГ®Г§ГЄГ  ГЎГ®ГҐГЇГ°ГЁГЇГ Г±Г®Гў", ""G"Г‡Г Г¤Г Г­ГЁГҐ, ГЄГ®ГІГ®Г°Г®ГҐ ГЇГ®Г¤ Г±ГЁГ«Гі Г«ГѕГЎГ®Г¬Гі!\nГ‚Г®Г§ГјГ¬ГЁ Г­Г  ГЇГ Г°ГЄГ®ГўГЄГҐ Г¬Г ГІГ®ГўГ®Г§ГЄГі,\nГЁ ГЇГҐГ°ГҐГўГҐГ§ГЁ Г­Г  Г±ГЄГ«Г Г¤ Г¬Г ГёГЁГ­Гі Г± ГЎГ®ГҐГЇГ°ГЁГЇГ Г±Г Г¬ГЁ.\n\n"ORANGE"Г‡Г Г¤Г Г·Г : ГЏГҐГ°ГҐГўГҐГ§ГІГЁ Г¬Г ГёГЁГ­Гі Г± ГЎГ®ГҐГЇГ°ГЁГЇГ Г±Г Г¬ГЁ.\nГЌГ ГЈГ°Г Г¤Г : "GREEN"10 Г°ГҐГЇГіГІГ Г¶ГЁГЁ, $15.000",10,15000},
-	{"Г“ГЎГЁГ©Г±ГІГўГ® ГЇГ°ГҐГ±ГІГіГЇГ­ГЁГЄГ ", ""G"ГќГІГ® ГіГ¦ГҐ Г±Г«Г®Г¦Г­ГҐГҐ, Г­Г® ГІГ®Г¦ГҐ Г«ГҐГЈГЄГ®!\nГ‚Г»Г±Г«ГҐГ¤ГЁ ГЇГ°ГҐГ±ГІГіГЇГ­ГЁГЄГ  ГЁ ГҐГ±Г«ГЁ Г®Г­ ГЎГіГ¤ГҐГІ ГЇГ»ГІГ ГІГјГ±Гї ГіГЎГҐГ¦Г ГІГј,\nГІГ® ГЇГ®Г¤Г±ГІГ°ГҐГ«ГЁ ГҐГЈГ®, Г·ГІГ®ГЎ Г®Г­ Г®ГІГЇГ°Г ГўГЁГ«Г±Гї Г§Г  Г°ГҐГёГҐГІГЄГі.\n\n"ORANGE"Г‡Г Г¤Г Г·Г : Г‚Г»Г±Г«ГҐГ¤ГЁГІГј ГЁ ГіГЎГЁГІГј ГЇГ°ГҐГ±ГІГіГЇГ­ГЁГЄГ .\nГЌГ ГЈГ°Г Г¤Г : "GREEN"7 Г°ГҐГЇГіГІГ Г¶ГЁГЁ * ГіГ°Г®ГўГҐГ­Гј Г°Г®Г§Г»Г±ГЄГ , $5.000*ГіГ°Г®ГўГҐГ­Гј Г°Г®Г§Г»Г§ГЄГ ",7,5000},
-	{"ГЏГ®ГЁГ¬ГЄГ  ГЇГ°ГҐГ±ГІГіГЇГ­ГЁГЄГ ", ""G"ГЂ ГЅГІГ® ГіГ¦ГҐ ГЎГіГ¤ГҐГІ Г­ГҐ ГЇГ°Г®Г±ГІГ® Г¤Г«Гї ГІГҐГЎГї!\nГ‚Г»Г±Г«ГҐГ¤ГЁ ГЇГ°ГҐГ±ГІГіГЇГ­ГЁГЄГ , ГЇГ®Г©Г¬Г Г© ГҐГЈГ®, ГЇГ®Г±Г Г¤ГЁ Гў ГІГ Г·ГЄГі,\nГ§Г ГІГҐГ¬ Г®ГІГўГҐГ§ГЁ ГҐГЈГ® Гў ГіГ·Г Г±ГІГ®ГЄ ГЁ Г®ГІГЇГ°Г ГўГј Г§Г  Г°ГҐГёГҐГІГЄГі(/arrest)\n\n"ORANGE"Г‡Г Г¤Г Г·Г : Г‚Г»Г±Г«ГҐГ¤ГЁГІГј, ГЇГ®Г©Г¬Г ГІГј ГЁ Г®ГІГЇГ°Г ГўГЁГІГј Г§Г  Г°ГҐГёГҐГІГЄГі Г± ГЇГ®Г¬Г®Г№ГјГѕ /arrest.\nГЌГ ГЈГ°Г Г¤Г : "GREEN"13 Г°ГҐГЇГіГІГ Г¶ГЁГЁ * ГіГ°Г®ГўГҐГ­Гј Г°Г®Г§Г»Г±ГЄГ , $14.000*ГіГ°Г®ГўГҐГ­Гј Г°Г®Г§Г»Г§ГЄГ ",13,14000}
-};
-
-new GangKvest[5][KvestInfo] = {
-	{"Г€Г±ГІГЁГ­Г­Г»Г© ГўГ®Г°ГѕГЈГ ",""G"Г‚ГЁГ¦Гі Г¶ГҐГ«Гј - Г­ГҐ ГўГЁГ¦Гі ГЇГ°ГҐГЈГ°Г Г¤.\nГ“ГЄГ°Г Г¤ГЁ Г­Г  Г§Г ГўГ®Г¤ГҐ ГЎГ®ГҐГЇГ°ГЁГЇГ Г±Г».\n\n"ORANGE"Г‡Г Г¤Г Г·Г : Г“ГЄГ°Г Г±ГІГј ГЎГ®ГҐГЇГ°ГЁГЇГ Г±Г» ГЁ ГЇГ®Г«Г®Г¦ГЁГІГј ГЁГµ Г­Г  Г±ГЄГ«Г Г¤ ГЎГ Г­Г¤Г».\n"P"ГЌГ ГЈГ°Г Г¤Г : "GREEN"12 Г°ГҐГЇГіГІГ Г¶ГЁГЁ, $15.000",12,15000},
-	{"ГЊГ Г¬ГЄГЁГ­ ГЈГ°Г ГЎГЁГІГҐГ«Гј",""G"ГЌГ  Г­Г ГёГЁГµ Г°Г Г©Г®Г­Г Гµ ГЇГ®ГїГўГЁГ«ГЁГ±Гј ГЎГ®ГЈГ ГІГ»ГҐ Г¦ГЁГ«ГјГ¶Г».\nГЌГҐ ГµГ®Г·ГҐГёГј ГіГЄГ°Г Г±ГІГј Гі Г­ГЁГµ Г¤ГҐГ­ГҐГЈ?\nГ‘ГІГіГЇГ Г© ГЁ Г®ГЈГ°Г ГЎГј Г¤Г®Г¬Г .\n\n"ORANGE"Г‡Г Г¤Г Г·Г : ГЌГіГ¦Г­Г® Г®ГЈГ°Г ГЎГЁГІГј Г¤Г®Г¬, Г¤Г ГЎГ» Г§Г Г°Г ГЎГ®ГІГ ГІГј Г°ГҐГЇГіГІГ Г¶ГЁГЁ (/robhouse).\n"P"ГЌГ ГЈГ°Г Г¤Г : "GREEN"15 Г°ГҐГЇГіГІГ Г¶ГЁГЁ, $25.000",15,25000},
-	{"ГќГ«ГЁГІГ­Г»Г© ГЏГ°Г®Г¤Г ГўГҐГ¶",""G"Г‡Г Г°Г ГЎГ®ГІГ Г© Г­Г  ГЇГ°Г®Г¤Г Г¦ГҐ Г®Г°ГіГ¦ГЁГї.\nГЌГ Г©Г¤ГЁ Г·ГҐГ«Г®ГўГҐГЄГ , ГЄГ®ГІГ®Г°Г»Г© ГµГ®Г·ГҐГІ ГЇГ®Г±ГІГ°ГҐГ«ГїГІГј, ГЁ ГЇГ°Г®Г¤Г Г© ГҐГ¬Гі Г«ГѕГЎГ®ГҐ Г®Г°ГіГ¦ГЁГҐ.\n\n"ORANGE"Г‡Г Г¤Г Г·Г : ГЏГ°Г®Г¤Г Г© Г®Г°ГіГ¦ГЁГҐ ГЁ ГЇГ®Г«ГіГ·ГЁ Г°ГҐГЇГіГІГ Г¶ГЁГѕ Гў ГЄГ Г°Г¬Г Г­.\n"P"ГЌГ ГЈГ°Г Г¤Г : "GREEN"7 Г°ГҐГЇГіГІГ Г¶ГЁГЁ, $30.000",15,30000},
-	{"Гџ Гі Г¬Г Г¬Г» ГІГ Г№ГҐГ° 228",""G"ГѓГ®ГўГ®Г°ГїГІ ГІГ» ГіГ¦ГҐ Г®ГЇГ»ГІГ­Г»Г© ГЎГ Г­Г¤ГЁГІ.\nГ’Г ГЄ ГўГ®ГІ, ГіГЎГҐГ© ГЁГЈГ°Г®ГЄГ  ГўГ® ГўГ°ГҐГ¬Гї ГЄГ ГЇГІГ ,\nГї ГІГҐГЎГҐ Г§Г  ГЅГІГ® ГµГ®Г°Г®ГёГ® Г§Г ГЇГ«Г Г·Гі. Г„Г  ГЁ Г ГўГІГ®Г°ГЁГІГҐГІ Г±ГўГ®Г© ГЇГ®ГўГ»Г±ГЁГёГј\n\n"ORANGE"Г‡Г Г¤Г Г·Г : Г“ГЎГҐГ© Г­Г  ГЄГ ГЇГІГҐ ГЄГ®ГЈГ®-ГІГ®.\n"P"ГЌГ ГЈГ°Г Г¤Г : "GREEN"10 Г°ГҐГЇГіГІГ Г¶ГЁГЁ, $26.000",10,26000},
-	{"ГЉГІГ® ГІГіГІ Г¶Г Г°Гј?",""G"Г„Г®ГЄГ Г¦ГЁ, Г·ГІГ® ГІГ» ГІГіГІ ГЄГ®Г°Г®Г«Гј ГЈГ®Г°Г®Г¤Г .\nГ“ГўГЁГ¤ГҐГ« Г¬ГҐГ­ГІГ  - ГіГЎГҐГ© ГҐГЈГ® Г­Г ГµГҐГ°, Г§Г Г°Г ГЎГ®ГІГ Г© Г°ГҐГЇГіГІГ Г¶ГЁГѕ ГЈГЅГ­ГЈГ±ГІГҐГ°Г !\n\n"ORANGE"Г‡Г Г¤Г Г·Г : Г“ГЎГҐГ© Г±Г®ГІГ°ГіГ¤Г­ГЁГЄГ  ГЇГ®Г«ГЁГ¶ГЁГЁ.\n"P"ГЌГ ГЈГ°Г Г¤Г : "GREEN"5 Г°ГҐГЇГіГІГ Г¶ГЁГЁ, $5.000",5,5000}
-};
 
 enum AIRPLANE_DATA {
 	aID,
@@ -7318,7 +7293,7 @@ stock IsAGang(playerid) {
 stock IsANews(playerid) {
 	if(!IsPlayerConnected(playerid)) return 0;
 	switch(GetTeamID(playerid)) {
-		case fLSNEWS: return 1;
+		case fLSNEWS,fSFNEWS,fLVNEWS: return 1;
 	}
 	return 0;
 }
@@ -7327,7 +7302,7 @@ stock DollahScoreUpdate(playerid) return SetPlayerScore(playerid, PlayerInfo[pla
 stock IsAMedic(playerid) {
 	if(!IsPlayerConnected(playerid)) return 0;
 	switch(GetTeamID(playerid)) {
-		case fMEDICLS: return 1;
+		case fMEDICLS,fMEDICSF,fMEDICLV: return 1;
 	}
 	return 0;
 }
@@ -7341,14 +7316,21 @@ stock IsAMayor(playerid) {
 stock IsAPD(playerid) {
 	if(!IsPlayerConnected(playerid)) return 0;
 	switch(GetTeamID(playerid)) {
-		case fLSPD: return 1;
+		case fLSPD,fSFPD,fLVPD: return 1;
 	}
 	return 0;
 }
 stock IsACop(playerid) {
 	if(!IsPlayerConnected(playerid)) return 0;
 	switch(GetTeamID(playerid)) {
-		case fLSPD: return 1;
+		case fLSPD,fSFPD,fLVPD,fFBI: return 1;
+	}
+	return 0;
+}
+stock IsAArm(playerid) {
+	if(!IsPlayerConnected(playerid)) return 0;
+	switch(GetTeamID(playerid)) {
+		case fARMYSF,fARMYLV: return 1;
 	}
 	return 0;
 }
@@ -7651,8 +7633,8 @@ new Float:auto_exam[12][3] = {
 
 new Float:tuning_enter[3][3] = {
 	{1153.4031,-1208.7499,19.0252},//LS
-	{844.7380,-601.3832,18.4219},//SF
-	{1219.2533,188.8808,19.9946}//LV
+	{-1786.8206,1206.0835,25.1250},//SF
+	{1643.8298,2197.1387,10.8203}//LV
 };
 new Float:tuning_exit_1[3][4] = {
 	{1146.8389,-1218.7427,17.7843,180.1412},//1
@@ -7660,14 +7642,14 @@ new Float:tuning_exit_1[3][4] = {
 	{1156.8915,-1219.8698,17.6866,179.4841}//3
 };
 new Float:tuning_exit_2[3][4] = {
-	{830.1998,-608.3957,16.3432,357.6947},//1
-	{820.6600,-607.4206,16.3359,2.2924},//2
-	{797.4576,-615.7350,16.3359,2.2959}//3
+	{-1779.4021, 1204.3573, 24.8605, 180.0000},//1
+	{-1775.1401, 1204.3573, 24.8605, 180.0000},//2
+	{-1770.8749, 1204.3573, 24.8605, 180.0000}//3
 };
 new Float:tuning_exit_3[3][4] = {
-	{1240.4636,183.5855,19.5547,334.8788},//1
-	{1232.9320,187.2008,19.5547,334.4602},//2
-	{1226.7039,189.3203,19.5666,333.2061}//3
+	{1638.3571, 2195.1743, 10.5474, 180.0000},//1
+	{1632.6182, 2195.1743, 10.5474, 180.0000},//2
+	{1626.9589, 2195.1743, 10.5474, 180.0000}//3
 };
 
 new TotalGZ[5],
@@ -9447,7 +9429,6 @@ stock to_default(playerid) {
 	TI[playerid][loadingModelPlayer] 			= 
 	TI[playerid][tACflood]						= 
 	PlayerInfo[playerid][pHelper]						=
-	PlayerInfo[playerid][pRankExp]						=
 	PlayerInfo[playerid][pSpecials]						=
 	PlayerInfo[playerid][ptheftSkill]					= //угон
 	PlayerInfo[playerid][ptheftExp]						= //угон
@@ -10086,9 +10067,7 @@ public OnPlayerConnect(playerid) {
 	format(query, sizeof(query), "SELECT * FROM `"TABLE_BANIP"` WHERE `IP` = '%s' LIMIT 1", player_ip_check[playerid]);
 	mysql_tquery(connects, query, "check_ip_ban", "i", playerid);
 
-	for(new i=0; i<10; i++) {
-		TextDrawShowForPlayer(playerid, LOGO[i]);
-	}
+	for(new i = 0; i < sizeof(TDEditor_TD); i++) TextDrawShowForPlayer(playerid, TDEditor_TD[i]);
 	GangZoneShowForPlayer(playerid, SFa, COLOR_YELLOW2);
 	GangZoneShowForPlayer(playerid, Army, COLOR_YELLOW2);
 
@@ -11776,7 +11755,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 				}
 				case 3: {
 					switch(GetTeamID(playerid)) {
-						case fLSPD: {
+						case fLSPD,fSFPD,fLVPD,fFBI: {
 							strcat(string,""P"/r"W" - рация\n");
 							strcat(string,""P"/rb"W" - НонРП рация\n");
 							strcat(string,""P"/d"W" - рация гос. департамента\n");
@@ -11802,8 +11781,13 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 							strcat(string,""P"/spikes"W" - выбросить шипы\n");
 							strcat(string,""P"/hack"W" - взломать дверь дома\n");
 							strcat(string,""P"/fences"W" - установить ограждение\n");
+							if(GetTeamID(playerid) == fFBI) {
+								strcat(string,""P"/demote"W" - понизить/уволить гос.служащего\n");
+								strcat(string,""P"/fakepass"W" - показать поддельный паспорт\n");
+								strcat(string,""P"/givekey"W" - выдать/забрать пропуск\n");
+							}
 						}
-						case fMEDICLS: {
+						case fMEDICLS,fMEDICSF,fMEDICLV: {
 							strcat(string,""P"/r"W" - рация\n");
 							strcat(string,""P"/rb"W" - НонРП рация\n");
 							strcat(string,""P"/d"W" - рация гос. департамента\n");
@@ -11816,7 +11800,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 							strcat(string,""P"/bheal"W" - вылечить от болезней\n");
 							strcat(string,""P"/gmed"W" - поставить печать в лицензию на оружие\n");
 						}
-						case fLSNEWS: {
+						case fLSNEWS,fSFNEWS,fLVNEWS: {
 							strcat(string,""P"/r"W" - рация\n");
 							strcat(string,""P"/rb"W" - НонРП рация\n");
 							strcat(string,""P"/d"W" - рация гос. департамента\n");
@@ -11829,6 +11813,18 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 							strcat(string,""P"/skip"W" - положить трубку\n");
 							strcat(string,""P"/udjur"W" - показать удостоверение журналиста\n");
 							strcat(string,""P"/audience"W" - рейтинг слушателей\n");
+						}
+						case fARMYLV,fARMYSF: {
+							strcat(string,""P"/r"W" - рация\n");
+							strcat(string,""P"/rb"W" - НонРП рация\n");
+							strcat(string,""P"/d"W" - рация гос. департамента\n");
+							strcat(string,""P"/db"W" - НонРП рация гос. департамента\n");
+							strcat(string,""P"/rr"W" - рация подфракций\n");
+							strcat(string,""P"/members"W" - посмотреть онлайн фракции\n");
+							strcat(string,""P"/gnews"W" - гос. новости\n");
+							strcat(string,""P"/load"W" - начать загрузку боеприпасов\n");
+							strcat(string,""P"/unload"W" - начать разгрузку боеприпасов\n");
+							strcat(string,""P"/carm"W" - начать перевозку боеприпасов\n");
 						}
 						case fBALLAS,fVAGOS,fGROVE,fAZTEC,fRIFA: {
 							strcat(string,""P"/f"W" - рация\n");
@@ -11972,6 +11968,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 			if(!response) return ShowSettings(playerid);
 			switch(listitem) {
 				case 0: PlayerInfo[playerid][pSettings][2] = fLSNEWS;
+				case 1: PlayerInfo[playerid][pSettings][2] = fSFNEWS;
+				case 2: PlayerInfo[playerid][pSettings][2] = fLVNEWS;
 				case 3: PlayerInfo[playerid][pSettings][2] = 0;
 			}
 			SendOk(playerid, "Радиостанция успешно установлена");
@@ -11982,6 +11980,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 			if(!response) return 1;
 			switch(listitem) {
 				case 0: PlayerInfo[playerid][pSettings][2] = fLSNEWS;
+				case 1: PlayerInfo[playerid][pSettings][2] = fSFNEWS;
+				case 2: PlayerInfo[playerid][pSettings][2] = fLVNEWS;
 				case 3: PlayerInfo[playerid][pSettings][2] = 0;
 			}
 			SendOk(playerid, "Радиостанция успешно установлена");
@@ -12332,6 +12332,14 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 							if(calls_news[0] == INVALID_PLAYER_ID) str = "Приём звонков - ["GREEN"Отсутствует"W"]";
 							else format(str,sizeof(str),"Приём звонков - ["P"%s]",player_name[calls_news[0]]);
 						}
+						case fSFNEWS: {
+							if(calls_news[1] == INVALID_PLAYER_ID) str = "Приём звонков - ["GREEN"Отсутствует"W"]";
+							else format(str,sizeof(str),"Приём звонков - ["P"%s]",player_name[calls_news[1]]);
+						}
+						case fLVNEWS: {
+							if(calls_news[2] == INVALID_PLAYER_ID) str = "Приём звонков - ["GREEN"Отсутствует"W"]";
+							else format(str,sizeof(str),"Приём звонков - ["P"%s]",player_name[calls_news[2]]);
+						}
 					}
 					new string[128];
 					format(string,sizeof(string),""W"1. %s\n"W"2. Цена за звонки - ["GREEN"%d"W"]",str,FI[PlayerInfo[playerid][pMember]][fPrice]);
@@ -12354,6 +12362,34 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 							}
 							else {
 								if(calls_news[0] == playerid) {
+									ether_closed(playerid);
+								}
+								else ErrorMessage(playerid,"Кто-то из сотрудников уже принимает звонки");
+							}
+						}
+						case fSFNEWS: {
+							if(calls_news[1] == INVALID_PLAYER_ID) {
+								calls_news[1] = playerid;
+								new string[128];
+								format(string,sizeof(string),"%s начал(а) приём звонков",player_name[playerid]);
+								SendFamilyMessage(PlayerInfo[playerid][pMember], 0x139BECFF, string);
+							}
+							else {
+								if(calls_news[1] == playerid) {
+									ether_closed(playerid);
+								}
+								else ErrorMessage(playerid,"Кто-то из сотрудников уже принимает звонки");
+							}
+						}
+						case fLVNEWS: {
+							if(calls_news[2] == INVALID_PLAYER_ID) {
+								calls_news[2] = playerid;
+								new string[128];
+								format(string,sizeof(string),"%s начал(а) приём звонков",player_name[playerid]);
+								SendFamilyMessage(PlayerInfo[playerid][pMember], 0x139BECFF, string);
+							}
+							else {
+								if(calls_news[2] == playerid) {
 									ether_closed(playerid);
 								}
 								else ErrorMessage(playerid,"Кто-то из сотрудников уже принимает звонки");
@@ -12430,6 +12466,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 			new id = GetPVarInt(playerid,"editadvert");
             switch(PlayerInfo[playerid][pMember]) {
                 case fLSNEWS: gAdvert[id][adNews] = "LS";
+                case fSFNEWS: gAdvert[id][adNews] = "SF";
+                case fLVNEWS: gAdvert[id][adNews] = "LV";
             }
 			if(strlen(inputtext)) format(gAdvert[id][adText],100,"%s",inputtext);
 			format(gAdvert[id][adCheker],24,"%s",player_name[playerid]);
@@ -12478,6 +12516,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 			new mes[90];
 			format(mes, sizeof mes, "[ ! ] Поступило новое объявление от %s | Отредактируйте: /edit", gAdvert[slot][adSender]);
 			SendFamilyMessage(fLSNEWS, 0x139BECFF, mes);
+			SendFamilyMessage(fSFNEWS, 0x139BECFF, mes);
+			SendFamilyMessage(fLVNEWS, 0x139BECFF, mes);
 			SendOk(playerid,"Объявление подано в редакцию. Ожидайте проверки");
 		}
 		case D_DJMSG: {
@@ -12542,9 +12582,18 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 							if(!PlayerInfo[i][pMember]) continue;
 							switch(PlayerInfo[i][pMember]) {
 								case fLSPD: frac_online[fLSPD] ++;
+								case fSFPD: frac_online[fSFPD] ++;
+								case fLVPD: frac_online[fLVPD] ++;
+								case fFBI: frac_online[fFBI] ++;
 								case fMAYOR: frac_online[fMAYOR] ++;
+								case fARMYSF: frac_online[fARMYSF] ++;
+								case fARMYLV: frac_online[fARMYLV] ++;
 								case fMEDICLS: frac_online[fMEDICLS] ++;
+								case fMEDICSF: frac_online[fMEDICSF] ++;
+								case fMEDICLV: frac_online[fMEDICLV] ++;
 								case fLSNEWS: frac_online[fLSNEWS] ++;
+								case fSFNEWS: frac_online[fSFNEWS] ++;
+								case fLVNEWS: frac_online[fLVNEWS] ++;
 								case fINSTRUCTORS: frac_online[fINSTRUCTORS] ++;
 								case fLCN: frac_online[fLCN] ++;
 								case fYAKUZA: frac_online[fYAKUZA] ++;
@@ -12558,17 +12607,17 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 							}
 						}
 						static const f_str[] = "\
-Фракция\tИгроки\nПолиция ЛС\t%d\n\
-Мэрия\t%d\n\
-Больница ЛС\t%d\n\
-Радиоцентр ЛС\t%d\n\
+Фракция\tИгроки\nПолиция ЛС\t%d\nПолиция СФ\t%d\nПолиция ЛВ\t%d\nФБР\t%d\n\
+Мэрия\t%d\nАрмия СФ\t%d\nАрмия ЛВ\t%d\n\
+Больница ЛС\t%d\nБольница СФ\t%d\nБольница ЛВ\t%d\n\
+Радиоцентр ЛС\t%d\nРадиоцентр СФ\t%d\nРадиоцентр ЛВ\t%d\n\
 Автошкола\t%d\nИтальянская мафия\t%d\nЯпонская мафия\t%d\n\
 Русская мафия\t%d\nThe Ballas\t%d\nThe Vagos\t%d\n\
 The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 						new string[sizeof(f_str) +1 + (30)];
-						format(string,sizeof(string),f_str,frac_online[fLSPD],frac_online[fMAYOR],frac_online[fMEDICLS],
-							frac_online[fLSNEWS],frac_online[fINSTRUCTORS],frac_online[fLCN],frac_online[fYAKUZA],frac_online[fRM],frac_online[fBALLAS],frac_online[fVAGOS],frac_online[fGROVE],
-							frac_online[fAZTEC],frac_online[fRIFA],frac_online[fWHITEHOUSE]);
+						format(string,sizeof(string),f_str,frac_online[fLSPD],frac_online[fSFPD],frac_online[fLVPD],frac_online[fFBI],frac_online[fMAYOR],frac_online[fARMYSF],frac_online[fARMYLV],frac_online[fMEDICLS],frac_online[fMEDICSF],frac_online[fMEDICLV],
+															frac_online[fLSNEWS],frac_online[fSFNEWS],frac_online[fLVNEWS],frac_online[fINSTRUCTORS],frac_online[fLCN],frac_online[fYAKUZA],frac_online[fRM],frac_online[fBALLAS],frac_online[fVAGOS],frac_online[fGROVE],
+															frac_online[fAZTEC],frac_online[fRIFA],frac_online[fWHITEHOUSE]);
 						D(playerid, D_AMEMBERS, DSTH, "Онлайн организаций", string, "Закрыть", "");
 						
 					}
@@ -13561,7 +13610,6 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 	        	PlayerInfo[ID][pLeader] = 0;
 				PlayerInfo[ID][pMember] = 0;
     			PlayerInfo[ID][pRank] = 0;
-    			PlayerInfo[ID][pRankExp] = 0;
 				start_work[ID] = 0;
     			static const f_str[] = ""W"%s "G"забрал у Вас полномочия лидера организации";
     			new string[sizeof(f_str) +1 + (-2 + MAX_PLAYER_NAME)];
@@ -14110,8 +14158,8 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			if(!response) {
 				if(gBusiness[businessid][bizzType] == 8) {
 					if(IsPlayerInRangeOfPoint(playerid,10.0, 545.7042,-1293.4833,17.2422)) SetPVarInt(playerid,"sellcarClass",1);
-					if(IsPlayerInRangeOfPoint(playerid,10.0, 1654.0626,-1654.7563,22.5156)) SetPVarInt(playerid,"sellcarClass",3);
-					if(IsPlayerInRangeOfPoint(playerid,10.0, 1081.2488,-1696.7892,13.5469)) SetPVarInt(playerid,"sellcarClass",5);
+					if(IsPlayerInRangeOfPoint(playerid,10.0, -1965.6605,293.9383,35.4688)) SetPVarInt(playerid,"sellcarClass",3);
+					if(IsPlayerInRangeOfPoint(playerid,10.0, 2200.8638,1394.8074,11.0625)) SetPVarInt(playerid,"sellcarClass",5);
 					if(IsPlayerInRangeOfPoint(playerid,10.0, 2131.8152,-1151.3242,24.0600)) SetPVarInt(playerid,"sellcarClass",6);
 					new carclass = GetPVarInt(playerid,"sellcarClass");
 					TI[playerid][tTPpick] = true;
@@ -15599,7 +15647,6 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 				if(GetPlayerMoneyEx(playerid) < 500) return ErrorMessage(playerid,"У Вас недостаточно средств");
 				GiveMoney(playerid,-500,"Доставка ТС к дому");
 			}
-
 			gPlayerCars[playerid][carFuel][listitem] = 40;
 			loading_cars(playerid, listitem);
 			SendOk(playerid,"Автомобиль успешно доставлен");
@@ -16927,8 +16974,6 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			format(string,sizeof(string),"Поздравляем с созданием семьи - "ORANGE"%s",gFamily[TotalFamily][famCName]);
 			SendUse(playerid,string);
 			SendOk(playerid,"Управление семьей - "W"/fmenu");
-			PlayerInfo[playerid][pFamily] = TotalFamily + 1;
-			UpdatePlayerData(playerid,"family",PlayerInfo[playerid][pFamily]);
 			PlayerInfo[playerid][pFamRank] = 8;
 			UpdatePlayerData(playerid,"pFamRank",8);
 			strmid(gFamily[TotalFamily][famCOwner],player_name[playerid],0,strlen(player_name[playerid]),MAX_PLAYER_NAME);
@@ -16936,14 +16981,14 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			new querys[512];
 			format(querys, sizeof(querys), "INSERT INTO `family`(`cname`,`name`,`time`,`cowner`,`owner`) VALUES ('%s','%s',NOW(),'%s','%s')",
 				gFamily[TotalFamily][famCName],gFamily[TotalFamily][famName],gFamily[TotalFamily][famCOwner],gFamily[TotalFamily][famOwner]);
-			mysql_tquery(connects, querys, "creategFamily", "i", TotalFamily);
+			mysql_tquery(connects, querys, "creategFamily", "ii", TotalFamily, playerid);
 			TotalFamily++;
 			PlayerInfo[playerid][pRouble] -= 500;
 			UpdatePlayerData(playerid, "donatemoney", PlayerInfo[playerid][pRouble]);
 		}
 		case D_FAMILY: {
 			if(!response) return 1;
-			new fam = PlayerInfo[playerid][pFamily]-1;
+			new fam = GetFamilyId(PlayerInfo[playerid][pFamily]);
 			switch(listitem) {
 				case 0: {
 					new str[24];
@@ -17068,7 +17113,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 					if(GetString(gFamily[fam][famOwner],player_name[playerid])) return ErrorMessage(playerid,"Вы не можете покинуть семью, так как владелец");
 					new string[128];
 					format(string,sizeof(string),"[FAMILY] "W"%s{%s} покинул семью",player_name[playerid],FamilyColor[gFamily[fam][famColor]]);
-					FamMSG(fam+1,string);
+					FamMSG(fam,string);
 					PlayerInfo[playerid][pFamily] = 0;
 					UpdatePlayerData(playerid,"family",0);
 					PlayerInfo[playerid][pFamRank] = 0;
@@ -17078,7 +17123,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 		}
 		case D_FAMILY_SET: {
 			if(!response) return family_dialog(playerid);
-			new fam = PlayerInfo[playerid][pFamily]-1;
+			new fam = GetFamilyId(PlayerInfo[playerid][pFamily]);
 			if(strcmp(gFamily[fam][famOwner],player_name[playerid],true)) return ErrorMessage(playerid,"Доступно только владельцу семьи");
 			switch(listitem) {
 				case 0..3: {
@@ -17167,10 +17212,10 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			new message[71];
 			if(NonSym(inputtext,70,1)) return D(playerid,D_FAMILY_TEXT, DSI, ""P"Сообщение семье", "\n\n"W"Введите сообщение, которое будет показано членам Вашей семьи при входе:\nДля удаления сообщения введите: "ORANGE"None\n\n"NO"* "G"Запрещены некорректные символы\n\n", "Ввод", "Отмена");
 			if(sscanf(inputtext,"s[70]",message)) return D(playerid,D_FAMILY_TEXT, DSI, ""P"Сообщение семье", "\n\n"W"Введите сообщение, которое будет показано членам Вашей семьи при входе:\nДля удаления сообщения введите: "ORANGE"None\n\n"NO"* "G"От 1 до 70 символов\n\n", "Ввод", "Отмена");
-			strmid(gFamily[PlayerInfo[playerid][pFamily]-1][famMessage],message,0,strlen(message),70);
+			strmid(gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famMessage],message,0,strlen(message),70);
 
 			new query[350];
-			format(query,sizeof(query),"UPDATE `family` SET message = '%s' WHERE `id` = '%d' LIMIT 1",gFamily[PlayerInfo[playerid][pFamily]-1][famMessage],PlayerInfo[playerid][pFamily]);
+			format(query,sizeof(query),"UPDATE `family` SET message = '%s' WHERE `id` = '%d' LIMIT 1",gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famMessage],PlayerInfo[playerid][pFamily]);
 			mysql_tquery(connects,query);
 
 			new string[128];
@@ -17185,7 +17230,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			}
 			if(!PlayerInfo[playerid][pHouse]) return ErrorMessage(playerid,"У Вас нет дома");
 			if(gHouses[PlayerInfo[playerid][pHouse]-1][houseClass] != 3) return ErrorMessage(playerid,"Класс дома не соответствует классу 'ОСОБНЯК'");
-			gFamily[PlayerInfo[playerid][pFamily]-1][famHouse] = PlayerInfo[playerid][pHouse];
+			gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famHouse] = PlayerInfo[playerid][pHouse];
 			UpdateFamily(PlayerInfo[playerid][pFamily],"house",PlayerInfo[playerid][pHouse]);
 			gHouses[PlayerInfo[playerid][pHouse]-1][houseFamily] = PlayerInfo[playerid][pHouse];
 			new query[128];
@@ -17199,7 +17244,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 		    	family_dialog(playerid);
 		    	return true;
 			}
-			new fam = PlayerInfo[playerid][pFamily]-1;
+			new fam = GetFamilyId(PlayerInfo[playerid][pFamily]);
 			new max_upgrade = 19,lvl = -1;
 			new name_upgrade[8][19] = {"денег","наркотиков","боеприпасов","бронежилетов","аптечек","масок","канистр с бензином","ремкомплектов"};
 			switch(listitem) {
@@ -17248,7 +17293,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 		    	family_dialog(playerid);
 		    	return true;
 			}
-			new fam = PlayerInfo[playerid][pFamily]-1;
+			new fam = GetFamilyId(PlayerInfo[playerid][pFamily]);
 			switch(GetPVarInt(playerid, "fam_upgrade_stock")) {
 				case 0: {
 					if(gFamily[fam][famPoint] < fam_point_upgrade[gFamily[fam][famMoneyMax]]) return ErrorMessage(playerid,"У Вашей семьи недостаточно поинтов");
@@ -17307,7 +17352,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			if(listitem == -1) return 1;
 			if(PlayerInfo[playerid][pFamRank] <= listitem) return ErrorMessage(playerid, "Ваш ранг недостаточен");
 			new rank_id = GetPVarInt(playerid,"id_fgiverank"),string[128];
-			new fam = PlayerInfo[playerid][pFamily]-1;
+			new fam = GetFamilyId(PlayerInfo[playerid][pFamily]);
 			format(string,sizeof(string),"Вы повысили/понизили "W"%s{%s} до ранга "W"%s",player_name[rank_id],FamilyColor[gFamily[fam][famColor]],GetFamName(fam,listitem+1));
 			SendClientMessage(playerid,FamilyColorG[gFamily[fam][famColor]],string);
 
@@ -17323,7 +17368,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 		case D_FAMILY_COLOR: {
 			if(!response) return family_dialog(playerid);
 			if(!PlayerInfo[playerid][pFamily]) return 1;
-			new fam = PlayerInfo[playerid][pFamily]-1;
+			new fam = GetFamilyId(PlayerInfo[playerid][pFamily]);
 			gFamily[fam][famColor] = listitem;
 			UpdateFamily(fam+1,"color",listitem);
 
@@ -17335,7 +17380,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 				if(!TI[i][tLogin] ||  AntiCheatIsKickedWithDesync(i)) continue;
 				if(PlayerInfo[playerid][pFamily] != PlayerInfo[i][pFamily]) continue;
 				new famtext[50];
-				format(famtext,sizeof(famtext),"{%s}%s",FamilyColor[gFamily[PlayerInfo[i][pFamily]-1][famColor]],gFamily[PlayerInfo[i][pFamily]-1][famName]);
+				format(famtext,sizeof(famtext),"{%s}%s",FamilyColor[gFamily[GetFamilyId(PlayerInfo[i][pFamily])][famColor]],gFamily[GetFamilyId(PlayerInfo[i][pFamily])][famName]);
 				UpdateDynamic3DTextLabelText(fam_lable[i], -1, famtext);
 			}
 			family_setting(playerid);
@@ -17343,7 +17388,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 		case D_FAMILY_SET_RANK: {
 			if(!response) return DeletePVar(playerid,"fam_rank"),family_dialog(playerid);
 			if(!PlayerInfo[playerid][pFamily]) return 1;
-			new fam = PlayerInfo[playerid][pFamily]-1;
+			new fam = GetFamilyId(PlayerInfo[playerid][pFamily]);
 			new select_listitem = GetPVarInt(playerid,"fam_rank");UpdateFamily(fam+1,"invite",listitem + 1);
 			if(select_listitem == 0) gFamily[fam][famInvRang] = listitem + 1,UpdateFamily(fam+1,"invite",listitem + 1);
 			else if(select_listitem == 1) gFamily[fam][famUninvRang] = listitem + 1,UpdateFamily(fam+1,"uninvite",listitem + 1);
@@ -17364,7 +17409,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 		case D_FAMILY_ERANK_2: {
 			if(!response) return family_dialog(playerid);
 			if(!PlayerInfo[playerid][pFamily]) return 1;
-			new fam = PlayerInfo[playerid][pFamily]-1;
+			new fam = GetFamilyId(PlayerInfo[playerid][pFamily]);
 			if(strlen(inputtext) <= 1 || strlen(inputtext) >= 24) return D(playerid, D_FAMILY_ERANK_2, DSI, ""P"Смена названия ранга", "\n\n"W"Введите новое название ранга:\n\n"NO"*"G" От 2 и до 24 симолов\n\n", "Изменить", "Отмена");
 			string_replace(inputtext, "'", ' ');
 			new slot = GetPVarInt(playerid, "edit_frank");
@@ -17408,7 +17453,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 				return 1;
 			}
 			cache_delete(result);
-			new fam = PlayerInfo[playerid][pFamily]-1;
+			new fam = GetFamilyId(PlayerInfo[playerid][pFamily]);
 			strmid(gFamily[fam][famName],inputtext,0,strlen(inputtext),strlen(inputtext)+1);
 			query = "";
 			format(query, sizeof(query), "UPDATE `family` SET name = '%s' WHERE id = '%d'", gFamily[fam][famName],gFamily[fam][famID]);
@@ -17418,7 +17463,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 				if(!TI[i][tLogin] ||  AntiCheatIsKickedWithDesync(i)) continue;
 				if(PlayerInfo[playerid][pFamily] != PlayerInfo[i][pFamily]) continue;
 				new famtext[50];
-				format(famtext,sizeof(famtext),"{%s}%s",FamilyColor[gFamily[PlayerInfo[i][pFamily]-1][famColor]],gFamily[PlayerInfo[i][pFamily]-1][famName]);
+				format(famtext,sizeof(famtext),"{%s}%s",FamilyColor[gFamily[GetFamilyId(PlayerInfo[i][pFamily])][famColor]],gFamily[GetFamilyId(PlayerInfo[i][pFamily])][famName]);
 				UpdateDynamic3DTextLabelText(fam_lable[i], -1, famtext);
 			}
 			new string[128];
@@ -17451,7 +17496,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 		    	family_dialog(playerid);
 		    	return true;
 			}
-			new fam = PlayerInfo[playerid][pFamily]-1;
+			new fam = GetFamilyId(PlayerInfo[playerid][pFamily]);
 			new name_upgrade[8][19] = {"денег","наркотиков","боеприпасов","бронежилетов","аптечек","масок","канистр с бензином","ремкомплектов"};
 			new lvl,colvo,all_1,all_2;
 			switch(GetPVarInt(playerid,"select_famscore")) {
@@ -17536,7 +17581,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 		    	family_dialog(playerid);
 		    	return true;
 			}
-			new fam = PlayerInfo[playerid][pFamily]-1;
+			new fam = GetFamilyId(PlayerInfo[playerid][pFamily]);
 			if(gFamily[fam][famSklad] > PlayerInfo[playerid][pFamRank]) return ErrorMessage(playerid,"Ваш ранг недостаточен");
 			new col = strval(inputtext);
 			switch(GetPVarInt(playerid,"select_famscore")) {
@@ -17558,7 +17603,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 
 					new string[144];
 					format(string,sizeof(string),"[FAMILY] "W"%s{%s} взял(а) "W"%d{%s} денег",player_name[playerid],FamilyColor[gFamily[fam][famColor]],col,FamilyColor[gFamily[fam][famColor]]);
-					FamMSG(fam+1,string);
+					FamMSG(fam,string);
 				} 
 				case 1: {
 					if(col < 1) {
@@ -17584,7 +17629,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 
 					new string[144];
 					format(string,sizeof(string),"[FAMILY] "W"%s{%s} взял(а) "W"%d{%s} наркотиков",player_name[playerid],FamilyColor[gFamily[fam][famColor]],col,FamilyColor[gFamily[fam][famColor]]);
-					FamMSG(fam+1,string);
+					FamMSG(fam,string);
 				} 
 				case 2: {
 					if(col < 1) {
@@ -17611,7 +17656,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 
 					new string[144];
 					format(string,sizeof(string),"[FAMILY] "W"%s{%s} взял(а) "W"%d{%s} боеприпасов",player_name[playerid],FamilyColor[gFamily[fam][famColor]],col,FamilyColor[gFamily[fam][famColor]]);
-					FamMSG(fam+1,string);
+					FamMSG(fam,string);
 				}
 				case 3: {
 					if(col != 1) {
@@ -17631,7 +17676,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 
 					new string[144];
 					format(string,sizeof(string),"[FAMILY] "W"%s{%s} взял(а) "W"%d{%s} бронежилет",player_name[playerid],FamilyColor[gFamily[fam][famColor]],col,FamilyColor[gFamily[fam][famColor]]);
-					FamMSG(fam+1,string);
+					FamMSG(fam,string);
 				}
 				case 4: {
 					if(col < 1) {
@@ -17657,7 +17702,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 
 					new string[144];
 					format(string,sizeof(string),"[FAMILY] "W"%s{%s} взял(а) "W"%d{%s} аптечек",player_name[playerid],FamilyColor[gFamily[fam][famColor]],col,FamilyColor[gFamily[fam][famColor]]);
-					FamMSG(fam+1,string);
+					FamMSG(fam,string);
 				}
 				case 5: {
 					if(col < 1) {
@@ -17684,7 +17729,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 
 					new string[144];
 					format(string,sizeof(string),"[FAMILY] "W"%s{%s} взял(а) "W"%d{%s} масок",player_name[playerid],FamilyColor[gFamily[fam][famColor]],col,FamilyColor[gFamily[fam][famColor]]);
-					FamMSG(fam+1,string);
+					FamMSG(fam,string);
 				}
 				case 6: {
 					if(col != 1) {
@@ -17710,7 +17755,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 
 					new string[144];
 					format(string,sizeof(string),"[FAMILY] "W"%s{%s} взял(а) "W"%d{%s} канистру с бензином",player_name[playerid],FamilyColor[gFamily[fam][famColor]],col,FamilyColor[gFamily[fam][famColor]]);
-					FamMSG(fam+1,string);
+					FamMSG(fam,string);
 				}
 				case 7: {
 					if(col < 1) {
@@ -17736,7 +17781,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 
 					new string[144];
 					format(string,sizeof(string),"[FAMILY] "W"%s{%s} взял(а) "W"%d{%s} ремкомплектов",player_name[playerid],FamilyColor[gFamily[fam][famColor]],col,FamilyColor[gFamily[fam][famColor]]);
-					FamMSG(fam+1,string);
+					FamMSG(fam,string);
 				}
 			}
 		}
@@ -17747,7 +17792,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 		    	family_dialog(playerid);
 		    	return true;
 			}
-			new fam = PlayerInfo[playerid][pFamily]-1;
+			new fam = GetFamilyId(PlayerInfo[playerid][pFamily]);
 			new col = strval(inputtext);
 			switch(GetPVarInt(playerid,"select_famscore")) {
 				case 0: {
@@ -17773,7 +17818,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 
 					new string[144];
 					format(string,sizeof(string),"[FAMILY] "W"%s{%s} положил(а) "W"%d{%s} денег на склад семьи",player_name[playerid],FamilyColor[gFamily[fam][famColor]],col,FamilyColor[gFamily[fam][famColor]]);
-					FamMSG(fam+1,string);
+					FamMSG(fam,string);
 				}
 				case 1: {
 					if(col < 1) {
@@ -17799,7 +17844,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 
 					new string[144];
 					format(string,sizeof(string),"[FAMILY] "W"%s{%s} положил(а) "W"%d{%s} наркотиков на склад семьи",player_name[playerid],FamilyColor[gFamily[fam][famColor]],col,FamilyColor[gFamily[fam][famColor]]);
-					FamMSG(fam+1,string);
+					FamMSG(fam,string);
 				} 
 				case 2: {
 					if(col < 1) {
@@ -17825,7 +17870,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 
 					new string[144];
 					format(string,sizeof(string),"[FAMILY] "W"%s{%s} положил(а) "W"%d{%s} боеприпасов на склад семьи",player_name[playerid],FamilyColor[gFamily[fam][famColor]],col,FamilyColor[gFamily[fam][famColor]]);
-					FamMSG(fam+1,string);
+					FamMSG(fam,string);
 				}
 				case 3: {
 					if(col < 1) {
@@ -17851,7 +17896,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 					SetPlayerArmour(playerid, 0);
 					new string[144];
 					format(string,sizeof(string),"[FAMILY] "W"%s{%s} положил(а) "W"%d{%s} бронежилет на склад семьи",player_name[playerid],FamilyColor[gFamily[fam][famColor]],col,FamilyColor[gFamily[fam][famColor]]);
-					FamMSG(fam+1,string);
+					FamMSG(fam,string);
 				}
 				case 4: {
 					if(col < 1) {
@@ -17877,7 +17922,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 
 					new string[144];
 					format(string,sizeof(string),"[FAMILY] "W"%s{%s} положил(а) "W"%d{%s} аптечек на склад семьи",player_name[playerid],FamilyColor[gFamily[fam][famColor]],col,FamilyColor[gFamily[fam][famColor]]);
-					FamMSG(fam+1,string);
+					FamMSG(fam,string);
 				}
 				case 5: {
 					if(col < 1) {
@@ -17903,7 +17948,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 
 					new string[144];
 					format(string,sizeof(string),"[FAMILY] "W"%s{%s} положил(а) "W"%d{%s} масок на склад семьи",player_name[playerid],FamilyColor[gFamily[fam][famColor]],col,FamilyColor[gFamily[fam][famColor]]);
-					FamMSG(fam+1,string);
+					FamMSG(fam,string);
 				}
 				case 6: {
 					if(col < 1) {
@@ -17929,7 +17974,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 
 					new string[144];
 					format(string,sizeof(string),"[FAMILY] "W"%s{%s} положил(а) "W"%d{%s} канистр с бензином на склад семьи",player_name[playerid],FamilyColor[gFamily[fam][famColor]],col,FamilyColor[gFamily[fam][famColor]]);
-					FamMSG(fam+1,string);
+					FamMSG(fam,string);
 				}
 				case 7: {
 					if(col < 1) {
@@ -17955,7 +18000,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 
 					new string[144];
 					format(string,sizeof(string),"[FAMILY] "W"%s{%s} положил(а) "W"%d{%s} ремкоплеков на склад семьи",player_name[playerid],FamilyColor[gFamily[fam][famColor]],col,FamilyColor[gFamily[fam][famColor]]);
-					FamMSG(fam+1,string);
+					FamMSG(fam,string);
 				}
 			}
 		}
@@ -18819,7 +18864,29 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			VehicleInfo[TI[playerid][tArendaCar]][vPlayer] = playerid;
 			SetPVarInt(playerid,"bus_id",vehicleid);
 			switch(VehicleInfo[GetPlayerVehicleID(playerid)][vBus]) {
-				case 1: D(playerid,dBusPrice,2,"Выберите маршрут:","1. АВЛС - Яблочный сад\n2. АВЛС - Оружейный завод\n3. АВЛС - Нефтезавод","Выбрать","Отмена");
+				case 1: D(playerid,dBusPrice,2,"Выберите маршрут:","1. АВЛС - Яблочный сад\n2. АВЛС - Оружейный завод\n3. АВЛС - Нефтезавод\n4. АВЛС - ЖДСФ\n5. АВЛС - ЖДЛВ","Выбрать","Отмена");
+				case 2: {
+					new string[156];
+					new model = GetVehicleModel(vehicleid);
+					if(vehicleid == INVALID_VEHICLE_ID || (model != 431 && model != 437)) return 1;
+					SetString(gRouteName[5], "ЖДЛВ - АВЛС");
+					format(string,sizeof(string),""P"%s\n"W"Стоимость билета: "GREEN"$%i",gRouteName[5],100);
+					gPlayerBusText[playerid] = CreateDynamic3DTextLabel(string,-1, 0.0, 0.0, 0.0, 50.0, INVALID_PLAYER_ID, GetPlayerVehicleID(playerid));
+
+					SetPVarInt(playerid,"route",6);
+					SetNextBusCP(playerid);
+				}
+				case 3: {
+					new string[156];
+					new model = GetVehicleModel(vehicleid);
+					if(vehicleid == INVALID_VEHICLE_ID || (model != 431 && model != 437)) return 1;
+					SetString(gRouteName[6], "ЖДСФ - АВЛС");
+					format(string,sizeof(string),""P"%s\n"W"Стоимость билета: "GREEN"$%i",gRouteName[6],100);
+					gPlayerBusText[playerid] = CreateDynamic3DTextLabel(string,-1, 0.0, 0.0, 0.0, 50.0, INVALID_PLAYER_ID, GetPlayerVehicleID(playerid));
+
+					SetPVarInt(playerid,"route",7);
+					SetNextBusCP(playerid);
+				}
 			}
 			GiveMoney(playerid,-BUS_PRICE_RENT,"аренда автобуса");
 			Streamer_SetFloatData(STREAMER_TYPE_3D_TEXT_LABEL,gPlayerBusText[playerid],E_STREAMER_ATTACH_OFFSET_Y, -0.5);
@@ -18829,7 +18896,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 		}
 		case dBusPrice: {
 			if(!response) {
-				D(playerid,dBusPrice,2,"Выберите маршрут:","1. АВЛС - Яблочный сад\n2. АВЛС - Оружейный завод\n3. АВЛС - Нефтезавод","Выбрать","Отмена");
+				D(playerid,dBusPrice,2,"Выберите маршрут:","1. АВЛС - Яблочный сад\n2. АВЛС - Оружейный завод\n3. АВЛС - Нефтезавод\n4. АВЛС - ЖДСФ\n5. АВЛС - ЖДЛВ","Выбрать","Отмена");
 				return 1;
 			}
 			SetPVarInt(playerid,"route_item",listitem);
@@ -18844,6 +18911,8 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 				case 0: SetString(gRouteName[0], "АВЛС - Яблочный сад");
 				case 1: SetString(gRouteName[1], "АВЛС - Оружейный завод");
 				case 2: SetString(gRouteName[2], "АВЛС - Нефтезавод");
+				case 3: SetString(gRouteName[3], "АВЛС - ЖДСФ");
+				case 4: SetString(gRouteName[4], "АВЛС - ЖДЛВ");
 			}
 
 			format(string,sizeof(string),""P"%s\n"W"Стоимость билета: "GREEN"$%i",gRouteName[route],100);
@@ -18872,7 +18941,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 					SendOk(playerid,"Вы выбрали местом спавна: "W"организация");
 				}
 				case 3: {
-					if(PlayerInfo[playerid][pFamily] && !gFamily[PlayerInfo[playerid][pFamily]-1][famHouse]) return ErrorMessage(playerid,"Дом семьи не выбран");
+					if(PlayerInfo[playerid][pFamily] && !gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famHouse]) return ErrorMessage(playerid,"Дом семьи не выбран");
 					SendOk(playerid,"Вы выбрали местом спавна: "W"дом семьи");
 				}
 			}
@@ -19022,38 +19091,210 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			}
 			DeletePVar(playerid,"sell_gdrugs");
 		}
+		case D_ARMY_CARM: {
+		    if(!response) return true;
+			if(start_work[playerid] && PlayerInfo[playerid][pMember] == fARMYLV) {}
+			else return true;
+			if(GetVehicleModel(GetPlayerVehicleID(playerid)) != 433) return ErrorMessage(playerid, "Вы не в матовозе");
+			switch(listitem) {
+				case 0: SetPlayerCheckpoint(playerid, 1535.8534,-1674.4445,13.3828, 5);
+				case 1: SetPlayerCheckpoint(playerid, -1606.6760,726.5093,12.0220, 5);
+				case 2: SetPlayerCheckpoint(playerid, 2288.5105,2421.4209,10.8203, 5);
+				case 3: SetPlayerCheckpoint(playerid, -1978.0072,-1008.3723,32.0234, 5);
+				case 4: {
+					new string[300];
+    				format(string, sizeof(string), "\tОрганизация\tБоеприпасы\n"W"Армия ЛВ:\t"P"%d\n"W"Армия СФ:\t"P"%d\n"W"Полиция ЛС:\t"P"%d\n"W"Полиция СФ:\t"P"%d\n"W"Полиция ЛВ:\t"P"%d\n"W"ФБР:\t"P"%d",
+					FI[fARMYLV][fMats],FI[fARMYSF][fMats],FI[fLSPD][fMats],FI[fSFPD][fMats],FI[fLVPD][fMats],FI[fFBI][fMats]);
+                    D(playerid, DIALOG_NONE, DST,"Склады организаций",string,"Скрыть","");
+                    return 1;
+				}
+			}
+			SendOk(playerid, "Место разгрузки помечено на радаре");
+			SetPVarInt(playerid,"MatsArmyCar",listitem+1);
+			return 1;
+		}
 		case D_ARMY_CARM_SF: {
 		    if(!response) return true;
-			if(GetVehicleModel(GetPlayerVehicleID(playerid)) != 433) return ErrorMessage(playerid, "Вы не в матовозе!");
+			if(GetVehicleModel(GetPlayerVehicleID(playerid)) != 548) return ErrorMessage(playerid, "Вы не в матолёте");
 			switch(listitem) {
-				case 0: D(playerid, D_ARMY_CARM_SF_2, DSL, ""P"Загрузка боеприпасов",""P"1."W" Загрузка оружейный завод", "Выбрать", "Отмена");
-				case 1: D(playerid, D_ARMY_CARM_SF_3, DSL, ""P"Разгрузка боеприпасов",""P"1."W" Разгрузка в LSPD", "Выбрать", "Отмена ");
+				case 0: D(playerid, D_ARMY_CARM_SF_2, DSL, ""P"Загрузка боеприпасов",""P"1."W" Загрузка оружейный завод\n"P"2."W" Загрузка склад Army SF", "Выбрать", "Отмена");
+				case 1: D(playerid, D_ARMY_CARM_SF_3, DSL, ""P"Разгрузка боеприпасов",""P"1."W" Разгрузка Army SF\n"P"2."W" Разгрузка Army LV", "Выбрать", "Отмена");
 			}
 			return 1;
 		}
 		case D_ARMY_CARM_SF_2: {
 		    if(!response) return true;
-			if(GetVehicleModel(GetPlayerVehicleID(playerid)) != 433) return ErrorMessage(playerid, "Вы не в матовозе!");
+			if(GetVehicleModel(GetPlayerVehicleID(playerid)) != 548) return ErrorMessage(playerid, "Вы не в матолёте");
 			switch(listitem) {
 				case 0: {
-					SetPlayerCheckpoint(playerid, 2707.8962,-2442.3040,13.6383, 5);
+					SetPlayerCheckpoint(playerid, 2693.2300,-2370.8938,16.0798, 5);
 					SendOk(playerid, "Место загрузки (оружейный завод) помечено на радаре");
 					SetPVarInt(playerid,"MatsArmyCar",5);
+				}
+				case 1: {
+					SetPlayerCheckpoint(playerid, -1607.3578,285.5919,7.1875, 5);
+					SendOk(playerid, "Место загрузки (склад Army SF) помечено на радаре");
+					SetPVarInt(playerid,"MatsArmyCar",6);
 				}
 			}
 			return 1;
 		}
 		case D_ARMY_CARM_SF_3: {
 		    if(!response) return true;
-			if(GetVehicleModel(GetPlayerVehicleID(playerid)) != 433) return ErrorMessage(playerid, "Вы не в матовозе");
+			if(GetVehicleModel(GetPlayerVehicleID(playerid)) != 548) return ErrorMessage(playerid, "Вы не в матолёте");
 			switch(listitem) {
 				case 0: {
-					SetPlayerCheckpoint(playerid, 1535.8534,-1674.4445,13.3828, 5);
-					SendOk(playerid, "Место разгрузки (LSPD) помечено на радаре");
-					SetPVarInt(playerid,"MatsArmyCar",1);
+					SetPlayerCheckpoint(playerid, -1607.3578,285.5919,7.1875, 5);
+					SendOk(playerid, "Место разгрузки (Army SF) помечено на радаре");
+					SetPVarInt(playerid,"MatsArmyCar",7);
+				}
+				case 1: {
+					SetPlayerCheckpoint(playerid, 310.7923,1801.0048,17.6406, 5);
+					SendOk(playerid, "Место загрузки (Army LV) помечено на радаре");
+					SetPVarInt(playerid,"MatsArmyCar",8);
 				}
 			}
 			return 1;
+		}
+		case D_ARMY_CARM_SF_4: {
+		    if(!response) return true;
+			if(GetVehicleModel(GetPlayerVehicleID(playerid)) != 548) return ErrorMessage(playerid, "Вы не в матолёте");
+			new mats = strval(inputtext);
+			new vehicleid = GetPlayerVehicleID(playerid);
+			if(zavodsklad - mats < 0) {
+				static const f_str[] = "\
+"W"Введите кол-во боеприпасов, которое хотите загрузить в матолёт:\n\n\
+Доступно боеприпасов: "ORANGE"%d\n\
+"W"В матолёт поместится: "ORANGE"%d\n\
+"NO"*"G" На оружейном складе недостаточно боеприпасов";
+				new string[sizeof(f_str) +1 + (-2 + 7) + (-2 + 7)];
+				format(string,sizeof(string),f_str,zavodsklad,30000-VG[vehicleid][vgAmount][0]);
+				D(playerid, D_ARMY_CARM_SF_4, DSI, ""P"Загрузка боеприпасов",string, "Загрузить", "Отмена");
+				return 1;
+			}
+			if(VG[vehicleid][vgAmount][0] + mats > 30000) {
+				static const f_str[] = "\
+"W"Введите кол-во боеприпасов, которое хотите загрузить в матолёт:\n\n\
+Доступно боеприпасов: "ORANGE"%d\n\
+"W"В матолёт поместится: "ORANGE"%d\n\
+"NO"*"G" В матолёте недостаточно места";
+				new string[sizeof(f_str) +1 + (-2 + 7) + (-2 + 7)];
+				format(string,sizeof(string),f_str,zavodsklad,30000-VG[vehicleid][vgAmount][0]);
+				D(playerid, D_ARMY_CARM_SF_4, DSI, ""P"Загрузка боеприпасов",string, "Загрузить", "Отмена");
+				return 1;
+			}
+			VG[vehicleid][vgAmount][0] += mats;
+			zavodsklad -= mats;
+			UpdateOtherData("gun_mats",zavodsklad);
+			new string[128];
+			format(string,sizeof(string),"Боеприпасы успешно загружены. В матолёте доступно: "ORANGE"%d"G" боеприпасов",VG[vehicleid][vgAmount][0]);
+			SendOk(playerid,string);
+		}
+		case D_ARMY_CARM_SF_5: {
+		    if(!response) return true;
+			if(GetVehicleModel(GetPlayerVehicleID(playerid)) != 548) return ErrorMessage(playerid, "Вы не в матолёте");
+			new mats = strval(inputtext);
+			new vehicleid = GetPlayerVehicleID(playerid);
+			if(FI[fARMYSF][fMats] - mats < 0) {
+				static const f_str[] = "\
+"W"Введите кол-во боеприпасов, которое хотите загрузить в матолёт:\n\n\
+Доступно боеприпасов: "ORANGE"%d\n\
+"W"В матолёт поместится: "ORANGE"%d\n\
+"NO"*"G" На складе Army SF недостаточно боеприпасов";
+				new string[sizeof(f_str) +1 + (-2 + 7) + (-2 + 7)];
+				format(string,sizeof(string),f_str,FI[fARMYSF][fMats],30000-VG[vehicleid][vgAmount][0]);
+				D(playerid, D_ARMY_CARM_SF_5, DSI, ""P"Загрузка боеприпасов",string, "Загрузить", "Отмена");
+				return 1;
+			}
+			if(VG[vehicleid][vgAmount][0] + mats > 30000) {
+				static const f_str[] = "\
+"W"Введите кол-во боеприпасов, которое хотите загрузить в матолёт:\n\n\
+Доступно боеприпасов: "ORANGE"%d\n\
+"W"В матолёт поместится: "ORANGE"%d\n\
+"NO"*"G" В матолёте недостаточно места";
+				new string[sizeof(f_str) +1 + (-2 + 7) + (-2 + 7)];
+				format(string,sizeof(string),f_str,FI[fARMYSF][fMats],30000-VG[vehicleid][vgAmount][0]);
+				D(playerid, D_ARMY_CARM_SF_5, DSI, ""P"Загрузка боеприпасов",string, "Загрузить", "Отмена");
+				return 1;
+			}
+			VG[vehicleid][vgAmount][0] += mats;
+			FI[fARMYSF][fMats] -= mats;
+			UpdateFraction(fARMYSF,"Mats",FI[fARMYSF][fMats]);
+			new string[128];
+			format(string,sizeof(string),"Боеприпасы успешно загружены. В матолёте доступно: "ORANGE"%d"G" боеприпасов",VG[vehicleid][vgAmount][0]);
+			SendOk(playerid,string);
+		}
+		case D_ARMY_CARM_SF_6: {
+		    if(!response) return true;
+			if(GetVehicleModel(GetPlayerVehicleID(playerid)) != 548) return ErrorMessage(playerid, "Вы не в матолёте");
+			new mats = strval(inputtext);
+			new vehicleid = GetPlayerVehicleID(playerid);
+			if(VG[vehicleid][vgAmount][0] - mats < 0) {
+				static const f_str[] = "\
+"W"Введите кол-во боеприпасов, которое хотите разгрузить на склад:\n\n\
+Доступно боеприпасов: "ORANGE"%d\n\
+"W"На склад поместится: "ORANGE"%d\n\
+"NO"*"G" В матолёте недостаточно боеприпасов";
+				new string[sizeof(f_str) +1 + (-2 + 7) + (-2 + 7)];
+				format(string,sizeof(string),f_str,VG[vehicleid][vgAmount][0],1000000-FI[fARMYSF][fMats]);
+				D(playerid, D_ARMY_CARM_SF_6, DSI, ""P"Загрузка боеприпасов",string, "Загрузить", "Отмена");
+				DeletePVar(playerid,"MatsArmyCar");
+				return 1;
+			}
+			if(FI[fARMYSF][fMats] + mats > 1000000) {
+				static const f_str[] = "\
+"W"Введите кол-во боеприпасов, которое хотите разгрузить на склад:\n\n\
+Доступно боеприпасов: "ORANGE"%d\n\
+"W"На склад поместится: "ORANGE"%d\n\
+"NO"*"G" На складе недосаточно места";
+				new string[sizeof(f_str) +1 + (-2 + 7) + (-2 + 7)];
+				format(string,sizeof(string),f_str,VG[vehicleid][vgAmount][0],1000000-FI[fARMYSF][fMats]);
+				D(playerid, D_ARMY_CARM_SF_6, DSI, ""P"Загрузка боеприпасов",string, "Загрузить", "Отмена");
+				DeletePVar(playerid,"MatsArmyCar");
+				return 1;
+			}
+			VG[vehicleid][vgAmount][0] -= mats;
+			FI[fARMYSF][fMats] += mats;
+			UpdateFraction(fARMYSF,"Mats",FI[fARMYSF][fMats]);
+			new string[128];
+			format(string,sizeof(string),"Боеприпасы успешно разгружены. В матолёте доступно: "ORANGE"%d"G" боеприпасов",VG[vehicleid][vgAmount][0]);
+			SendOk(playerid,string);
+		}
+		case D_ARMY_CARM_SF_7: {
+		    if(!response) return true;
+			if(GetVehicleModel(GetPlayerVehicleID(playerid)) != 548) return ErrorMessage(playerid, "Вы не в матолёте");
+			new mats = strval(inputtext);
+			new vehicleid = GetPlayerVehicleID(playerid);
+			if(VG[vehicleid][vgAmount][0] - mats < 0) {
+				static const f_str[] = "\
+"W"Введите кол-во боеприпасов, которое хотите разгрузить на склад:\n\n\
+Доступно боеприпасов: "ORANGE"%d\n\
+"W"На склад поместится: "ORANGE"%d\n\
+"NO"*"G" В матолёте недостаточно боеприпасов";
+				new string[sizeof(f_str) +1 + (-2 + 7) + (-2 + 7)];
+				format(string,sizeof(string),f_str,VG[vehicleid][vgAmount][0],1000000-FI[fARMYLV][fMats]);
+				D(playerid, D_ARMY_CARM_SF_7, DSI, ""P"Загрузка боеприпасов",string, "Загрузить", "Отмена");
+				DeletePVar(playerid,"MatsArmyCar");
+				return 1;
+			}
+			if(FI[fARMYLV][fMats] + mats > 1000000) {
+				static const f_str[] = "\
+"W"Введите кол-во боеприпасов, которое хотите разгрузить на склад:\n\n\
+Доступно боеприпасов: "ORANGE"%d\n\
+"W"На склад поместится: "ORANGE"%d\n\
+"NO"*"G" На складе недосаточно места";
+				new string[sizeof(f_str) +1 + (-2 + 7) + (-2 + 7)];
+				format(string,sizeof(string),f_str,VG[vehicleid][vgAmount][0],1000000-FI[fARMYLV][fMats]);
+				D(playerid, D_ARMY_CARM_SF_7, DSI, ""P"Загрузка боеприпасов",string, "Загрузить", "Отмена");
+				DeletePVar(playerid,"MatsArmyCar");
+				return 1;
+			}
+			VG[vehicleid][vgAmount][0] -= mats;
+			FI[fARMYLV][fMats] += mats;
+			UpdateFraction(fARMYLV,"Mats",FI[fARMYLV][fMats]);
+			new string[128];
+			format(string,sizeof(string),"Боеприпасы успешно разгружены. В матолёте доступно: "ORANGE"%d"G" боеприпасов",VG[vehicleid][vgAmount][0]);
+			SendOk(playerid,string);
 		}
 		case dProdList: {
 			if(!response) return 1;
@@ -19111,8 +19352,14 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			UpdateDynamic3DTextLabelText(gPlayerProdText[playerid],COLOR_BLUE,string);
 
 			SetPVarInt(playerid,"prod_id", biz + 1);
-			gPlayerProdCP[playerid] = CreateDynamicCP(gBusiness[biz][bizzX] + (3.5 * floatsin(-gBusiness[biz][bizzR], degrees)),gBusiness[biz][bizzY] + (3.5 * floatcos(-gBusiness[biz][bizzR], degrees)),gBusiness[biz][bizzZ],8.0,-1,-1,playerid,100.0);
-			EnableGPSForPlayer(playerid, gBusiness[biz][bizzX] + (3.5 * floatsin(-gBusiness[biz][bizzR], degrees)),gBusiness[biz][bizzY] + (3.5 * floatcos(-gBusiness[biz][bizzR], degrees)),gBusiness[biz][bizzZ]);
+			if(gBusiness[biz][bizzID] != 20) {
+				gPlayerProdCP[playerid] = CreateDynamicCP(gBusiness[biz][bizzX] + (3.5 * floatsin(-gBusiness[biz][bizzR], degrees)),gBusiness[biz][bizzY] + (3.5 * floatcos(-gBusiness[biz][bizzR], degrees)),gBusiness[biz][bizzZ],8.0,-1,-1,playerid,100.0);
+				EnableGPSForPlayer(playerid, gBusiness[biz][bizzX] + (3.5 * floatsin(-gBusiness[biz][bizzR], degrees)),gBusiness[biz][bizzY] + (3.5 * floatcos(-gBusiness[biz][bizzR], degrees)),gBusiness[biz][bizzZ]);
+			}
+			else {
+				gPlayerProdCP[playerid] = CreateDynamicCP(693.7745,1948.5906,5.5432,8.0,-1,-1,playerid,100.0);
+				EnableGPSForPlayer(playerid, 693.7745,1948.5906,5.5432);
+			}
 			return 1;
 		}
 		case D_BUKSIR: {
@@ -19453,66 +19700,6 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			}
 			return 1;
 		}
-		case D_AUTOINVITE_BANDS: {
-			if(!response) return 1;
-			if(GetTeamID(playerid) > 0) return ErrorMessage(playerid, "Вы состоите в другой организации.");
-			if(PlayerInfo[playerid][pWarns] >= 1) return ErrorMessage(playerid, "У вас есть варн.");
-			
-			new band;
-			if(listitem == 0) band = fBALLAS;
-			if(listitem == 1) band = fVAGOS;
-			if(listitem == 2) band = fGROVE;
-			if(listitem == 3) band = fAZTEC;
-			if(listitem == 4) band = fRIFA;
-			if(bl_info[playerid][bl_fraction][band]) return ErrorMessage(playerid, "Вы в черном списке.");
-			PlayerInfo[playerid][pRank] = 1;
-			PlayerInfo[playerid][pRankExp] = 0;
-			PlayerInfo[playerid][pMember] = band;
-
-			SendUse(playerid, ""G" Вы успешно приняли приглашение вступить в банду и стать на сторону криминала!");
-
-			new skinid = 100;
-			if(PlayerInfo[playerid][pSex] == 1) {
-				skinid = gFractionSkinMan[band][0];
-			}
-			else {
-				skinid = gFractionSkinGirl[band][0];
-			}
-			PlayerInfo[playerid][pFracSkin] = skinid;
-			A_SetPlayerSkin(playerid,PlayerInfo[playerid][pFracSkin]);
-			start_work[playerid] = 1;
-			SetPlayerColor(playerid,gFractionSpawn[PlayerInfo[playerid][pMember]][fracColor]);
-
-			D(playerid, DIALOG_NONE, DSM, "Conor", fSpawnText[PlayerInfo[playerid][pMember]], "Закрыть", "");
-		}
-		case dAutoInviteLSPD: {
-			if(!response) return 1;
-			if(GetTeamID(playerid) > 0) return ErrorMessage(playerid, "Вы уже состоите в организации или в банде.");
-			if(PlayerInfo[playerid][pWarns] >= 1) return ErrorMessage(playerid, "У вас есть варн.");
-			if(bl_info[playerid][bl_fraction][fLSPD]) return ErrorMessage(playerid, "Вы в черном списке.");			
-			
-			SendUse(playerid, ""G" Вы успешно приняли приглашение вступить в организацию "ORANGE"LSPD");
-			PlayerInfo[playerid][pRank] = 1;
-			PlayerInfo[playerid][pRankExp] = 0;
-			PlayerInfo[playerid][pMember] = fLSPD;
-
-			new skinid = 100;
-			if(PlayerInfo[playerid][pSex] == 1) {
-				skinid = gFractionSkinMan[fLSPD][0];
-			}
-			else {
-				skinid = gFractionSkinGirl[fLSPD][0];
-			}
-			PlayerInfo[playerid][pFracSkin] = skinid;
-			A_SetPlayerSkin(playerid,PlayerInfo[playerid][pFracSkin]);
-			SendOk(playerid,"Рабочий день начат.");
-			TI[playerid][tMasked] = 0;
-			SetPlayerColor(playerid,gFractionSpawn[PlayerInfo[playerid][pMember]][fracColor]);
-			start_work[playerid] = 1;
-
-			D(playerid, DIALOG_NONE, DSM, "Sam Mason", fSpawnText[PlayerInfo[playerid][pMember]], "Понятно", "");
-		}
-
 		case dInviteSkin: {
 			new string[156];
 			format(string, sizeof(string), ""P"%s"G" предложил Вам вступить в организацию "ORANGE"%s",player_name[playerid],FI[PlayerInfo[playerid][pMember]][fName]);
@@ -19524,30 +19711,25 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 	
 	        SetPVarInt(GetPVarInt(playerid,"invkot"),"invstat",GetPVarInt(playerid,"invkot"));
 			SetPVarInt(GetPVarInt(playerid,"invkot"),"invinv",playerid);
-			if(PlayerInfo[playerid][pSex] == 1) {
-				SetPVarInt(GetPVarInt(playerid,"invkot"),"invskin", gFractionSkinMan[PlayerInfo[playerid][pMember]][0]);
-			}
-			else {
-				SetPVarInt(GetPVarInt(playerid,"invkot"),"invskin", gFractionSkinGirl[PlayerInfo[playerid][pMember]][0]);
-			}
+			SetPVarInt(GetPVarInt(playerid,"invkot"),"invskin",gFractionSkin[PlayerInfo[playerid][pMember]][listitem]);
 	
 			DeletePVar(playerid, "invkot");
 		}
 		case dFractionSkin: {
 			if(!response) return 1;
-			if(!response) return 1;
-			new fractionid = PlayerInfo[playerid][pMember];
-			new skinid;
-			if(PlayerInfo[playerid][pSex] == 1) {
-				skinid = gFractionSkinMan[fractionid][listitem];
-			} else {
-				skinid = gFractionSkinGirl[fractionid][listitem];
-			}
-			if(skinid == PlayerInfo[playerid][pFracSkin]) return 1;
-			SendUse(playerid,"Ваш скин был успешно изменён­!");
-			UpdatePlayerData(playerid,"pModel",skinid);
-			PlayerInfo[playerid][pFracSkin] = skinid;
-			if(start_work[playerid]) A_SetPlayerSkin(playerid,skinid);
+			new actplayerid = GetPVarInt(playerid,"params[0]");
+			if(!IsPlayerConnected(actplayerid) || PlayerInfo[actplayerid][pMember] != PlayerInfo[playerid][pMember]) return 1;
+			new fractionid = PlayerInfo[actplayerid][pMember];
+			new skinid = gFractionSkin[fractionid][listitem];
+			if(skinid == PlayerInfo[actplayerid][pFracSkin]) return 1;
+			new mes[213];
+			format(mes,sizeof(mes),"Ваша внешность была изменена лидером организации "P"%s[%d]",player_name[playerid],playerid);
+			SendUse(actplayerid,mes);
+			format(mes,sizeof(mes),"Вы изменили внешность игрока "P"%s[%d]",player_name[actplayerid],actplayerid);
+			SendUse(playerid,mes);
+			UpdatePlayerData(actplayerid,"pModel",skinid);
+			PlayerInfo[actplayerid][pFracSkin] = skinid;
+			if(start_work[actplayerid]) A_SetPlayerSkin(actplayerid,skinid);
 		}
 		case dRank: {
 			if(!response) return 1;
@@ -20545,7 +20727,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			if(!strlen(inputtext)) return D(playerid,D_LMENU_BANK_INPUT,DSI, ""P"Управление банком фракции","\n\n"W"Введите сумму, которую хотите взять с банка фракции:\n\n","Взять","Отмена");
 			new dengi = strval(inputtext),maxmoney = 0;
 			switch(PlayerInfo[playerid][pMember]) {
-				case fLSPD,fMEDICLS,fLSNEWS,fINSTRUCTORS,fRM,fLCN,fYAKUZA: maxmoney = 300000;
+				case fLSPD,fSFPD,fLVPD,fFBI,fARMYSF,fARMYLV,fMEDICLS,fMEDICSF,fMEDICLV,fLSNEWS,fSFNEWS,fLVNEWS,fINSTRUCTORS,fRM,fLCN,fYAKUZA: maxmoney = 300000;
 				case fBALLAS,fVAGOS,fGROVE,fAZTEC,fRIFA: maxmoney = 200000;
 				case fWHITEHOUSE: maxmoney = 500000;
 			}
@@ -20875,8 +21057,17 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 					new black_str[30] = {""G"Не в ЧС",""NO"В ЧС"};
 					static const f_str[] = "Организация\tЦена\tСтатус\n\
 "G"Полиция г.ЛС\t"GREEN"50 рублей\t%s\n\
+"G"Полиция г.СФ\t"GREEN"50 рублей\t%s\n\
+"G"Полиция г.ЛВ\t"GREEN"50 рублей\t%s\n\
+"G"ФБР\t"GREEN"50 рублей\t%s\n\
+"G"Армия г.СФ\t"GREEN"50 рублей\t%s\n\
+"G"Армия г.ЛВ\t"GREEN"50 рублей\t%s\n\
 "G"Больница г.ЛС\t"GREEN"50 рублей\t%s\n\
+"G"Больница г.СФ\t"GREEN"50 рублей\t%s\n\
+"G"Больница г.ЛВ\t"GREEN"50 рублей\t%s\n\
 "G"Радиоцентр г.ЛС\t"GREEN"50 рублей\t%s\n\
+"G"Радиоцентр г.СФ\t"GREEN"50 рублей\t%s\n\
+"G"Радиоцентр г.ЛВ\t"GREEN"50 рублей\t%s\n\
 "G"Итальянская мафия\t"GREEN"50 рублей\t%s\n\
 "G"Японская мафия\t"GREEN"50 рублей\t%s\n\
 "G"Русская мафия\t"GREEN"50 рублей\t%s\n\
@@ -20888,8 +21079,11 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 "G"Белый дом\t"GREEN"50 рублей\t%s";
 					new string[sizeof(f_str) + 280];
 					format(string,sizeof(string),f_str,
-						black_str[bl_info[playerid][bl_fraction][fLSPD]],
-						black_str[bl_info[playerid][bl_fraction][fMAYOR]],black_str[bl_info[playerid][bl_fraction][fMEDICLS]],black_str[bl_info[playerid][bl_fraction][fLSNEWS]],
+						black_str[bl_info[playerid][bl_fraction][fLSPD]],black_str[bl_info[playerid][bl_fraction][fSFPD]],black_str[bl_info[playerid][bl_fraction][fLVPD]],
+						black_str[bl_info[playerid][bl_fraction][fFBI]],black_str[bl_info[playerid][bl_fraction][fMAYOR]],black_str[bl_info[playerid][bl_fraction][fARMYSF]],
+						black_str[bl_info[playerid][bl_fraction][fARMYLV]],black_str[bl_info[playerid][bl_fraction][fMEDICLS]],black_str[bl_info[playerid][bl_fraction][fMEDICSF]],
+						black_str[bl_info[playerid][bl_fraction][fMEDICLV]],black_str[bl_info[playerid][bl_fraction][fLSNEWS]],black_str[bl_info[playerid][bl_fraction][fSFNEWS]],
+						black_str[bl_info[playerid][bl_fraction][fLVNEWS]],black_str[bl_info[playerid][bl_fraction][fLCN]],black_str[bl_info[playerid][bl_fraction][fYAKUZA]],
 						black_str[bl_info[playerid][bl_fraction][fRM]],black_str[bl_info[playerid][bl_fraction][fBALLAS]],black_str[bl_info[playerid][bl_fraction][fVAGOS]],
 						black_str[bl_info[playerid][bl_fraction][fGROVE]],black_str[bl_info[playerid][bl_fraction][fAZTEC]],black_str[bl_info[playerid][bl_fraction][fRIFA]],
 						black_str[bl_info[playerid][bl_fraction][fWHITEHOUSE]]);
@@ -20908,8 +21102,11 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			PlayerInfo[playerid][pRouble] -= 300;
 			UpdatePlayerData(playerid,"donatemoney",PlayerInfo[playerid][pRouble]);
 			SendClientMessage(playerid,CGOLD,"Вы успешно вышли их ЧС всех организаций");
-			bl_info[playerid][bl_fraction][fLSPD] = bl_info[playerid][bl_fraction][fMAYOR] = bl_info[playerid][bl_fraction][fMEDICLS] =
-			bl_info[playerid][bl_fraction][fLSNEWS] = bl_info[playerid][bl_fraction][fLCN] = bl_info[playerid][bl_fraction][fYAKUZA] =
+			bl_info[playerid][bl_fraction][fLSPD] = bl_info[playerid][bl_fraction][fSFPD] = bl_info[playerid][bl_fraction][fLVPD] =
+			bl_info[playerid][bl_fraction][fFBI] = bl_info[playerid][bl_fraction][fMAYOR] = bl_info[playerid][bl_fraction][fARMYSF] = 
+			bl_info[playerid][bl_fraction][fARMYLV] = bl_info[playerid][bl_fraction][fMEDICLS] = bl_info[playerid][bl_fraction][fMEDICSF] = 
+			bl_info[playerid][bl_fraction][fMEDICLV] = bl_info[playerid][bl_fraction][fLSNEWS] = bl_info[playerid][bl_fraction][fSFNEWS] =
+			bl_info[playerid][bl_fraction][fLVNEWS] = bl_info[playerid][bl_fraction][fLCN] = bl_info[playerid][bl_fraction][fYAKUZA] =
 			bl_info[playerid][bl_fraction][fRM] = bl_info[playerid][bl_fraction][fBALLAS] = bl_info[playerid][bl_fraction][fVAGOS] =
 			bl_info[playerid][bl_fraction][fGROVE] = bl_info[playerid][bl_fraction][fAZTEC] = bl_info[playerid][bl_fraction][fRIFA] = 
 			bl_info[playerid][bl_fraction][fWHITEHOUSE] = false;
@@ -20922,17 +21119,26 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			new frac;
 			switch(listitem) {
 				case 0: frac = fLSPD;
-				case 1: frac = fMEDICLS;
-				case 2: frac = fLSNEWS;
-				case 3: frac = fLCN;
-				case 4: frac = fYAKUZA;
-				case 5: frac = fRM;
-				case 6: frac = fBALLAS;
-				case 7: frac = fVAGOS;
-				case 8: frac = fGROVE;
-				case 9: frac = fAZTEC;
-				case 10: frac = fRIFA;
-				case 11: frac = fWHITEHOUSE;
+				case 1: frac = fSFPD;
+				case 2: frac = fLVPD;
+				case 3: frac = fFBI;
+				case 4: frac = fARMYSF;
+				case 5: frac = fARMYLV;
+				case 6: frac = fMEDICLS;
+				case 7: frac = fMEDICSF;
+				case 8: frac = fMEDICLV;
+				case 9: frac = fLSNEWS;
+				case 10: frac = fSFNEWS;
+				case 11: frac = fLVNEWS;
+				case 12: frac = fLCN;
+				case 13: frac = fYAKUZA;
+				case 14: frac = fRM;
+				case 15: frac = fBALLAS;
+				case 16: frac = fVAGOS;
+				case 17: frac = fGROVE;
+				case 18: frac = fAZTEC;
+				case 19: frac = fRIFA;
+				case 20: frac = fWHITEHOUSE;
 			}
 			if(bl_info[playerid][bl_fraction][frac] == false) return ErrorMessage(playerid,"Вы не состоите в ЧС данной организации");
 			bl_info[playerid][bl_fraction][frac] = false;
@@ -21448,15 +21654,15 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 				return 1;
 			}
 			if(moneys > 10000 || moneys < 1) return ErrorMessage(playerid, "От 1 до 10000");
-			reputation_family(PlayerInfo[playerid][pFamily]-1,10*moneys);
+			reputation_family(GetFamilyId(PlayerInfo[playerid][pFamily]),10*moneys);
 			SendClientMessage(playerid, CGOLD, "Операция успешно произведена");
 			PlayerInfo[playerid][pRouble] -= moneys;
 			UpdatePlayerData(playerid,"donatemoney",PlayerInfo[playerid][pRouble]);
 
 			new string[128];
 	
-			format(string,sizeof(string),"[!] %s %s: пополнил счёт семьи(EXP+Поинты) на %d",GetFamName(PlayerInfo[playerid][pFamily]-1,PlayerInfo[playerid][pFamRank]),player_name[playerid],10*moneys);
-			FamMSG(PlayerInfo[playerid][pFamily],string);
+			format(string,sizeof(string),"[!] %s %s: пополнил счёт семьи(EXP+Поинты) на %d",GetFamName(GetFamilyId(PlayerInfo[playerid][pFamily]),PlayerInfo[playerid][pFamRank]),player_name[playerid],10*moneys);
+			FamMSG(GetFamilyId(PlayerInfo[playerid][pFamily]),string);
 			return 1;
 		}
 		case D_DONATE_CONVERT: {
@@ -22193,12 +22399,15 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 				}
 				case 5: {
 					D(playerid,D_GPS_O,DSL,""P"Общественные места",""P"1."W" Автошкола\n\
-"P"2."W" ЖД Вокзал г. ЛС\n\
-"P"3."W" Церковь\n\
-"P"4."W" Казино\n\
-"P"5."W" Ловля рыбы\n\
-"P"6."W" Спорт-Зал\n\
-"P"7."W" Центр развлечений","Выбрать","Назад");
+"P"2."W" Военкомат\n\
+"P"3."W" ЖД Вокзал г. ЛС\n\
+"P"4."W" ЖД Вокзал г. СФ\n\
+"P"5."W" ЖД Вокзал г. ЛВ\n\
+"P"6."W" Церковь\n\
+"P"7."W" Казино\n\
+"P"8."W" Ловля рыбы\n\
+"P"9."W" Спорт-Зал\n\
+"P"10."W" Центр развлечений","Выбрать","Назад");
 					
 				}
 				case 6: {
@@ -22207,13 +22416,20 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 "P"3."W" Нефтезавод\n\
 "P"4."W" Лесопилка\n\
 "P"5."W" Аренда автобусов г. ЛС\n\
-"P"6."W" Аренда развозчиков продуктов\n\
-"P"7."W" Аренда развозчиков топлива\n\
-"P"8."W" Аренда развозчиков еды г. ЛС\n\
-"P"9."W" Аренда транспорта механиков г. ЛС №1\n\
-"P"10."W" Аренда транспорта механиков г. ЛС №2\n\
-"P"11."W" Аренда транспорта для уборки улиц\n\
-"P"12."W" Аренда транспорта для скашивания травы","Выбрать","Назад");
+"P"6."W" Аренда автобусов г. СФ\n\
+"P"7."W" Аренда автобусов г. ЛВ\n\
+"P"8."W" Аренда развозчиков продуктов\n\
+"P"9."W" Аренда развозчиков топлива\n\
+"P"10."W" Аренда развозчиков еды г. ЛС\n\
+"P"11."W" Аренда развозчиков еды г. СФ\n\
+"P"12."W" Аренда транспорта механиков г. ЛС №1\n\
+"P"13."W" Аренда транспорта механиков г. ЛС №2\n\
+"P"14."W" Аренда транспорта механиков г. СФ №1\n\
+"P"15."W" Аренда транспорта механиков г. СФ №2\n\
+"P"16."W" Аренда транспорта механиков г. ЛВ №1\n\
+"P"17."W" Аренда транспорта механиков г. ЛВ №2\n\
+"P"18."W" Аренда транспорта для уборки улиц\n\
+"P"19."W" Аренда транспорта для скашивания травы","Выбрать","Назад");
 				}
 				case 7: {
 					D(playerid,D_GPS_AUTOSALON,DSL,""P"Автосалоны и тюнинги","\
@@ -22221,9 +22437,9 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 "P"2."W" Автосалон [Стандарт]\n\
 "P"3."W" Автосалон [Спорт]\n\
 "P"4."W" Мотосалон\n\
-"P"5."W" Тюнинг 1\n\
-"P"6."W" Тюнинг 2\n\
-"P"7."W" Тюнинг 3\n\
+"P"5."W" Тюнинг г. ЛС\n\
+"P"6."W" Тюнинг г. СФ\n\
+"P"7."W" Тюнинг г. ЛВ\n\
 "P"8."W" Perfomance Tuning [г. ЛС]","Выбрать","Назад");
 				}
 				case 8: {
@@ -22231,9 +22447,18 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 "P"1."W" Белый дом\n\
 "P"2."W" Мэрия\n\
 "P"3."W" Полицейский участок г. ЛС\n\
-"P"4."W" Больница г. ЛС\n\
-"P"5."W" Лицензеры\n\
-"P"6."W" Радиоцентр г. ЛС","Выбрать","Назад");
+"P"4."W" Полицейский участок г. СФ\n\
+"P"5."W" Полицейский участок г. ЛВ\n\
+"P"6."W" Больница г. ЛС\n\
+"P"7."W" Больница г. СФ\n\
+"P"8."W" Больница г. ЛВ\n\
+"P"9."W" ФБР\n\
+"P"10."W" Армия [Сухопутные войска]\n\
+"P"11."W" Армия [Военно-морской флот]\n\
+"P"12."W" Лицензеры\n\
+"P"13."W" Радиоцентр г. ЛС\n\
+"P"14."W" Радиоцентр г. СФ\n\
+"P"15."W" Радиоцентр г. ЛВ","Выбрать","Назад");
 				}
 				case 9: {
 					D(playerid,D_GPS_NOLEGAL,DSL,""P"Нелегальные организации","\
@@ -22252,8 +22477,8 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 				case 10: {
 					D(playerid,D_GPS_BANK,DSL,""P"Банки","\
 "P"1."W" Банк г. ЛС\n\
-"P"2."W" Банк д. Блубери\n\
-"P"3."W" Банк д. Паломино Креек","Выбрать","Назад");
+"P"2."W" Банк г. СФ\n\
+"P"3."W" Банк г. ЛВ","Выбрать","Назад");
 				}
 				case 11: {
 					new string[2512];
@@ -22277,7 +22502,9 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 				}
 				case 13: {
 					D(playerid,D_GPS_AIRPORT,DSL,""P"Аэропорты","\
-"P"1."W" Аэропорт г. ЛС","Выбрать","Назад");
+"P"1."W" Аэропорт г. ЛС\n\
+"P"2."W" Аэропорт г. СФ\n\
+"P"3."W" Аэропорт г. ЛВ","Выбрать","Назад");
 				}
 				case 14: {
 					new string[512];
@@ -22297,7 +22524,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 						format(string,sizeof(string),"%s"P"%d."W" %s\n",string,count_ammo,FuncBizz[i+1][funcbName]);
 						count_ammo++;
 					}
-					strcat(string,""P"4."W" [Загрузка] Оружейный завод\n"P"5."W" [Загрузка] Нефтезавод\n"P"6."W" [Разгрузка] Склад Монтгомери\n"P"7."W" [Разгрузка] Порт г. ЛС");
+					strcat(string,""P"4."W" [Загрузка] Оружейный завод\n"P"5."W" [Загрузка] Нефтезавод\n"P"6."W" [Разгрузка] Порт г. СФ\n"P"7."W" [Разгрузка] Порт г. ЛС");
 					D(playerid, D_GPS_TK, DSL, ""P"Транспортные компании", string, "Выбрать", "Назад");
 				}
 				case 16: {
@@ -22306,7 +22533,9 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 				}
 				case 17: {
 					D(playerid,D_GPS_RIELTOR,DSL,""P"Риэлторские агенства","\
-"P"1."W" Риэлторское агенство г. ЛС","Выбрать","Назад");
+"P"1."W" Риэлторское агенство г. ЛС\n\
+"P"2."W" Риэлторское агенство г. СФ\n\
+"P"3."W" Риэлторское агенство г. ЛВ","Выбрать","Назад");
 				}
 			}
 		}
@@ -22315,12 +22544,15 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			new string[120],str[28];
 			switch(listitem) {
 				case 0: EnableGPSForPlayer(playerid,747.1273,-1390.9849,13.4882), str = "Автошколы";
+				case 1: EnableGPSForPlayer(playerid,-318.0250,1068.1536,19.5907), str = "Военкомата";
 				case 2: EnableGPSForPlayer(playerid,1814.4481,-1890.3649,13.4141), str = "Ж/Д Вокзала г. ЛС";
-				case 3: EnableGPSForPlayer(playerid,-1970.0964,1118.4404,53.1299), str = "Церкви";
-				case 4: EnableGPSForPlayer(playerid,1222.9508,-1134.3561,23.4701), str = "Казино";
-				case 5: EnableGPSForPlayer(playerid,-424.3238,-437.3412,17.2794), str = "Ловли рыбы";
-				case 6: EnableGPSForPlayer(playerid,2225.3281,-1725.0433,13.5620), str = "Спорт-Зала";
-				case 7: EnableGPSForPlayer(playerid,2218.9026,1838.8079,10.8203), str = "Центра развлечений";
+				case 3: EnableGPSForPlayer(playerid,-1994.8622,112.8504,27.5391), str = "Ж/Д Вокзала г. СФ";
+				case 4: EnableGPSForPlayer(playerid,2806.9531,1312.4647,10.7500), str = "Ж/Д Вокзала г. ЛВ";
+				case 5: EnableGPSForPlayer(playerid,-1970.0964,1118.4404,53.1299), str = "Церкви";
+				case 6: EnableGPSForPlayer(playerid,2156.2654,2155.5183,10.6719), str = "Казино";
+				case 7: EnableGPSForPlayer(playerid,-424.3238,-437.3412,17.2794), str = "Ловли рыбы";
+				case 8: EnableGPSForPlayer(playerid,2225.3281,-1725.0433,13.5620), str = "Спорт-Зала";
+				case 9: EnableGPSForPlayer(playerid,2218.9026,1838.8079,10.8203), str = "Центра развлечений";
 			}
 			format(string,sizeof(string),"Местоположение %s успешно отмечено в вашем GPS",str);
 			SendClientMessage(playerid,CGOLD,string);
@@ -22331,16 +22563,23 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			switch(listitem) {
 				case 0: EnableGPSForPlayer(playerid,-118.2737,7.1584,3.1172), str = "Яблочного сада";
 				case 1: EnableGPSForPlayer(playerid,2675.6917,-2405.5618,13.4675), str = "Оружейного завода";
-				case 2: EnableGPSForPlayer(playerid,-1038.4648,-595.8793,32.0078), str = "Нефтезавода";
+				case 2: EnableGPSForPlayer(playerid,302.3781,1411.4307,9.3229), str = "Нефтезавода";
 				case 3: EnableGPSForPlayer(playerid,-495.1036,-1568.1460,9.8474), str = "Лесопилки";
 				case 4: EnableGPSForPlayer(playerid,1269.4330,-1846.6799,13.3974), str = "Аренды автобусов г. ЛС";
-				case 5: EnableGPSForPlayer(playerid,-10.1753,-314.8848,5.4229), str = "Аренды развозчиков продуктов";
-				case 6: EnableGPSForPlayer(playerid,-10.1753,-314.8848,5.4229), str = "Аренды топлива продуктов";
-				case 7: EnableGPSForPlayer(playerid,218.3788,-1443.7483,13.2123), str = "Аренды развозчиков еды г. ЛС";
-				case 8: EnableGPSForPlayer(playerid,1636.6709,-1106.8654,23.9063), str = "Аренды транспорта механиков г. ЛС №1";
-				case 9: EnableGPSForPlayer(playerid,-82.6767,-1155.2017,1.7500), str = "Аренды транспорта механиков г. ЛС №2";
-				case 10: EnableGPSForPlayer(playerid,1400.2572,-1796.6935,13.5469), str = "Аренда транспорта для уборки улиц";
-				case 11: EnableGPSForPlayer(playerid,1427.5365,-1837.8632,13.5469), str = "Аренда транспорта для скашивания травы";
+				case 5: EnableGPSForPlayer(playerid,-1986.1086,192.0124,27.7047), str = "Аренды автобусов г. СФ";
+				case 6: EnableGPSForPlayer(playerid,2784.5828,1274.3229,10.7500), str = "Аренды автобусов г. ЛВ";
+				case 7: EnableGPSForPlayer(playerid,1071.2417,1948.1721,10.8203), str = "Аренды развозчиков продуктов";
+				case 8: EnableGPSForPlayer(playerid,-10.1753,-314.8848,5.4229), str = "Аренды топлива продуктов";
+				case 9: EnableGPSForPlayer(playerid,218.3788,-1443.7483,13.2123), str = "Аренды развозчиков еды г. ЛС";
+				case 10: EnableGPSForPlayer(playerid,-2416.5146,-604.9440,132.5625), str = "Аренды развозчиков еды г. СФ";
+				case 11: EnableGPSForPlayer(playerid,1636.6709,-1106.8654,23.9063), str = "Аренды транспорта механиков г. ЛС №1";
+				case 12: EnableGPSForPlayer(playerid,-82.6767,-1155.2017,1.7500), str = "Аренды транспорта механиков г. ЛС №2";
+				case 13: EnableGPSForPlayer(playerid,-2026.8943,142.5349,28.8359), str = "Аренды транспорта механиков г. СФ №1";
+				case 14: EnableGPSForPlayer(playerid,-1648.2657,436.3811,7.1797), str = "Аренды транспорта механиков г. СФ №2";
+				case 15: EnableGPSForPlayer(playerid,2127.3828,953.3461,10.8130), str = "Аренды транспорта механиков г. ЛС №1";
+				case 16: EnableGPSForPlayer(playerid,2624.8748,1072.8818,10.8203), str = "Аренды транспорта механиков г. ЛВ №2";
+				case 17: EnableGPSForPlayer(playerid,1400.2572,-1796.6935,13.5469), str = "Аренда транспорта для уборки улиц";
+				case 18: EnableGPSForPlayer(playerid,1427.5365,-1837.8632,13.5469), str = "Аренда транспорта для скашивания травы";
 			}
 			format(string,sizeof(string),"Местоположение %s успешно отмечено в вашем GPS",str);
 			SendClientMessage(playerid,CGOLD,string);
@@ -22352,9 +22591,18 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 				case 0: EnableGPSForPlayer(playerid,1270.4175,-2053.0439,59.1521), str = "Белого дома";
 				case 1: EnableGPSForPlayer(playerid,1480.9188,-1740.3135,13.5469), str = "Правительства";
 				case 2: EnableGPSForPlayer(playerid,1539.1508,-1675.5208,13.5469), str = "Полицейского участка г. ЛС";
-				case 3: EnableGPSForPlayer(playerid,1184.2065,-1325.4333,13.5755), str = "Больницы г. ЛС";
-				case 4: EnableGPSForPlayer(playerid,747.1273,-1390.9849,13.4882), str = "Лицензеров";
-				case 5: EnableGPSForPlayer(playerid,1589.3326,-1317.3939,17.5201), str = "Радиоцентра г. ЛС";
+				case 3: EnableGPSForPlayer(playerid,-1604.8586,724.6096,11.6933), str = "Полицейского участка г. СФ";
+				case 4: EnableGPSForPlayer(playerid,2292.0945,2421.0532,10.8203), str = "Полицейского участка г. ЛВ";
+				case 5: EnableGPSForPlayer(playerid,1184.2065,-1325.4333,13.5755), str = "Больницы г. ЛС";
+				case 6: EnableGPSForPlayer(playerid,-2654.8313,623.7918,14.4531), str = "Больницы г. СФ";
+				case 7: EnableGPSForPlayer(playerid,1607.5950,1831.1354,10.8203), str = "Больницы г. ЛВ";
+				case 8: EnableGPSForPlayer(playerid,-1980.5592,-1012.2474,32.1719), str = "ФБР";
+				case 9: EnableGPSForPlayer(playerid,107.3565,2072.0569,17.4144), str = "Армии [сухопутные войска]";
+				case 10: EnableGPSForPlayer(playerid,-1529.3359,502.5937,7.1797), str = "Армии [военно-морской флот]";
+				case 11: EnableGPSForPlayer(playerid,747.1273,-1390.9849,13.4882), str = "Лицензеров";
+				case 12: EnableGPSForPlayer(playerid,1589.3326,-1317.3939,17.5201), str = "Радиоцентра г. ЛС";
+				case 13: EnableGPSForPlayer(playerid,-2482.1636,-616.2321,132.5656), str = "Радиоцентра г. СФ";
+				case 14: EnableGPSForPlayer(playerid,2615.1035,1172.8719,10.7614), str = "Радиоцентра г. ЛВ";
 			}
 			format(string,sizeof(string),"Местоположение %s успешно отмечено в вашем GPS",str);
 			SendClientMessage(playerid,CGOLD,string);
@@ -22380,11 +22628,11 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 		}
 		case D_GPS_BANK: {
 			if(!response) return pc_cmd_gps(playerid);
-			new string[120],str[64];
+			new string[120],str[14];
 			switch(listitem) {
 				case 0: EnableGPSForPlayer(playerid,1709.3918,-1343.1489,13.5469), str = "Банка г. ЛС";
-				case 1: EnableGPSForPlayer(playerid,207.8649,-61.6911,1.9766), str = "Банка д. Блубери";
-				case 2: EnableGPSForPlayer(playerid,2303.8328,-16.2453,26.4844), str = "Банка д. Паломино Креек";
+				case 1: EnableGPSForPlayer(playerid,-2361.9106,493.2753,30.7346), str = "Банка г. СФ";
+				case 2: EnableGPSForPlayer(playerid,2577.3542,1317.7053,10.6999), str = "Банка г. ЛВ";
 			}
 			format(string,sizeof(string),"Местоположение %s успешно отмечено в вашем GPS",str);
 			SendClientMessage(playerid,CGOLD,string);
@@ -22394,6 +22642,8 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			new string[120],str[28];
 			switch(listitem) {
 				case 0: EnableGPSForPlayer(playerid,777.3998,-1041.3154,24.1305), str = "Риэлторского агенства г. ЛС";
+				case 1: EnableGPSForPlayer(playerid,-2545.3013,320.7252,19.6200), str = "Риэлторского агенства г. СФ";
+				case 2: EnableGPSForPlayer(playerid,2016.7900,1101.9283,10.8203), str = "Риэлторского агенства г. ЛВ";
 			}
 			format(string,sizeof(string),"Местоположение %s успешно отмечено в вашем GPS",str);
 			SendClientMessage(playerid,CGOLD,string);
@@ -22403,6 +22653,8 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			new string[120],str[16];
 			switch(listitem) {
 				case 0: EnableGPSForPlayer(playerid,1910.6567,-2326.6270,13.5469), str = "Аэропорта г. ЛС";
+				case 1: EnableGPSForPlayer(playerid,-1280.7502,8.5439,14.1484), str = "Аэропорта г. СФ";
+				case 2: EnableGPSForPlayer(playerid,1695.4163,1446.6281,10.7626), str = "Аэропорта г. ЛВ";
 			}
 			format(string,sizeof(string),"Местоположение %s успешно отмечено в вашем GPS",str);
 			SendClientMessage(playerid,CGOLD,string);
@@ -22424,7 +22676,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 		}
 		case D_GPS_TK: {
 			if(!response) return pc_cmd_gps(playerid);
-			new count_ammo = 1,string[200],str[30];
+			new count_ammo = 1,string[200],str[28];
 			for(new i = 0; i < gBusinessCount; i ++) {
 				if(gBusiness[i][bizzType] != 14) continue;
 				if((count_ammo-1) == listitem) {
@@ -22437,8 +22689,8 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			}
 			switch(listitem) {
 				case 3: EnableGPSForPlayer(playerid,2653.8486,-2387.8660,13.6328), str = "[Загрузка] Оружейный завод";
-				case 4: EnableGPSForPlayer(playerid,-1048.6555,-609.4244,32.0078), str = "[Загрузка] Нефтезавод";
-				case 5: EnableGPSForPlayer(playerid,1340.6106,332.1387,19.9806), str = "[Разгрузка] Склад Монтгомери";
+				case 4: EnableGPSForPlayer(playerid,253.3007,1396.0299,10.5859), str = "[Загрузка] Нефтезавод";
+				case 5: EnableGPSForPlayer(playerid,-1744.4447,149.4602,3.5496), str = "[Разгрузка] Порт г. СФ";
 				case 6: EnableGPSForPlayer(playerid,2616.7119,-2226.7627,13.3819), str = "[Разгрузка] Порт г. ЛС";
 				//case 7: EnableGPSForPlayer(playerid,2687.9753,-2480.1912,13.5008), str = "[Разгрузка] Оружейный завод";
 			}
@@ -22486,8 +22738,8 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 				case 2: EnableGPSForPlayer(playerid,2107.0535,1377.9354,10.8607), str = "Автосалона [Спорт]";
 				case 3: EnableGPSForPlayer(playerid,2126.6680,-1119.6429,25.3591), str = "Мотосалона";
 				case 4: EnableGPSForPlayer(playerid,1151.0156,-1224.6001,17.4627), str = "Тюнинга г. ЛС";
-				case 5: EnableGPSForPlayer(playerid,-1787.5232,1197.9948,25.1194), str = "Тюнинга 2";
-				case 6: EnableGPSForPlayer(playerid,1643.3086,2187.9753,10.8203), str = "Тюнинга 3";
+				case 5: EnableGPSForPlayer(playerid,-1787.5232,1197.9948,25.1194), str = "Тюнинга г. СФ";
+				case 6: EnableGPSForPlayer(playerid,1643.3086,2187.9753,10.8203), str = "Тюнинга г. ЛВ";
 				case 7: EnableGPSForPlayer(playerid,642.2348,-1488.5830,14.1320), str = "Perfomance Tuning [г. ЛС]";
 			}
 			format(string,sizeof(string),"Местоположение %s успешно отмечено в вашем GPS",str);
@@ -22591,6 +22843,569 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			UpdatePlayerData(playerid,"pJail",0);
 			GameTextForPlayer(playerid, "~g~~h~FREEDOM", 5000, 1);
 			return 1;
+		}
+		case D_ECONOMY: {
+			if(!response) return 1;
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			switch(listitem) {
+				case 0: {
+					static const f_str[] = ""W"Казна штата: \t\t\t\t\t"YELLOW"$%d\n\n\
+"W"Заработная плата оружейный завод:\t"GREEN"$%d\n\
+"W"Заработная плата нефтезавод:\t\t"GREEN"$%d\n\
+"W"Заработная плата яблочный сад:\t\t"GREEN"$%d\n\
+"W"Заработная плата лесопилка:\t\t"GREEN"$%d\n\
+"W"Заработная плата алькатрас:\t\t\t"GREEN"$%d\n\
+"W"Налогообложение бизнесов:\t\t"ORANGE"%d%%\n\
+"W"Налоги заработных плат гос.структур:\t"ORANGE"%d%%";
+					new string[sizeof(f_str) +1 + (-2 + 13) + (-2 + 3) + (-2 + 3) + (-2 + 3) + (-2 + 3) + (-2 + 3) + (-2 + 3) + (-2 + 3)];
+					format(string,sizeof(string),f_str,FI[fWHITEHOUSE][fBank],WorkSalary[0],WorkSalary[1],WorkSalary[3],WorkSalary[2],WorkSalary[4],Nalog[3],Nalog[0]);
+					D(playerid,DIALOG_NONE,DSM, ""P"Информация",string,"Закрыть","");
+				}
+				case 1: {
+					static const f_str[] = "\n\n"W"Заработная плата на оружейном заводе составляет: "GREEN"$%d\n\
+Установите новую заработную плату на оружейном заводе:\n\n";
+					new string[sizeof(f_str) +1 + (-2 + 3)];
+					format(string,sizeof(string),f_str,WorkSalary[0]);
+					D(playerid,D_ECONOMY_GUN,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				}
+				case 2: {
+					static const f_str[] = "\n\n"W"Заработная плата на нефтезаводе составляет: "GREEN"$%d\n\
+Установите новую заработную плату на нефтезаводе:\n\n";
+					new string[sizeof(f_str) +1 + (-2 + 3)];
+					format(string,sizeof(string),f_str,WorkSalary[1]);
+					D(playerid,D_ECONOMY_OIL,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				}
+				case 3: {
+					static const f_str[] = "\n\n"W"Заработная плата в яблочном саду составляет: "GREEN"$%d\n\
+Установите новую заработную плату в яблочном саду:\n\n";
+					new string[sizeof(f_str) +1 + (-2 + 3)];
+					format(string,sizeof(string),f_str,WorkSalary[3]);
+					D(playerid,D_ECONOMY_APPLE,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				}
+				case 4: {
+					static const f_str[] = "\n\n"W"Заработная плата на лесопилке составляет: "GREEN"$%d\n\
+Установите новую заработную плату на лесопилке:\n\n";
+					new string[sizeof(f_str) +1 + (-2 + 3)];
+					format(string,sizeof(string),f_str,WorkSalary[4]);
+					D(playerid,D_ECONOMY_WOOD,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				}
+				case 5: {
+					static const f_str[] = "\n\n"W"Заработная плата в алькатрасе составляет: "GREEN"$%d\n\
+Установите новую заработную плату в алькатрасе:\n\n";
+					new string[sizeof(f_str) +1 + (-2 + 3)];
+					format(string,sizeof(string),f_str,WorkSalary[2]);
+					D(playerid,D_ECONOMY_ALCO,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				}
+				case 6: {
+					static const f_str[] = "\n\n"W"Налогообложение бизнесов составляет: "GREEN"$%d\n\
+Установите новое налогообложение бизнесов:\n\n";
+					new string[sizeof(f_str) +1 + (-2 + 3)];
+					format(string,sizeof(string),f_str,Nalog[3]);
+					D(playerid,D_ECONOMY_BIZZ,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				}
+				case 7: {
+					static const f_str[] = "\n\n"W"Налоги заработных плат гос.структур составляют: "GREEN"$%d\n\
+Установите новые налоги заработных плат гос.структур:\n\n";
+					new string[sizeof(f_str) +1 + (-2 + 3)];
+					format(string,sizeof(string),f_str,Nalog[0]);
+					D(playerid,D_ECONOMY_NALOG,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				}
+				case 8: D(playerid,D_ECONOMY_SALARY,DSL,"Управление штатом",""P"1."W" Полиция\n"P"2."W" ФБР\n"P"3."W" Армии\n"P"4."W" МЧС\n"P"5."W" Новостные студии\n"P"6."W" Белый дом","Выбрать", "Отмена");
+				case 9: D(playerid,D_ECONOMY_PREM,DSL,""P"Управление штатом",""P"1."W" Полиция ЛС\n"P"2."W" Полиция СФ\n"P"3."W" Полиция ЛВ\n"P"4."W" ФБР\n"P"5."W" Армия СФ\n"P"6."W" Армия ЛВ\n"P"7."W" Больница г.ЛС\n"P"8."W" Больница г.СФ\n"P"9."W" Больница г.ЛВ\n"P"10."W" Радиоцентр ЛС\n"P"11."W" Радиоцентр СФ\n"P"12."W" Радиоцентр ЛВ","Выбрать", "Отмена");
+				case 10: D(playerid,D_ECONOMY_PENS,DSL,""P"Управление штатом",""P"1."W" Размер пенсии\n"P"2."W" Пенсионный возраст","Выбрать", "Отмена");
+				case 11: D(playerid,D_ECONOMY_PUT,DSI,""P"Управление штатом","\n\n"W"Укажите сумму, на которую хотите пополнить казну штата\n\n","Пополнить", "Отмена");
+				case 12: D(playerid,D_ECONOMY_INPUT,DSI,""P"Управление штатом","\n\n"W"Укажите сумму, которую хотите снять с казны штата\n\n","Снять", "Отмена");
+			}
+		}
+		case D_ECONOMY_PENS: {
+			if(!response) return 1;
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			switch(listitem) {
+				case 0: {
+					static const f_str[] = "\n\n"W"Размер пенсии составляет: "GREEN"$%d\n\
+Установите новый размер пенсии:\n\n";
+					new string[sizeof(f_str) +1 + (-2 + 3)];
+					format(string,sizeof(string),f_str,Nalog[2]);
+					D(playerid,D_ECONOMY_PENS_1,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				}
+				case 1: {
+					static const f_str[] = "\n\n"W"Пенсионный возраст составляет: "GREEN"%d\n\
+Установите новый пенсионный возраст:\n\n";
+					new string[sizeof(f_str) +1 + (-2 + 3)];
+					format(string,sizeof(string),f_str,Nalog[1]);
+					D(playerid,D_ECONOMY_PENS_2,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				}
+			}
+		}
+		case D_ECONOMY_PENS_1: {
+			if(!response) return 1;
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			new salary = strval(inputtext);
+			if(salary < 5000 || salary > 9000) {
+				static const f_str[] = "\n\n"W"Размер пенсии составляет: "GREEN"$%d\n\
+Установите новый размер пенсии:\n\n"NO"*"G" От $5000 до $9000\n\n";
+				new string[sizeof(f_str) +1 + (-2 + 3)];
+				format(string,sizeof(string),f_str,Nalog[2]);
+				D(playerid,D_ECONOMY_PENS_1,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				return 1;
+			}
+			Nalog[2] = salary;
+			UpdateEconomyData("nalog_3",salary);
+			static const f_string[] = "Размер пенсии в размере "GREEN"$%d"G" установлен";
+			new str[sizeof(f_string) +1 + (-2 + 4)];
+			format(str,sizeof(str),f_string,Nalog[2]);
+			SendUse(playerid,str);
+		}
+		case D_ECONOMY_PENS_2: {
+			if(!response) return 1;
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			new salary = strval(inputtext);
+			if(salary < 15 || salary > 25) {
+				static const f_str[] = "\n\n"W"Пенсионный возраст составляет: "GREEN"%d\n\
+Установите новый пенсионный возраст:\n\n"NO"*"G" От 15 до 25\n\n";
+				new string[sizeof(f_str) +1 + (-2 + 3)];
+				format(string,sizeof(string),f_str,Nalog[1]);
+				D(playerid,D_ECONOMY_PENS_2,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				return 1;
+			}
+			Nalog[1] = salary;
+			UpdateEconomyData("nalog_2",salary);
+			static const f_string[] = "Пенсионный возраст "GREEN"$%d"G" лет установлен";
+			new str[sizeof(f_string) +1 + (-2 + 4)];
+			format(str,sizeof(str),f_string,Nalog[1]);
+			SendUse(playerid,str);
+		}
+		case D_ECONOMY_GUN: {
+			if(!response) return 1;
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			new salary = strval(inputtext);
+			if(salary < 60 || salary > 160) {
+				static const f_str[] = "\n\n"W"Заработная плата на оружейном заводе составляет: "GREEN"$%d\n\
+Установите новую заработную плату на оружейном заводе:\n\n"NO"*"G" От $60 до $160\n\n";
+				new string[sizeof(f_str) +1 + (-2 + 3)];
+				format(string,sizeof(string),f_str,WorkSalary[0]);
+				D(playerid,D_ECONOMY_GUN,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				return 1;
+			}
+			WorkSalary[0] = salary;
+			UpdateEconomyData("work_gun",salary);
+			static const f_string[] = "Заработная плата на оружейном заводе в размере "ORANGE"$%d"G" установлена";
+			new str[sizeof(f_string) +1 + (-2 + 4)];
+			format(str,sizeof(str),f_string,WorkSalary[0]);
+			SendUse(playerid,str);
+		}
+		case D_ECONOMY_OIL: {
+			if(!response) return 1;
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			new salary = strval(inputtext);
+			if(salary < 120 || salary > 220) {
+				static const f_str[] = "\n\n"W"Заработная плата на нефтезаводе составляет: "GREEN"$%d\n\
+Установите новую заработную плату на нефтезаводе:\n\n"NO"*"G" От $120 до $220\n\n";
+				new string[sizeof(f_str) +1 + (-2 + 3)];
+				format(string,sizeof(string),f_str,WorkSalary[1]);
+				D(playerid,D_ECONOMY_OIL,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				return 1;
+			}
+			WorkSalary[1] = salary;
+			UpdateEconomyData("work_oil",salary);
+			static const f_string[] = "Заработная плата на нефтезаводе в размере "ORANGE"$%d"G" установлена";
+			new str[sizeof(f_string) +1 + (-2 + 4)];
+			format(str,sizeof(str),f_string,WorkSalary[1]);
+			SendUse(playerid,str);
+		}
+		case D_ECONOMY_APPLE: {
+			if(!response) return 1;
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			new salary = strval(inputtext);
+			if(salary < 30 || salary > 120) {
+				static const f_str[] = "\n\n"W"Заработная плата в яблочном саду составляет: "GREEN"$%d\n\
+Установите новую заработную плату в яблочном саду:\n\n"NO"*"G" От $30 до $120\n\n";
+				new string[sizeof(f_str) +1 + (-2 + 3)];
+				format(string,sizeof(string),f_str,WorkSalary[3]);
+				D(playerid,D_ECONOMY_APPLE,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				return 1;
+			}
+			WorkSalary[3] = salary;
+			UpdateEconomyData("work_apple",salary);
+			static const f_string[] = "Заработная плата в яблочном саду в размере "ORANGE"$%d"G" установлена";
+			new str[sizeof(f_string) +1 + (-2 + 4)];
+			format(str,sizeof(str),f_string,WorkSalary[3]);
+			SendUse(playerid,str);
+		}
+		case D_ECONOMY_WOOD: {
+			if(!response) return 1;
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			new salary = strval(inputtext);
+			if(salary < 30 || salary > 120) {
+				static const f_str[] = "\n\n"W"Заработная плата на лесопилке составляет: "GREEN"$%d\n\
+Установите новую заработную плату на лесопилке:\n\n"NO"*"G" От $30 до $120\n\n";
+				new string[sizeof(f_str) +1 + (-2 + 3)];
+				format(string,sizeof(string),f_str,WorkSalary[4]);
+				D(playerid,D_ECONOMY_WOOD,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				return 1;
+			}
+			WorkSalary[4] = salary;
+			UpdateEconomyData("work_wood",salary);
+			static const f_string[] = "Заработная плата на лесопилке в размере "ORANGE"$%d"G" установлена";
+			new str[sizeof(f_string) +1 + (-2 + 4)];
+			format(str,sizeof(str),f_string,WorkSalary[4]);
+			SendUse(playerid,str);
+		}
+		case D_ECONOMY_ALCO: {
+			if(!response) return 1;
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			new salary = strval(inputtext);
+			if(salary < 20 || salary > 40) {
+				static const f_str[] = "\n\n"W"Заработная плата в алькатрасе составляет: "GREEN"$%d\n\
+Установите новую заработную плату в алькатрасе:\n\n"NO"*"G" От $20 до $40\n\n";
+				new string[sizeof(f_str) +1 + (-2 + 3)];
+				format(string,sizeof(string),f_str,WorkSalary[2]);
+				D(playerid,D_ECONOMY_ALCO,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				return 1;
+			}
+			WorkSalary[2] = salary;
+			UpdateEconomyData("work_alco",salary);
+			static const f_string[] = "Заработная плата в алькатрасе в размере "ORANGE"$%d"G" установлена";
+			new str[sizeof(f_string) +1 + (-2 + 4)];
+			format(str,sizeof(str),f_string,WorkSalary[2]);
+			SendUse(playerid,str);
+		}
+		case D_ECONOMY_BIZZ: {
+			if(!response) return 1;
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			new salary = strval(inputtext);
+			if(salary < 1 || salary > 15) {
+				static const f_str[] = "\n\n"W"Налогообложение бизнесов составляет: "P"%d%%\n\
+Установите новое налогообложение бизнесов:\n\n"NO"*"G" От 1%% до 15%%\n\n";
+				new string[sizeof(f_str) +1 + (-2 + 3)];
+				format(string,sizeof(string),f_str,Nalog[3]);
+				D(playerid,D_ECONOMY_BIZZ,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				return 1;
+			}
+			Nalog[3] = salary;
+			UpdateEconomyData("nalog_4",salary);
+			static const f_string[] = "Налогообложение бизнесов в размере "ORANGE"%d%%"G" установлено";
+			new str[sizeof(f_string) +1 + (-2 + 4)];
+			format(str,sizeof(str),f_string,Nalog[3]);
+			SendUse(playerid,str);
+		}
+		case D_ECONOMY_NALOG: {
+			if(!response) return 1;
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			new salary = strval(inputtext);
+			if(salary < 5 || salary > 15) {
+				static const f_str[] = "\n\n"W"Налоги заработных плат гос.структур составляют: "P"%d%%\n\
+Установите новые налоги заработных плат гос.структур:\n\n"NO"*"G" От 5%% до 15%%\n\n";
+				new string[sizeof(f_str) +1 + (-2 + 3)];
+				format(string,sizeof(string),f_str,Nalog[0]);
+				D(playerid,D_ECONOMY_NALOG,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+				return 1;
+			}
+			Nalog[0] = salary;
+			UpdateEconomyData("nalog_1",salary);
+			static const f_string[] = "Налоги заработных плат гос.структур в размере "ORANGE"%d%%"G" установлены";
+			new str[sizeof(f_string) +1 + (-2 + 4)];
+			format(str,sizeof(str),f_string,Nalog[0]);
+			SendUse(playerid,str);
+		}
+		case D_ECONOMY_SALARY: {
+			if(!response) return 1;
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			switch(listitem) {
+				case 0: {
+					new string[555];
+					string = "Должность\tРанг\tЗарплата\n";
+					for(new i = 1; i <= FI[fLSPD][fMaxRang]; i++) {
+						format(string,sizeof(string),"%s%s\t%i\t%d\n",string,GetRankName(fLSPD,i),i,FracSalary[0][i-1]);
+						D(playerid,D_ECONOMY_SALARY_1,DSTH,""P"Выберите ранг",string,"Выбрать","Закрыть");
+					}
+				}
+				case 1: {
+					new string[555];
+					string = "Должность\tРанг\tЗарплата\n";
+					for(new i = 1; i <= FI[fFBI][fMaxRang]; i++) {
+						format(string,sizeof(string),"%s%s\t%i\t%d\n",string,GetRankName(fFBI,i),i,FracSalary[1][i-1]);
+						D(playerid,D_ECONOMY_SALARY_1,DSTH,""P"Выберите ранг",string,"Выбрать","Закрыть");
+					}
+				}
+				case 2: {
+					new string[555];
+					string = "Должность\tРанг\tЗарплата\n";
+					for(new i = 1; i <= FI[fARMYSF][fMaxRang]; i++) {
+						format(string,sizeof(string),"%s%s\t%i\t%d\n",string,GetRankName(fARMYSF,i),i,FracSalary[3][i-1]);
+						D(playerid,D_ECONOMY_SALARY_1,DSTH,""P"Выберите ранг",string,"Выбрать","Закрыть");
+					}
+				}
+				case 3: {
+					new string[555];
+					string = "Должность\tРанг\tЗарплата\n";
+					for(new i = 1; i <= FI[fMEDICLS][fMaxRang]; i++) {
+						format(string,sizeof(string),"%s%s\t%i\t%d\n",string,GetRankName(fMEDICLS,i),i,FracSalary[4][i-1]);
+						D(playerid,D_ECONOMY_SALARY_1,DSTH,""P"Выберите ранг",string,"Выбрать","Закрыть");
+					}
+				}
+				case 4: {
+					new string[555];
+					string = "Должность\tРанг\tЗарплата\n";
+					for(new i = 1; i <= FI[fLSNEWS][fMaxRang]; i++) {
+						format(string,sizeof(string),"%s%s\t%i\t%d\n",string,GetRankName(fLSNEWS,i),i,FracSalary[5][i-1]);
+						D(playerid,D_ECONOMY_SALARY_1,DSTH,""P"Выберите ранг",string,"Выбрать","Закрыть");
+					}
+				}
+				case 5: {
+					new string[555];
+					string = "Должность\tРанг\tЗарплата\n";
+					for(new i = 1; i <= FI[fWHITEHOUSE][fMaxRang]; i++) {
+						format(string,sizeof(string),"%s%s\t%i\t%d\n",string,GetRankName(fWHITEHOUSE,i),i,FracSalary[8][i-1]);
+						D(playerid,D_ECONOMY_SALARY_1,DSTH,""P"Выберите ранг",string,"Выбрать","Закрыть");
+					}
+				}
+			}
+			SetPVarInt(playerid, "variable_zp", listitem);
+		}
+		case D_ECONOMY_SALARY_1: {
+			if(!response) return 1;
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			SetPVarInt(playerid, "variable_rang", listitem);
+			switch(GetPVarInt(playerid, "variable_zp")) {
+				case 0: {
+					static const f_str[] = "\n\n"W"Заработная плата %s(%d) $%d - Полиция\n\
+Установите новую заработную плату для ранга %s:\n\n"NO"*"G" От %d до %d\n\n";
+					new string[sizeof(f_str) +1 + (-2 + 24) + (-2 + 4) + (-2 + 6) + (-2 + 24) + (-2 + 5) + (-2 + 5)];
+					format(string,sizeof(string),f_str,GetRankName(fLSPD,listitem+1),listitem+1,FracSalary[0][listitem],GetRankName(fLSPD,listitem+1),salary_pd[listitem]/2,salary_pd[listitem]);
+					D(playerid,D_ECONOMY_SALARY_2,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+					return 1;
+				}
+				case 1: {
+					static const f_str[] = "\n\n"W"Заработная плата %s(%d) $%d - ФБР\n\
+Установите новую заработную плату для ранга %s:\n\n"NO"*"G" От %d до %d\n\n";
+					new string[sizeof(f_str) +1 + (-2 + 24) + (-2 + 4) + (-2 + 6) + (-2 + 24) + (-2 + 5) + (-2 + 5)];
+					format(string,sizeof(string),f_str,GetRankName(fFBI,listitem+1),listitem+1,FracSalary[1][listitem],GetRankName(fFBI,listitem+1),salary_fbi[listitem]/2,salary_fbi[listitem]);
+					D(playerid,D_ECONOMY_SALARY_2,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+					return 1;
+				}
+				case 2: {
+					static const f_str[] = "\n\n"W"Заработная плата %s(%d) $%d - Армии\n\
+Установите новую заработную плату для ранга %s:\n\n"NO"*"G" От %d до %d\n\n";
+					new string[sizeof(f_str) +1 + (-2 + 24) + (-2 + 4) + (-2 + 6) + (-2 + 24) + (-2 + 5) + (-2 + 5)];
+					format(string,sizeof(string),f_str,GetRankName(fARMYSF,listitem+1),listitem+1,FracSalary[3][listitem],GetRankName(fARMYSF,listitem+1),salary_army[listitem]/2,salary_army[listitem]);
+					D(playerid,D_ECONOMY_SALARY_2,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+					return 1;
+				}
+				case 3: {
+					static const f_str[] = "\n\n"W"Заработная плата %s(%d) $%d - МЧС\n\
+Установите новую заработную плату для ранга %s:\n\n"NO"*"G" От %d до %d\n\n";
+					new string[sizeof(f_str) +1 + (-2 + 24) + (-2 + 4) + (-2 + 6) + (-2 + 24) + (-2 + 5) + (-2 + 5)];
+					format(string,sizeof(string),f_str,GetRankName(fMEDICLS,listitem+1),listitem+1,FracSalary[4][listitem],GetRankName(fMEDICLS,listitem+1),salary_medics[listitem]/2,salary_medics[listitem]);
+					D(playerid,D_ECONOMY_SALARY_2,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+					return 1;
+				}
+				case 4: {
+					static const f_str[] = "\n\n"W"Заработная плата %s(%d) $%d - Новостная студия\n\
+Установите новую заработную плату для ранга %s:\n\n"NO"*"G" От %d до %d\n\n";
+					new string[sizeof(f_str) +1 + (-2 + 24) + (-2 + 4) + (-2 + 6) + (-2 + 24) + (-2 + 5) + (-2 + 5)];
+					format(string,sizeof(string),f_str,GetRankName(fLSNEWS,listitem+1),listitem+1,FracSalary[5][listitem],GetRankName(fLSNEWS,listitem+1),salary_news[listitem]/2,salary_news[listitem]);
+					D(playerid,D_ECONOMY_SALARY_2,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+					return 1;
+				}
+				case 5: {
+					static const f_str[] = "\n\n"W"Заработная плата %s(%d) $%d - Белый дом\n\
+Установите новую заработную плату для ранга %s:\n\n"NO"*"G" От %d до %d\n\n";
+					new string[sizeof(f_str) +1 + (-2 + 24) + (-2 + 4) + (-2 + 6) + (-2 + 24) + (-2 + 5) + (-2 + 5)];
+					format(string,sizeof(string),f_str,GetRankName(fWHITEHOUSE,listitem+1),listitem+1,FracSalary[8][listitem],GetRankName(fWHITEHOUSE,listitem+1),salary_wh[listitem]/2,salary_wh[listitem]);
+					D(playerid,D_ECONOMY_SALARY_2,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+					return 1;
+				}
+			}
+		}
+		case D_ECONOMY_SALARY_2: {
+			if(!response) return 1;
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			new salary = strval(inputtext);
+			new list = GetPVarInt(playerid, "variable_rang");
+			switch(GetPVarInt(playerid, "variable_zp")) {
+				case 0: {
+					if(salary < salary_pd[list]/2 || salary > salary_pd[list]) {
+						static const f_str[] = "\n\n"W"Заработная плата %s(%d) $%d - Полиция\n\
+Установите новую заработную плату для ранга %s:\n\n"NO"*"G" От %d до %d\n\n";
+						new string[sizeof(f_str) +1 + (-2 + 24) + (-2 + 4) + (-2 + 6) + (-2 + 24) + (-2 + 5) + (-2 + 5)];
+						format(string,sizeof(string),f_str,GetRankName(fLSPD,list+1),list+1,FracSalary[0][list],GetRankName(fLSPD,list+1),salary_pd[list]/2,salary_pd[list]);
+						D(playerid,D_ECONOMY_SALARY_2,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+						return 1;
+					}
+					FracSalary[0][list] = salary;
+					save_salary(0);
+				}
+				case 1: {
+					if(salary < salary_fbi[list]/2 || salary > salary_fbi[list]) {
+						static const f_str[] = "\n\n"W"Заработная плата %s(%d) $%d - ФБР\n\
+Установите новую заработную плату для ранга %s:\n\n"NO"*"G" От %d до %d\n\n";
+						new string[sizeof(f_str) +1 + (-2 + 24) + (-2 + 4) + (-2 + 6) + (-2 + 24) + (-2 + 5) + (-2 + 5)];
+						format(string,sizeof(string),f_str,GetRankName(fFBI,list+1),list+1,FracSalary[1][list],GetRankName(fFBI,list+1),salary_fbi[list]/2,salary_fbi[list]);
+						D(playerid,D_ECONOMY_SALARY_2,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+						return 1;
+					}
+					FracSalary[1][list] = salary;
+					save_salary(1);
+				}
+				case 2: {
+					if(salary < salary_army[list]/2 || salary > salary_army[list]) {
+						static const f_str[] = "\n\n"W"Заработная плата %s(%d) $%d - Армии\n\
+Установите новую заработную плату для ранга %s:\n\n"NO"*"G" От %d до %d\n\n";
+						new string[sizeof(f_str) +1 + (-2 + 24) + (-2 + 4) + (-2 + 6) + (-2 + 24) + (-2 + 5) + (-2 + 5)];
+						format(string,sizeof(string),f_str,GetRankName(fARMYSF,list+1),list+1,FracSalary[3][list],GetRankName(fARMYSF,list+1),salary_army[list]/2,salary_army[list]);
+						D(playerid,D_ECONOMY_SALARY_2,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+						return 1;
+					}
+					FracSalary[3][list] = salary;
+					save_salary(3);
+				}
+				case 3: {
+					if(salary < salary_medics[list]/2 || salary > salary_medics[list]) {
+						static const f_str[] = "\n\n"W"Заработная плата %s(%d) $%d - МЧС\n\
+Установите новую заработную плату для ранга %s:\n\n"NO"*"G" От %d до %d\n\n";
+						new string[sizeof(f_str) +1 + (-2 + 24) + (-2 + 4) + (-2 + 6) + (-2 + 24) + (-2 + 5) + (-2 + 5)];
+						format(string,sizeof(string),f_str,GetRankName(fMEDICLS,list+1),list+1,FracSalary[4][list],GetRankName(fMEDICLS,list+1),salary_medics[list]/2,salary_medics[list]);
+						D(playerid,D_ECONOMY_SALARY_2,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+						return 1;
+					}
+					FracSalary[4][list] = salary;
+					save_salary(4);
+				}
+				case 4: {
+					if(salary < salary_news[list]/2 || salary > salary_news[list]) {
+						static const f_str[] = "\n\n"W"Заработная плата %s(%d) $%d - Новостная студия\n\
+Установите новую заработную плату для ранга %s:\n\n"NO"*"G" От %d до %d\n\n";
+						new string[sizeof(f_str) +1 + (-2 + 24) + (-2 + 4) + (-2 + 6) + (-2 + 24) + (-2 + 5) + (-2 + 5)];
+						format(string,sizeof(string),f_str,GetRankName(fLSNEWS,list+1),list+1,FracSalary[5][list],GetRankName(fLSNEWS,list+1),salary_news[list]/2,salary_news[list]);
+						D(playerid,D_ECONOMY_SALARY_2,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+						return 1;
+					}
+					FracSalary[5][list] = salary;
+					save_salary(5);
+				}
+				case 5: {
+					if(salary < salary_wh[list]/2 || salary > salary_wh[list]) {
+						static const f_str[] = "\n\n"W"Заработная плата %s(%d) $%d - Белый дом\n\
+Установите новую заработную плату для ранга %s:\n\n"NO"*"G" От %d до %d\n\n";
+						new string[sizeof(f_str) +1 + (-2 + 24) + (-2 + 4) + (-2 + 6) + (-2 + 24) + (-2 + 5) + (-2 + 5)];
+						format(string,sizeof(string),f_str,GetRankName(fWHITEHOUSE,list+1),list+1,FracSalary[8][list],GetRankName(fWHITEHOUSE,list+1),salary_wh[list]/2,salary_wh[list]);
+						D(playerid,D_ECONOMY_SALARY_2,DSI, ""P"Управление штатом",string,"Установить", "Отмена");
+						return 1;
+					}
+					FracSalary[8][list] = salary;
+					save_salary(8);
+				}
+			}
+			SendOk(playerid,"Заработная плата изменена");
+		}
+		case D_ECONOMY_PREM: {
+			if(!response) return 1;
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			new frac;
+			switch(listitem) {
+				case 0: frac = fLSPD;
+				case 1: frac = fSFPD;
+				case 2: frac = fLVPD;
+				case 3: frac = fFBI;
+				case 4: frac = fARMYSF;
+				case 5: frac = fARMYLV;
+				case 6: frac = fMEDICLS;
+				case 7: frac = fMEDICSF;
+				case 8: frac = fMEDICLV;
+				case 9: frac = fLSNEWS;
+				case 10: frac = fSFNEWS;
+				case 11: frac = fLVNEWS;
+			}
+			SetPVarInt(playerid,"prem_fration",frac);
+			new string[156];
+			format(string,sizeof(string),"\n\n"W"Укажите сумму перевода:\nОрганизация: "ORANGE"%s\n\n",FI[frac][fName]);
+			D(playerid,D_ECONOMY_PREM_1,DSI, ""P"Управление штатом",string,"Перевести", "Отмена");
+		}
+		case D_ECONOMY_PREM_1: {
+			if(!response) return DeletePVar(playerid,"prem_fration");
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			new salary = strval(inputtext);
+			if(salary < 50000 || salary > 500000) {
+				new string[156];
+				format(string,sizeof(string),"\n\n"W"Укажите сумму перевода:\nОрганизация: "ORANGE"%s\n\n"NO"*"G" От $50.000 до $500.000\n\n",FI[GetPVarInt(playerid,"prem_fration")][fName]);
+				D(playerid,D_ECONOMY_PREM_1,DSI, ""P"Управление штатом",string,"Перевести", "Отмена");
+				return 1;
+			}
+			if(FI[fWHITEHOUSE][fBank] - salary < 0) return ErrorMessage(playerid,"В казне недостаточно средств");
+			if(FI[fWHITEHOUSE][fBankCash] + salary > 500000) {
+				new string[128];
+				format(string,sizeof(string),"Суточный лимит на перевод/снятие средств с казны - $500.000. Доступный лимит: $%d",500000-FI[fWHITEHOUSE][fBankCash]);
+				ErrorMessage(playerid,string);
+				return 1;
+			}
+			FI[fWHITEHOUSE][fBankCash] += salary;
+			UpdateFraction(fWHITEHOUSE,"BankCash",FI[fWHITEHOUSE][fBankCash]);
+			FI[GetPVarInt(playerid,"prem_fration")][fBank] += salary;
+			UpdateFraction(GetPVarInt(playerid,"prem_fration"),"Bank",FI[GetPVarInt(playerid,"prem_fration")][fBank]);
+			FI[fWHITEHOUSE][fBank] -= salary;
+			UpdateFraction(fWHITEHOUSE,"Bank",FI[fWHITEHOUSE][fBank]);
+			static const f_string[] = "Перевод денежных средств в размере "ORANGE"$%d"G" организации "P"%s"G" выполнен успешно";
+			new str[sizeof(f_string) +1 + (-2 + 4) + (-2 + 24)];
+			format(str,sizeof(str),f_string,salary,FI[GetPVarInt(playerid,"prem_fration")][fName]);
+			SendUse(playerid,str);
+			DeletePVar(playerid,"prem_fration");
+		}
+		case D_ECONOMY_PUT: {
+			if(!response) return 1;
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			new salary = strval(inputtext);
+			if(salary < 1 || salary > 500000) {
+				D(playerid,D_ECONOMY_PUT,DSI, ""P"Управление штатом","\n\n"W"Укажите сумму, на которую хотите пополнить казну штата\n\n"NO"*"G" От $1 до $500.000\n\n","Пополнить", "Отмена");
+				return 1;
+			}
+			if(GetPlayerMoneyEx(playerid) < salary) {
+				D(playerid,D_ECONOMY_PUT,DSI, ""P"Управление штатом","\n\n"W"Укажите сумму, на которую хотите пополнить казну штата\n\n"NO"*"G" У Вас недостаточно средств\n\n","Пополнить", "Отмена");
+				return 1;
+			}
+			GiveMoney(playerid,-salary,"пополнение казны");
+			FI[fWHITEHOUSE][fBank] += salary;
+			UpdateFraction(fWHITEHOUSE,"Bank",FI[fWHITEHOUSE][fBank]);
+
+			FI[fWHITEHOUSE][fBankCash] -= salary;
+			if(FI[fWHITEHOUSE][fBankCash] < 0) FI[fWHITEHOUSE][fBankCash] = 0;
+			UpdateFraction(fWHITEHOUSE,"BankCash",FI[fWHITEHOUSE][fBankCash]);
+
+			static const f_string[] = "Вы пополнили казну штата на "ORANGE"$%d";
+			new str[sizeof(f_string) +1 + (-2 + 5)];
+			format(str,sizeof(str),f_string,salary);
+			SendUse(playerid,str);
+		}
+		case D_ECONOMY_INPUT: {
+			if(!response) return 1;
+			if(PlayerInfo[playerid][pLeader] != fWHITEHOUSE) return 1;
+			new salary = strval(inputtext);
+			if(salary < 1 || salary > 500000) {
+				D(playerid,D_ECONOMY_INPUT,DSI, ""P"Управление штатом","\n\n"W"Укажите сумму, которую хотите снять с казны штата\n\n"NO"*"G" От $1 до $500.000\n\n","Снять", "Отмена");
+				return 1;
+			}
+			if(FI[fWHITEHOUSE][fBank] < salary) {
+				D(playerid,D_ECONOMY_INPUT,DSI, ""P"Управление штатом","\n\n"W"Укажите сумму, которую хотите снять с казны штата\n\n"NO"*"G" В казне недостаточно средств\n\n","Снять", "Отмена");
+				return 1;
+			}
+			if(FI[fWHITEHOUSE][fBankCash] + salary > 500000) {
+				static const f_str[] = "\n\n"W"Укажите сумму, которую хотите снять с казны штата\n\n"NO"*"G" Суточный лимит на перевод/снятие средств с казны - $500.000. Доступный лимит: $%d\n\n";
+				new string[sizeof(f_str) +1 + (-2 + 6)];
+				format(string,sizeof(string),f_str,500000-FI[fWHITEHOUSE][fBankCash]);
+				D(playerid,D_ECONOMY_INPUT,DSI, ""P"Управление штатом",string,"Снять", "Отмена");
+				return 1;
+			}
+			GiveMoney(playerid,salary,"снятие с казны");
+			FI[fWHITEHOUSE][fBank] -= salary;
+			UpdateFraction(fWHITEHOUSE,"Bank",FI[fWHITEHOUSE][fBank]);
+
+			FI[fWHITEHOUSE][fBankCash] += salary;
+			UpdateFraction(fWHITEHOUSE,"BankCash",FI[fWHITEHOUSE][fBankCash]);
+
+			static const f_string[] = "Вы сняли с казны штата "ORANGE"$%d";
+			new str[sizeof(f_string) +1 + (-2 + 5)];
+			format(str,sizeof(str),f_string,salary);
+			SendUse(playerid,str);
 		}
 		case D_REC_KICK: {
 			if(!response) return 1;
@@ -22885,6 +23700,9 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			new team;
 			switch(GetPlayerVirtualWorld(playerid)) {
 				case 40: team = fLSPD;
+				case 41: team = fSFPD;
+				case 42: team = fLVPD;
+				case 43: team = fFBI;
 			}
 			for(new i = 0 ; i < 9 ; i++) {
 				if(strfind(inputtext, FW[i][team][fwName]) != -1) {
@@ -23695,7 +24513,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 							GiveMoney(playerid,10000,"квест лесопилка");
 						}
 					}
-					if(PlayerInfo[playerid][pFamily]) reputation_family(PlayerInfo[playerid][pFamily]-1,1);
+					if(PlayerInfo[playerid][pFamily]) reputation_family(GetFamilyId(PlayerInfo[playerid][pFamily]),1);
 					QuestProgress[playerid][id] = 100;
 					new query[256];
 					format(query, sizeof(query), "UPDATE `questsprogress` SET `progress`='%d' WHERE `idquest`='%d' AND `name`='%s';", QuestProgress[playerid][id], id, player_name[playerid]);
@@ -23742,7 +24560,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 							GiveMoney(playerid,20000,"квест Провокатор");
 						}
 					}
-					if(PlayerInfo[playerid][pFamily]) reputation_family(PlayerInfo[playerid][pFamily]-1,1);
+					if(PlayerInfo[playerid][pFamily]) reputation_family(GetFamilyId(PlayerInfo[playerid][pFamily]),1);
 					QuestProgress[playerid][id] = 100;
 					new query[256];
 					format(query, sizeof(query), "UPDATE `questsprogress` SET `progress`='%d' WHERE `idquest`='%d' AND `name`='%s';", QuestProgress[playerid][id], id, player_name[playerid]);
@@ -23781,48 +24599,6 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 		case D_QUEST_3: {
 		    if(!response) return 1;
 			NextStapQI(playerid,QuestClick[playerid]);
-		}
-
-		case D_LSPD_MENU: {
-			if(!response) return 1;
-			switch(listitem) {
-				case 0: {
-					new str[1024];
-					str = "Привет, сейчас я постараюсь ответить на твой вопрос - а чем же я могу себя занять тут?\nОтвет довольно таки простой!\n\nОсновная наша задача - это патрулировать город и его окресности,\nа также охотиться на игроков, у которых есть розыск.\n\nКстати, ознакомся с нашими заданиями. За них можно получать репутацию и деньги.\n\nТакже несколько раз в день приезжает судно с боеприпасами.\nНаша задача - не дать захватить судно и забрать все боеприпасы.";
-					D(playerid,DIALOG_NONE,DSM, ""P"FAQ",str,"Принял","");
-				}
-				case 1: ShowFracInfo(playerid);
-				case 2: pc_cmd_lspdKvest(playerid);
-				case 3: pc_cmd_changeskinn(playerid);
-			}
-			return 1;
-		}
-		
-		case D_GANG_ACTOR_MENU: {
-			if(!response) return 1;
-			switch(listitem) {
-				case 0: ShowFracInfo(playerid);
-				case 1: pc_cmd_gangKvest(playerid);
-				case 2: pc_cmd_changeskinn(playerid);
-				case 3: EnableGPSForPlayer(playerid,2713.5166,-2452.3777,13.6417);
-			}
-			return 1;
-		}
-
-		case D_LSPD_KVEST_LIST: {
-			if(!response) return 1;
-			new id = QuestShow[playerid][listitem],string[512];
-			format(string,sizeof(string),"%s",LSPDKvest[id][KvestText]);
-			D(playerid,DIALOG_NONE,DSM, ""P"Задания",string,"Принял","");
-			return 1;
-		}
-		
-		case D_GANG_KVEST_LIST: {
-			if(!response) return 1;
-			new id = QuestShow[playerid][listitem],string[512];
-			format(string,sizeof(string),"%s",GangKvest[id][KvestText]);
-			D(playerid,DIALOG_NONE,DSM, ""P"Задания",string,"Принял","");
-			return 1;
 		}
 		case D_RIELTOR: {
 			if(!response) return 1;
@@ -24047,6 +24823,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 				PlayerInfo[playerid][pJob] = 0;
 				return 1;
 			}
+			if(IsAArm(playerid)) if(PlayerInfo[playerid][pRank] < 3) return ErrorMessage(playerid, "Доступно с 3 ранга");
 			DelGun(playerid);
 			SendOk(playerid, "Рабочий день окончен");
 			SetPlayerColor(playerid, TEAM_HIT_COLOR);
@@ -24619,16 +25396,16 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			SendOk(playerid,"Загрузка фуры начата. Ожидайте завершения загрузки");
 		}
 		case D_TRUCK_UNLOAD: {
-			SetPlayerCheckpoint(playerid, 1340.6106,332.1387,19.9806, 5);
-			SendOk(playerid,"Отправляйтесь к складу в д. Монтгомери");
+			SetPlayerCheckpoint(playerid, -1744.4447,149.4602,3.5496, 5);
+			SendOk(playerid,"Отправляйтесь к порту г. СФ");
 			TI[playerid][tTrucker][1] = 1;
 			TI[playerid][tTrucker][2] = tk_unloading[0];
 		}
 		case D_TRUCK_UNLOAD_2: {
 			switch(listitem) {
 				case 0: {
-					SetPlayerCheckpoint(playerid, 1340.6106,332.1387,19.9806, 5);
-					SendOk(playerid,"Отправляйтесь к складу в д. Монтгомери");
+					SetPlayerCheckpoint(playerid, -1744.4447,149.4602,3.5496, 5);
+					SendOk(playerid,"Отправляйтесь к порту г. СФ");
 					TI[playerid][tTrucker][2] = tk_unloading[1];
 				}
 				case 1: {
@@ -24644,23 +25421,31 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			}
 			TI[playerid][tTrucker][1] = listitem+1;
 		}
-		/*case D_SPY: {
+		case D_SPY: {
 			if(!response) return 1;
 			new string[1024];
 			switch(listitem) {
 				case 0: TI[playerid][tMasked] = fLSPD;
-				case 1: TI[playerid][tMasked] = fMAYOR;
-				case 2: TI[playerid][tMasked] = fMEDICLS;
-				case 3: TI[playerid][tMasked] = fLSNEWS;
-				case 4: TI[playerid][tMasked] = fLCN;
-				case 5: TI[playerid][tMasked] = fYAKUZA;
-				case 6: TI[playerid][tMasked] = fRM;
-				case 7: TI[playerid][tMasked] = fBALLAS;
-				case 8: TI[playerid][tMasked] = fVAGOS;
-				case 9: TI[playerid][tMasked] = fGROVE;
-				case 10: TI[playerid][tMasked] = fAZTEC;
-				case 11: TI[playerid][tMasked] = fRIFA;
-				case 12: TI[playerid][tMasked] = fWHITEHOUSE;
+				case 1: TI[playerid][tMasked] = fSFPD;
+				case 2: TI[playerid][tMasked] = fLVPD;
+				case 3: TI[playerid][tMasked] = fMAYOR;
+				case 4: TI[playerid][tMasked] = fARMYSF;
+				case 5: TI[playerid][tMasked] = fARMYLV;
+				case 6: TI[playerid][tMasked] = fMEDICLS;
+				case 7: TI[playerid][tMasked] = fMEDICSF;
+				case 8: TI[playerid][tMasked] = fMEDICLV;
+				case 9: TI[playerid][tMasked] = fLSNEWS;
+				case 10: TI[playerid][tMasked] = fSFNEWS;
+				case 11: TI[playerid][tMasked] = fLVNEWS;
+				case 12: TI[playerid][tMasked] = fLCN;
+				case 13: TI[playerid][tMasked] = fYAKUZA;
+				case 14: TI[playerid][tMasked] = fRM;
+				case 15: TI[playerid][tMasked] = fBALLAS;
+				case 16: TI[playerid][tMasked] = fVAGOS;
+				case 17: TI[playerid][tMasked] = fGROVE;
+				case 18: TI[playerid][tMasked] = fAZTEC;
+				case 19: TI[playerid][tMasked] = fRIFA;
+				case 20: TI[playerid][tMasked] = fWHITEHOUSE;
 			}
 			for(new i = 0; i < 10; i++) {
 				if(!gFractionSkin[TI[playerid][tMasked]][i]) continue;
@@ -24679,7 +25464,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			SendOk(playerid,string);
 			SendOk(playerid,"Чтобы переодеться обратно, встаньте еще раз на пикап");
 			return 1;
-		}*/
+		}
 		case D_FBI_LIFT: {
 			if(!response) return 1;
 			new pic;
@@ -25690,7 +26475,7 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 		}
 		case D_FAKEPASS: {
 			if(!response) return 1;
-			if(PlayerInfo[playerid][pMember] != fLSPD || !start_work[playerid]) return ErrorMessage(playerid, "Вы не агент fLSPD");
+			if(PlayerInfo[playerid][pMember] != fFBI || !start_work[playerid]) return ErrorMessage(playerid, "Вы не агент FBI");
 			if(!TI[playerid][tMasked]) return ErrorMessage(playerid,"На Вас нет маскировочной формы");
 			new id = GetPVarInt(playerid,"fpass2");
 			DeletePVar(playerid,"fpass2");
@@ -26708,6 +27493,97 @@ The Grove\t%d\nThe Aztec\t%d\nThe Rifa\t%d\nБелый дом\t%d\nНотариус\t%d";
 			new car = GetNearestCar(playerid);
 			save_perf(playerid,car);
 		}
+		case D_FIND: {
+			if(!response) return 1;
+			new frac;
+			switch(PlayerInfo[playerid][pRank]) {
+				case MINISTRE_NEWS: {
+					switch(listitem) {
+						case 0: frac = fLSNEWS;
+						case 1: frac = fSFNEWS;
+						case 2: frac = fLVNEWS;
+					}
+				}
+				case MINISTRE_ARMY: {
+					switch(listitem) {
+						case 0: frac = fARMYSF;
+						case 1: frac = fARMYLV;
+					}
+				}
+				case MINISTRE_PD: {
+					switch(listitem) {
+						case 0: frac = fLSPD;
+						case 1: frac = fSFPD;
+						case 2: frac = fLVPD;
+						case 3: frac = fFBI;
+					}
+				}
+				case MINISTRE_MEDICS: {
+					switch(listitem) {
+						case 0: frac = fMEDICLS;
+						case 1: frac = fMEDICSF;
+						case 2: frac = fMEDICLV;
+					}
+				}
+				default: return 1;
+			}
+			new ids = 0;
+			new string[3000],str[128];
+			strcat(str,"ID\tРанг\tТелефон\tВыговоры\tИмя"W"\n\n");
+			strcat(string,str);
+			foreach(new i:Player) {
+				if(!TI[i][tLogin] ||  AntiCheatIsKickedWithDesync(i)) continue;
+				if(PlayerInfo[i][pMember] != frac)continue;
+				if(PlayerInfo[i][pRank] < 1 || PlayerInfo[i][pMember] < 1) continue;
+				if(PlayerInfo[i][pAdmin]) continue;
+				format(str, sizeof(str), "%d\t%d\t%d\t\t%d/3\t\t%s %s %s\n",i,PlayerInfo[i][pRank],PlayerInfo[i][pPhone],PlayerInfo[i][pfWarn],player_name[i],(start_work[i]) ? ("[На работе]") : ("[Не на работе]"),(TI[i][tAFK] > 3) ? (""P"[AFK]"W""):(""));
+				strcat(string,str);
+				ids++;
+			}
+			D(playerid, DIALOG_NONE, DSM, ""P"Члены организации онлайн", string, "Закрыть", "");
+			new strr[128];
+			format(strr,sizeof(strr),"Всего игроков в организации: "ORANGE"%d",ids);
+			SendOk(playerid,strr);
+		}
+		case D_SHOWALL_2: {
+			if(!response) return 1;
+			new frac;
+			switch(PlayerInfo[playerid][pRank]) {
+				case MINISTRE_NEWS: {
+					switch(listitem) {
+						case 0: frac = fLSNEWS;
+						case 1: frac = fSFNEWS;
+						case 2: frac = fLVNEWS;
+					}
+				}
+				case MINISTRE_ARMY: {
+					switch(listitem) {
+						case 0: frac = fARMYSF;
+						case 1: frac = fARMYLV;
+					}
+				}
+				case MINISTRE_PD: {
+					switch(listitem) {
+						case 0: frac = fLSPD;
+						case 1: frac = fSFPD;
+						case 2: frac = fLVPD;
+						case 3: frac = fFBI;
+					}
+				}
+				case MINISTRE_MEDICS: {
+					switch(listitem) {
+						case 0: frac = fMEDICLS;
+						case 1: frac = fMEDICSF;
+						case 2: frac = fMEDICLV;
+					}
+				}
+				default: return 1;
+			}
+			SALLROWS[playerid] = 0;
+			new query[200];
+			format(query,sizeof(query),"SELECT `Name`,`pRank` FROM `accounts` WHERE `pMember` = '%i' ORDER BY `pRank` LIMIT 0, 20", frac);
+			mysql_pquery(connects, query, "showall_callback", "i", playerid);
+		}
 		case D_GANG_PAY: {
 			if(!response) return DeletePVar(playerid, "prem_gang_money");
 			new money = GetPVarInt(playerid, "prem_gang_money");
@@ -27618,7 +28494,7 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 				TI[playerid][tHeal] = false;
 			}
 			case 8: {
-				if(PlayerInfo[playerid][pMember] != fLSPD && !TI[playerid][tEnter][fLSPD]) return ErrorMessage(playerid,"Вы не состоите в данной организации/У Вас нет пропуска");
+				if(PlayerInfo[playerid][pMember] != fFBI && !TI[playerid][tEnter][fFBI]) return ErrorMessage(playerid,"Вы не состоите в данной организации/У Вас нет пропуска");
 				return D(playerid,D_FBI_LIFT,DSL,""P"Лифт","1 этаж\n2 этаж\nКрыша","Выбрать","Отмена");
 			}
 			case 10,12,14: {
@@ -27627,7 +28503,7 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 				TI[playerid][tHeal] = false;
 			}
 			case 40: {
-				if(PlayerInfo[playerid][pMember] != fLSPD && !TI[playerid][tEnter][fLSPD]) return ErrorMessage(playerid,"Вы не состоите в данной организации/У Вас нет пропуска");
+				if(PlayerInfo[playerid][pMember] != fFBI && !TI[playerid][tEnter][fFBI]) return ErrorMessage(playerid,"Вы не состоите в данной организации/У Вас нет пропуска");
 				return D(playerid,D_FBI_LIFT_1,DSL,""P"Лифт","2 этаж\n3 этаж\nКрыша","Выбрать","Отмена");
 			}
 			case 41: return D(playerid,D_FBI_LIFT_2,DSL,""P"Лифт","1 этаж\n3 этаж\nКрыша","Выбрать","Отмена");
@@ -27665,8 +28541,8 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 				if(!casino) return ErrorMessage(playerid, "Вход в казино временно закрыт");
 			}
 			case 77: if(GetPVarInt(playerid,"krup")) return ErrorMessage(playerid, "Необходимо закончить работу крупье");
-			case 78,80: if(!IsACop(playerid)) return ErrorMessage(playerid,"У Вас нет доступа");
-			case 92,94: if(!IsACop(playerid) || !start_work[playerid]) return ErrorMessage(playerid,"У Вас нет доступа");
+			case 78,80: if(!IsAArm(playerid)) return ErrorMessage(playerid,"У Вас нет доступа");
+			case 92,94: if(!IsAArm(playerid) || !start_work[playerid]) return ErrorMessage(playerid,"У Вас нет доступа");
 			case 93,95: if(PlayerInfo[playerid][pHospital]) return ErrorMessage(playerid, "Вы не прошли полный курс лечения");
 			case 96..99: if(!IsACop(playerid) || !start_work[playerid]) return ErrorMessage(playerid,"У Вас нет доступа");
 			case 28,32,36: if(!IsACop(playerid)) return ErrorMessage(playerid,"У Вас нет доступа");
@@ -27892,7 +28768,7 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 			case 15: {
 				new bizz = TI[playerid][tSelectedBusinessID];
 				switch(GetPlayerVirtualWorld(playerid)) {
-					case 2: {
+					case 2..4: {
 						if(PlayerInfo[playerid][bizz_work] == bizz+1) {
 							static const f_str[] = "Таксопарк {%s}%s";
 							new string[sizeof(f_str) +1 + (-2 + 36)];
@@ -27901,7 +28777,7 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 						}
 						else showstattaxi(playerid,bizz+1);
 					}
-					case 3..5: {
+					case 5..7: {
 						if(PlayerInfo[playerid][bizz_work] == bizz+1) {
 							static const f_str[] = "Транспортная компания {%s}%s";
 							new string[sizeof(f_str) +1 + (-2 + 36)];
@@ -27910,7 +28786,7 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 						}
 						else showstattk(playerid,bizz+1);
 					}
-					case 6..8: {
+					case 8..10: {
 						static const f_str[] = "\n\n"ORANGE"Название:\t\t"W"%s\n\
 "ORANGE"Владелец:\t\t"W"%s\n\
 "ORANGE"Гос. цена\t\t"W"%d\n\n\n\
@@ -28042,20 +28918,20 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 				ShowGetGun(playerid);
 			}
 			case 27: {
-				if(GetTeamID(playerid) != fLSPD || !start_work[playerid]) return 1;
+				if(GetTeamID(playerid) != fFBI || !start_work[playerid]) return 1;
 				ShowGetGun(playerid);
 			}
 			case 28: {
-				if(!IsACop(playerid) || !start_work[playerid]) return 1;
+				if(!IsAArm(playerid) || !start_work[playerid]) return 1;
 				switch(GetPlayerVirtualWorld(playerid)) {
-					/*case 30: if(FI[fARMYLV][fMats] < 100) return ErrorMessage(playerid,"Недостаточно боеприпасов");
-					case 31: if(FI[fARMYSF][fMats] < 100) return ErrorMessage(playerid,"Недостаточно боеприпасов");*/
+					case 30: if(FI[fARMYLV][fMats] < 100) return ErrorMessage(playerid,"Недостаточно боеприпасов");
+					case 31: if(FI[fARMYSF][fMats] < 100) return ErrorMessage(playerid,"Недостаточно боеприпасов");
 					case 35: if(zavodsklad < 100) return ErrorMessage(playerid,"Недостаточно боеприпасов");
 				}
 				if(GunTickGet[playerid][0] > unix) return ErrorMessage(playerid,"Нельзя брать оружие слишком часто");
 				switch(GetPlayerVirtualWorld(playerid)) {
-					/*case 30: FI[fARMYLV][fMats] -= 100,UpdateFraction(fARMYLV,"Mats",FI[fARMYLV][fMats]);
-					case 31: FI[fARMYSF][fMats] -= 100,UpdateFraction(fARMYSF,"Mats",FI[fARMYSF][fMats]);*/
+					case 30: FI[fARMYLV][fMats] -= 100,UpdateFraction(fARMYLV,"Mats",FI[fARMYLV][fMats]);
+					case 31: FI[fARMYSF][fMats] -= 100,UpdateFraction(fARMYSF,"Mats",FI[fARMYSF][fMats]);
 					case 35: zavodsklad -= 100;
 				}
 				GunTickGet[playerid][0] = unix+20;
@@ -28094,8 +28970,17 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 				new vw = GetPlayerVirtualWorld(playerid);
 
 				if(pick == 32 && vw == 40 && PlayerInfo[playerid][pMember] != fLSPD) return ErrorMessage(playerid,"Вы не состоите в Полиции г. ЛС");
+				if(pick == 32 && vw == 41 && PlayerInfo[playerid][pMember] != fSFPD) return ErrorMessage(playerid,"Вы не состоите в Полиции г. СФ");
+				if(pick == 32 && vw == 42 && PlayerInfo[playerid][pMember] != fLVPD) return ErrorMessage(playerid,"Вы не состоите в Полиции г. ЛВ");
+				if(pick == 33 && PlayerInfo[playerid][pMember] != fFBI) return ErrorMessage(playerid,"Вы не состоите в ФБР");
 				if(pick == 34 && vw == 20 && PlayerInfo[playerid][pMember] != fMEDICLS) return ErrorMessage(playerid,"Вы не состоите в Больнице г. ЛС");
+				if(pick == 34 && vw == 21 && PlayerInfo[playerid][pMember] != fMEDICSF) return ErrorMessage(playerid,"Вы не состоите в Больнице г. СФ");
+				if(pick == 34 && vw == 22 && PlayerInfo[playerid][pMember] != fMEDICLV) return ErrorMessage(playerid,"Вы не состоите в Больнице г. ЛВ");
+				if(pick == 35 && vw == 60 && PlayerInfo[playerid][pMember] != fARMYLV) return ErrorMessage(playerid,"Вы не состоите в Армии г. ЛВ");
+				if(pick == 35 && vw == 59 && PlayerInfo[playerid][pMember] != fARMYSF) return ErrorMessage(playerid,"Вы не состоите в Армии г. СФ");
 				if(pick == 36 && vw == 10 && PlayerInfo[playerid][pMember] != fLSNEWS) return ErrorMessage(playerid,"Вы не состоите в Радиоцентре г. ЛС");
+				if(pick == 36 && vw == 11 && PlayerInfo[playerid][pMember] != fSFNEWS) return ErrorMessage(playerid,"Вы не состоите в Радиоцентре г. СФ");
+				if(pick == 36 && vw == 12 && PlayerInfo[playerid][pMember] != fLVNEWS) return ErrorMessage(playerid,"Вы не состоите в Радиоцентре г. ЛВ");
 				if(pick == 37 && PlayerInfo[playerid][pMember] != fWHITEHOUSE) return ErrorMessage(playerid,"Вы не состоите в Белом Доме");
 				new string[128];
 				format(string,sizeof(string),"\n\n"W"Вы действительно хотите %s"W" рабочий день?\n\n",(!start_work[playerid]) ? (""ORANGE"начать") : (""ORANGE"закончить"));
@@ -28175,7 +29060,7 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 			}
 			case 42: return D(playerid, D_GAME_GOLOD, DSL, ""P"Голодные игры",""P"1."W" Регистрация на голодные игры\n"P"2."W" Информация о данном мероприятии", "Выбрать", "Закрыть");
 			case 43: {
-				if(PlayerInfo[playerid][pMember] != fLSPD || !start_work[playerid]) return ErrorMessage(playerid, "Вы не агент FBI");
+				if(PlayerInfo[playerid][pMember] != fFBI || !start_work[playerid]) return ErrorMessage(playerid, "Вы не агент FBI");
 				if(TI[playerid][tMasked]) {
 					A_SetPlayerSkin(playerid,PlayerInfo[playerid][pFracSkin]);
 					SetPlayerColor(playerid,gFractionSpawn[PlayerInfo[playerid][pMember]][fracColor]);
@@ -28185,7 +29070,7 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 				if(PlayerInfo[playerid][pRank] < 3) return ErrorMessage(playerid, "Доступно с должности Агент FBI");
 				new string[1024];
 				for(new i = 1;i < MAX_FRACTIONS;i ++) {
-					if(i == fLSPD) continue;
+					if(i == fFBI) continue;
 					if(i == fINSTRUCTORS) continue;
 					format(string,sizeof(string),"%s%s\n", string, FI[i][fName]);
 				}
@@ -28449,8 +29334,8 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 		else {
 			if(gBusiness[businessid][bizzType] == 8) {
 				if(IsPlayerInRangeOfPoint(playerid,5.0, 545.7042,-1293.4833,17.2422)) SetPVarInt(playerid,"sellcarClass",1);
-				if(IsPlayerInRangeOfPoint(playerid,5.0, 1654.0626,-1654.7563,22.5156)) SetPVarInt(playerid,"sellcarClass",3);
-				if(IsPlayerInRangeOfPoint(playerid,5.0, 1081.2488,-1696.7892,13.5469)) SetPVarInt(playerid,"sellcarClass",5);
+				if(IsPlayerInRangeOfPoint(playerid,5.0, -1965.6605,293.9383,35.4688)) SetPVarInt(playerid,"sellcarClass",3);
+				if(IsPlayerInRangeOfPoint(playerid,5.0, 2200.8638,1394.8074,11.0625)) SetPVarInt(playerid,"sellcarClass",5);
 				if(IsPlayerInRangeOfPoint(playerid,5.0, 2131.8152,-1151.3242,24.0600)) SetPVarInt(playerid,"sellcarClass",6);
 				return D(playerid,dBuyCarSalon,DSM, ""P"Автосалон","\n\n"W"Вы хотите посмотреть список машин?\n\n","Да","Нет");
 			}
@@ -28518,12 +29403,12 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 		}
 		new id = TI[playerid][tSelectedBusinessID];
 		if(id < 0) return true;
-		if(id == 47 && TI[playerid][tGym]) return ErrorMessage(playerid,"Необходимо закончить тренировку");
+		if(id == 75 && TI[playerid][tGym]) return ErrorMessage(playerid,"Необходимо закончить тренировку");
 		new vw, int;
 		switch(id) {
-			case 5: vw = 46,int = 78;
-			case 6: vw = 47,int = 78;
-			case 7: vw = 48,int = 78;
+			case 7: vw = 46,int = 78;
+			case 8: vw = 47,int = 78;
+			case 9: vw = 48,int = 78;
 			default: vw = 0,int = 0;
 		}
 		TI[playerid][tTPpick] = true;
@@ -28644,7 +29529,7 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 				}
 				else {
 					switch(businessid) {
-						case 2: {
+						case 1..3: {
 							if(PlayerInfo[playerid][pBusiness]-1 == businessid) {
 								return D(playerid, D_BIZZ_TAXI, DSL, ""P"Меню таксопарка", ""P"1."W" Информация\n"P"2."W" Управление кассой\n"P"3."W" Управление автомобилями\n"P"4."W" Управление цветом\n"P"5."W" Управление цветом шашки\n"P"6."W" Управление названием таксопарка\n"P"7."W" Управление текстом на автомобилях\n"P"8."W" Изменение тарифов\n"P"9."W" Изменение процента от прибыли\n"P"10."W" Покупка номера телефона\n"P"11."W" Сотрудники\n"P"12."W" Статистика\n"P"13."W" Продать таксопарк", "Выбрать", "Отмена");
 							}
@@ -28653,7 +29538,7 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 							}
 							else return ErrorMessage(playerid,"Управление таксопарком доступно только руководителю бизнеса и управляющему");
 						}
-						case 3..5: {
+						case 4..6: {
 							if(PlayerInfo[playerid][pBusiness]-1 == businessid) {
 								return D(playerid, D_BIZZ_TK, DSL, ""P"Меню транспортной компании", ""P"1."W" Информация\n"P"2."W" Управление кассой\n"P"3."W" Управление автомобилями\n"P"4."W" Управление цветом\n"P"5."W" Управление названием транспортной компании\n"P"6."W" Изменение процента от прибыли\n"P"7."W" Сотрудники\n"P"8."W" Статистика\n"P"9."W" Продать транспортную компанию", "Выбрать", "Отмена");
 							}
@@ -28662,7 +29547,7 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 							}
 							else return ErrorMessage(playerid,"Управление транспортной компанией доступно только руководителю бизнеса и управляющему");
 						}
-						case 6..8: {
+						case 7..9: {
 							if(PlayerInfo[playerid][pBusiness]-1 == businessid) {
 								return D(playerid, D_BIZZ_BO, DSL, ""P"Меню банковского отделения", ""P"1."W" Информация\n"P"2."W" Управление кассой\n"P"3."W" Управление цветом\n"P"4."W" Управление названием банковского отделения\n"P"5."W" Изменение комиссии переводов\n"P"6."W" Изменение комиссии за оплату недвижимости\n"P"7."W" Изменение комиссии за пользование банкоматами\n"P"8."W" Управление банкоматами\n"P"9."W" Статистика\n"P"10."W" Продать банковское отделение", "Выбрать", "Отмена");
 							}
@@ -28745,8 +29630,23 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 		SetPVarInt(playerid,"pOff9",gettime()+20);
 		TI[playerid][tJobGun][1] = 1;
 	}
- 	else if(areaid == gAreas[arZavodSklad] && IsAGang(playerid) || areaid == gAreas[arArmyLVSklad] && IsAGang(playerid) || areaid == gAreas[arArmyLVSklad] && IsAMafia(playerid) || areaid == gAreas[arArmyLVSklad] && GetTeamID(playerid) == fLSPD && pstate == PLAYER_STATE_ONFOOT) {
+ 	else if(areaid == gAreas[arZavodSklad] && IsAGang(playerid) || areaid == gAreas[arArmyLVSklad] && IsAGang(playerid) || areaid == gAreas[arArmyLVSklad] && IsAMafia(playerid) || areaid == gAreas[arArmyLVSklad] && GetTeamID(playerid) == fARMYLV && pstate == PLAYER_STATE_ONFOOT) {
 		SendOk(playerid,"Нажмите "ORANGE"'ALT'"G" чтобы взять боеприпасы со склада");
+	}
+	else if(areaid == gAreas[arArmySFSklad] && IsAGang(playerid) || areaid == gAreas[arArmySFSklad] && IsAMafia(playerid) && pstate == PLAYER_STATE_ONFOOT) {
+		SendOk(playerid,"Нажмите "ORANGE"'ALT'"G" чтобы взять боеприпасы со склада");
+	}
+	else if(areaid == gAreas[arArmySFSklad]) {
+		if(GetTeamID(playerid) == fARMYSF) {
+			new gunamount = GetPVarInt(playerid,"carrygun")*500;
+			if(gunamount) {
+				DeletePVar(playerid,"carrygun");
+				RemovePlayerAttachedObject(playerid,1);
+				ApplyAnimation(playerid,"CARRY","putdwn",1.0,0,1,1,0,0,1);
+				if(FI[fARMYSF][fMats] + gunamount > 1000000) return ErrorMessage(playerid,"На складе недостаточно места");
+				else FI[fARMYSF][fMats] += gunamount;
+			}
+		}
 	}
 	else if((areaid == gAreas[arOil][0] || areaid == gAreas[arOil][1]) && TI[playerid][tJobOil][0] && !TI[playerid][tJobOil][1] && pstate == PLAYER_STATE_ONFOOT) {
 		ApplyAnimation(playerid,"CARRY","liftup",1.0,0,1,1,0,0,1);
@@ -29009,7 +29909,7 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 			}
 		}
 	}
-	if(IsAGang(playerid) || IsACop(playerid) || IsAMafia(playerid)) {
+	if(IsAGang(playerid) || IsAArm(playerid) || IsAMafia(playerid)) {
 		for(new i = GetVehiclePoolSize()+1; --i != 0;) {
 			if(areaid == VG[i][vgArea]) {
 				if(VG[i][vgLoading] == true && GetPVarInt(playerid,"carrygun")) {
@@ -29018,7 +29918,8 @@ public OnPlayerEnterDynamicArea(playerid, areaid) {
 					RemovePlayerAttachedObject(playerid,1);
 					ApplyAnimation(playerid,"CARRY","putdwn",1.0,0,1,1,0,0,1);
 					switch(GetVehicleModel(i)) {
-						case 433: if(VG[i][vgAmount][0] + gunamount > 70) return ErrorMessage(playerid,"Недостаточно места"),FI[fLSPD][fMats] += 500;
+						case 433: if(VG[i][vgAmount][0] + gunamount > 70) return ErrorMessage(playerid,"Недостаточно места"),FI[fARMYLV][fMats] += 500;
+						case 482: if(VG[i][vgAmount][0] + gunamount > 30) return ErrorMessage(playerid,"Недостаточно места"),FI[fARMYLV][fMats] += 500;
 						case 573: if(VG[i][vgAmount][0] + gunamount > 200) return ErrorMessage(playerid,"Недостаточно места");
 					}
 					if(gunamount) VG[i][vgAmount][0] += gunamount;
@@ -29496,8 +30397,7 @@ public OnPlayerDisconnect(playerid, reason) {
 	if(house_car[playerid][0] != INVALID_VEHICLE_ID) {
 		gPlayerCars[playerid][carFuel][0] = VehicleInfo[house_car[playerid][0]][vFuel];
 		gPlayerCars[playerid][carDrived][0] = VehicleInfo[house_car[playerid][0]][vDrived];
-		SaveTuning(playerid, house_car[playerid][0], 0);
-		save_car(playerid, 0);
+		save_car(playerid,0);
 		if(theftplayer[playerid][0] == 1010) {
 			A_DestroyVehicle(house_car[playerid][0]);
 			house_car[playerid][0] = INVALID_VEHICLE_ID;
@@ -29510,8 +30410,7 @@ public OnPlayerDisconnect(playerid, reason) {
 	if(house_car[playerid][1] != INVALID_VEHICLE_ID) {
 		gPlayerCars[playerid][carFuel][1] = VehicleInfo[house_car[playerid][1]][vFuel];
 		gPlayerCars[playerid][carDrived][1] = VehicleInfo[house_car[playerid][1]][vDrived];
-		SaveTuning(playerid, house_car[playerid][1], 1);
-		save_car(playerid, 0);
+		save_car(playerid,1);
 	    if(theftplayer[playerid][0] == 1010) {
 	    	A_DestroyVehicle(house_car[playerid][1]);
 	    	house_car[playerid][1] = INVALID_VEHICLE_ID;
@@ -29732,7 +30631,7 @@ public OnPlayerDeath(playerid, killerid, reason) {
 			format(string,sizeof(string),"{1bd12f}Kills Gun:{ffffff}%d/3\n{1bd12f}Guns:{ffffff}%d/6",TI[killerid][tGunArea][1],TI[killerid][tGunArea][3]);
 			UpdateDynamic3DTextLabelText(DMSTATUS[killerid],0xFF6347FF,string);
 		}
-		if(!IsACop(killerid) && IsAGang(playerid) != IsAGang(killerid) && IsAMafia(playerid) != IsAMafia(killerid) && !TI[killerid][tDMArea][0] && !TI[killerid][tGunArea][0] && !TI[killerid][tGym] && !player_to_golod[killerid] && !player_to_game[killerid] && TI[killerid][tDuel] == -1) {
+		if(!IsACop(killerid) && !IsAArm(killerid) && IsAGang(playerid) != IsAGang(killerid) && IsAMafia(playerid) != IsAMafia(killerid) && !TI[killerid][tDMArea][0] && !TI[killerid][tGunArea][0] && !TI[killerid][tGym] && !player_to_golod[killerid] && !player_to_game[killerid] && TI[killerid][tDuel] == -1) {
 			PlayerInfo[killerid][pZakonp] --;
 			if(PlayerInfo[killerid][pZakonp] < -100) PlayerInfo[killerid][pZakonp] = -100;
 			UpdatePlayerData(killerid,"pZakonp",PlayerInfo[killerid][pZakonp]);
@@ -29796,8 +30695,8 @@ public OnPlayerDeath(playerid, killerid, reason) {
 										default: CountOnZone[PlayerInfo[killerid][pMember]]++;
 									}
 									SetPVarInt(killerid,"killed_shot",GetPVarInt(killerid,"killed_shot")+1);
-									if(PlayerInfo[killerid][pFamily]) reputation_family(PlayerInfo[killerid][pFamily]-1,1);
-									if(PlayerInfo[playerid][pFamily]) reputation_family(PlayerInfo[playerid][pFamily]-1,-1);
+									if(PlayerInfo[killerid][pFamily]) reputation_family(GetFamilyId(PlayerInfo[killerid][pFamily]),1);
+									if(PlayerInfo[playerid][pFamily]) reputation_family(GetFamilyId(PlayerInfo[playerid][pFamily]),-1);
 									GameTextForPlayer(killerid, "~r~+Kill", 5000, 6);
 									if(PlayerInfo[killerid][pMember]) add_gang_points(PlayerInfo[killerid][pMember],1);
 									break;
@@ -29814,8 +30713,8 @@ public OnPlayerDeath(playerid, killerid, reason) {
 									default: CountOnZone[PlayerInfo[killerid][pMember]]++;
 								}
 								SetPVarInt(killerid,"killed_shot",GetPVarInt(killerid,"killed_shot")+1);
-								if(PlayerInfo[killerid][pFamily]) reputation_family(PlayerInfo[killerid][pFamily]-1,1);
-								if(PlayerInfo[playerid][pFamily]) reputation_family(PlayerInfo[playerid][pFamily]-1,-1);
+								if(PlayerInfo[killerid][pFamily]) reputation_family(GetFamilyId(PlayerInfo[killerid][pFamily]),1);
+								if(PlayerInfo[playerid][pFamily]) reputation_family(GetFamilyId(PlayerInfo[playerid][pFamily]),-1);
 								GameTextForPlayer(killerid, "~r~+Kill", 5000, 6);
 								if(PlayerInfo[killerid][pMember]) add_gang_points(PlayerInfo[killerid][pMember],1);
 								break;
@@ -29834,25 +30733,53 @@ public OnPlayerDeath(playerid, killerid, reason) {
 						SendDead(PlayerInfo[killerid][pMember],PlayerInfo[playerid][pMember],killerid,playerid,reason);
 						MZInfo[bCountDead][PlayerInfo[killerid][pMember]]++;
 						SetPVarInt(killerid,"m_killed_shot",GetPVarInt(killerid,"m_killed_shot") + 1);
-						if(PlayerInfo[killerid][pFamily]) reputation_family(PlayerInfo[killerid][pFamily]-1,1);
-						if(PlayerInfo[playerid][pFamily]) reputation_family(PlayerInfo[playerid][pFamily]-1,-1);
+						if(PlayerInfo[killerid][pFamily]) reputation_family(GetFamilyId(PlayerInfo[killerid][pFamily]),1);
+						if(PlayerInfo[playerid][pFamily]) reputation_family(GetFamilyId(PlayerInfo[playerid][pFamily]),-1);
 					}
 				}
 			}
 		}
 	}
-	if(IsAGang(killerid) || IsACop(killerid)) {
+	if(IsAArm(killerid)) {
+		if(IsAGang(playerid) || IsAMafia(playerid)) {
+		    if(PlayerToKvadrat(killerid, -1544.892, 270.5747, -1232.015, 558.557) || PlayerToKvadrat(killerid, -49.979476, 1695.982177, 414.020507, 2175.982177)) {
+		        if(PlayerToKvadrat(playerid, -1544.892, 270.5747, -1232.015, 558.557) || PlayerToKvadrat(playerid, -49.979476, 1695.982177, 414.020507, 2175.982177)) {
+		            GiveMoney(killerid,500,"Убийство бандита на территории армии");
+				}
+			}
+		}
+	}
+	if(IsAGang(killerid) || IsACop(killerid) || IsAArm(killerid)) {
 		if(invent_zone_id != -1) {
  			if(PlayerToKvadrat(playerid,invent_place[invent_zone_id][0], invent_place[invent_zone_id][1],invent_place[invent_zone_id][2],invent_place[invent_zone_id][3])) {
-	 			if(IsACop(playerid)) {
+	 			if((IsACop(playerid) || IsAArm(playerid)) && IsAGang(killerid)) {
 	 				GiveMoney(killerid,1500,"Убийство госника на территории корабля");
 	 				if(PlayerInfo[killerid][pMember]) add_gang_points(PlayerInfo[killerid][pMember],2);
 	 			}
-	 			else if(IsAGang(playerid) && IsACop(killerid)) {
+	 			else if(IsAGang(playerid) && (IsACop(killerid) || IsAArm(killerid))) {
 	 				GiveMoney(killerid,3000,"Убийство бандита на территории корабля");
 	 			}
 	 		}
  		}
+	}
+ 	if(IsAGang(killerid) && killerid != INVALID_PLAYER_ID) {
+ 		if(IsAArm(playerid) && start_work[playerid]) {
+			for(new i = 0; i < TOTALGZ; i++) {
+				if(PlayerToKvadrat(playerid,GZInfo[i][gCoords][0], GZInfo[i][gCoords][1],GZInfo[i][gCoords][2],GZInfo[i][gCoords][3])) {
+					if(GetPlayerSkin(playerid) != 252 || PlayerInfo[playerid][pFracSkin] != 252) {
+						if(!PlayerInfo[killerid][pArmSkin]) {
+							PlayerInfo[playerid][pFracSkin] = 252;
+							SendOk(playerid, "Вы потеряли армейскую форму");
+							SendOk(killerid, "Вы cняли с армейца форму, введите /dress, чтобы переодеться");
+							PlayerInfo[killerid][pZakonp] -= 2;
+							if(PlayerInfo[killerid][pZakonp] < -100) PlayerInfo[killerid][pZakonp] = -100;
+							PlayerInfo[killerid][pArmSkin] = 1;
+							UpdatePlayerData(killerid,"ArmSkin",1);
+						}
+					}
+				}
+			}
+		}
 	}
 	TI[playerid][tMaskTime] = 0;
 	TI[playerid][tTazers][0] = 0;
@@ -30078,8 +31005,8 @@ SettingSpawn(playerid) {
 		SetCameraBehindPlayer(playerid);
 		return 1;
 	}
-	else if(PlayerInfo[playerid][pSpawn] == 3 && PlayerInfo[playerid][pFamily] && gHouses[gFamily[PlayerInfo[playerid][pFamily]-1][famHouse]-1][houseFamily]) {
-		new houseid = gFamily[PlayerInfo[playerid][pFamily]-1][famHouse] -1;
+	else if(PlayerInfo[playerid][pSpawn] == 3 && PlayerInfo[playerid][pFamily] && gHouses[gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famHouse]-1][houseFamily]) {
+		new houseid = gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famHouse] -1;
 		new interior, Float:r;
 		new hint = gHouses[houseid][houseHint];
 		TI[playerid][tSelectHouse] = houseid;
@@ -30147,11 +31074,11 @@ SettingSpawn(playerid) {
 		return 1;
 	}
 	else {
-		if(PlayerInfo[playerid][pLevel] < 5000) {
+		if(PlayerInfo[playerid][pLevel] < 3) {
 			new rand = random(sizeof(spawn_ls));
 			SetSpawnInfoEx(playerid, skin, spawn_ls[rand][0], spawn_ls[rand][1], spawn_ls[rand][2], spawn_ls[rand][3]);
 		}
-		/*else if(PlayerInfo[playerid][pLevel] >= 3 && PlayerInfo[playerid][pLevel] <= 6) {
+		else if(PlayerInfo[playerid][pLevel] >= 3 && PlayerInfo[playerid][pLevel] <= 6) {
 			new rand = random(sizeof(spawn_sf));
 			SetSpawnInfoEx(playerid, skin, spawn_sf[rand][0], spawn_sf[rand][1], spawn_sf[rand][2], spawn_sf[rand][3]);
 		}
@@ -30161,7 +31088,7 @@ SettingSpawn(playerid) {
 		}
 		TI[playerid][tVirtualWorld] = 0;
 		TI[playerid][tInterior] = 0;
-		SetCameraBehindPlayer(playerid);*/
+		SetCameraBehindPlayer(playerid);
 	}
 	return 1;
 }
@@ -30189,6 +31116,9 @@ public OnPlayerEnterCheckpoint(playerid) {
 		case 1..4: {
 			DisablePlayerCheckpoint(playerid);
 			if(GetPVarInt(playerid,"MatsArmyCar") == 1 && !IsPlayerInRangeOfPoint(playerid, 10.0, 1535.8534,-1674.4445,13.3828)) return 1;
+			if(GetPVarInt(playerid,"MatsArmyCar") == 2 && !IsPlayerInRangeOfPoint(playerid, 10.0, -1606.6760,726.5093,12.0220)) return 1;
+			if(GetPVarInt(playerid,"MatsArmyCar") == 3 && !IsPlayerInRangeOfPoint(playerid, 10.0, 2288.5105,2421.4209,10.8203)) return 1;
+			if(GetPVarInt(playerid,"MatsArmyCar") == 4 && !IsPlayerInRangeOfPoint(playerid, 10.0, -1978.0072,-1008.3723,32.0234)) return 1;
 			new string[96];
 			if(VG[vehicleid][vgAmount][0] <= 0) return ErrorMessage(playerid,"Грузовик пуст");
 			switch(GetPVarInt(playerid,"MatsArmyCar")) {
@@ -30198,22 +31128,88 @@ public OnPlayerEnterCheckpoint(playerid) {
 					format(string,sizeof(string),"Боеприпасы успешно выгружены! На складе Полиции ЛС: "W"%i",FI[fLSPD][fMats]);
 					SendOk(playerid,string);
 				}
+				case 2: {
+					FI[fSFPD][fMats] += VG[vehicleid][vgAmount][0]*500;
+					if(FI[fSFPD][fMats] > 500000) FI[fSFPD][fMats] = 500000;
+					format(string,sizeof(string),"Боеприпасы успешно выгружены! На складе Полиции СФ: "W"%i",FI[fSFPD][fMats]);
+					SendOk(playerid,string);
+				}
+				case 3: {
+					FI[fLVPD][fMats] += VG[vehicleid][vgAmount][0]*500;
+					if(FI[fLVPD][fMats] > 500000) FI[fLVPD][fMats] = 500000;
+					format(string,sizeof(string),"Боеприпасы успешно выгружены! На складе Полиции ЛВ: "W"%i",FI[fLVPD][fMats]);
+					SendOk(playerid,string);
+				}
+				case 4: {
+					FI[fFBI][fMats] += VG[vehicleid][vgAmount][0]*500;
+					if(FI[fFBI][fMats] > 500000) FI[fFBI][fMats] = 500000;
+					format(string,sizeof(string),"Боеприпасы успешно выгружены! На складе ФБР: "W"%i",FI[fFBI][fMats]);
+					SendOk(playerid,string);
+				}
 			}
+			GiveMoney(playerid,1500,"доставка боеприпасов");
 			VG[vehicleid][vgAmount][0] = 0;
 			DeletePVar(playerid,"MatsArmyCar");
 		}
 		case 5: {
-			DisablePlayerCheckpoint(playerid);
-			if(GetPVarInt(playerid,"MatsArmyCar") == 5 && !IsPlayerInRangeOfPoint(playerid, 10.0, 2707.8962,-2442.3040,13.6383)) return 1;
-			new string[96];
-			switch(GetPVarInt(playerid,"MatsArmyCar")) {
-				case 5: {
-					VG[vehicleid][vgAmount][0] = 15000;
-					format(string,sizeof(string),"Боеприпасы успешно загружены! В грузовике: "W"%i", VG[vehicleid][vgAmount][0]);
-					SendOk(playerid,string);
-				}
-			}
+			static const f_str[] = ""W"Введите кол-во боеприпасов, которое хотите загрузить в матолёт:\n\n\
+Доступно боеприпасов: "ORANGE"%d\n\
+"W"В матолёт поместится: "ORANGE"%d";
+			new string[sizeof(f_str) +1 + (-2 + 7) + (-2 + 7)];
+			format(string,sizeof(string),f_str,zavodsklad,30000-VG[vehicleid][vgAmount][0]);
+			D(playerid, D_ARMY_CARM_SF_4, DSI, ""P"Загрузка боеприпасов",string, "Загрузить", "Отмена");
 			DeletePVar(playerid,"MatsArmyCar");
+			DisablePlayerCheckpoint(playerid);
+		}
+		case 6: {
+			static const f_str[] = ""W"Введите кол-во боеприпасов, которое хотите загрузить в матолёт:\n\n\
+Доступно боеприпасов: "ORANGE"%d\n\
+"W"В матолёт поместится: "ORANGE"%d";
+			new string[sizeof(f_str) +1 + (-2 + 7) + (-2 + 7)];
+			format(string,sizeof(string),f_str,FI[fARMYSF][fMats],30000-VG[vehicleid][vgAmount][0]);
+			D(playerid, D_ARMY_CARM_SF_5, DSI, ""P"Загрузка боеприпасов",string, "Загрузить", "Отмена");
+			DeletePVar(playerid,"MatsArmyCar");
+			DisablePlayerCheckpoint(playerid);
+		}
+		case 7: {
+			static const f_str[] = ""W"Введите кол-во боеприпасов, которое хотите разгрузить на склад:\n\n\
+Доступно боеприпасов: "ORANGE"%d\n\
+"W"На склад поместится: "ORANGE"%d";
+			new string[sizeof(f_str) +1 + (-2 + 7) + (-2 + 7)];
+			format(string,sizeof(string),f_str,VG[vehicleid][vgAmount][0],1000000-FI[fARMYSF][fMats]);
+			D(playerid, D_ARMY_CARM_SF_6, DSI, ""P"Загрузка боеприпасов",string, "Загрузить", "Отмена");
+			DeletePVar(playerid,"MatsArmyCar");
+			DisablePlayerCheckpoint(playerid);
+		}
+		case 8: {
+			static const f_str[] = ""W"Введите кол-во боеприпасов, которое хотите разгрузить на склад:\n\n\
+Доступно боеприпасов: "ORANGE"%d\n\
+"W"На склад поместится: "ORANGE"%d";
+			new string[sizeof(f_str) +1 + (-2 + 7) + (-2 + 7)];
+			format(string,sizeof(string),f_str,VG[vehicleid][vgAmount][0],1000000-FI[fARMYLV][fMats]);
+			D(playerid, D_ARMY_CARM_SF_7, DSI, ""P"Загрузка боеприпасов",string, "Загрузить", "Отмена");
+			DeletePVar(playerid,"MatsArmyCar");
+			DisablePlayerCheckpoint(playerid);
+		}
+		case 10: {
+			if(VG[vehicleid][vgAmount][0]) return ErrorMessage(playerid,"В автомобиле уже есть боеприпасы");
+			if(FI[fARMYLV][fMats] < 12500) return ErrorMessage(playerid,"На складе армии недостаточно боеприпасов");
+			VG[vehicleid][vgAmount][0] = 25;
+			FI[fARMYLV][fMats] -= 500*25;
+			SendOk(playerid,"Боеприпасы успешно загружены! Доступно ящиков: "W"25");
+			SendOk(playerid,"Для разгрузки боеприпасов введите: "W"/unload");
+			DeletePVar(playerid,"MatsArmyCar");
+			DisablePlayerCheckpoint(playerid);
+		}
+		case 11: {
+			if(VG[vehicleid][vgAmount][0]) return ErrorMessage(playerid,"В автомобиле уже есть боеприпасы");
+			if(FI[fARMYSF][fMats] < 12500) return ErrorMessage(playerid,"На складе армии недостаточно боеприпасов");
+			VG[vehicleid][vgAmount][0] = 25;
+			FI[fARMYSF][fMats] -= 500*25;
+			SendOk(playerid,"Боеприпасы успешно загружены! Доступно ящиков: "W"25");
+			SendOk(playerid,"Для разгрузки боеприпасов введите: "W"/unload");
+			DeletePVar(playerid,"MatsArmyCar");
+			DisablePlayerCheckpoint(playerid);
 		}
 	}
 	switch(GetPVarInt(playerid,"DrugsMafiaCar")) {
@@ -30660,7 +31656,11 @@ public OnPlayerStateChange(playerid, newstate, oldstate) {
 		    
 			format(string,sizeof(string),f_str,VG[carid][vgAmount][0]);
 			SendOk(playerid,string);
-			if(PlayerInfo[playerid][pMember] == fLSPD) SendOk(playerid,"Используйте: "W"/carm");
+			if(PlayerInfo[playerid][pMember] == fARMYLV) {
+				SendOk(playerid,"Для загрузки/разгрузки боеприпасов введите: "W"/load | /unload");
+				SendOk(playerid,"Для транспортировки боеприпасов на склады фракций: "W"/carm");
+			}
+			if(PlayerInfo[playerid][pMember] == fARMYSF) SendOk(playerid,"Используйте: "W"/carm");
 			if(IsAGang(playerid)) SendOk(playerid,"Для загрузки боеприпасов введите: "W"/load");
 		} 
 		if(GetVehicleModel(carid) == 548) {
@@ -30698,7 +31698,9 @@ public OnPlayerStateChange(playerid, newstate, oldstate) {
 			}
 		}
 		if(VG[carid][vgLoading] || VG[carid][vgUnloading]) {
-			if((VehicleInfo[carid][vTeam] == fBALLAS && GetTeamID(playerid) == fBALLAS)	||
+			if((VehicleInfo[carid][vTeam] == fARMYSF && GetTeamID(playerid) == fARMYSF) || 
+				(VehicleInfo[carid][vTeam] == fARMYLV && GetTeamID(playerid) == fARMYLV) || 
+				(VehicleInfo[carid][vTeam] == fBALLAS && GetTeamID(playerid) == fBALLAS)	||
 				(VehicleInfo[carid][vTeam] == fVAGOS && GetTeamID(playerid) == fVAGOS)	||
 				(VehicleInfo[carid][vTeam] == fGROVE && GetTeamID(playerid) == fGROVE)	||
 				(VehicleInfo[carid][vTeam] == fAZTEC && GetTeamID(playerid) == fAZTEC)	||
@@ -30706,7 +31708,7 @@ public OnPlayerStateChange(playerid, newstate, oldstate) {
 				(VehicleInfo[carid][vTeam] == fLCN && GetTeamID(playerid) == fLCN)		||
 				(VehicleInfo[carid][vTeam] == fYAKUZA && GetTeamID(playerid) == fYAKUZA)	||
 				(VehicleInfo[carid][vTeam] == fRM && GetTeamID(playerid) == fRM)			||
-				(IsAGang(playerid) || IsACop(playerid) || IsAMafia(playerid) || GetPlayerSkin(playerid) == 191) && (IsAGang(playerid) || GetPlayerSkin(playerid) == 287)) {
+				(IsAGang(playerid) || IsAArm(playerid) || IsAMafia(playerid) || GetPlayerSkin(playerid) == 191) && (IsAGang(playerid) || GetPlayerSkin(playerid) == 287)) {
 				D(playerid,D_STOP_LOAD,DSM, ""P"Погрузка","\n\n"W"Вы хотите прекратить загрузку/разгрузку боеприпасов?\n\n","Да","Нет");
 			}
 		}
@@ -30718,8 +31720,8 @@ public OnPlayerStateChange(playerid, newstate, oldstate) {
 			}
 		}*/
 		if(VehicleInfo[carid][vType] == VEHICLE_TYPE_INVENT) {
-			if(!IsAGang(playerid) && !IsAMafia(playerid) && !IsACop(playerid)) {
-				ErrorMessage(playerid,"Данный транспорт доступен только: бандам/мафиям/полиции");
+			if(!IsAGang(playerid) && !IsAMafia(playerid) && !IsAArm(playerid)) {
+				ErrorMessage(playerid,"Данный транспорт доступен только: бандам/мафиям/армиям");
 				return RemovePlayerFromVehicleAC(playerid);
 			}
 			SendOk(playerid,"Для загрузки/разгрузки боеприпасов введите: "W"/load | /unload");
@@ -31916,7 +32918,7 @@ stock second_timer() {
 			}
 			if(PlayerInfo[i][pFamily]) {
 				if(fam_lable[i] == Text3D:-1 && PlayerInfo[i][pSettings][9]) {
-					format(string,sizeof(string),"{%s}%s",FamilyColor[gFamily[PlayerInfo[i][pFamily]-1][famColor]],gFamily[PlayerInfo[i][pFamily]-1][famName]);
+					format(string,sizeof(string),"{%s}%s",FamilyColor[gFamily[GetFamilyId(PlayerInfo[i][pFamily])][famColor]],gFamily[GetFamilyId(PlayerInfo[i][pFamily])][famName]);
 					fam_lable[i] = CreateDynamic3DTextLabel(string, -1, 0.0, 0.0, 0.025, 5.0, i,INVALID_VEHICLE_ID,1);
 				}
 			}
@@ -32171,7 +33173,7 @@ stock checkhour() {
 		save_other();
 		foreach(new i:Player) {
 			if(!TI[i][tLogin] ||  AntiCheatIsKickedWithDesync(i)) continue;
-			SaveAccount(i);		
+			SaveAccount(i);
 			save_car(i,0);
 			save_car(i,1);
 			kick(i);
@@ -32423,11 +33425,11 @@ stock CreateVehicless() {
 	CreateSpawnCar(462, 2670.0527, -2413.3423, 13.1436, 358.4811,1,1,60);//ОРУЖЕЙНЫЙ ЗАВОД
 	CreateSpawnCar(462, 2668.6086, -2413.3423, 13.1436, 358.4811,1,1,60);//ОРУЖЕЙНЫЙ ЗАВОД
 
-	/*CreateSpawnCar(462,271.8202,1427.1577,10.1645,179.0355,1,1,60);//НЕФТЕЗАВОД
+	CreateSpawnCar(462,271.8202,1427.1577,10.1645,179.0355,1,1,60);//НЕФТЕЗАВОД
 	CreateSpawnCar(462,273.2711,1427.2019,10.1626,180.0503,1,1,60);//НЕФТЕЗАВОД
 	CreateSpawnCar(462,274.7584,1427.1423,10.1619,183.0715,1,1,60);//НЕФТЕЗАВОД
 	CreateSpawnCar(462,276.2276,1427.1021,10.1622,180.1871,1,1,60);//НЕФТЕЗАВОД
-	CreateSpawnCar(462,277.8054,1427.1165,10.1668,180.1018,1,1,60);//НЕФТЕЗАВОД*/
+	CreateSpawnCar(462,277.8054,1427.1165,10.1668,180.1018,1,1,60);//НЕФТЕЗАВОД
 
 	CreateSpawnCar(462, -116.5770, -24.1387, 2.6292, 78.0000,1,1,60);//ЯБЛОЧНЫЙ САД
 	CreateSpawnCar(462, -116.9116, -25.5444, 2.6292, 78.0000,1,1,60);//ЯБЛОЧНЫЙ САД
@@ -32465,11 +33467,45 @@ stock CreateVehicless() {
 	CreateSpawnCar(462,1980.4257,-2011.1464,13.1017,66.1313,1,1,60); // Велики СПАВН 2
 	CreateSpawnCar(462,1980.3619,-2009.6249,13.0935,60.8603,1,1,60); // Велики СПАВН 2
 
+	CreateSpawnCar(462,-1993.2566,82.8969,27.2860,90.2142,1,1,60); // спавн сф
+	CreateSpawnCar(462,-1993.2607,84.0124,27.2860,90.2142,1,1,60); // спавн сф
+	CreateSpawnCar(462,-1993.2655,85.3536,27.2860,90.2142,1,1,60); // спавн сф
+	CreateSpawnCar(462,-1993.2687,86.2130,27.2860,90.2142,1,1,60); // спавн сф
+	CreateSpawnCar(462,-1993.2732,87.4867,27.2860,90.2142,1,1,60); // спавн сф
+	CreateSpawnCar(462,2835.7261,1266.3748,10.3807,90.8178,1,1,60); // спавн lv
+	CreateSpawnCar(462,2835.7429,1265.1968,10.3807,90.8178,1,1,60); // спавн lv
+	CreateSpawnCar(462,2835.7612,1263.9366,10.3808,90.8178,1,1,60); // спавн lv
+	CreateSpawnCar(462,2835.7874,1262.0920,10.3808,90.8178,1,1,60); // спавн lv
+	CreateSpawnCar(462,2835.8115,1260.4039,10.3809,90.8178,1,1,60); // спавн lv
+
 	CreateSpawnCar(462,1182.0991,-1329.3724,13.1847,268.8999,1,1,60); // мчс лс
 	CreateSpawnCar(462,1182.0771,-1330.5140,13.1857,268.9000,1,1,60); // мчс лс
 	CreateSpawnCar(462,1182.0511,-1331.8663,13.1867,268.9000,1,1,60); // мчс лс
 	CreateSpawnCar(462,1182.0260,-1333.1855,13.1878,268.9000,1,1,60); // мчс лс
 	CreateSpawnCar(462,1181.9995,-1334.5588,13.1889,268.9000,1,1,60); // мчс лс
+	CreateSpawnCar(462,-2635.4229,630.0054,14.0520,180.0844,1,1,60); // мчс sf
+	CreateSpawnCar(462,-2633.9866,630.0076,14.0520,180.0844,1,1,60); // мчс sf
+	CreateSpawnCar(462,-2632.1309,630.0104,14.0520,180.0844,1,1,60); // мчс sf
+	CreateSpawnCar(462,-2630.2559,630.0133,14.0520,180.0844,1,1,60); // мчс sf
+	CreateSpawnCar(462,1635.2633,1824.8049,10.4197,88.2549,1,1,60); // мчс lv
+	CreateSpawnCar(462,1635.3402,1827.3315,10.4197,88.2549,1,1,60); // мчс lv
+	CreateSpawnCar(462,1635.7010,1839.1863,10.4197,88.2549,1,1,60); // мчс lv
+	CreateSpawnCar(462,1635.6339,1841.6512,10.4192,88.2577,1,1,60); // мчс lv
+
+	// автобусы ЛВ
+	CreateBusVehicle(2,1,437, 2794.6882, 1293.1810, 10.8859, 180.0000, 136, 136, RES_CAR_TIME);
+	CreateBusVehicle(2,1,437, 2788.3594, 1293.1810, 10.8859, 180.0000, 136, 136, RES_CAR_TIME);
+	CreateBusVehicle(2,1,437, 2781.9868, 1293.1810, 10.8855, 180.0000, 136, 136, RES_CAR_TIME);
+	CreateBusVehicle(2,1,437, 2775.5146, 1293.1810, 10.8563, 180.0000, 136, 136, RES_CAR_TIME);
+	CreateBusVehicle(2,1,437, 2851.2383, 1351.6852, 10.9355, 90.0000, 136, 136, RES_CAR_TIME);
+	CreateBusVehicle(2,1,437, 2851.2383, 1358.0764, 10.9359, 90.0000, 136, 136, RES_CAR_TIME);
+	CreateBusVehicle(2,1,437, 2851.2383, 1364.4673, 10.9355, 90.0000, 136, 136, RES_CAR_TIME);
+
+	//автобусы сф
+	CreateBusVehicle(3,1,437, -1963.1046, 193.7052, 27.8558, 90.0000, 229, 229, RES_CAR_TIME);
+	CreateBusVehicle(3,1,437, -1963.1046, 198.6266, 27.8588, 90.0000, 229, 229, RES_CAR_TIME);
+	CreateBusVehicle(3,1,437, -1963.1046, 188.6046, 27.8560, 90.0000, 229, 229, RES_CAR_TIME);
+	CreateBusVehicle(3,1,437, -1963.1046, 183.8036, 27.8560, 90.0000, 229, 229, RES_CAR_TIME);
 
 	//автобусы лс
 	CreateBusVehicle(1,1,431, 1275.2385, -1799.5630, 13.5189, 180.0000, 162, 162, RES_CAR_TIME);
@@ -32552,12 +33588,79 @@ stock CreateVehicless() {
 	CreateOrgsVehicle(fWHITEHOUSE,1,507, 1276.6218, -2021.4860, 58.7829, 90.0000, 1, 1, RES_CAR_TIME);
 	CreateOrgsVehicle(fWHITEHOUSE,1,507, 1276.6218, -2015.9333, 58.7760, 90.0000, 1, 1, RES_CAR_TIME);
 
+ 	CreateOrgsVehicle(fARMYLV,1,470, 268.4419, 1935.4885, 17.6347, 324.9113, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYLV,1,470, 272.1119, 1932.7533, 17.6353, 324.9113, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYLV,1,470, 276.4181, 1929.5566, 17.6389, 324.9113, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYLV,1,470, 280.4232, 1926.5811, 17.6347, 324.9113, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYLV,1,470, 284.5529, 1923.7101, 17.6331, 324.9113, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYLV,1,470, 288.6778, 1920.7625, 17.6336, 324.9113, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYLV,1,470, 292.8157, 1917.9739, 17.6323, 324.9113, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYLV,1,500, 301.2961, 1948.4688, 17.7460, 180.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYLV,1,500, 296.3886, 1948.4688, 17.7501, 180.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYLV,1,500, 291.2571, 1948.4688, 17.7447, 180.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYLV,1,433, 362.8168, 1989.0564, 18.2781, 90.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYLV,1,433, 362.8168, 1954.8677, 18.3227, 90.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYLV,1,433, 362.8168, 1931.3804, 18.2753, 90.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYLV,1,433, 362.8168, 1896.3716, 18.2595, 90.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYLV,1,437, 304.9612, 2003.3536, 17.7745, 180.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYLV,1,487, 280.1958, 1966.1233, 17.7227, 270.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYLV,1,487, 108.6494, 1958.2063, 21.2978, 90.0000, 77, 77, RES_CAR_TIME);
+
+    CreateOrgsVehicle(fARMYSF,11,520, -1434.5057, 493.8642, 18.9569, 329.5873, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYSF,11,520, -1420.1467, 493.8642, 18.9545, 336.3047, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYSF,11,520, -1407.3956, 493.8642, 18.9524, 338.6350, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYSF,1,500, -1298.1809, 445.3586, 7.3255, 270.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYSF,1,500, -1298.1809, 439.2568, 7.3188, 270.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYSF,1,470, -1276.6373, 430.2199, 6.9925, 90.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYSF,1,470, -1276.6373, 424.5062, 6.9926, 90.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYSF,1,470, -1276.6373, 417.7141, 6.9956, 90.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYSF,1,470, -1276.6373, 411.5981, 6.9933, 90.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYSF,1,470, -1276.6373, 405.0411, 6.9951, 90.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYSF,1,437, -1287.1252, 321.3988, 7.3527, 90.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYSF,3,487, -1455.7255, 506.8724, 18.3539, 270.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYSF,3,487, -1455.7255, 494.6060, 18.3725, 270.0000, 77, 77, RES_CAR_TIME);
+    CreateOrgsVehicle(fARMYSF,3,548, -1264.0575, 446.1845, 8.8937, 0.0000, 77, 77, RES_CAR_TIME);
+	CreateOrgsVehicle(fARMYSF,3,548, -1248.1761, 446.1845, 8.8937, 0.0000, 77, 77, RES_CAR_TIME);
+
+	CreateOrgsVehicle(fARMYSF,3,452, -1439.9626, 507.3423, -0.2277, 90.0000, 77, 77, RES_CAR_TIME);
+	CreateOrgsVehicle(fARMYSF,3,452, -1444.6266, 495.3742, 0.0307, 90.0000, 77, 77, RES_CAR_TIME);
+
 	CreateOrgsVehicle(fLSNEWS,1, 582, 1548.4930,-1324.9818,16.5440,0.0000,152,155,RES_CAR_TIME);
 	CreateOrgsVehicle(fLSNEWS,1, 582, 1552.9690,-1324.9818,16.5394,0.0000,152,155,RES_CAR_TIME);
 	CreateOrgsVehicle(fLSNEWS,1, 582, 1558.9740,-1324.9818,16.5374,0.0000,152,155,RES_CAR_TIME);
 	CreateOrgsVehicle(fLSNEWS,1, 582, 1563.6055,-1324.9818,16.5413,0.0000,152,155,RES_CAR_TIME);
 	CreateOrgsVehicle(fLSNEWS,1,	582, 1577.4751, -1315.8938, 16.5327, 90.0000,152,155,RES_CAR_TIME);
 	CreateOrgsVehicle(fLSNEWS,1, 488, 1545.1329,-1352.8324,329.6407,270.5792,0,155,RES_CAR_TIME);
+
+	CreateOrgsVehicle(fLVNEWS,1, 582, 2672.6760,1167.1061,10.8768,90.0000,152,3,RES_CAR_TIME);
+	CreateOrgsVehicle(fLVNEWS,1, 582, 2672.6760,1171.3126,10.8746,90.0000,152,3,RES_CAR_TIME);
+	CreateOrgsVehicle(fLVNEWS,1, 582, 2672.6760,1175.4086,10.8823,90.0000,152,3,RES_CAR_TIME);
+	CreateOrgsVehicle(fLVNEWS,1, 582, 2672.6760,1179.3368,10.8770,90.0000,152,3,RES_CAR_TIME);
+	CreateOrgsVehicle(fLVNEWS,1, 582, 2672.6760,1183.3915,10.8770,90.0000,152,3,RES_CAR_TIME);
+	CreateOrgsVehicle(fLVNEWS,1, 488, 2645.8816,1209.9844,27.3821,270.0000,0,3,RES_CAR_TIME);
+
+	CreateOrgsVehicle(fSFNEWS,1, 582, -2520.5928,-602.0733,132.6188,180.0000,152,128,RES_CAR_TIME);
+	CreateOrgsVehicle(fSFNEWS,1, 582, -2524.4219,-602.0733,132.6191,180.0000,152,128,RES_CAR_TIME);
+	CreateOrgsVehicle(fSFNEWS,1, 582, -2528.0747,-602.0733,132.6203,180.0000,152,128,RES_CAR_TIME);
+	CreateOrgsVehicle(fSFNEWS,1, 582, -2531.8828,-602.0733,132.6212,180.0000,152,128,RES_CAR_TIME);
+	CreateOrgsVehicle(fSFNEWS,1, 582, -2535.6157,-602.0733,132.6185,180.0000,152,128,RES_CAR_TIME);
+	CreateOrgsVehicle(fSFNEWS,1, 488, -2500.6589,-665.8373,139.3712,90.0000,1,128,RES_CAR_TIME);
+
+	CreateOrgsVehicle(fFBI,1, 415, -1937.2799,-1022.4963,31.9282,0.0000,0,0,RES_CAR_TIME);
+	CreateOrgsVehicle(fFBI,1, 415, -1937.2799,-1031.4089,31.9379,0.0000,0,0,RES_CAR_TIME);
+	CreateOrgsVehicle(fFBI,1, 522, -1937.6946,-1041.4673,31.7430,45.0736,0,0,RES_CAR_TIME);
+	CreateOrgsVehicle(fFBI,1, 522, -1937.7007,-1044.9742,31.7419,45.7392,0,0,RES_CAR_TIME);
+	CreateOrgsVehicle(fFBI,1, 522, -1937.7550,-1048.8241,31.7360,46.0861,0,0,RES_CAR_TIME);
+	CreateOrgsVehicle(fFBI,1, 490, -1950.2008,-1046.9810,32.2998,270.0000,0,0,RES_CAR_TIME);
+	CreateOrgsVehicle(fFBI,1, 490, -1950.2008,-1042.4598,32.3009,270.0000,0,0,RES_CAR_TIME);
+	CreateOrgsVehicle(fFBI,1, 490, -1950.2008,-1038.1807,32.2442,270.0000,0,0,RES_CAR_TIME);
+	CreateOrgsVehicle(fFBI,1, 490, -1950.2008,-1033.7538,32.3027,270.0000,0,0,RES_CAR_TIME);
+	CreateOrgsVehicle(fFBI,1, 490, -1950.2008,-1029.2238,32.2593,270.0000,0,0,RES_CAR_TIME);
+	CreateOrgsVehicle(fFBI,1, 482, -1941.6862,-1086.3093,30.8959,0.0000,0,0,RES_CAR_TIME);
+	CreateOrgsVehicle(fFBI,1, 482, -1949.0909,-1086.3093,30.8906,0.0000,0,0,RES_CAR_TIME);
+	CreateOrgsVehicle(fFBI,1, 421, -1970.9238,-1010.7789,31.9717,270.9419,0,0,RES_CAR_TIME);
+	CreateOrgsVehicle(fFBI,1, 487, -1955.7759, -1068.0977, 53.4151, -90.0000,0,0,RES_CAR_TIME);
+	CreateOrgsVehicle(fFBI,1, 487, -1955.7759, -1053.5165, 53.4151, -90.0000,0,0,RES_CAR_TIME);
 
 	CreateOrgsVehicle(fYAKUZA,1, 555, 2631.4116,1845.6924,10.5046,90.0000,0,0,RES_CAR_TIME);
 	CreateOrgsVehicle(fYAKUZA,1, 562, 2631.4116,1842.4629,10.4791,90.0000,0,0,RES_CAR_TIME);
@@ -32607,6 +33710,50 @@ stock CreateVehicless() {
 	CreateOrgsVehicle(fLCN,1,487, 1428.8878, 787.3394, 10.9727, 180.4051, 0, 0, RES_CAR_TIME);
 	CreateOrgsVehicle(fLCN,1,482, 1445.5157, 787.6576, 10.9375, 180.0000, 0, 0, 300);
 
+	CreateOrgsVehicle(fLVPD,1,497, 2278.0625, 2473.5723, 38.8575, 0.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,601, 2291.1147, 2444.7144, 10.4793, 0.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,523, 2282.2769, 2444.7144, 10.3939, 0.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,523, 2277.4885, 2444.7144, 10.3926, 0.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,599, 2273.5005, 2444.7144, 10.9246, 0.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,599, 2269.0186, 2444.7144, 10.8988, 0.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,427, 2260.5225, 2444.7144, 10.9761, 0.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,427, 2256.0354, 2444.7144, 10.9760, 0.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,598, 2251.5117, 2459.9065, 10.5944, 178.2610, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,598, 2256.1277, 2460.4294, 10.5944, 180.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,598, 2260.4863, 2460.4294, 10.5944, 180.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,598, 2269.1028, 2460.4294, 10.5043, 180.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,598, 2273.7246, 2460.4294, 10.6009, 180.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,598, 2278.0828, 2460.4294, 10.5042, 180.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,598, 2282.3440, 2460.4294, 10.5941, 180.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,528, 2295.2390, 2477.5283, 10.7858, 180.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,528, 2291.1707, 2477.5283, 10.7860, 180.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,560, 2277.9666, 2477.5283, 10.5250, 180.0000, 0, 0, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,560, 2282.0403, 2477.5283, 10.5257, 180.0000, 0, 0, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,541, 2273.4744, 2477.0938, 10.4234, 180.0000, 0, 0, RES_CAR_TIME);
+	CreateOrgsVehicle(fLVPD,1,541, 2269.1233, 2477.0938, 10.4234, 180.0000, 0, 0, RES_CAR_TIME);
+
+
+	CreateOrgsVehicle(fSFPD,1,528, -1622.9227, 653.6722, -5.1983, 90.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,528, -1622.9227, 649.7008, -5.1642, 90.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,601, -1640.1469, 661.8729, -5.4829, 270.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,523, -1604.2440, 693.0329, -5.6739, 180.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,523, -1600.0601, 693.0329, -5.6687, 180.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,427, -1600.1724, 676.6910, -5.1099, 0.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,427, -1595.9003, 676.6910, -5.1097, 0.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,560, -1572.2313, 706.1619, -5.5371, 90.0000, 0, 0, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,560, -1572.2313, 710.1091, -5.5368, 90.0000, 0, 0, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,597, -1572.2313, 714.1777, -5.4738, 90.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,597, -1572.2313, 718.4165, -5.4737, 90.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,597, -1572.2313, 722.3792, -5.4727, 90.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,597, -1572.2313, 726.4285, -5.4727, 90.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,597, -1572.2313, 730.5509, -5.4733, 90.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,597, -1572.2313, 734.7073, -5.4736, 90.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,599, -1612.3265, 732.4606, -5.0585, 0.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,599, -1616.5073, 732.4606, -5.0449, 0.0000, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,497, -1679.1805, 705.8844, 30.8665, 90.6946, 0, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,541, -1579.8966, 749.6949, -5.6392, 180.0000, 0, 0, RES_CAR_TIME);
+	CreateOrgsVehicle(fSFPD,1,541, -1584.1494, 749.6949, -5.6392, 180.0000, 0, 0, RES_CAR_TIME);
+
 	CreateOrgsVehicle(fLSPD,1,596, 1595.4889, -1711.5000, 5.6125, 0.0000, 0, 1, RES_CAR_TIME);
 	CreateOrgsVehicle(fLSPD,1,596, 1591.4387, -1711.5000, 5.6116, 0.0000, 0, 1, RES_CAR_TIME);
 	CreateOrgsVehicle(fLSPD,1,596, 1587.4666, -1711.5000, 5.6071, 0.0000, 0, 1, RES_CAR_TIME);
@@ -32640,6 +33787,24 @@ stock CreateVehicless() {
 	CreateOrgsVehicle(fMEDICLS,1,416, 1184.0970, -1315.7960, 13.8034, 180.0000, 3, 1, RES_CAR_TIME);
 	CreateOrgsVehicle(fMEDICLS,1,416, 1176.9188, -1308.4987, 13.9295, 270.0000, 3, 1, RES_CAR_TIME);
 
+	CreateOrgsVehicle(fMEDICSF,1,416, -2588.6016, 622.3234, 14.4929, 270.0000, 3, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fMEDICSF,1,416, -2588.6016, 627.3912, 14.6536, 270.0000, 3, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fMEDICSF,1,416, -2588.6016, 632.8304, 14.6029, 270.0000, 3, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fMEDICSF,1,416, -2588.6016, 637.8122, 14.4868, 270.0000, 3, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fMEDICSF,1,416, -2588.6016, 642.8408, 14.6423, 270.0000, 3, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fMEDICSF,1,416, -2588.6016, 647.9203, 14.4876, 270.0000, 3, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fMEDICSF,1,487, -2727.4817, 615.3436, 34.0142, 90.0000, 1, 3, RES_CAR_TIME);
+	CreateOrgsVehicle(fMEDICSF,1,487, -2727.4817, 594.9642, 34.0142, 90.0000, 1, 3, RES_CAR_TIME);
+
+	CreateOrgsVehicle(fMEDICLV,1,416, 1610.7651, 1848.9933, 10.9895, 180.0000, 3, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fMEDICLV,1,416, 1606.3879, 1848.9933, 10.9216, 180.0000, 3, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fMEDICLV,1,416, 1602.1953, 1848.9933, 10.9086, 180.0000, 3, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fMEDICLV,1,416, 1598.0675, 1848.9933, 10.9138, 180.0000, 3, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fMEDICLV,1,416, 1593.6991, 1848.9933, 11.0052, 180.0000, 3, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fMEDICLV,1,416, 1589.5984, 1848.9933, 11.0115, 180.0000, 3, 1, RES_CAR_TIME);
+	CreateOrgsVehicle(fMEDICLV,1,487, 1594.7169, 1799.4476, 31.2183, 0.0000, 1, 3, RES_CAR_TIME);
+	CreateOrgsVehicle(fMEDICLV,1,487, 1622.0305, 1799.4476, 31.1707, 0.0000, 1, 3, RES_CAR_TIME);
+
 	CreateOrgsVehicle(fINSTRUCTORS,1,426,776.7488,-1341.6019,13.4731,179.0946,79,70, RES_CAR_TIME); // АШ кар
 	CreateOrgsVehicle(fINSTRUCTORS,1,426,771.8151,-1341.6345,13.4736,180.8721,79,70, RES_CAR_TIME); // АШ кар
 	CreateOrgsVehicle(fINSTRUCTORS,1,426,766.5387,-1341.6300,13.4967,180.5028,79,70, RES_CAR_TIME); // АШ кар
@@ -32659,11 +33824,19 @@ stock CreateVehicless() {
 	CreateJobVehicle(50,530,267.3203,1459.5337,10.3355,178.2702,1,1, RES_CAR_TIME); // Погрузочник
 	CreateJobVehicle(50,530,269.2901,1459.4288,10.3161,177.4821,1,1, RES_CAR_TIME); // Погрузочник
 
-	CreateJobVehicle(3,456, -49.8326,-376.9155,5.5836,358.6509, -1, -1, RES_CAR_TIME);//развозчики
-	CreateJobVehicle(3,456, -42.8151,-377.0809,5.5934,358.6510, -1, -1, RES_CAR_TIME);//развозчики
-	CreateJobVehicle(3,456, -36.4885,-376.8164,5.5982,358.6511, -1, -1, RES_CAR_TIME);//развозчики
-	CreateJobVehicle(3,456, -29.9785,-376.9697,5.6027,358.6510, -1, -1, RES_CAR_TIME);//развозчики
-	CreateJobVehicle(3,456, -22.9573,-377.0476,5.5844,1.4828, -1, -1, RES_CAR_TIME);//развозчики
+	CreateJobVehicle(3,456, 1052.9790, 1917.8970, 10.9935, 0.0000, -1, -1, RES_CAR_TIME);//развозчики
+	CreateJobVehicle(3,456, 1060.5085, 1917.8970, 10.9938, 0.0000, -1, -1, RES_CAR_TIME);//развозчики
+	CreateJobVehicle(3,456, 1067.8171, 1917.8970, 10.9934, 0.0000, -1, -1, RES_CAR_TIME);//развозчики
+	CreateJobVehicle(3,456, 1076.4841, 1917.8970, 10.9935, 0.0000, -1, -1, RES_CAR_TIME);//развозчики
+	CreateJobVehicle(3,456, 1082.7102, 1917.8970, 10.9934, 0.0000, -1, -1, RES_CAR_TIME);//развозчики
+	CreateJobVehicle(3,456, 1091.4449, 1917.8970, 10.9938, 0.0000, -1, -1, RES_CAR_TIME);//развозчики
+
+	CreateJobVehicle(3,456, 1106.8574, 1934.7936, 10.9146, 90.0000, -1, -1, RES_CAR_TIME);//развозчики
+	CreateJobVehicle(3,456, 1106.8574, 1926.1255, 10.9141, 90.0000, -1, -1, RES_CAR_TIME);//развозчики
+	CreateJobVehicle(3,456, 1106.8574, 1920.0426, 10.9140, 90.0000, -1, -1, RES_CAR_TIME);//развозчики
+	CreateJobVehicle(3,456, 1106.8574, 1911.5863, 10.9139, 90.0000, -1, -1, RES_CAR_TIME);//развозчики
+	CreateJobVehicle(3,456, 1106.8574, 1903.9119, 10.9140, 90.0000, -1, -1, RES_CAR_TIME);//развозчики
+	CreateJobVehicle(3,456, 1106.8574, 1896.5710, 10.9141, 90.0000, -1, -1, RES_CAR_TIME);//развозчики
 
 	CreateJobVehicle(3,403, -2.3778, -364.5102, 5.9873, 90.0000, -1, -1, RES_CAR_TIME);//развозчики АЗС
 	CreateJobVehicle(3,403, -2.3778, -360.0000, 5.9873, 90.0000, -1, -1, RES_CAR_TIME);//развозчики АЗС
@@ -32867,14 +34040,6 @@ stock CreateSphree() {
 	actor[33] = CreateActor(6,-2137.6365,-248.1024,36.5156,270.0877);//угон
 	SetActorVirtualWorld(actor[33],0); //угон
 
-	actor[34] = CreateActor(283, 1573.5339,-1690.7994,6.2188,145.2065);//LSPD
-	SetActorVirtualWorld(actor[34],0);
-
-
-	actor[35] = CreateActor(273, 2314.1125,-1214.8785,24.0240,176.2836);//Банды
-	SetActorVirtualWorld(actor[35],0);
-	ApplyActorAnimation(actor[35],"BD_FIRE","M_smklean_loop",4.1,0,0,0,1,1);
-
 
 	for(new i;i<MAX_ACTORSS;i++) {
 	    new Float: x,Float:y,Float:z;
@@ -32883,7 +34048,7 @@ stock CreateSphree() {
 	}
 
 	gAreas[arJob][0] = CreateDynamicSphere(-131.4120,8.5900,3.1172,1000.0);//[ферма]
-	gAreas[arJob][1] = CreateDynamicSphere(-1048.6555,-609.4244,32.0078,210.0);//[нефтезавод]
+	gAreas[arJob][1] = CreateDynamicSphere(337.1608,1408.8275,6.5547,210.0);//[нефтезавод]
 	gAreas[arJob][2] = CreateDynamicSphere(2708.9302,-2405.2688,13.5039,70.0);//[оружейный]
 	gAreas[arJob][3] = CreateDynamicSphere(-310.8985,-481.1532,1.9255,350.0);//[рыбалка]
 	gAreas[arJob][4] = CreateDynamicSphere(-504.1548,-1564.1219,10.3160,350.0);//[лесопилка]
@@ -32898,10 +34063,10 @@ stock CreateSphree() {
 
 	CreateDynamicCP(308.1984,-168.6314,999.5938,1.5, -1, -1, -1,10.0);//[АРМИЯ] склад
 
-	CreateDynamicCP(-13.4905,-273.9991,5.5830,5.0, 0, 0, -1,10.0);//[развозчики продуктов] ПРОЧЕЕ
+	CreateDynamicCP(1144.7769,1975.1379,10.8203,5.0, 0, 0, -1,10.0);//[развозчики продуктов] ПРОЧЕЕ
 	CreateDynamicCP(-215.4123,-246.7570,2.0283,5.0, 0, 0, -1,10.0);//[развозчики продуктов] АЗС
 
-	gAreas[arLoadProds][0] = CreateDynamicSphere(-13.4905,-273.9991,5.5830,2.0);//[Развозчик продуктов] 24-7
+	gAreas[arLoadProds][0] = CreateDynamicSphere(1144.7769,1975.1379,10.8203,2.0);//[Развозчик продуктов] 24-7
 	gAreas[arLoadProds][1] = CreateDynamicSphere(-215.4123,-246.7570,2.0283,2.0);//[Развозчик продуктов] АЗС
 
 	gAreas[arSad] = CreateDynamicSphere(-103.0734,-5.6714,3.1172,2.0);//[Сад] склад
@@ -32985,8 +34150,8 @@ stock CreatePickups() {
 	//==========================================================================
 
 	CreateDynamicMapIcon(1555.1647,-1675.6324,16.1953,30,0); // LSPD
-	//CreateDynamicMapIcon(-1605.5975,710.3373,13.8672,30,0); // SFPD
-	//CreateDynamicMapIcon(2337.1853,2459.2725,14.9742,30,0); // LVPD
+	CreateDynamicMapIcon(-1605.5975,710.3373,13.8672,30,0); // SFPD
+	CreateDynamicMapIcon(2337.1853,2459.2725,14.9742,30,0); // LVPD
 	CreateDynamicMapIcon(-1972.5879,-1020.2689,32.1719,16,0); // FBI
 	CreateDynamicMapIcon(1481.0220,-1772.2487,18.7958,19,0); // Mayor
 	CreateDynamicMapIcon(1939.1348,-1114.5219,27.4523,59,0); // Ballas//
@@ -32999,18 +34164,14 @@ stock CreatePickups() {
 	CreateDynamicMapIcon(2634.7048,1824.2144,11.0161,43,0); // YAKUZA
 	CreateDynamicMapIcon(747.3283,-1379.0117,14.1992,36,0); // АШ
 	CreateDynamicMapIcon(1569.6614,-1334.6711,16.4844,56,0);//LSn
-	//CreateDynamicMapIcon(-2521.1753,-624.5951,132.7827,56,0);//SFn
-	//CreateDynamicMapIcon(2645.2136,1185.2959,10.8203,56,0);//LVn
+	CreateDynamicMapIcon(-2521.1753,-624.5951,132.7827,56,0);//SFn
+	CreateDynamicMapIcon(2645.2136,1185.2959,10.8203,56,0);//LVn
 
 	CreateDynamicMapIcon(1684.5287,-1343.3507,17.4368,52,0); // bank ls
+	CreateDynamicMapIcon(-2351.1323,492.5963,30.8144,52,0); // bank sf
+	CreateDynamicMapIcon(2577.4541,1325.8289,10.8203,52,0); // bank lv
 
-	CreateDynamicMapIcon(1222.9508,-1134.3561,23.4701,25,0); // casino
-	CreateDynamicMapIcon(-1038.4648,-595.8793,32.0078,51,0); // Нефтезавод
-	CreateDynamicMapIcon(1340.6106,332.1387,19.9806,51,0); // Склад монтгомери
-	CreateDynamicMapIcon(2616.7119,-2226.7627,13.3819,51,0); // Порт ЛС
-	CreateDynamicMapIcon(2687.9753,-2480.1912,13.5008,56,0); // Оружейный завод
-	CreateDynamicMapIcon(-116.4320,-0.3284,3.1094,56,0); // Яблочный сад
-	CreateDynamicMapIcon(-502.3524,-1571.3837,10.3160,56,0); // Лесопилка
+	CreateDynamicMapIcon(2166.0955,2165.0505,10.8203,25,0); // casino
 	return 1;
 }
 stock Create3dText() {
@@ -33043,9 +34204,29 @@ stock Create3dText() {
 	format(string,sizeof(string),"Древесины на складе: "ORANGE"%d кг",woodsklad);
  	wood_3dtext = CreateDynamic3DTextLabel(string,-1,-535.6497,-1582.4492,10.3110,15.0);
 
+ 	format(string,sizeof(string),"Боеприпасов: "ORANGE"%d ед",FI[fARMYSF][fMats]);
+ 	sklad_armysf[0] = CreateDynamic3DTextLabel(string,-1,-1331.0984,407.6659,7.1875,20.0);
+
+ 	format(string,sizeof(string),"Боеприпасов: "ORANGE"%d ед",FI[fARMYSF][fMats]);
+ 	sklad_armysf[1] = CreateDynamic3DTextLabel(string,-1,-1607.3578,285.5919,7.1875,45.0);
+
+	format(string,sizeof(string),"Боеприпасов: "ORANGE"%d ед",FI[fARMYSF][fMats]);
+ 	sklad_armysf[2] = CreateDynamic3DTextLabel(string,-1,308.1984,-168.6314,999.5938,20.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,0, 31);
+
+ 	format(string,sizeof(string),"Боеприпасов: "ORANGE"%d ед",FI[fARMYLV][fMats]);
+ 	sklad_armylv[0] = CreateDynamic3DTextLabel(string,-1,308.1984,-168.6314,999.5938,20.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,0, 30);
+
 	format(string,sizeof(string),"Боеприпасов: "ORANGE"%d ед",FI[fLSPD][fMats]);
  	sklad_cops[0] = CreateDynamic3DTextLabel(string,-1,1374.6270,1056.6377,1626.4896,10.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, 40);
 	
+	format(string,sizeof(string),"Боеприпасов: "ORANGE"%d ед",FI[fSFPD][fMats]);
+ 	sklad_cops[1] = CreateDynamic3DTextLabel(string,-1,1374.6270,1056.6377,1626.4896,10.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, 41);
+	
+	format(string,sizeof(string),"Боеприпасов: "ORANGE"%d ед",FI[fLVPD][fMats]);
+ 	sklad_cops[2] = CreateDynamic3DTextLabel(string,-1,1374.6270,1056.6377,1626.4896,10.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, 42);
+
+	format(string,sizeof(string),"Боеприпасов: "ORANGE"%d ед",FI[fFBI][fMats]);
+ 	sklad_cops[3] = CreateDynamic3DTextLabel(string,-1,1468.2729,252.4930,1013.5259,10.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, 43);
 
 	CreateDynamic3DTextLabel("Эфир:"P" /ether",0xFFFFFFFF,785.3342,-1532.6215,1418.8169-0.5,5.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);
 	CreateDynamic3DTextLabel("Эфир:"P" /ether",0xFFFFFFFF,779.9375,-1497.9346,1418.8450-0.5,5.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);
@@ -33077,11 +34258,11 @@ stock Create3dText() {
 	CreateDynamic3DTextLabel("John Thompson\n"P" Нажмите ALT для получения транспорта",0xFFFFFFFF,952.2404,2054.9951,10.8203,7.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1); //угон
 	CreateDynamic3DTextLabel("Julian Garcia\n"P" Нажмите ALT для получения транспорта",0xFFFFFFFF,-2137.6365,-248.1024,36.5156,7.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1); //угон
 
-	CreateDynamic3DTextLabel("Место загрузки\n Посигнальте (H) чтобы загрузиться",CGOLD,-1048.6555,-609.4244,32.0078,20.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);//лесопилка
+	CreateDynamic3DTextLabel("Место загрузки\n Посигнальте (H) чтобы загрузиться",CGOLD,253.3007,1396.0299,10.5859,20.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);//лесопилка
 	CreateDynamic3DTextLabel("Место загрузки\n Посигнальте (H) чтобы загрузиться",CGOLD,2653.8486,-2387.8660,13.6328,20.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);//оружейный завод LOAD
 	CreateDynamic3DTextLabel("Место разгрузки\n Посигнальте (H) чтобы разгрузиться",CGOLD,2687.9753,-2480.1912,13.5008,20.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);//оружейный завод UNLOAD
 	CreateDynamic3DTextLabel("Место разгрузки\n Посигнальте (H) чтобы разгрузиться",CGOLD,2616.7119,-2226.7627,13.3819,20.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);//порт ЛС
-	CreateDynamic3DTextLabel("Место разгрузки\n Посигнальте (H) чтобы разгрузиться",CGOLD,1340.6106,332.1387,19.9806,20.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);//порт СФ
+	CreateDynamic3DTextLabel("Место разгрузки\n Посигнальте (H) чтобы разгрузиться",CGOLD,-1744.4447,149.4602,3.5496,20.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);//порт СФ
 
 	CreateDynamic3DTextLabel("База данных:"P" /scan",0xFFFFFFFF,1494.6227,281.6257,1020.4926,5.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,0, -1, -1);
 	CreateDynamic3DTextLabel("База данных:"P" /scan",0xFFFFFFFF,1490.9877,278.8188,1020.4926,5.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);
@@ -33105,8 +34286,8 @@ stock Create3dText() {
 	advert_turn_text[2] = CreateDynamic3DTextLabel("Лучшие работники:",-1,740.5614,-1520.5980,1415.4099+1.5, 10.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, 12, -1);
 
 	CreateDynamic3DTextLabel(""P"Для ареста преступника, используйте: "NO"/arrest [id]",-1,1560.2266,-1694.2327,5.8970, 10.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);//lspd
-	//CreateDynamic3DTextLabel(""P"Для ареста преступника, используйте: "NO"/arrest [id]",-1,-1590.0127,708.3984,-5.2422, 10.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);//sfpd
-	//CreateDynamic3DTextLabel(""P"Для ареста преступника, используйте: "NO"/arrest [id]",-1,2293.5652,2459.6794,10.8203, 10.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);//sfpd
+	CreateDynamic3DTextLabel(""P"Для ареста преступника, используйте: "NO"/arrest [id]",-1,-1590.0127,708.3984,-5.2422, 10.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);//sfpd
+	CreateDynamic3DTextLabel(""P"Для ареста преступника, используйте: "NO"/arrest [id]",-1,2293.5652,2459.6794,10.8203, 10.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);//sfpd
 
 	CreateDynamic3DTextLabel("Выезд из гаража: "GREEN"H",-1, 1050.0936,-1868.7532,894.0478,17.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);
 	CreateDynamic3DTextLabel("Выезд из гаража: "GREEN"H",-1, 1123.6130,-1849.0645,894.0478,17.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);
@@ -34582,158 +35763,56 @@ stock CreateTexdraw() {
 	/* -------------------------------------------- */
 
 	/* ----------------- LOGO----------------- */
-	LOGO[9] = TextDrawCreate(554.636963, 5.083362, "~w~FRI~r~~h~~h~~h~ME");
-	TextDrawLetterSize(LOGO[9], 0.366733, 1.494999);
-	TextDrawTextSize(LOGO[9], 642.000000, 0.000000);
-	TextDrawAlignment(LOGO[9], 1);
-	TextDrawColor(LOGO[9], 0xFFFFFFFF);
-	TextDrawUseBox(LOGO[9], 0);
-	TextDrawBoxColor(LOGO[9], 0x80808080);
-	TextDrawSetShadow(LOGO[9], 0);
-	TextDrawSetOutline(LOGO[9], 0);
-	TextDrawBackgroundColor(LOGO[9], 0x000000FF);
-	TextDrawFont(LOGO[9], 1);
-	TextDrawSetProportional(LOGO[9], 1);
-	TextDrawSetSelectable(LOGO[9], 0);
+	TDEditor_TD[0] = TextDrawCreate(542.0000, 5.8125, "FRIME"); // пусто
+	TextDrawLetterSize(TDEditor_TD[0], 0.5289, 2.3524);
+	TextDrawAlignment(TDEditor_TD[0], 1);
+	TextDrawColor(TDEditor_TD[0], -1);
+	TextDrawSetOutline(TDEditor_TD[0], 1);
+	TextDrawBackgroundColor(TDEditor_TD[0], 255);
+	TextDrawFont(TDEditor_TD[0], 2);
+	TextDrawSetProportional(TDEditor_TD[0], 1);
+	TextDrawSetShadow(TDEditor_TD[0], 0);
 
-	LOGO[8] = TextDrawCreate(578.894409, 16.333359, "~r~~h~~h~~h~PROJECT");
-	TextDrawLetterSize(LOGO[8], 0.155431, 0.660833);
-	TextDrawTextSize(LOGO[8], 634.000000, 0.000000);
-	TextDrawAlignment(LOGO[8], 1);
-	TextDrawColor(LOGO[8], 0xFFFFFFFF);
-	TextDrawUseBox(LOGO[8], 0);
-	TextDrawBoxColor(LOGO[8], 0x80808080);
-	TextDrawSetShadow(LOGO[8], 0);
-	TextDrawSetOutline(LOGO[8], 0);
-	TextDrawBackgroundColor(LOGO[8], 0x000000FF);
-	TextDrawFont(LOGO[8], 1);
-	TextDrawSetProportional(LOGO[8], 1);
-	TextDrawSetSelectable(LOGO[8], 0);
+	TDEditor_TD[1] = TextDrawCreate(542.5000, 23.3125, "PRO_"); // пусто
+	TextDrawLetterSize(TDEditor_TD[1], 0.4000, 1.6000);
+	TextDrawAlignment(TDEditor_TD[1], 1);
+	TextDrawColor(TDEditor_TD[1], 65535);
+	TextDrawSetOutline(TDEditor_TD[1], 1);
+	TextDrawBackgroundColor(TDEditor_TD[1], 255);
+	TextDrawFont(TDEditor_TD[1], 2);
+	TextDrawSetProportional(TDEditor_TD[1], 1);
+	TextDrawSetShadow(TDEditor_TD[1], 0);
 
-	LOGO[7] = TextDrawCreate(555.137085, 18.500000, "line_modelid");
-	TextDrawLetterSize(LOGO[7], 0.480000, 1.120000);
-	TextDrawTextSize(LOGO[7], 4.000000, 4.000000);
-	TextDrawAlignment(LOGO[7], 1);
-	TextDrawColor(LOGO[7], 0xFFFFFFFF);
-	TextDrawUseBox(LOGO[7], 0);
-	TextDrawBoxColor(LOGO[7], 0x80808080);
-	TextDrawSetShadow(LOGO[7], 0);
-	TextDrawSetOutline(LOGO[7], 0);
-	TextDrawBackgroundColor(LOGO[7], 0x00000000);
-	TextDrawFont(LOGO[7], 5);
-	TextDrawSetProportional(LOGO[7], 0);
-	TextDrawSetSelectable(LOGO[7], 0);
-	TextDrawSetPreviewModel(LOGO[7], 19445);
-	TextDrawSetPreviewRot(LOGO[7], 270.000000, 0.000000, 45.000000, 0.227272);
+	TDEditor_TD[2] = TextDrawCreate(585.5000, 23.3125, "JECT"); // пусто
+	TextDrawLetterSize(TDEditor_TD[2], 0.4000, 1.6000);
+	TextDrawAlignment(TDEditor_TD[2], 1);
+	TextDrawColor(TDEditor_TD[2], -16776961);
+	TextDrawSetOutline(TDEditor_TD[2], 1);
+	TextDrawBackgroundColor(TDEditor_TD[2], 255);
+	TextDrawFont(TDEditor_TD[2], 2);
+	TextDrawSetProportional(TDEditor_TD[2], 1);
+	TextDrawSetShadow(TDEditor_TD[2], 0);
 
-	LOGO[6] = TextDrawCreate(558.937256, 18.500000, "line_modelid");
-	TextDrawLetterSize(LOGO[6], 0.480000, 1.120000);
-	TextDrawTextSize(LOGO[6], 4.000000, 4.000000);
-	TextDrawAlignment(LOGO[6], 1);
-	TextDrawColor(LOGO[6], 0xFFFFFFFF);
-	TextDrawUseBox(LOGO[6], 0);
-	TextDrawBoxColor(LOGO[6], 0x80808080);
-	TextDrawSetShadow(LOGO[6], 0);
-	TextDrawSetOutline(LOGO[6], 0);
-	TextDrawBackgroundColor(LOGO[6], 0x00000000);
-	TextDrawFont(LOGO[6], 5);
-	TextDrawSetProportional(LOGO[6], 0);
-	TextDrawSetSelectable(LOGO[6], 0);
-	TextDrawSetPreviewModel(LOGO[6], 19445);
-	TextDrawSetPreviewRot(LOGO[6], 270.000000, 0.000000, 130.000000, 0.227272);
+	TDEditor_TD[3] = TextDrawCreate(618.0000, 11.0625, "hud:radar_cash"); // пусто
+	TextDrawTextSize(TDEditor_TD[3], 17.0000, 14.0000);
+	TextDrawAlignment(TDEditor_TD[3], 1);
+	TextDrawColor(TDEditor_TD[3], -1);
+	TextDrawBackgroundColor(TDEditor_TD[3], 255);
+	TextDrawFont(TDEditor_TD[3], 4);
+	TextDrawSetProportional(TDEditor_TD[3], 0);
+	TextDrawSetShadow(TDEditor_TD[3], 0);
 
-	LOGO[5] = TextDrawCreate(562.337524, 18.500000, "line_modelid");
-	TextDrawLetterSize(LOGO[5], 0.480000, 1.120000);
-	TextDrawTextSize(LOGO[5], 4.000000, 4.000000);
-	TextDrawAlignment(LOGO[5], 1);
-	TextDrawColor(LOGO[5], 0xFFFFFFFF);
-	TextDrawUseBox(LOGO[5], 0);
-	TextDrawBoxColor(LOGO[5], 0x80808080);
-	TextDrawSetShadow(LOGO[5], 0);
-	TextDrawSetOutline(LOGO[5], 0);
-	TextDrawBackgroundColor(LOGO[5], 0x00000000);
-	TextDrawFont(LOGO[5], 5);
-	TextDrawSetProportional(LOGO[5], 0);
-	TextDrawSetSelectable(LOGO[5], 0);
-	TextDrawSetPreviewModel(LOGO[5], 19445);
-	TextDrawSetPreviewRot(LOGO[5], 270.000000, 0.000000, 45.000000, 0.227272);
-
-	LOGO[4] = TextDrawCreate(565.837708, 18.500000, "line_modelid");
-	TextDrawLetterSize(LOGO[4], 0.480000, 1.120000);
-	TextDrawTextSize(LOGO[4], 4.000000, 4.000000);
-	TextDrawAlignment(LOGO[4], 1);
-	TextDrawColor(LOGO[4], 0xFFFFFFFF);
-	TextDrawUseBox(LOGO[4], 0);
-	TextDrawBoxColor(LOGO[4], 0x80808080);
-	TextDrawSetShadow(LOGO[4], 0);
-	TextDrawSetOutline(LOGO[4], 0);
-	TextDrawBackgroundColor(LOGO[4], 0x00000000);
-	TextDrawFont(LOGO[4], 5);
-	TextDrawSetProportional(LOGO[4], 0);
-	TextDrawSetSelectable(LOGO[4], 0);
-	TextDrawSetPreviewModel(LOGO[4], 19445);
-	TextDrawSetPreviewRot(LOGO[4], 270.000000, 0.000000, 130.000000, 0.227272);
-
-	LOGO[3] = TextDrawCreate(569.137939, 18.500000, "line_modelid");
-	TextDrawLetterSize(LOGO[3], 0.480000, 1.120000);
-	TextDrawTextSize(LOGO[3], 4.000000, 4.000000);
-	TextDrawAlignment(LOGO[3], 1);
-	TextDrawColor(LOGO[3], 0xFFFFFFFF);
-	TextDrawUseBox(LOGO[3], 0);
-	TextDrawBoxColor(LOGO[3], 0x80808080);
-	TextDrawSetShadow(LOGO[3], 0);
-	TextDrawSetOutline(LOGO[3], 0);
-	TextDrawBackgroundColor(LOGO[3], 0x00000000);
-	TextDrawFont(LOGO[3], 5);
-	TextDrawSetProportional(LOGO[3], 0);
-	TextDrawSetSelectable(LOGO[3], 0);
-	TextDrawSetPreviewModel(LOGO[3], 19445);
-	TextDrawSetPreviewRot(LOGO[3], 270.000000, 0.000000, 45.000000, 0.227272);
-
-	LOGO[2] = TextDrawCreate(572.625000, 18.600006, "line_modelid");
-	TextDrawLetterSize(LOGO[2], 0.480000, 1.120000);
-	TextDrawTextSize(LOGO[2], 4.000000, 4.000000);
-	TextDrawAlignment(LOGO[2], 1);
-	TextDrawColor(LOGO[2], 0xFFFFFFFF);
-	TextDrawUseBox(LOGO[2], 0);
-	TextDrawBoxColor(LOGO[2], 0x80808080);
-	TextDrawSetShadow(LOGO[2], 0);
-	TextDrawSetOutline(LOGO[2], 0);
-	TextDrawBackgroundColor(LOGO[2], 0x00000000);
-	TextDrawFont(LOGO[2], 5);
-	TextDrawSetProportional(LOGO[2], 0);
-	TextDrawSetSelectable(LOGO[2], 0);
-	TextDrawSetPreviewModel(LOGO[2], 19445);
-	TextDrawSetPreviewRot(LOGO[2], 270.000000, 0.000000, 130.000000, 0.227272);
-
-	LOGO[1] = TextDrawCreate(547.324951, 25.500004, "particle:lamp_shad_64");
-	TextDrawLetterSize(LOGO[1], 0.480000, 1.120000);
-	TextDrawTextSize(LOGO[1], 63.000000, -19.000000);
-	TextDrawAlignment(LOGO[1], 1);
-	TextDrawColor(LOGO[1], 0xA52A2A24);
-	TextDrawUseBox(LOGO[1], 0);
-	TextDrawBoxColor(LOGO[1], 0x80808080);
-	TextDrawSetShadow(LOGO[1], 0);
-	TextDrawSetOutline(LOGO[1], 0);
-	TextDrawBackgroundColor(LOGO[1], 0x00000000);
-	TextDrawFont(LOGO[1], 4);
-	TextDrawSetProportional(LOGO[1], 0);
-	TextDrawSetSelectable(LOGO[1], 0);
-
-	LOGO[0] = TextDrawCreate(547.324951, 5.466666, "particle:lamp_shad_64");
-	TextDrawLetterSize(LOGO[0], 0.480000, 1.120000);
-	TextDrawTextSize(LOGO[0], 63.000000, 19.000000);
-	TextDrawAlignment(LOGO[0], 1);
-	TextDrawColor(LOGO[0], 0xA52A2A24);
-	TextDrawUseBox(LOGO[0], 0);
-	TextDrawBoxColor(LOGO[0], 0x80808080);
-	TextDrawSetShadow(LOGO[0], 0);
-	TextDrawSetOutline(LOGO[0], 0);
-	TextDrawBackgroundColor(LOGO[0], 0x00000000);
-	TextDrawFont(LOGO[0], 4);
-	TextDrawSetProportional(LOGO[0], 0);
-	TextDrawSetSelectable(LOGO[0], 0);
-	
+	TDEditor_TD[4] = TextDrawCreate(539.5000, 39.9375, "Box"); // пусто
+	TextDrawLetterSize(TDEditor_TD[4], 0.0000, -0.1999);
+	TextDrawTextSize(TDEditor_TD[4], 628.0000, 0.0000);
+	TextDrawAlignment(TDEditor_TD[4], 1);
+	TextDrawColor(TDEditor_TD[4], -1);
+	TextDrawUseBox(TDEditor_TD[4], 1);
+	TextDrawBoxColor(TDEditor_TD[4], -1);
+	TextDrawBackgroundColor(TDEditor_TD[4], 255);
+	TextDrawFont(TDEditor_TD[4], 1);
+	TextDrawSetProportional(TDEditor_TD[4], 1);
+	TextDrawSetShadow(TDEditor_TD[4], 0);
 	/* ---------------------------------------- */
 
 	CheatPanel[0] = TextDrawCreate(644.666503, 435.562164, "usebox");
@@ -34798,13 +35877,15 @@ stock PayChecks(i) {
     else price = 1;
 
 	switch(PlayerInfo[i][pMember]) {
-		case fLSPD: nalog = floatround((FracSalary[0][PlayerInfo[i][pRank]-1])/100*Nalog[0]),PlayerInfo[i][pSalary] += (FracSalary[0][PlayerInfo[i][pRank]-1]-nalog)*price,FI[fWHITEHOUSE][fBank] -= floatround(FracSalary[0][PlayerInfo[i][pRank]-1]-nalog);
-		case fMEDICLS: nalog = floatround(FracSalary[4][PlayerInfo[i][pRank]-1]/100*Nalog[0]),PlayerInfo[i][pSalary] += (FracSalary[4][PlayerInfo[i][pRank]-1]-nalog)*price,FI[fWHITEHOUSE][fBank] -= floatround(FracSalary[4][PlayerInfo[i][pRank]-1]-nalog);
-		case fLSNEWS: nalog = floatround(FracSalary[5][PlayerInfo[i][pRank]-1]/100*Nalog[0]),PlayerInfo[i][pSalary] += (FracSalary[5][PlayerInfo[i][pRank]-1]-nalog)*price,FI[fWHITEHOUSE][fBank] -= floatround(FracSalary[5][PlayerInfo[i][pRank]-1]-nalog);
+		case fLSPD,fSFPD,fLVPD: nalog = floatround((FracSalary[0][PlayerInfo[i][pRank]-1])/100*Nalog[0]),PlayerInfo[i][pSalary] += (FracSalary[0][PlayerInfo[i][pRank]-1]-nalog)*price,FI[fWHITEHOUSE][fBank] -= floatround(FracSalary[0][PlayerInfo[i][pRank]-1]-nalog);
+		case fFBI: nalog = floatround(FracSalary[1][PlayerInfo[i][pRank]-1]/100*Nalog[0]),PlayerInfo[i][pSalary] += (FracSalary[1][PlayerInfo[i][pRank]-1]-nalog)*price,FI[fWHITEHOUSE][fBank] -= floatround(FracSalary[1][PlayerInfo[i][pRank]-1]-nalog);
+		case fMEDICLS,fMEDICSF,fMEDICLV: nalog = floatround(FracSalary[4][PlayerInfo[i][pRank]-1]/100*Nalog[0]),PlayerInfo[i][pSalary] += (FracSalary[4][PlayerInfo[i][pRank]-1]-nalog)*price,FI[fWHITEHOUSE][fBank] -= floatround(FracSalary[4][PlayerInfo[i][pRank]-1]-nalog);
+		case fLSNEWS,fSFNEWS,fLVNEWS: nalog = floatround(FracSalary[5][PlayerInfo[i][pRank]-1]/100*Nalog[0]),PlayerInfo[i][pSalary] += (FracSalary[5][PlayerInfo[i][pRank]-1]-nalog)*price,FI[fWHITEHOUSE][fBank] -= floatround(FracSalary[5][PlayerInfo[i][pRank]-1]-nalog);
 		case fBALLAS,fVAGOS,fGROVE,fAZTEC,fRIFA: PlayerInfo[i][pSalary] += FracSalary[7][PlayerInfo[i][pRank]-1]*price;
 		case fLCN,fYAKUZA,fRM: PlayerInfo[i][pSalary] += FracSalary[6][PlayerInfo[i][pRank]-1]*price;
 		case fMAYOR: nalog = floatround(FracSalary[2][PlayerInfo[i][pRank]-1]/100*Nalog[0]),PlayerInfo[i][pSalary] += (FracSalary[2][PlayerInfo[i][pRank]-1]-nalog)*price,FI[fWHITEHOUSE][fBank] -= floatround(FracSalary[2][PlayerInfo[i][pRank]-1]-nalog);
 		case fWHITEHOUSE: nalog = floatround(FracSalary[8][PlayerInfo[i][pRank]-1]/100*Nalog[0]),PlayerInfo[i][pSalary] += (FracSalary[8][PlayerInfo[i][pRank]-1]-nalog)*price,FI[fWHITEHOUSE][fBank] -= floatround(FracSalary[8][PlayerInfo[i][pRank]-1]-nalog);
+		case fARMYSF,fARMYLV: nalog = floatround(FracSalary[3][PlayerInfo[i][pRank]-1]/100*Nalog[0]),PlayerInfo[i][pSalary] += (FracSalary[3][PlayerInfo[i][pRank]-1]-nalog)*price,FI[fWHITEHOUSE][fBank] -= floatround(FracSalary[3][PlayerInfo[i][pRank]-1]-nalog);
 		case fINSTRUCTORS: nalog = floatround(FracSalary[9][PlayerInfo[i][pRank]-1]/100*Nalog[0]),PlayerInfo[i][pSalary] += (FracSalary[9][PlayerInfo[i][pRank]-1]-nalog)*price,FI[fWHITEHOUSE][fBank] -= floatround(FracSalary[9][PlayerInfo[i][pRank]-1]-nalog);
 	}
 	return 0;
@@ -34884,6 +35965,8 @@ stock PayDay() {
 		gHouses[i][houseRob] = false;
 	}
 
+	if(FI[fARMYLV][fMats] < 0) FI[fARMYLV][fMats] = 0;
+	if(FI[fARMYSF][fMats] < 0) FI[fARMYSF][fMats] = 0;
 	new string[128];
 	foreach(new i:Player) {
 		if(!TI[i][tLogin] ||  AntiCheatIsKickedWithDesync(i)) continue;
@@ -34924,7 +36007,7 @@ stock PayDay() {
 			PlayerInfo[i][pBank] += 4000;
 		}
 
-		if(IsACop(i) || IsANews(i) || PlayerInfo[i][pMember] == fINSTRUCTORS || PlayerInfo[i][pMember] == fWHITEHOUSE || PlayerInfo[i][pMember] == fMAYOR) {
+		if(IsAArm(i) || IsACop(i) || IsANews(i) || PlayerInfo[i][pMember] == fINSTRUCTORS || PlayerInfo[i][pMember] == fWHITEHOUSE || PlayerInfo[i][pMember] == fMAYOR) {
 			format(string, sizeof(string), "Налог государству: "GREEN"%d%s", Nalog[0],"%%");
 			SendClientMessage(i,-1, string);
 		} 
@@ -34980,14 +36063,14 @@ stock PayDay() {
 			mysql_tquery(connects,query,"reg_friend","i",i);
 		}
 		if(PlayerInfo[i][pFamily]) {
-			if((PlayerInfo[i][pGoogle] && PlayerInfo[i][pRank] == FI[PlayerInfo[i][pMember]][fInviteRang] && IsAGang(i)) || (PlayerInfo[i][pGoogle] && PlayerInfo[i][pRank] == FI[PlayerInfo[i][pMember]][fInviteRang] && IsAMafia(i))) reputation_family(PlayerInfo[i][pFamily]-1,2);
-			if(PlayerInfo[i][pGoogle] && PlayerInfo[i][pRank] == FI[PlayerInfo[i][pMember]][fInviteRang] && !IsAGang(i) && !IsAMafia(i)) reputation_family(PlayerInfo[i][pFamily]-1,3);
-			if(PlayerInfo[i][pLeader]) reputation_family(PlayerInfo[i][pFamily]-1,4);
-			if(PlayerInfo[i][pAdmin]) reputation_family(PlayerInfo[i][pFamily]-1,5);
-			if(PlayerInfo[i][pBusiness]) reputation_family(PlayerInfo[i][pFamily]-1,1);
-			if(PlayerInfo[i][pHotel]) reputation_family(PlayerInfo[i][pFamily]-1,2);
-			if(PlayerInfo[i][pAirport]) reputation_family(PlayerInfo[i][pFamily]-1,3);
-			if(PlayerInfo[i][pVips]) reputation_family(PlayerInfo[i][pFamily]-1,vip_status[PlayerInfo[i][pVips]][vip_fam_point]);
+			if((PlayerInfo[i][pGoogle] && PlayerInfo[i][pRank] == FI[PlayerInfo[i][pMember]][fInviteRang] && IsAGang(i)) || (PlayerInfo[i][pGoogle] && PlayerInfo[i][pRank] == FI[PlayerInfo[i][pMember]][fInviteRang] && IsAMafia(i))) reputation_family(GetFamilyId(PlayerInfo[i][pFamily]),2);
+			if(PlayerInfo[i][pGoogle] && PlayerInfo[i][pRank] == FI[PlayerInfo[i][pMember]][fInviteRang] && !IsAGang(i) && !IsAMafia(i)) reputation_family(GetFamilyId(PlayerInfo[i][pFamily]),3);
+			if(PlayerInfo[i][pLeader]) reputation_family(GetFamilyId(PlayerInfo[i][pFamily]),4);
+			if(PlayerInfo[i][pAdmin]) reputation_family(GetFamilyId(PlayerInfo[i][pFamily]),5);
+			if(PlayerInfo[i][pBusiness]) reputation_family(GetFamilyId(PlayerInfo[i][pFamily]),1);
+			if(PlayerInfo[i][pHotel]) reputation_family(GetFamilyId(PlayerInfo[i][pFamily]),2);
+			if(PlayerInfo[i][pAirport]) reputation_family(GetFamilyId(PlayerInfo[i][pFamily]),3);
+			if(PlayerInfo[i][pVips]) reputation_family(GetFamilyId(PlayerInfo[i][pFamily]),vip_status[PlayerInfo[i][pVips]][vip_fam_point]);
 		}
 	}
 	UpdateFraction(fWHITEHOUSE,"Bank",FI[fWHITEHOUSE][fBank]);
@@ -35033,7 +36116,7 @@ stock SendDepMessage(color, const string[]) {
 		if(!TI[i][tLogin] ||  AntiCheatIsKickedWithDesync(i)) continue;
 		if(!start_work[i]) continue;
 		if(!PlayerInfo[i][pSettings][1]) continue;
-		if(IsACop(i) || IsAMedic(i) || IsANews(i) || IsAMayor(i) || PlayerInfo[i][pMember] == fINSTRUCTORS || PlayerInfo[i][pMember] == fWHITEHOUSE) {
+		if(IsACop(i) || IsAArm(i) || IsAMedic(i) || IsANews(i) || IsAMayor(i) || PlayerInfo[i][pMember] == fINSTRUCTORS || PlayerInfo[i][pMember] == fWHITEHOUSE) {
 			SendClientMessage(i, color, string);
 		}
 	}
@@ -35091,8 +36174,8 @@ stock BizzMSG(bizz, color, const str[]) {
 stock FamMSG(fam, const str[]) {
 	foreach(new i:Player) {
 		if(!TI[i][tLogin] ||  AntiCheatIsKickedWithDesync(i)) continue;
-		if(PlayerInfo[i][pFamily] != fam) continue;
-		SendClientMessage(i, FamilyColorG[gFamily[fam-1][famColor]], str);
+		if(GetFamilyId(PlayerInfo[i][pFamily]) != fam) continue;
+		SendClientMessage(i, FamilyColorG[gFamily[fam][famColor]], str);
     }
 }
 
@@ -35583,17 +36666,17 @@ CMD:fam(playerid,params[]) {
 	if(!PlayerInfo[playerid][pFamily]) return ErrorMessage(playerid,"Вы не состоите в семье");
 	if(PlayerInfo[playerid][pMute] > 0) return ErrorMessage(playerid, "У Вас бан чата");
 	if(sscanf(params, "s[128]",params[0])) return SendEsp(playerid, "/fam [текст]");
-	new fam = PlayerInfo[playerid][pFamily] - 1,string[128];
+	new fam = PlayerInfo[playerid][pFamily],string[128];
 	
 	format(string,sizeof(string),"%s %s: %s",GetFamName(fam,PlayerInfo[playerid][pFamRank]),player_name[playerid],params[0]);
-	FamMSG(fam+1,string);
+	FamMSG(fam,string);
 	return 1;
 }
 CMD:finvite(playerid,params[]) {
 	if(!PlayerInfo[playerid][pFamily]) return ErrorMessage(playerid,"Вы не состоите в семье");
 	new string[144];
-	if(PlayerInfo[playerid][pFamRank] < gFamily[PlayerInfo[playerid][pFamily]-1][famInvRang]) {
-		format(string,sizeof(string),"Данная функция доступна с %i ранга", gFamily[PlayerInfo[playerid][pFamily]-1][famInvRang]);
+	if(PlayerInfo[playerid][pFamRank] < gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famInvRang]) {
+		format(string,sizeof(string),"Данная функция доступна с %i ранга", gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famInvRang]);
 		ErrorMessage(playerid,string);
 		return 1;
 	}
@@ -35602,21 +36685,21 @@ CMD:finvite(playerid,params[]) {
 	if(PlayerInfo[params[0]][pFamily]) return ErrorMessage(playerid,"Игрок состоит в семье");
 	if(!ProxDetectorS(3.0, playerid,params[0])) return ErrorMessage(playerid, "Вы далеко друг от друга");
 
-	format(string, sizeof(string), ""P"%s "G"предложил(а) Вам вступить в семью "ORANGE"%s", player_name[playerid], gFamily[PlayerInfo[playerid][pFamily]-1][famName]);
+	format(string, sizeof(string), ""P"%s "G"предложил(а) Вам вступить в семью "ORANGE"%s", player_name[playerid], gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famName]);
 	SendUse(params[0], string);
 	SendClientMessage(params[0],COLOR_BLUE,"Нажмите "YES"Y "BLUE"чтобы согласиться "NO"N "BLUE"для отказа");
 
 	format(string, sizeof(string), "Вы предложили "P"%s "G"вступить в вашу семью", player_name[params[0]]);
 	SendUse(playerid, string);
 
-	SetPVarInt(params[0],"family_invite",playerid + 1);
+	SetPVarInt(params[0],"family_invite", playerid);
 	return 1;
 }
 CMD:funinvite(playerid,params[]) {
 	if(!PlayerInfo[playerid][pFamily]) return ErrorMessage(playerid,"Вы не состоите в семье");
 	new string[144];
-	if(PlayerInfo[playerid][pFamRank] < gFamily[PlayerInfo[playerid][pFamily]-1][famUninvRang]) {
-		format(string,sizeof(string),"Данная функция доступна с %i ранга", gFamily[PlayerInfo[playerid][pFamily]-1][famUninvRang]);
+	if(PlayerInfo[playerid][pFamRank] < gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famUninvRang]) {
+		format(string,sizeof(string),"Данная функция доступна с %i ранга", gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famUninvRang]);
 		ErrorMessage(playerid,string);
 		return 1;
 	}
@@ -35627,7 +36710,7 @@ CMD:funinvite(playerid,params[]) {
 	if(PlayerInfo[playerid][pFamRank] <= PlayerInfo[params[0]][pFamRank]) return ErrorMessage(playerid,"Ваш ранг недостаточен");
 	//if(!ProxDetectorS(3.0, playerid,params[0])) return ErrorMessage(playerid, "Вы далеко друг от друга");
 
-	new fam = PlayerInfo[playerid][pFamily]-1;
+	new fam = GetFamilyId(PlayerInfo[playerid][pFamily]);
 
 	format(string,128,""W"%s{%s} выгнал Вас из семьи "W"%s", player_name[playerid],FamilyColor[gFamily[fam][famColor]],gFamily[fam][famName]);
 	SendClientMessage(params[0],FamilyColorG[gFamily[fam][famColor]],string);
@@ -35637,14 +36720,14 @@ CMD:funinvite(playerid,params[]) {
 	UpdatePlayerData(params[0],"pFamRank",0);
 
 	format(string,128,""W"%s{%s} выгнал "W"%s{%s} из семьи", player_name[playerid],FamilyColor[gFamily[fam][famColor]],player_name[params[0]],FamilyColor[gFamily[fam][famColor]]);
-	FamMSG(fam+1,string);
+	FamMSG(fam,string);
 	return 1;
 }
 CMD:foffuninvite(playerid,params[]) {
 	if(!PlayerInfo[playerid][pFamily]) return ErrorMessage(playerid,"Вы не состоите в семье");
 	new string[144],query[144],giveplayerid;
-	if(PlayerInfo[playerid][pFamRank] < gFamily[PlayerInfo[playerid][pFamily]-1][famUninvRang]) {
-		format(string,sizeof(string),"Данная функция доступна с %i ранга", gFamily[PlayerInfo[playerid][pFamily]-1][famUninvRang]);
+	if(PlayerInfo[playerid][pFamRank] < gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famUninvRang]) {
+		format(string,sizeof(string),"Данная функция доступна с %i ранга", gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famUninvRang]);
 		ErrorMessage(playerid,string);
 		return 1;
 	}
@@ -35669,15 +36752,15 @@ CMD:foffuninvite(playerid,params[]) {
 	else ErrorMessage(playerid, "Данный игрок не состит в Вашей семье");
 	cache_delete(result);
 
-	format(string,128,""W"%s{%s} выгнал "W"%s{%s} из семьи", player_name[playerid],FamilyColor[gFamily[PlayerInfo[playerid][pFamily]-1][famColor]],params,FamilyColor[gFamily[PlayerInfo[playerid][pFamily]-1][famColor]]);
-	FamMSG(PlayerInfo[playerid][pFamily],string);
+	format(string,128,""W"%s{%s} выгнал "W"%s{%s} из семьи", player_name[playerid],FamilyColor[gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famColor]],params,FamilyColor[gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famColor]]);
+	FamMSG(GetFamilyId(PlayerInfo[playerid][pFamily]),string);
 	return 1;
 }
 CMD:frang(playerid, params[]) {
 	if(!PlayerInfo[playerid][pFamily]) return ErrorMessage(playerid,"Вы не состоите в семье");
 	new string[512];
-	if(PlayerInfo[playerid][pFamRank] < gFamily[PlayerInfo[playerid][pFamily]-1][famGiveRang]) {
-		format(string,sizeof(string),"Данная функция доступна с %i ранга", gFamily[PlayerInfo[playerid][pFamily]-1][famGiveRang]);
+	if(PlayerInfo[playerid][pFamRank] < gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famGiveRang]) {
+		format(string,sizeof(string),"Данная функция доступна с %i ранга", gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famGiveRang]);
 		ErrorMessage(playerid,string);
 		return 1;
 	}
@@ -35690,7 +36773,7 @@ CMD:frang(playerid, params[]) {
 	if(PlayerInfo[playerid][pFamRank] == 8) {
 		for(new i = 1; i <= 8; i++) {
 			if(i>= PlayerInfo[playerid][pFamRank]) break;
-			format(string,sizeof(string),"%s%s%s (%i)\n",string,(PlayerInfo[params[0]][pFamRank] == i) ? (""P"") : (""),GetFamName(PlayerInfo[playerid][pFamily]-1,i),i);
+			format(string,sizeof(string),"%s%s%s (%i)\n",string,(PlayerInfo[params[0]][pFamRank] == i) ? (""P"") : (""),GetFamName(GetFamilyId(PlayerInfo[playerid][pFamily]),i),i);
 			D(playerid,D_FAM_RANK,DSL,""P"Выберите ранг",string,"Выбрать","Закрыть");
 		}
 		SetPVarInt(playerid,"id_fgiverank",params[0]);
@@ -35698,7 +36781,7 @@ CMD:frang(playerid, params[]) {
 	else if(PlayerInfo[playerid][pFamRank] == 8-(8-PlayerInfo[playerid][pFamRank])) {
 		for(new i = 1; i <= 8; i++) {
 			if(i>= PlayerInfo[playerid][pFamRank]) break;
-			format(string,sizeof(string),"%s%s%s (%i)\n",string,(PlayerInfo[params[0]][pFamRank] == i) ? (""P"") : (""),GetFamName(PlayerInfo[playerid][pFamily]-1,i),i);
+			format(string,sizeof(string),"%s%s%s (%i)\n",string,(PlayerInfo[params[0]][pFamRank] == i) ? (""P"") : (""),GetFamName(GetFamilyId(PlayerInfo[playerid][pFamily]),i),i);
 			D(playerid,D_FAM_RANK,DSL,""P"Выберите ранг",string,"Выбрать","Закрыть");
 		}
 		SetPVarInt(playerid,"id_fgiverank",params[0]);
@@ -35736,7 +36819,9 @@ CMD:audience(playerid, params[]) {
     new radioall = 0,points[3],string[900],ratingLS = 0,ratingSF = 0,ratingLV = 0,procLS = 0, procSF = 0, procLV = 0;
 	foreach(new i:Player) {
 		if(!TI[i][tLogin] ||  AntiCheatIsKickedWithDesync(i)) continue;
+		if(PlayerInfo[i][pSettings][2] == fSFNEWS) ratingSF++, radioall++;
 		if(PlayerInfo[i][pSettings][2] == fLSNEWS) ratingLS++, radioall++;
+		if(PlayerInfo[i][pSettings][2] == fLVNEWS) ratingLV++, radioall++;
 	}
 	if(!radioall) return ErrorMessage(playerid,"Никто не подключен к радиостанции");
 	procLS = 100 / radioall * ratingLS;
@@ -35766,7 +36851,7 @@ CMD:edit(playerid) {
 		!PlayerToPoint(3.0,playerid,759.6584,-1536.2838,1417.8180) &&
 		!PlayerToPoint(3.0,playerid,759.6487,-1533.7859,1417.8180) &&
 		!PlayerToPoint(3.0,playerid,759.6533,-1531.2749,1417.8180) &&
-	VehicleInfo[veh][vTeam] != fLSNEWS) return ErrorMessage(playerid,"Необходимо находиться на рабочем месте/служебном автомобиле");
+	VehicleInfo[veh][vTeam] != fLSNEWS && VehicleInfo[veh][vTeam] != fSFNEWS && VehicleInfo[veh][vTeam] != fLVNEWS) return ErrorMessage(playerid,"Необходимо находиться на рабочем месте/служебном автомобиле");
 	ShowAdvertList(playerid);
 	return 1;
 }
@@ -35774,7 +36859,7 @@ CMD:ether(playerid) {
 	if(!IsANews(playerid) || !start_work[playerid]) return ErrorMessage(playerid, "Вы не сотрудник новостей");
 	if(PlayerInfo[playerid][pRank] < 5) return ErrorMessage(playerid, "Доступно с 5 ранга");
 	new veh = GetPlayerVehicleID(playerid);
-	if(VehicleInfo[veh][vTeam] == fLSNEWS || PlayerToPoint(5.0,playerid,779.9375,-1497.9346,1418.8450)) {
+	if(VehicleInfo[veh][vTeam] == fLSNEWS || VehicleInfo[veh][vTeam] == fSFNEWS || VehicleInfo[veh][vTeam] == fLVNEWS || PlayerToPoint(5.0,playerid,779.9375,-1497.9346,1418.8450)) {
 		if(!TI[playerid][tEther]) {
 			TI[playerid][tEther] = true;
 			SendClientMessage(playerid,COLOR_GREEN,"Вы в прямом эфире");		
@@ -35809,6 +36894,20 @@ CMD:skip(playerid) {
 			PhoneStatus(calls_ether[0],false);
 			TI[calls_ether[0]][tPhoneNews] = true;
 			calls_ether[0] = INVALID_PLAYER_ID;
+		}
+		case fSFNEWS: {
+			if(calls_ether[1] == INVALID_PLAYER_ID) return ErrorMessage(playerid,"Никого нет на линии");
+			SendClientMessage(calls_ether[1],COLOR_GREY,"Вы были отсоединены ведущим");
+			PhoneStatus(calls_ether[1],false);
+			TI[calls_ether[1]][tPhoneNews] = true;
+			calls_ether[1] = INVALID_PLAYER_ID;
+		}
+		case fLVNEWS: {
+			if(calls_ether[2] == INVALID_PLAYER_ID) return ErrorMessage(playerid,"Никого нет на линии");
+			SendClientMessage(calls_ether[2],COLOR_GREY,"Вы были отсоединены ведущим");
+			PhoneStatus(calls_ether[2],false);
+			TI[calls_ether[2]][tPhoneNews] = true;
+			calls_ether[2] = INVALID_PLAYER_ID;
 		}
 	}
 	SendClientMessage(playerid,COLOR_GREY,"Игрок отсоединен");
@@ -36456,7 +37555,7 @@ CMD:call(playerid,params[]) {
 	switch(number) {
 		case 0000: {
 			if(!PlayerInfo[playerid][pDonateBank]) return 1;
-			return D(playerid, D_DONATE_BANK_2, DSL, ""P"Выберите банк", ""P"1."W" Банк г.ЛС\n"P"2."W" Банк д. Блубери\n"P"3."W" Банк д. Паломино Креек", "Выбрать", "Отмена");
+			return D(playerid, D_DONATE_BANK_2, DSL, ""P"Выберите банк", ""P"1."W" Банк г.ЛС\n"P"2."W" Банк г.СФ\n"P"3."W" Банк г.ЛВ", "Выбрать", "Отмена");
 		}
 		case 911: return D(playerid, D_CALL_SERVICESS, DSL, ""P"Выберите сервис", ""P"1."W" Полиция\n"P"2."W" Скорая помощь\n"P"3."W" Механик", "Выбор", "Отмена");
 		case 111: {
@@ -36475,6 +37574,42 @@ CMD:call(playerid,params[]) {
 			PhoneStatus(playerid,true);
 			calls_ether[0] = playerid;
 			PlayerInfo[playerid][pSettings][2] = fLSNEWS;
+			TI[playerid][tPhoneNews] = true;
+		}
+		case 222: {
+			if(PlayerInfo[playerid][pVips] != VIP_ECSCLUSIVE || PlayerInfo[playerid][pVips] != VIP_FOREVER) {
+				if(PlayerInfo[playerid][pMobile] <= 9) return ErrorMessage(playerid,"Недостаточно средств на счету телефона");
+			}
+			if(calls_news[1] == INVALID_PLAYER_ID) return ErrorMessage(playerid,"Приём звонков отключен");
+			if(calls_ether[1] != INVALID_PLAYER_ID) return ErrorMessage(playerid,"Линия занята");
+			if(PlayerInfo[playerid][pMember] == fSFNEWS) return ErrorMessage(playerid,"Вы не можете звонить в свою студию");
+			if(random(3)) return ErrorMessage(playerid,"Дозвониться не получилось");
+
+			SendClientMessage(playerid,CGOLD,"Вы в прямом эфире");
+			SendOk(calls_news[1],"Игрок дозвонился в прямой эфир");
+			SendOk(calls_news[1],"Чтобы закончить разговор, введите: "W"/skip");
+			SetPlayerSpecialAction(playerid,SPECIAL_ACTION_USECELLPHONE);
+			SetPlayerAttachedObject(playerid,0,330,6);
+			calls_ether[1] = playerid;
+			PlayerInfo[playerid][pSettings][2] = fSFNEWS;
+			TI[playerid][tPhoneNews] = true;
+		}
+		case 333: {
+			if(PlayerInfo[playerid][pVips] != VIP_ECSCLUSIVE || PlayerInfo[playerid][pVips] != VIP_FOREVER) {
+				if(PlayerInfo[playerid][pMobile] <= 9) return ErrorMessage(playerid,"Недостаточно средств на счету телефона");
+			}
+			if(calls_news[2] == INVALID_PLAYER_ID) return ErrorMessage(playerid,"Приём звонков отключен");
+			if(calls_ether[2] != INVALID_PLAYER_ID) return ErrorMessage(playerid,"Линия занята");
+			if(PlayerInfo[playerid][pMember] == fLVNEWS) return ErrorMessage(playerid,"Вы не можете звонить в свою студию");
+			if(random(3)) return ErrorMessage(playerid,"Дозвониться не получилось");
+
+			SendClientMessage(playerid,CGOLD,"Вы в прямом эфире");
+			SendOk(calls_news[2],"Игрок дозвонился в прямой эфир");
+			SendOk(calls_news[2],"Чтобы закончить разговор, введите: "W"/skip");
+			SetPlayerSpecialAction(playerid,SPECIAL_ACTION_USECELLPHONE);
+			SetPlayerAttachedObject(playerid,0,330,6);
+			calls_ether[2] = playerid;
+			PlayerInfo[playerid][pSettings][2] = fLVNEWS;
 			TI[playerid][tPhoneNews] = true;
 		}
 		default: {
@@ -36754,7 +37889,7 @@ CMD:test100(playerid) {
 }
 CMD:testt(playerid) {
 	new string[128];
-	format(string, sizeof(string), "ID: %d | %d", gPlayerCars[playerid][carVehcom_1][0], GetVehicleComponentInSlot(house_car[playerid][0], CARMODTYPE_SPOILER));
+	format(string, sizeof(string), "ID: %d", gPlayerCars[playerid][carVehcom_1][0]);
 	SendClientMessage(playerid, COLOR_GRAD1, string);
 	format(string, sizeof(string), "ID: %d", gPlayerCars[playerid][carVehcom_1][1]);
 	SendClientMessage(playerid, COLOR_GRAD1, string);
@@ -36798,7 +37933,7 @@ CMD:test2(playerid) {
 	return 1;
 }
 CMD:setspawn(playerid) {
-	if(PlayerInfo[playerid][pFamily] && gHouses[gFamily[PlayerInfo[playerid][pFamily]-1][famHouse]][houseFamily] == gFamily[PlayerInfo[playerid][pFamily]-1][famHouse]) D(playerid, D_SPAWN, DSL, ""P"Выбор спавна", ""P"1."W" Вокзал\n"P"2."W" В доме/отеле\n"P"3."W" На базе организации\n"P"4."W" В доме семьи", "Выбрать", "Отмена");
+	if(PlayerInfo[playerid][pFamily] && gHouses[gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famHouse]][houseFamily] == gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famHouse]) D(playerid, D_SPAWN, DSL, ""P"Выбор спавна", ""P"1."W" Вокзал\n"P"2."W" В доме/отеле\n"P"3."W" На базе организации\n"P"4."W" В доме семьи", "Выбрать", "Отмена");
 	else D(playerid, D_SPAWN, DSL, ""P"Выбор спавна", ""P"1."W" Вокзал\n"P"2."W" В доме/отеле\n"P"3."W" На базе организации", "Выбрать", "Отмена");
 	return 1;
 }
@@ -37067,7 +38202,7 @@ CMD:gnews(playerid, params[]) {
 	new max_rows = GetPVarInt(playerid, "max_rows");
 	new get_goverment_text[100];
 	new set_pvar_string[15];
-	if(!IsACop(playerid) && !IsAMayor(playerid) && !IsANews(playerid) && !IsAMedic(playerid) && PlayerInfo[playerid][pMember] != fINSTRUCTORS && PlayerInfo[playerid][pMember] != fWHITEHOUSE) return 1;
+	if(!IsACop(playerid) && !IsAArm(playerid) && !IsAMayor(playerid) && !IsANews(playerid) && !IsAMedic(playerid) && PlayerInfo[playerid][pMember] != fINSTRUCTORS && PlayerInfo[playerid][pMember] != fWHITEHOUSE) return 1;
 	else if(PlayerInfo[playerid][pRank] < FI[GetTeamID(playerid)][fInviteRang]) return ErrorMessage(playerid, "Вам недоступна эта команда");
 	else if(!start_work[playerid]) return ErrorMessage(playerid, "Вам необходимо начать рабочий день");
 	else if(PlayerInfo[playerid][pMute] > 0) return ErrorMessage(playerid, "У Вас бан чата");
@@ -37313,7 +38448,7 @@ CMD:pass(playerid, params[]) {
 	return 1;
 }
 CMD:fakepass(playerid, params[]) {
-	if(PlayerInfo[playerid][pMember] != fLSPD || !start_work[playerid]) return ErrorMessage(playerid, "Вы не агент FBI");
+	if(PlayerInfo[playerid][pMember] != fFBI || !start_work[playerid]) return ErrorMessage(playerid, "Вы не агент FBI");
 	if(!TI[playerid][tMasked]) return ErrorMessage(playerid,"На Вас нет маскировочной формы");
 	if(sscanf(params,"d",params[0])) return SendEsp(playerid, "/fakepass [id игрока]");
 	if(!IsPlayerConnected(params[0])) return ErrorMessage(playerid,not_id);
@@ -37351,11 +38486,12 @@ CMD:suspect(playerid, params[]) {
 CMD:clear(playerid, params[]) {
 	if(!IsACop(playerid) || !start_work[playerid]) return ErrorMessage(playerid, "Доступно только правоохранительным органам");
 	if(IsAPD(playerid)) if(PlayerInfo[playerid][pRank] < 6) return ErrorMessage(playerid, "Доступно с 6 ранга");
+	if(GetTeamID(playerid) == fFBI) if(PlayerInfo[playerid][pRank] < 4) return ErrorMessage(playerid, "Доступно с 4 ранга");
 	if(PlayerInfo[playerid][pRank] < 6) return ErrorMessage(playerid, "Доступно с 6 ранга");
 	if(sscanf(params,"i",params[0])) return SendEsp(playerid, "/clear [ID игрока]");
 	if(!IsPlayerConnected(params[0])) return ErrorMessage(playerid,not_id);
 	new veh = GetPlayerVehicleID(playerid);
-	if(VehicleInfo[veh][vTeam] != fLSPD) return ErrorMessage(playerid, "Вы не в полицейской машине");
+	if(VehicleInfo[veh][vTeam] != fLSPD && VehicleInfo[veh][vTeam] != fSFPD && VehicleInfo[veh][vTeam] != fLVPD && VehicleInfo[veh][vTeam] != fFBI) return ErrorMessage(playerid, "Вы не в полицейской машине");
 	if(params[0] == INVALID_PLAYER_ID) return ErrorMessage(playerid,not_id);
 	if(!ProxDetectorS(5.0, playerid, params[0])) return ErrorMessage(playerid, "Игрок далеко от вас");
 	if(!PlayerInfo[params[0]][pSearch]) return ErrorMessage(playerid,"Игрок не находится в розыске");
@@ -37369,8 +38505,8 @@ CMD:clear(playerid, params[]) {
 	return 1;
 }
 CMD:tipster(playerid,params[]) {
-	if(PlayerInfo[playerid][pMember] != fLSPD) return ErrorMessage(playerid, "Доступно только LSPD");
-	if(PlayerInfo[playerid][pRank] < 7 && PlayerInfo[playerid][pMember] == fLSPD) return ErrorMessage(playerid,"Доступно с 7 ранга");
+	if(PlayerInfo[playerid][pMember] != fFBI) return ErrorMessage(playerid, "Доступно только ФБР");
+	if(PlayerInfo[playerid][pRank] < 5 && PlayerInfo[playerid][pMember] == fFBI) return ErrorMessage(playerid,"Доступно с 5 ранга");
 	if(!GetPVarInt(playerid,"tipster")) return ErrorMessage(playerid, "У Вас нет жучка. Подойдите к багажнику машины и нажмите "GREEN"ALT");
 	new param[40],string[200];
 	if(sscanf(params, "s[32]S()[64]", param, params)) {
@@ -37581,7 +38717,7 @@ CMD:megaphone(playerid,params[]) {
 	if(PlayerInfo[playerid][pMute]) return ErrorMessage(playerid,"У Вас бан чата");
 	if(sscanf(params, "s[128]",params[0])) return SendEsp(playerid, "/m [текст]");
 	new veh = GetPlayerVehicleID(playerid);
-	if(VehicleInfo[veh][vTeam] != fLSPD && PlayerInfo[playerid][pAdmin] == 0) return ErrorMessage(playerid, "Вы не в полицейской машине");
+	if(VehicleInfo[veh][vTeam] != fLSPD && VehicleInfo[veh][vTeam] != fSFPD && VehicleInfo[veh][vTeam] != fLVPD && VehicleInfo[veh][vTeam] != fFBI && PlayerInfo[playerid][pAdmin] == 0) return ErrorMessage(playerid, "Вы не в полицейской машине");
 	new string[220];
 	if(PlayerInfo[playerid][pAdmin] >= 1 || dostup[playerid] != 0) {
 		format(string,sizeof(string),"[АДМИНИСТРАТОР] %s(%d): %s",player_name[playerid],playerid,params[0]);
@@ -37596,6 +38732,7 @@ CMD:megaphone(playerid,params[]) {
 CMD:look(playerid,params[]) {
 	if(!IsACop(playerid) || !start_work[playerid]) return ErrorMessage(playerid, "Доступно только правоохранительным органам");
 	if(IsAPD(playerid)) if(PlayerInfo[playerid][pRank] < 3) return ErrorMessage(playerid, "Доступно с 3 ранга");
+	if(GetTeamID(playerid) == fFBI) if(PlayerInfo[playerid][pRank] < 2) return ErrorMessage(playerid, "Доступно со 2 ранга");
 	if(sscanf(params,"d",params[0])) return SendEsp(playerid, "/look [id]");
 	if(!IsPlayerConnected(params[0])) return ErrorMessage(playerid,not_id);
 	if(!IsPlayerStream(3.0, playerid, params[0])) return ErrorMessage(playerid, "Игрок не рядом с Вами");
@@ -37612,6 +38749,79 @@ CMD:look(playerid,params[]) {
 	MeAction(playerid, string);
 	return 1;
 }
+
+CMD:demote(playerid, params[]) {
+	if(PlayerInfo[playerid][pMember] != fFBI || !start_work[playerid]) return ErrorMessage(playerid, "Вы не агент FBI");
+	new string[144];
+	if(PlayerInfo[playerid][pRank] < FI[GetTeamID(playerid)][fInviteRang]) {
+		format(string,sizeof(string),"Данная функция доступна с %i ранга", FI[GetTeamID(playerid)][fInviteRang]);
+		ErrorMessage(playerid,string);
+		return 1;
+	}
+	new giveplayerid;
+	if(sscanf(params,"u",giveplayerid)) return  SendEsp(playerid, "/demote [id]");
+	if(giveplayerid == INVALID_PLAYER_ID) return ErrorMessage(playerid,not_id);
+	if(PlayerInfo[giveplayerid][pLeader]) return ErrorMessage(playerid,"Невозможно применить на лидере");
+	new giveplayer_member = PlayerInfo[giveplayerid][pMember];
+	switch(giveplayer_member) {
+		case fLSPD, fSFPD, fLVPD,fARMYSF,fARMYLV: {}
+		default: return ErrorMessage(playerid, "Данный игрок не состоит в правоохранительных органах/армии");
+	}
+	new rankdemote = PlayerInfo[giveplayerid][pRank];
+	rankdemote --;
+	if(!rankdemote) {
+		switch(giveplayer_member) {
+			case fLSPD, fSFPD, fLVPD: {
+				PlayerInfo[giveplayerid][pMember] = fARMYSF;
+				PlayerInfo[giveplayerid][pRank] = 3;
+				DelGun(giveplayerid);
+				PlayerInfo[giveplayerid][pJob] = 0;
+				PlayerInfo[giveplayerid][pFracSkin] = GetPVarInt(giveplayerid,"InviteSkin");
+
+				UpdatePlayerData(giveplayerid,"pMember",PlayerInfo[giveplayerid][pMember]);
+				UpdatePlayerData(giveplayerid,"pRank",PlayerInfo[giveplayerid][pRank]);
+				SetPVarInt(giveplayerid,"InviteSkin", (PlayerInfo[giveplayerid][pSex] == 1) ? (287) : (141));
+				SetPlayerColor(playerid,gFractionSpawn[PlayerInfo[playerid][pMember]][fracColor]);
+				A_SetPlayerSkin(giveplayerid, GetPVarInt(giveplayerid,"InviteSkin"));
+
+				format(string, sizeof(string), ""W"%s [%s]"G" перевел Вас в армию", player_name[playerid],GetRankName(PlayerInfo[playerid][pMember],PlayerInfo[playerid][pRank]));
+				SendOk(giveplayerid, string);
+				format(string, sizeof(string), "Вы перевели "W"%s"G" в армию", player_name[giveplayerid],rankdemote);
+				SendOk(playerid, string);
+				return 1;
+			}
+		}
+		PlayerInfo[giveplayerid][pRank] = 0;
+		UpdatePlayerData(giveplayerid,"pRank",PlayerInfo[giveplayerid][pRank]);
+
+		PlayerInfo[giveplayerid][pMember] = 0;
+		UpdatePlayerData(giveplayerid,"pMember",PlayerInfo[giveplayerid][pMember]);
+
+		SetPlayerArmour(giveplayerid,0);
+		DelGun(giveplayerid);
+		SetPlayerColor(giveplayerid, TEAM_HIT_COLOR);
+		if(PlayerInfo[giveplayerid][pHouse] > 0) PlayerInfo[giveplayerid][pSpawn] = 1;
+		else PlayerInfo[giveplayerid][pSpawn] = 0;
+		A_SetPlayerSkin(giveplayerid, PlayerInfo[giveplayerid][pSkin]);
+
+		format(string, sizeof(string), ""W"%s"G" уволил Вас из организации", player_name[playerid]);
+		SendOk(giveplayerid, string);
+
+		format(string, sizeof(string), "Вы уволили "W"%s"G" из организации", player_name[giveplayerid]);
+		SendOk(playerid, string);
+		return 1;
+	}
+	PlayerInfo[giveplayerid][pRank] = rankdemote;
+	UpdatePlayerData(giveplayerid,"pRank",PlayerInfo[giveplayerid][pRank]);
+
+	format(string, sizeof(string), ""W"%s"G" понизил Вас до "ORANGE"%s[%d]", player_name[playerid],GetRankName(PlayerInfo[giveplayerid][pMember],rankdemote), rankdemote);
+	SendOk(giveplayerid, string);
+
+	format(string, sizeof(string), "Вы понизили "W"%s"G" до "ORANGE"%s[%d]", player_name[giveplayerid],GetRankName(PlayerInfo[giveplayerid][pMember],rankdemote), rankdemote);
+	SendOk(playerid, string);
+	return 1;
+}
+
 CMD:arrest(playerid,params[]) {
 	if(!IsACop(playerid) || !start_work[playerid]) return ErrorMessage(playerid, "Доступно только правоохранительным органам");
 	if(!PlayerToPoint(10.0, playerid, 1560.2266,-1694.2327,5.8970) && 
@@ -37660,6 +38870,7 @@ CMD:ticket(playerid, params[]) {
 	if(!IsACop(playerid) || !start_work[playerid]) return ErrorMessage(playerid, "Доступно только правоохранительным органам");
 	if(sscanf(params, "uds[128]",params[0],params[1],params[2])) return SendEsp(playerid, "/ticket [id] [цена] [причина]");
 	if(IsACop(params[0]) && start_work[params[0]]) return ErrorMessage(playerid, "Вы не можете выписать штраф сотруднику првоохранительных органов");
+	if(GetTeamID(playerid) == fFBI) if(PlayerInfo[playerid][pRank] < 4) return ErrorMessage(playerid, "Доступно с 4 ранга");
 	if(PlayerInfo[playerid][pRank] < 3) return ErrorMessage(playerid, "Доступно с 3 ранга");
 	if(!IsPlayerConnected(params[0])) return ErrorMessage(playerid,not_id);
 	if(params[1] < 1 || params[1] > 10000) return ErrorMessage(playerid, "Сумма штрафа не должна превышать $10.000");
@@ -37693,7 +38904,8 @@ CMD:take(playerid,params[]) {
 }
 CMD:hack(playerid, params[]) {
     if(!IsACop(playerid) || !start_work[playerid]) return ErrorMessage(playerid, "Доступно только правоохранительным органам");
-	if(GetTeamID(playerid) == fLSPD) if(PlayerInfo[playerid][pRank] < 4) return ErrorMessage(playerid, "Доступно с 4 ранга");
+	if(GetTeamID(playerid) == fFBI) if(PlayerInfo[playerid][pRank] < 4) return ErrorMessage(playerid, "Доступно с 4 ранга");
+	if(PlayerInfo[playerid][pRank] < 2) return ErrorMessage(playerid, "Доступно со 2 ранга");
 	new idx = -1;
 	for(new i = 0; i < gHouseCount; i ++) {
 		if(IsPlayerInRangeOfPoint(playerid, 3.0, gHouses[i][houseX], gHouses[i][houseY], gHouses[i][houseZ])) {
@@ -37709,7 +38921,8 @@ CMD:hack(playerid, params[]) {
 }
 CMD:spikes(playerid) {
 	if(!IsACop(playerid) || !start_work[playerid]) return ErrorMessage(playerid, "Доступно только правоохранительным органам");
-	if(GetTeamID(playerid) == fLSPD) if(PlayerInfo[playerid][pRank] < 4) return ErrorMessage(playerid, "Доступно с 4 ранга");
+	if(GetTeamID(playerid) == fFBI) if(PlayerInfo[playerid][pRank] < 4) return ErrorMessage(playerid, "Доступно с 4 ранга");
+	if(PlayerInfo[playerid][pRank] < 2) return ErrorMessage(playerid, "Доступно со 2 ранга");
 	new veh = GetPlayerVehicleID(playerid);
 	if(GetVehicleModel(veh) != 490 && GetVehicleModel(veh) != 560 && GetVehicleModel(veh) != 596 && GetVehicleModel(veh) != 597 && GetVehicleModel(veh) != 598 && GetVehicleModel(veh) != 599) return ErrorMessage(playerid,"Недоступно в данном автомобиле");
 	if(GetPlayerVirtualWorld(playerid) != 0) return 1;
@@ -37771,7 +38984,7 @@ CMD:rights(playerid) {
 CMD:obc(playerid) {
     if(!IsACop(playerid) || !start_work[playerid]) return ErrorMessage(playerid, "Доступно только правоохранительным органам");
 	new veh = GetPlayerVehicleID(playerid);
-	if(VehicleInfo[veh][vTeam] != fLSPD) return ErrorMessage(playerid, "Вы не в полицейской машине");
+	if(VehicleInfo[veh][vTeam] != fLSPD && VehicleInfo[veh][vTeam] != fSFPD && VehicleInfo[veh][vTeam] != fLVPD && VehicleInfo[veh][vTeam] != fFBI) return ErrorMessage(playerid, "Вы не в полицейской машине");
     if(GetPVarInt(playerid, "Patrul") == 1) {
 		DeletePVar(playerid, "Patrul");
 		KillTimer(time_wanted[playerid]);
@@ -37783,7 +38996,7 @@ CMD:obc(playerid) {
 	return 1;
 }
 CMD:scan(playerid,params[]) {
-    if(GetTeamID(playerid) != fLSPD || !start_work[playerid]) return ErrorMessage(playerid, "Доступно только сотрудникам LSPD");
+    if(GetTeamID(playerid) != fFBI || !start_work[playerid]) return ErrorMessage(playerid, "Доступно только сотрудникам FBI");
 	if(PlayerInfo[playerid][pRank] < 3) return ErrorMessage(playerid, "Доступно с 3 ранга");
 	if(!PlayerToPoint(3.0,playerid,1491.3950,278.6347,1019.8281) &&
 		!PlayerToPoint(3.0,playerid,1494.4558,281.5873,1020.7458)) return ErrorMessage(playerid,"Необходимо находиться на рабочем месте");
@@ -37981,7 +39194,7 @@ CMD:medics(playerid) {
     if(!IsAMedic(playerid) || !start_work[playerid]) return ErrorMessage(playerid, "Доступно только здравоохранительным органам");
 	if(PlayerInfo[playerid][pRank] < 2) return ErrorMessage(playerid, "Доступно со 2 ранга");
 	new veh = GetPlayerVehicleID(playerid);
-	if(VehicleInfo[veh][vTeam] != fMEDICLS) return ErrorMessage(playerid, "Вы не в Т/С МЧС");
+	if(VehicleInfo[veh][vTeam] != fMEDICLS && VehicleInfo[veh][vTeam] != fMEDICSF && VehicleInfo[veh][vTeam] != fMEDICLV) return ErrorMessage(playerid, "Вы не в Т/С МЧС");
 	new Float:pos[3];
     GetPlayerPos(playerid,pos[0],pos[1],pos[2]); 
 	new bool:callers = false;
@@ -38382,7 +39595,94 @@ CMD:members(playerid) {
 	SendOk(playerid,strr);
 	return 1;
 }
-
+CMD:invite(playerid, params[]) {
+	if(!PlayerInfo[playerid][pMember]) return ErrorMessage(playerid,"Вы не состоите в организации");
+	if(!start_work[playerid]) return ErrorMessage(playerid, "Необходимо начать рабочий день");
+	new string[128];
+	if(PlayerInfo[playerid][pRank] < FI[GetTeamID(playerid)][fInviteRang]) {
+		format(string,sizeof(string),"Данная функция доступна с %i ранга", FI[GetTeamID(playerid)][fInviteRang]);
+		ErrorMessage(playerid,string);
+		return 1;
+	}
+	if(sscanf(params,"d",params[0])) return	SendEsp(playerid, "/invite [ID]");
+	if(!IsPlayerConnected(params[0]) || params[0] == INVALID_PLAYER_ID) return ErrorMessage(playerid,not_id);
+	if(IsPlayerInAnyVehicle(params[0])) return ErrorMessage(playerid, "Игрок в машине");
+	if(GetTeamID(params[0]) > 0) return ErrorMessage(playerid, "Игрок уже состоит в организации");
+	if(PlayerInfo[params[0]][pWarns] >= 1) return ErrorMessage(playerid, "У игрока имеются предупреждения");
+	//if(PlayerInfo[params[0]][pLevel] < 2) return ErrorMessage(playerid, "У игрока должен быть 2 уровень");
+	if(bl_info[params[0]][bl_fraction][PlayerInfo[playerid][pMember]]) return ErrorMessage(playerid, "Игрок в ЧС Вашей организации");
+	if(!IsPlayerStream(7.0, playerid, params[0])) return ErrorMessage(playerid, "Вы далеко от игрока");
+	if(GetPVarInt(params[0],"krup")) return ErrorMessage(playerid, "Данный игрок работает крупье");
+	if(active_accept(params[0])) return ErrorMessage(playerid,"У игрока есть активное предложение");
+	switch(PlayerInfo[playerid][pMember]) {
+		case fLSPD,fSFPD,fLVPD: {
+			if(PlayerInfo[params[0]][pLevel] < invite_frac[0]) {
+				format(string,sizeof(string),"У игрока должен быть %i уровень", invite_frac[0]);
+				ErrorMessage(playerid,string);
+				return 1;
+			}
+		}
+		case fFBI: {
+			if(PlayerInfo[params[0]][pLevel] < invite_frac[1]) {
+				format(string,sizeof(string),"У игрока должен быть %i уровень", invite_frac[1]);
+				ErrorMessage(playerid,string);
+				return 1;
+			}
+		}
+		case fARMYSF,fARMYLV: {
+			if(PlayerInfo[params[0]][pLevel] < invite_frac[2]) {
+				format(string,sizeof(string),"У игрока должен быть %i уровень", invite_frac[2]);
+				ErrorMessage(playerid,string);
+				return 1;
+			}
+		}
+		case fMEDICLS,fMEDICSF,fMEDICLV: {
+			if(PlayerInfo[params[0]][pLevel] < invite_frac[3]) {
+				format(string,sizeof(string),"У игрока должен быть %i уровень", invite_frac[3]);
+				ErrorMessage(playerid,string);
+				return 1;
+			}
+		}
+		case fLSNEWS,fSFNEWS,fLVNEWS: {
+			if(PlayerInfo[params[0]][pLevel] < invite_frac[4]) {
+				format(string,sizeof(string),"У игрока должен быть %i уровень", invite_frac[4]);
+				ErrorMessage(playerid,string);
+				return 1;
+			}
+		}
+		case fLCN,fYAKUZA,fRM: {
+			if(PlayerInfo[params[0]][pLevel] < invite_frac[5]) {
+				format(string,sizeof(string),"У игрока должен быть %i уровень", invite_frac[5]);
+				ErrorMessage(playerid,string);
+				return 1;
+			}
+		}
+		case fBALLAS,fVAGOS,fGROVE,fAZTEC,fRIFA: {
+			if(PlayerInfo[params[0]][pLevel] < invite_frac[6]) {
+				format(string,sizeof(string),"У игрока должен быть %i уровень", invite_frac[6]);
+				ErrorMessage(playerid,string);
+				return 1;
+			}
+		}
+		case fWHITEHOUSE: {
+			if(PlayerInfo[params[0]][pLevel] < invite_frac[7]) {
+				format(string,sizeof(string),"У игрока должен быть %i уровень", invite_frac[7]);
+				ErrorMessage(playerid,string);
+				return 1;
+			}
+		}
+	}
+	new mes[400];
+	for(new i;i<10;i++) {
+		new skinid = gFractionSkin[PlayerInfo[playerid][pMember]][i];
+		if(!skinid) break;
+		if(!i) format(mes,sizeof(mes),"Скин %d [%d]",i+1,skinid);
+		else format(mes,sizeof(mes),"%s\nСкин %d [%d]",mes,i+1,skinid);
+	}
+	D(playerid,dInviteSkin,DSL,player_name[params[0]],mes,"Принять","");
+	SetPVarInt(playerid,"invkot",params[0]);
+	return 1;
+}
 CMD:uninvite(playerid, params[]) {
 	if(!PlayerInfo[playerid][pMember]) return ErrorMessage(playerid,"Вы не состоите в организации");
 	if(!start_work[playerid]) return ErrorMessage(playerid, "Необходимо начать рабочий день");
@@ -38653,28 +39953,24 @@ CMD:dropgun(playerid, param[]) {
 	DropGun(playerid,weapon,ammo);
     return 1;
 }
-CMD:changeskinn(playerid) {
+CMD:changeskin(playerid,params[]) {
     new mes[400];
     if(!PlayerInfo[playerid][pMember]) return ErrorMessage(playerid,"Вы не состоите в организации");
-	new rank = PlayerInfo[playerid][pRank];
-	new numSkin = 1;
-	if(rank == 2) numSkin = 2;
-	if(rank >= 3) numSkin = 3;
-	if(rank >= 5) numSkin = 4;
-	if(rank >= 7) numSkin = 7;
-	if(rank >= 10) numSkin = 10;
-	if(rank >= 13) numSkin = 14;
-	if(rank == 15) numSkin = 15;
-	for(new i; i < numSkin;i++) {
-		new skinid;
-		if(PlayerInfo[playerid][pSex] == 1) {
-			skinid = gFractionSkinMan[PlayerInfo[playerid][pMember]][i];
-		} 
-		else {
-			skinid = gFractionSkinGirl[PlayerInfo[playerid][pMember]][i];
-		}
+	if(!start_work[playerid]) return ErrorMessage(playerid, "Необходимо начать рабочий день");
+	if(PlayerInfo[playerid][pRank] < FI[GetTeamID(playerid)][fUninviteRang]) {
+		format(mes,128,"Данная функция доступна с %i ранга", FI[GetTeamID(playerid)][fUninviteRang]);
+		ErrorMessage(playerid,mes);
+		return 1;
+	}
+	if(sscanf(params,"u",params[0])) return SendEsp(playerid,"/changeskin [ID]");
+	if(!IsPlayerConnected(params[0])) return ErrorMessage(playerid,not_id);
+	if(PlayerInfo[params[0]][pMember] != PlayerInfo[playerid][pMember]) return ErrorMessage(playerid,"Игрок не состоит в Вашей организации");
+	if(PlayerInfo[params[0]][pRank] >= PlayerInfo[playerid][pRank] && params[0] != playerid) return ErrorMessage(playerid,"Ваш ранг недостаточен");
+	SetPVarInt(playerid,"params[0]",params[0]);
+	for(new i; i < 10;i++) {
+		new skinid = gFractionSkin[PlayerInfo[playerid][pMember]][i];
 		if(!skinid) break;
-		if(skinid == PlayerInfo[playerid][pFracSkin]) {
+		if(skinid == PlayerInfo[params[0]][pFracSkin]) {
 			if(!i) format(mes,sizeof(mes),""P"Скин %d [%d]",i+1,skinid);
 			else format(mes,sizeof(mes),"%s\n"P"Скин %d [%d]",mes,i+1,skinid);
 		}
@@ -38683,7 +39979,7 @@ CMD:changeskinn(playerid) {
 			else format(mes,sizeof(mes),"%s\nСкин %d [%d]",mes,i+1,skinid);
 		}
 	}
-	D(playerid,dFractionSkin,2,player_name[playerid],mes,"Сменить","Отмена");
+	D(playerid,dFractionSkin,2,player_name[params[0]],mes,"Сменить","Отмена");
 	return true;
 }
 CMD:rang(playerid, params[]) {
@@ -38756,7 +40052,7 @@ CMD:fb(playerid, params[]) {
 	return true;
 }
 CMD:rb(playerid,params[]) {
-	if(!IsACop(playerid) && !IsAMedic(playerid) && !IsANews(playerid) && PlayerInfo[playerid][pMember] != fINSTRUCTORS && PlayerInfo[playerid][pMember] != fMAYOR && PlayerInfo[playerid][pMember] != fWHITEHOUSE) return true;
+	if(!IsACop(playerid) && !IsAMedic(playerid) && !IsAArm(playerid) && !IsANews(playerid) && PlayerInfo[playerid][pMember] != fINSTRUCTORS && PlayerInfo[playerid][pMember] != fMAYOR && PlayerInfo[playerid][pMember] != fWHITEHOUSE) return true;
 	if(!PlayerInfo[playerid][pSettings][1]) return ErrorMessage(playerid,"Для начала включите чат организации. /mm > личные настройки > чат организации");
 	if(PlayerInfo[playerid][pFMute] > 0) return ErrorMessage(playerid, "У Вас заглушка");
 	new result[128];
@@ -38775,7 +40071,7 @@ CMD:rb(playerid,params[]) {
 	return 1;
 }
 CMD:r(playerid, params[]) {
-	if(!IsACop(playerid) && !IsAMedic(playerid) && !IsANews(playerid) && PlayerInfo[playerid][pMember] != fINSTRUCTORS && PlayerInfo[playerid][pMember] != fMAYOR && PlayerInfo[playerid][pMember] != fWHITEHOUSE) return true;
+	if(!IsACop(playerid) && !IsAMedic(playerid) && !IsAArm(playerid) && !IsANews(playerid) && PlayerInfo[playerid][pMember] != fINSTRUCTORS && PlayerInfo[playerid][pMember] != fMAYOR && PlayerInfo[playerid][pMember] != fWHITEHOUSE) return true;
 	if(GetPVarInt(playerid,"takradio")) return ErrorMessage(playerid, "У Вас нет рации");
 	if(!PlayerInfo[playerid][pSettings][1]) return ErrorMessage(playerid,"Для начала включите чат организации. /mm > личные настройки > чат организации");
 	if(PlayerInfo[playerid][pFMute] > 0) return ErrorMessage(playerid, "У Вас заглушка");
@@ -38791,6 +40087,81 @@ CMD:r(playerid, params[]) {
 	format(string, sizeof(string), f_str,GetRankName(GetTeamID(playerid),PlayerInfo[playerid][pRank]), player_name[playerid],playerid, result);
 	SendFamilyMessage(PlayerInfo[playerid][pMember], 0x31cf63FF, string);
 	foreach(new i:Player) if(GetPVarInt(i,"admin_tipster") == PlayerInfo[playerid][pMember]) SendClientMessage(i, COLOR_LIGHTRED, string);
+	SendSpyMessage(PlayerInfo[playerid][pMember], 0xADFFEFFF, string);
+	return true;
+}
+CMD:rr(playerid, params[]) {
+	if(!IsACop(playerid) && !IsAMedic(playerid) && !IsAArm(playerid) && !IsANews(playerid) && !IsAMafia(playerid)) return true;
+	if(!PlayerInfo[playerid][pSettings][1]) return ErrorMessage(playerid,"Для начала включите чат организации. /mm > личные настройки > чат организации");
+	if(PlayerInfo[playerid][pFMute] > 0) return ErrorMessage(playerid, "У Вас заглушка");
+	new result[128];
+	if(sscanf(params, "s[128]",result)) return SendEsp(playerid, "/rr [текст]");
+	if(PlayerInfo[playerid][pMute] > 0) return ErrorMessage(playerid, "У Вас бан чата");
+	if(TI[playerid][tGag]) return ErrorMessage(playerid, "У Вас кляп");
+	if(!start_work[playerid]) return true;
+	new string[156];
+	if(PlayerInfo[playerid][pRank] < 3) return ErrorMessage(playerid, "Доступно с 3 ранга");
+	format(string, sizeof(string), "[%s] %s %s[%d]: %s",FI[GetTeamID(playerid)][fName],GetRankName(GetTeamID(playerid),PlayerInfo[playerid][pRank]), player_name[playerid],playerid, result);
+	if(PlayerInfo[playerid][pMember] == fWHITEHOUSE && PlayerInfo[playerid][pRank] == MINISTRE_NEWS) SendNews(0x54548CFF,string);
+	if(PlayerInfo[playerid][pMember] == fWHITEHOUSE && PlayerInfo[playerid][pRank] == MINISTRE_PD) SendCop(0x54548CFF,string);
+	if(PlayerInfo[playerid][pMember] == fWHITEHOUSE && PlayerInfo[playerid][pRank] == MINISTRE_MEDICS) SendMedic(0x54548CFF,string);
+	if(PlayerInfo[playerid][pMember] == fWHITEHOUSE && PlayerInfo[playerid][pRank] == MINISTRE_ARMY) SendArmy(0x54548CFF,string);
+
+	if(IsACop(playerid)) SendCop(0x54548CFF,string);
+	if(IsAArm(playerid)) SendArmy(0x54548CFF,string);
+	if(IsAMedic(playerid)) SendMedic(0x54548CFF,string);
+	if(IsANews(playerid)) SendNews(0x54548CFF,string);
+	if(IsAMafia(playerid)) SendMafia(0x54548CFF,string);
+	return true;
+}
+CMD:d(playerid, params[]) {
+	if(!IsACop(playerid) && !IsAMedic(playerid) && !IsAArm(playerid) && !IsANews(playerid) && PlayerInfo[playerid][pMember] != fMAYOR && PlayerInfo[playerid][pMember] != fWHITEHOUSE) return true;
+	if(GetPVarInt(playerid,"takradio")) return ErrorMessage(playerid, "У Вас нет рации");
+	if(!PlayerInfo[playerid][pSettings][1]) return ErrorMessage(playerid,"Для начала включите чат организации. /mm > личные настройки > чат организации");
+	if(PlayerInfo[playerid][pFMute] > 0) return ErrorMessage(playerid, "У Вас заглушка");
+	new result[128];
+	if(sscanf(params, "s[128]",result)) return SendEsp(playerid, "/d [текст]");
+	if(PlayerInfo[playerid][pMute] > 0) return ErrorMessage(playerid, "У Вас бан чата");
+	if(TI[playerid][tGag]) return ErrorMessage(playerid, "У Вас кляп");
+	if(!start_work[playerid]) return true;
+	new string[156];
+	if(PlayerInfo[playerid][pAdmin] >= 1 || dostup[playerid] != 0) {
+		format(string,sizeof(string),"[АДМИНИСТРАТОР] %s(%d): %s",player_name[playerid],playerid,params[0]);
+	}
+	else {
+		if(PlayerInfo[playerid][pRank] < 3) return ErrorMessage(playerid, "Доступно с 3 ранга");
+		if(GetSVarInt("d_timer") > gettime()) return ErrorMessage(playerid, "Пользоваться рацией департамента можно раз в 15 секунд");
+		SetSVarInt("d_timer", gettime() + 15);
+		format(string, sizeof(string), "[%s] %s %s[%d]: %s",FI[GetTeamID(playerid)][fName],GetRankName(GetTeamID(playerid),PlayerInfo[playerid][pRank]), player_name[playerid],playerid, result);
+	}
+	SendDepMessage(COLOR_ALLDEPT, string);
+	SendSpyMessage(PlayerInfo[playerid][pMember], 0xADFFEFFF, string);
+	foreach(new i:Player) {
+	    if(PlayerInfo[i][pAdmin] < 1 || dostup[i] == 0) continue;
+		switch(GetPVarInt(i,"admin_tipster")) {
+			case 1-13,23: SendClientMessage(i, COLOR_ALLDEPT, string);
+		}
+	}
+	return true;
+}
+CMD:db(playerid, params[]) {
+	if(!IsACop(playerid) && !IsAMedic(playerid) && !IsAArm(playerid) && !IsANews(playerid) && PlayerInfo[playerid][pMember] != fINSTRUCTORS && PlayerInfo[playerid][pMember] != fMAYOR && PlayerInfo[playerid][pMember] != fWHITEHOUSE) return true;
+	if(!PlayerInfo[playerid][pSettings][1]) return ErrorMessage(playerid,"Для начала включите чат организации. /mm > личные настройки > чат организации");
+	if(PlayerInfo[playerid][pFMute] > 0) return ErrorMessage(playerid, "У Вас заглушка");
+	new result[128];
+	if(sscanf(params, "s[128]",result)) return SendEsp(playerid, "/db [текст]");
+	if(PlayerInfo[playerid][pMute] > 0) return ErrorMessage(playerid, "У Вас бан чата");
+	if(TI[playerid][tGag]) return ErrorMessage(playerid, "У Вас кляп");
+	if(!start_work[playerid]) return true;
+	if(PlayerInfo[playerid][pRank] < 3) return ErrorMessage(playerid, "Доступно с 3 ранга");
+	if(GetSVarInt("d_timer") > gettime()) return ErrorMessage(playerid, "Пользоваться рацией департамента можно раз в 15 секунд");
+	SetSVarInt("d_timer", gettime() + 15);
+
+	static const f_str[] = "[%s] %s %s: (( %s ))";
+	new string[sizeof(f_str) +1 + (-2 + 20) + (-2 + 24) + (-2 + MAX_PLAYER_NAME) + (-2 + 100)];
+	
+	format(string, sizeof(string), f_str,FI[GetTeamID(playerid)][fName],GetRankName(GetTeamID(playerid),PlayerInfo[playerid][pRank]), player_name[playerid], result);
+    SendDepMessage(COLOR_ALLDEPT, string);
 	SendSpyMessage(PlayerInfo[playerid][pMember], 0xADFFEFFF, string);
 	return true;
 }
@@ -38931,31 +40302,22 @@ CMD:findcar(playerid, params[])
 }
 CMD:cars(playerid)
 {
-	new string[200], id;
+	new string[150];
     if(!PlayerInfo[playerid][pRoom] && !PlayerInfo[playerid][pHouse]) return ErrorMessage(playerid,"У Вас нет дома/номера в отеле");
 	if(gPlayerCars[playerid][carModel][0] == 481 && gPlayerCars[playerid][carModel][1] == 481) return ErrorMessage(playerid, "У вас нет автомобилей.");
 	if(gPlayerCars[playerid][carModel][0] == 481)
 	{
 	    SetPVarInt(playerid, "cars_enter", 1);
-		if(house_car[playerid][0] > 2000) id = -1;
-		else id = house_car[playerid][0];
-        format(string,sizeof(string),"{FED748}[%s]{FFFFFF} %s [ID: %d]",(!gPlayerCars[playerid][carPEngine_1][1]) ? ("X") : ("PERFOMANCE"), gTransport[gPlayerCars[playerid][carModel][1]-400][trName], id);
+        format(string,sizeof(string),"{FED748}[%s]{FFFFFF} %s",(!gPlayerCars[playerid][carPEngine_1][1]) ? ("X") : ("PERFOMANCE"), gTransport[gPlayerCars[playerid][carModel][1]-400][trName]);
 	}
 	if(gPlayerCars[playerid][carModel][1] == 481)
 	{
 	    SetPVarInt(playerid, "cars_enter", 0);
-		if(house_car[playerid][1] > 2000) id = -1;
-		else id = house_car[playerid][1];
-        format(string,sizeof(string),"{FED748}[%s]{FFFFFF} %s [ID: %d]",(!gPlayerCars[playerid][carPEngine_1][0]) ? ("X") : ("PERFOMANCE"), gTransport[gPlayerCars[playerid][carModel][0]-400][trName], id);
+        format(string,sizeof(string),"{FED748}[%s]{FFFFFF} %s",(!gPlayerCars[playerid][carPEngine_1][0]) ? ("X") : ("PERFOMANCE"), gTransport[gPlayerCars[playerid][carModel][0]-400][trName]);
 	}
 	if(gPlayerCars[playerid][carModel][0] != 481 && gPlayerCars[playerid][carModel][1] != 481)
 	{
-		new id2;
-		if(house_car[playerid][0] > 2000) id = -1;
-		else id = house_car[playerid][0];
-		if(house_car[playerid][1] > 2000) id2 = -1;
-		else id2 = house_car[playerid][1];
-	    format(string,sizeof(string),"{FED748}[%s]{FFFFFF} %s [ID: %d]\n{FED748}[%s]{FFFFFF} %s [ID: %d]", (!gPlayerCars[playerid][carPEngine_1][0]) ? ("X") : ("PERFOMANCE"), gTransport[gPlayerCars[playerid][carModel][0]-400][trName], id, (!gPlayerCars[playerid][carPEngine_1][1]) ? ("X") : ("PERFOMANCE"), gTransport[gPlayerCars[playerid][carModel][1]-400][trName], id2);
+	    format(string,sizeof(string),"{FED748}[%s]{FFFFFF} %s\n{FED748}[%s]{FFFFFF} %s", (!gPlayerCars[playerid][carPEngine_1][0]) ? ("X") : ("PERFOMANCE"), gTransport[gPlayerCars[playerid][carModel][0]-400][trName], (!gPlayerCars[playerid][carPEngine_1][1]) ? ("X") : ("PERFOMANCE"), gTransport[gPlayerCars[playerid][carModel][1]-400][trName]);
 	}
 	D(playerid, D_CARS, DSL, "Мой транспорт",string,"Выбор","");
 	return 1;
@@ -39274,7 +40636,7 @@ CMD:dcarm(playerid, params[]) {
 	if(VehicleInfo[veh][vTeam] == fLCN || VehicleInfo[veh][vTeam] == fYAKUZA || VehicleInfo[veh][vTeam] == fRM) D(playerid, D_MAFIA_CARM, DSL, ""P"Развозка наркотиков",""P"1."W" Загрузить наркотики\n"P"2."W" Разгрузить на склад Ballas\n"P"3."W" Разгрузить на склад Vagos\n"P"4."W" Разгрузить на склад Grove\n"P"5."W" Разгрузить на склад Aztec\n"P"6."W" Разгрузить на склад Rifa\n"P"7."W" Заказы", "Выбрать", "Отмена");
 	return true;
 }
-/*CMD:fhelp(playerid, params[]) {
+CMD:fhelp(playerid, params[]) {
     if(!IsAArm(playerid)) return true;
     if(PlayerInfo[playerid][pRank] < 3) return ErrorMessage(playerid,"Ваш ранг недостаточен");
     new string[128];
@@ -39313,30 +40675,31 @@ CMD:dcarm(playerid, params[]) {
     	}
     }
 	return true;
-}*/
+}
 CMD:carm(playerid, params[]) {
-    if(!IsACop(playerid)) return true;
+    if(!IsAArm(playerid)) return true;
 	new veh = GetPlayerVehicleID(playerid);
 	switch(GetVehicleModel(veh)) {
-		case 433: if(VehicleInfo[veh][vTeam] == fLSPD) D(playerid, D_ARMY_CARM_SF, DSL, ""P"Развозка боеприпасов",""P"1."W" Загрузка боеприпасов\n"P"2."W" Разгрузка боеприпасов.", "Выбрать", "Отмена");
+		case 433: if(VehicleInfo[veh][vTeam] == fARMYLV) D(playerid, D_ARMY_CARM, DSL, ""P"Развозка боеприпасов",""P"1."W" Разгрузить на склад Полиции ЛС\n"P"2."W" Разгрузить на склад Полиции СФ\n"P"3."W" Разгрузить на склад Полиции ЛВ\n"P"4."W" Разгрузить на склад ФБР\n"P"5."W" Состояние складов", "Выбрать", "Отмена");
+		case 548: if(VehicleInfo[veh][vTeam] == fARMYSF) D(playerid, D_ARMY_CARM_SF, DSL, ""P"Развозка боеприпасов",""P"1."W" Загрузка боеприпасов\n"P"2."W" Разгрузка боеприпасов", "Выбрать", "Отмена");
 	}
 	return true;
 }
 CMD:load(playerid, params[]) {
 	if(GetPlayerState(playerid) == PLAYER_STATE_DRIVER) {
 		new vehicleid = GetPlayerVehicleID(playerid);
-		if(!IsAGang(playerid) && !IsAMafia(playerid) && (!IsAGang(playerid) || GetPlayerSkin(playerid) != 191) && (!IsAGang(playerid) || GetPlayerSkin(playerid) != 287)) return 1;
-		//if(IsACop(playerid)) if(PlayerInfo[playerid][pRank] < 3) return ErrorMessage(playerid, "Доступно с 3 ранга");
+		if(!IsAArm(playerid) && !IsAGang(playerid) && !IsAMafia(playerid) && (!IsAGang(playerid) || GetPlayerSkin(playerid) != 191) && (!IsAGang(playerid) || GetPlayerSkin(playerid) != 287)) return 1;
+		//if(IsAArm(playerid)) if(PlayerInfo[playerid][pRank] < 3) return ErrorMessage(playerid, "Доступно с 3 ранга");
 		switch(GetVehicleModel(vehicleid)) {
 			case 433,482,573: {
 				if(VG[vehicleid][vgLoading] || VG[vehicleid][vgUnloading]) return ErrorMessage(playerid,"Авто уже стоит на загрузке / разгрузке");
-				/*if((IsAGang(playerid) && GetPlayerSkin(playerid) == 191 && GetVehicleModel(vehicleid) == 433) || (IsAGang(playerid) && GetPlayerSkin(playerid) == 287 && GetVehicleModel(vehicleid) == 433)) {
+				if((IsAGang(playerid) && GetPlayerSkin(playerid) == 191 && GetVehicleModel(vehicleid) == 433) || (IsAGang(playerid) && GetPlayerSkin(playerid) == 287 && GetVehicleModel(vehicleid) == 433)) {
 					switch(VehicleInfo[vehicleid][vTeam]) {
 						case fARMYLV: SetPlayerCheckpoint(playerid, 255.0845,1831.5399,18.1076,5.0),SetPVarInt(playerid,"MatsArmyCar",10);
 						case fARMYSF: SetPlayerCheckpoint(playerid, -1325.2426,407.5635,7.0743,5.0),SetPVarInt(playerid,"MatsArmyCar",11);
 					}
 					return 1;
-				}*/
+				}
 				VG[vehicleid][vgID] = vehicleid;
 				VG[vehicleid][vgLoading] = true;
 
@@ -39354,6 +40717,7 @@ CMD:load(playerid, params[]) {
 				switch(GetVehicleModel(vehicleid)) {
 					case 433: format(string,sizeof(string),"Ящиков: "O"%i/70",VG[vehicleid][vgAmount][0]);
 					case 482: format(string,sizeof(string),"Ящиков: "O"%i/30",VG[vehicleid][vgAmount][0]);
+					case 573: format(string,sizeof(string),"Ящиков: "O"%i/200",VG[vehicleid][vgAmount][0]);
 				}
 				VG[vehicleid][vgText] = CreateDynamic3DTextLabel(string,COLOR_WHITE,x,y,z+0.5,20.0);
 			}
@@ -39365,8 +40729,8 @@ CMD:load(playerid, params[]) {
 CMD:unload(playerid, params[]) {
 	if(GetPlayerState(playerid) == PLAYER_STATE_DRIVER) {
 		new vehicleid = GetPlayerVehicleID(playerid);
-		if(!IsAGang(playerid) && !IsAMafia(playerid) && (!IsAGang(playerid) || GetPlayerSkin(playerid) != 191) && (!IsAGang(playerid) || GetPlayerSkin(playerid) != 287)) return 1;
-		//if(IsACop(playerid)) if(PlayerInfo[playerid][pRank] < 3) return ErrorMessage(playerid, "Доступно с 3 ранга");
+		if(!IsAArm(playerid) && !IsAGang(playerid) && !IsAMafia(playerid) && (!IsAGang(playerid) || GetPlayerSkin(playerid) != 191) && (!IsAGang(playerid) || GetPlayerSkin(playerid) != 287)) return 1;
+		//if(IsAArm(playerid)) if(PlayerInfo[playerid][pRank] < 3) return ErrorMessage(playerid, "Доступно с 3 ранга");
 		switch(GetVehicleModel(vehicleid)) {
 			case 433,482: {
 				if(VG[vehicleid][vgLoading] || VG[vehicleid][vgUnloading]) return ErrorMessage(playerid,"Авто уже стоит на загрузке / разгрузке");
@@ -39383,6 +40747,7 @@ CMD:unload(playerid, params[]) {
 				new string[64];
 				switch(GetVehicleModel(vehicleid)) {
 					case 433: format(string,sizeof(string),"Ящиков: "O"%i/70",VG[vehicleid][vgAmount][0]);
+					case 482: format(string,sizeof(string),"Ящиков: "O"%i/30",VG[vehicleid][vgAmount][0]);
 				}
 				VG[vehicleid][vgText] = CreateDynamic3DTextLabel(string,COLOR_WHITE,x,y,z+0.5,20.0);
 			}
@@ -39404,6 +40769,12 @@ CMD:unload(playerid, params[]) {
 					case fRIFA: {
 						if(!IsPlayerInRangeOfPoint(playerid, 50, 2720.9058,-1945.3914,13.5469)) return ErrorMessage(playerid,"Вы далеко от The Rifa");
 					}
+					case fARMYSF: {
+						if(!IsPlayerInRangeOfPoint(playerid, 100, -1327.4373,406.4024,7.0743)) return ErrorMessage(playerid,"Вы далеко от склада Армии СФ");
+					}
+					case fARMYLV: {
+						if(!IsPlayerInRangeOfPoint(playerid, 100, 273.9764,1831.2097,17.6709)) return ErrorMessage(playerid,"Вы далеко от склада Армии ЛВ");
+					}
 					case fLCN: {
 						if(!IsPlayerInRangeOfPoint(playerid, 100, 1450.5173,751.1883,11.0234)) return ErrorMessage(playerid,"Вы далеко от Итальянской Мафии");
 					}
@@ -39414,7 +40785,7 @@ CMD:unload(playerid, params[]) {
 						if(!IsPlayerInRangeOfPoint(playerid, 100, 966.8095,1732.4703,8.6484)) return ErrorMessage(playerid,"Вы далеко от Русской Мафии");
 					}
 				}
-				if(!IsACop(playerid)) {
+				if(!IsAArm(playerid)) {
 					new mats = floatround(FI[GetTeamID(playerid)][fMats]/500);//ящиков на складе банды
 					new mats_2 = mats+(VG[vehicleid][vgAmount][0]*5000/500);//сколько будет всего ящиков
 					if(mats_2 > 600) {
@@ -39583,6 +40954,10 @@ public OnPlayerText(playerid, text[]) {
 				MeAction(playerid,string);
 				ApplyAnimation(playerid,"GHANDS","gsign1LH",4.0,0,0,0,0,1,1);
 			}
+			case fARMYSF,fARMYLV: {
+				MeAction(playerid,"выполнил(а) воинское приветствие");
+				ApplyAnimation(playerid, "VENDING", "VEND_Drink2_P",4.0,0,0,0,0,1000,1);
+			}
 		}
 		return false;
 	}
@@ -39749,6 +41124,8 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys) {
 		else if(GetPVarInt(playerid,"carrygun")) {
 			SendOk(playerid,"Вы уронили ящик");
 			DeletePVar(playerid,"carrygun");
+			if(GetPVarInt(playerid,"use_mats") == 1) FI[fARMYLV][fMats] += 500,DeletePVar(playerid,"use_mats");
+			if(GetPVarInt(playerid,"use_mats") == 2) FI[fARMYSF][fMats] += 500,DeletePVar(playerid,"use_mats");
 			if(IsPlayerAttachedObjectSlotUsed(playerid, 1)) RemovePlayerAttachedObject(playerid,1);
 			ClearAnimations(playerid);
 		}
@@ -39844,9 +41221,9 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys) {
 			exit_garage(Veh,0);
 			SetCameraBehindPlayer(playerid);
 		}
-		else if((IsPlayerInRangeOfPoint(playerid,  5.0, tuning_enter[0][0],tuning_enter[0][1], tuning_enter[0][2]) ||
-				IsPlayerInRangeOfPoint(playerid,  5.0, tuning_enter[1][0],tuning_enter[1][1], tuning_enter[1][2]) ||
-				IsPlayerInRangeOfPoint(playerid,  5.0, tuning_enter[2][0],tuning_enter[2][1], tuning_enter[2][2])) && GetPlayerState(playerid) == PLAYER_STATE_DRIVER) {
+		else if((IsPlayerInRangeOfPoint(playerid,  5.0, 1153.4031,-1208.7499,19.0252) ||
+				IsPlayerInRangeOfPoint(playerid,  5.0, -1786.8206,1206.0835,25.1250) ||
+				IsPlayerInRangeOfPoint(playerid,  5.0, 1643.8298,2197.1387,10.8203)) && GetPlayerState(playerid) == PLAYER_STATE_DRIVER) {
 			if(GetPlayerVehicleID(playerid) != house_car[playerid][0] && GetPlayerVehicleID(playerid) != house_car[playerid][1]) return ErrorMessage(playerid, "Вы не за рулём своего Т/С");
 			new Veh = GetPlayerVehicleID(playerid);	
 			if(GetVehicleFreeSeat(Veh) == -1) return ErrorMessage(playerid,"У Вас в Т/C пассажиры");
@@ -40028,8 +41405,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys) {
 			VG[rob_veh[playerid]][vgAmount][0] = 0;
 			SendOk(playerid,"Вы успешно продали награбленную технику");
 		}
-		//ФУРА
-		else if(IsPlayerInRangeOfPoint(playerid,  7.0, -1048.6555,-609.4244,32.0078) && (PlayerInfo[playerid][bizz_work] == 5 || PlayerInfo[playerid][bizz_work] == 6 || PlayerInfo[playerid][bizz_work] == 7)) {
+		else if(IsPlayerInRangeOfPoint(playerid,  7.0, 253.3007,1396.0299,10.5859) && (PlayerInfo[playerid][bizz_work] == 5 || PlayerInfo[playerid][bizz_work] == 6 || PlayerInfo[playerid][bizz_work] == 7)) {
 			new Veh = GetPlayerVehicleID(playerid);
 			if((VehicleInfo[Veh][vBizz] != 5 && VehicleInfo[Veh][vBizz] != 6 && VehicleInfo[Veh][vBizz] != 7) || GetPlayerState(playerid) != PLAYER_STATE_DRIVER) return ErrorMessage(playerid,"Необходимо находиться за рулём тягоча");
 			if(TK_Trailer[playerid] != INVALID_VEHICLE_ID) return ErrorMessage(playerid,"У Вас уже есть груз");
@@ -40064,7 +41440,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys) {
 
 			D(playerid,D_TRUCK_2,DSI, ""P"Нефтезавод",string,"Загрузить","Отмена");
 		}
-		else if(IsPlayerInRangeOfPoint(playerid,  7.0, 1340.6106,332.1387,19.9806) && (PlayerInfo[playerid][bizz_work] == 5 || PlayerInfo[playerid][bizz_work] == 6 || PlayerInfo[playerid][bizz_work] == 7) && TI[playerid][tTrucker][1] == 1) {//порт сф
+		else if(IsPlayerInRangeOfPoint(playerid,  7.0, -1744.4447,149.4602,3.5496) && (PlayerInfo[playerid][bizz_work] == 5 || PlayerInfo[playerid][bizz_work] == 6 || PlayerInfo[playerid][bizz_work] == 7) && TI[playerid][tTrucker][1] == 1) {//порт сф
 			new Veh = GetPlayerVehicleID(playerid);
 			if((VehicleInfo[Veh][vBizz] != 5 || VehicleInfo[Veh][vBizz] != 6 || VehicleInfo[Veh][vBizz] != 7) && GetPlayerState(playerid) != PLAYER_STATE_DRIVER) return ErrorMessage(playerid,"Необходимо находиться за рулём тягоча");
 			if(TK_Trailer[playerid] == INVALID_VEHICLE_ID || !GetVehicleTrailer(Veh)) return ErrorMessage(playerid,"У Вас нет груза");
@@ -40266,6 +41642,34 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys) {
 				SetPVarInt(playerid,"carrygun",1);
 			}
 		}
+  		else if((IsAGang(playerid) || GetTeamID(playerid) == fARMYLV || IsAMafia(playerid)) && IsPlayerInDynamicArea(playerid,gAreas[arArmyLVSklad])) {
+		    if(GetPVarInt(playerid,"carrygun")) return ErrorMessage(playerid,"У Вас уже есть ящик с боеприпасами");
+			if(FI[fARMYLV][fMats] < 500) return ErrorMessage(playerid, "На складе недостаточно боеприпасов");
+			if(!GetPVarInt(playerid,"carrygun")) {
+				FI[fARMYLV][fMats] -= 500;
+				SetPlayerFacingAngle(playerid,270.0);
+				ClearAnimations(playerid);
+				ApplyAnimation(playerid,"CARRY","liftup",1.0,0,1,1,0,0,1);
+				SetTimerEx("CarryDelay",1000,false,"i",playerid);
+				SetPlayerAttachedObject(playerid,1,2358,6,0.0,0.10,-0.2, -110.0,0.0,78.0);
+				SetPVarInt(playerid,"carrygun",1);
+				SetPVarInt(playerid,"use_mats",1);
+			}
+		}
+		else if((IsAGang(playerid) || IsAMafia(playerid)) && IsPlayerInDynamicArea(playerid,gAreas[arArmySFSklad])) {
+			if(GetPVarInt(playerid,"carrygun")) return ErrorMessage(playerid,"У Вас уже есть ящик с боеприпасами");
+			if(FI[fARMYSF][fMats] < 500) return ErrorMessage(playerid, "На складе недостаточно боеприпасов");
+			if(!GetPVarInt(playerid,"carrygun")) {
+				FI[fARMYSF][fMats] -= 500;
+				SetPlayerFacingAngle(playerid,270.0);
+				ClearAnimations(playerid);
+				ApplyAnimation(playerid,"CARRY","liftup",1.0,0,1,1,0,0,1);
+				SetTimerEx("CarryDelay",1000,false,"i",playerid);
+				SetPlayerAttachedObject(playerid,1,2358,6,0.0,0.10,-0.2, -110.0,0.0,78.0);
+				SetPVarInt(playerid,"carrygun",1);
+				SetPVarInt(playerid,"use_mats",2);
+			}
+		}
 		else if(IsPlayerInRangeOfPoint(playerid, 1.7, 1050.3049,2313.1973,10.6818)) {
 			if(!IsAMafia(playerid)) return ErrorMessage(playerid,"Вы не мафиози");
 			static const f_str[] = ""W"Стоимость "P"10.000"W" боеприпасов: "GREEN"$%d"W"\n\
@@ -40464,9 +41868,9 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys) {
 			}
 		}
 		else if(GetNearestATM(playerid) != -1) ShowATMMenu(playerid);
-		else if(PlayerInfo[playerid][pMember] == fLSPD) {
+		else if(PlayerInfo[playerid][pMember] == fFBI) {
 			 for(new i = GetVehiclePoolSize()+1; --i != 0;) {
-				if(VehicleInfo[i][vTeam] == fLSPD) {
+				if(VehicleInfo[i][vTeam] == fFBI) {
 					new Float:X,Float:Y,Float:Z;
 					GetVehicleShiftPos(i,1,X,Y,Z,3.0);
 
@@ -40649,8 +42053,8 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys) {
 			}
 			if(GetPVarInt(playerid,"family_invite")) {
 				SendOk(playerid,"Вы отказались от предложения вступить в семью");
-				SendOk(GetPVarInt(playerid,"family_invite") - 1,"Игрок отказался от предложения вступить в Вашу семью");
-				DeletePVar(GetPVarInt(playerid,"family_invite") - 1,"family_invite");
+				SendOk(GetPVarInt(playerid,"family_invite"),"Игрок отказался от предложения вступить в Вашу семью");
+				DeletePVar(GetPVarInt(playerid,"family_invite"),"family_invite");
 				DeletePVar(playerid,"family_invite");
 			}
 			else if(GetPVarInt(playerid, "drugoffee") == playerid && GetPVarInt(playerid,"drugoffer") != playerid) {
@@ -41003,7 +42407,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys) {
 				SendUse(driverid,"Пассажир установил "YELLOW"метку "G"на карте. Чтобы убрать метку введите: "W"/untaxi");
 			}
 			else if(GetPVarInt(playerid,"family_invite")) {
-				new fam = GetPVarInt(playerid,"family_invite")-1;
+				new fam = GetPVarInt(playerid,"family_invite");
 				DeletePVar(playerid,"family_invite");
 				if(PlayerInfo[fam][pFamily]) {
 					new string[128];
@@ -41012,8 +42416,8 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys) {
 					PlayerInfo[playerid][pFamRank] = 1;
 					UpdatePlayerData(playerid,"pFamRank",1);
 
-					format(string,sizeof(string),"[FAMILY] "W"%s{%s} вступил в семью",player_name[playerid],FamilyColor[gFamily[PlayerInfo[playerid][pFamily]-1][famColor]]);
-					FamMSG(PlayerInfo[playerid][pFamily],string);
+					format(string,sizeof(string),"[FAMILY] "W"%s{%s} вступил в семью",player_name[playerid],FamilyColor[gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famColor]]);
+					FamMSG(GetFamilyId(PlayerInfo[playerid][pFamily]),string);
 				}
 			}
 			else if(GetPVarInt(playerid,"fight_offer")) {
@@ -41696,17 +43100,35 @@ public OnVehicleDeath(vehicleid, killerid) {
 }
 public OnVehicleSpawn(vehicleid) {
 	VehicleInfo[vehicleid][vPlayer] = -1;
+	SetVehicleParamsEx(vehicleid,false,false,false,false,false,false,false);
+
+	if(VehicleInfo[vehicleid][vTeam] == fFBI || VehicleInfo[vehicleid][vTeam] == fWHITEHOUSE) SetVehicleHealth(vehicleid,3000.0);
+	if(GetArendCarID(vehicleid) != -1) {
+	    new playerid = ArendInfo[GetArendCarID(vehicleid)][aPlayerID];
+		VehicleInfo[vehicleid][vFuel] = gTransport[GetVehicleModel(vehicleid-400)][trTank];
+	    ArendInfo[GetArendCarID(vehicleid)][aPlayerID] = INVALID_PLAYER_ID;
+	    if(IsPlayerConnected(playerid) && TI[playerid][tArendKey] == GetArendCarID(vehicleid)) {
+	        SendClientMessage(playerid, COLOR_LIGHTRED, "Транспорт, который вы арендовали, был заспавнен. Контракт расторгнут");
+			TI[playerid][tArendKey] = -1;
+	    }
+	}
+	if(VehicleInfo[vehicleid][vType] == VEHICLE_TYPE_ADMIN) {
+		A_DestroyVehicle(vehicleid);
+	}
+	if(VehicleInfo[vehicleid][vJob] > 0 || VehicleInfo[vehicleid][vTeam] > 0) {
+		VehicleInfo[vehicleid][vFuel] = gTransport[GetVehicleModel(vehicleid)-400][trTank];
+		VehicleInfo[vehicleid][vPlayer] = -1;
+	}
+	if(VehicleInfo[vehicleid][vBizz] > 0) {
+		for(new i; i < 20; i ++) {
+			if(FuncBizz[VehicleInfo[vehicleid][vBizz]][funcbCars][i] != vehicleid) continue;
+			update_bfunc(3,VehicleInfo[vehicleid][vBizz],VehicleInfo[vehicleid][vColor],i);
+		}
+	}
 	foreach(new i:Player) {
 		if(!TI[i][tLogin] ||  AntiCheatIsKickedWithDesync(i)) continue;
-	 	if(vehicleid == house_car[i][0]) 
-		{
-			VehicleInfo[house_car[i][0]][vFuel] = gPlayerCars[i][carFuel][0],SetVehicleParamsEx(vehicleid,false,false,false,true,false,false,false), LoadTuning(i,house_car[i][0],0);
-		}
-		if(vehicleid == house_car[i][1])
-		{
-			VehicleInfo[house_car[i][1]][vFuel] = gPlayerCars[i][carFuel][1],SetVehicleParamsEx(vehicleid,false,false,false,true,false,false,false), LoadTuning(i,house_car[i][1],1);
-
-		} 		
+	 	if(vehicleid == house_car[i][0]) VehicleInfo[house_car[i][0]][vFuel] = gPlayerCars[i][carFuel][0],SetVehicleParamsEx(vehicleid,false,false,false,true,false,false,false), LoadTuning(i,house_car[i][0],0);
+		if(vehicleid == house_car[i][1]) VehicleInfo[house_car[i][1]][vFuel] = gPlayerCars[i][carFuel][1],SetVehicleParamsEx(vehicleid,false,false,false,true,false,false,false), LoadTuning(i,house_car[i][1],1);
 		if(vehicleid == PlayerTrailer[i]) {
 			A_DestroyVehicle(PlayerTrailer[i]);
 			PlayerTrailer[i] = INVALID_VEHICLE_ID;
@@ -41740,31 +43162,6 @@ public OnVehicleSpawn(vehicleid) {
 			DeletePVar(i,"LessonSlotMav");
 			DeletePVar(i,"LessonSlotBoat");
 			SetPlayerPosAC(i,GetPVarFloat(i,"pos_x_autos"),GetPVarFloat(i,"pos_y_autos"),GetPVarFloat(i,"pos_z_autos"),45,76);
-		}
-	}
-	SetVehicleParamsEx(vehicleid,false,false,false,false,false,false,false);
-
-	if(VehicleInfo[vehicleid][vTeam] == fLSPD || VehicleInfo[vehicleid][vTeam] == fWHITEHOUSE) SetVehicleHealth(vehicleid,3000.0);
-	if(GetArendCarID(vehicleid) != -1) {
-	    new playerid = ArendInfo[GetArendCarID(vehicleid)][aPlayerID];
-		VehicleInfo[vehicleid][vFuel] = gTransport[GetVehicleModel(vehicleid-400)][trTank];
-	    ArendInfo[GetArendCarID(vehicleid)][aPlayerID] = INVALID_PLAYER_ID;
-	    if(IsPlayerConnected(playerid) && TI[playerid][tArendKey] == GetArendCarID(vehicleid)) {
-	        SendClientMessage(playerid, COLOR_LIGHTRED, "Транспорт, который вы арендовали, был заспавнен. Контракт расторгнут");
-			TI[playerid][tArendKey] = -1;
-	    }
-	}
-	if(VehicleInfo[vehicleid][vType] == VEHICLE_TYPE_ADMIN) {
-		A_DestroyVehicle(vehicleid);
-	}
-	if(VehicleInfo[vehicleid][vJob] > 0 || VehicleInfo[vehicleid][vTeam] > 0) {
-		VehicleInfo[vehicleid][vFuel] = gTransport[GetVehicleModel(vehicleid)-400][trTank];
-		VehicleInfo[vehicleid][vPlayer] = -1;
-	}
-	if(VehicleInfo[vehicleid][vBizz] > 0) {
-		for(new i; i < 20; i ++) {
-			if(FuncBizz[VehicleInfo[vehicleid][vBizz]][funcbCars][i] != vehicleid) continue;
-			update_bfunc(3,VehicleInfo[vehicleid][vBizz],VehicleInfo[vehicleid][vColor],i);
 		}
 	}
 	if(VG[vehicleid][vgLoading] || VG[vehicleid][vgUnloading] || VG[vehicleid][vgRobHouse]) {
@@ -44606,7 +46003,7 @@ stock load_funcbizz() {
 		cache_get_value_name_float(i,"percent2", FuncBizz[FuncBizz[i][funcbID]][funcbPercent2]);
 		cache_get_value_name_int(i,"percent3", FuncBizz[FuncBizz[i][funcbID]][funcbPercent3]);
 		switch(FuncBizz[i][funcbID]) {
-			case 2,3..5: {
+			case 2..4,5..7: {
 				biz_text[FuncBizz[FuncBizz[i][funcbID]][funcbSlot]] = CreateDynamicObject(19482, 2402.697021, -33.206501, 1030.597290, 0.000000, 0.000000, 0.000000, FuncBizz[i][funcbID], -1, -1, 50.00);
 				new string[54];
 				format(string,sizeof(string),"{%s}%s",color_td[FuncBizz[FuncBizz[i][funcbID]][funcbColor]][col_rgb],FuncBizz[FuncBizz[i][funcbID]][funcbName]);
@@ -44677,22 +46074,22 @@ stock load_business() {
 		cache_get_value_name(i, "owner", gBusiness[i][bizzOwner], MAX_PLAYER_NAME);
 		
 		switch(gBusiness[i][bizzID]) {
-			case 6: {
+			case 8: {
 				CreateDynamicPickup(19132,1,gBusiness[i][bizzX],gBusiness[i][bizzY],gBusiness[i][bizzZ],46,78);
 				gBusinessText[i] = CreateDynamic3DTextLabel("_",-1,gBusiness[i][bizzX],gBusiness[i][bizzY],gBusiness[i][bizzZ]+1.0,20.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, 46, 78);
 				b_area[i] = CreateDynamicSphere(gBusiness[i][bizzX],gBusiness[i][bizzY],gBusiness[i][bizzZ],1.5,46,78,-1);
 			}
-			case 7: {
+			case 9: {
 				CreateDynamicPickup(19132,1,gBusiness[i][bizzX],gBusiness[i][bizzY],gBusiness[i][bizzZ],47,78);
 				gBusinessText[i] = CreateDynamic3DTextLabel("_",-1,gBusiness[i][bizzX],gBusiness[i][bizzY],gBusiness[i][bizzZ]+1.0,20.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, 47, 78);
 				b_area[i] = CreateDynamicSphere(gBusiness[i][bizzX],gBusiness[i][bizzY],gBusiness[i][bizzZ],1.5,47,78,-1);
 			}
-			case 8: {
+			case 10: {
 				CreateDynamicPickup(19132,1,gBusiness[i][bizzX],gBusiness[i][bizzY],gBusiness[i][bizzZ],48,78);
 				gBusinessText[i] = CreateDynamic3DTextLabel("_",-1,gBusiness[i][bizzX],gBusiness[i][bizzY],gBusiness[i][bizzZ]+1.0,20.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, 48, 78);
 				b_area[i] = CreateDynamicSphere(gBusiness[i][bizzX],gBusiness[i][bizzY],gBusiness[i][bizzZ],1.5,48,78,-1);
 			}
-			case 54: {
+			case 82: {
 				CreateDynamicPickup(19627,1,gBusiness[i][bizzX],gBusiness[i][bizzY],gBusiness[i][bizzZ],0,0);
 				gBusinessText[i] = CreateDynamic3DTextLabel("_",-1,gBusiness[i][bizzX],gBusiness[i][bizzY],gBusiness[i][bizzZ]+1.0,20.0,INVALID_PLAYER_ID,INVALID_VEHICLE_ID,1, -1, -1);
 				b_area[i] = CreateDynamicSphere(gBusiness[i][bizzX],gBusiness[i][bizzY],gBusiness[i][bizzZ],1.5);
@@ -45458,7 +46855,6 @@ CB: load_cars(playerid) {
 
         cache_get_value_name_int(x, "model", gPlayerCars[playerid][carModel][x]);
         cache_get_value_name(x, "owner", gPlayerCars[playerid][carOwner][x], 64);
-		printf("%s", gPlayerCars[playerid][carOwner][x]);
         cache_get_value_name_int(x, "color_one", gPlayerCars[playerid][carColor_one][x]);
         cache_get_value_name_int(x, "color_two", gPlayerCars[playerid][carColor_two][x]);
 
@@ -45509,35 +46905,15 @@ CB: load_cars(playerid) {
 			//loading_cars(playerid,x);
 		}
 		else if(PlayerInfo[playerid][pHouse] && !gHouses[PlayerInfo[playerid][pHouse]-1][houseImprove][2]){
-			if (x == 0) {
-				loading_cars(playerid,0);
-			}
+			loading_cars(playerid,x);
 		}
 		else if (PlayerInfo[playerid][pRoom]){
-			if (x == 0) {
-				loading_cars(playerid,0);
-			}
+			loading_cars(playerid,x);
 		}
 		//printf("1 | FUEL: %f | CAR: %d", gPlayerCars[playerid][carFuel][x], gPlayerCars[playerid][carID][x]);
 	}
-
-	if(house_car[playerid][0] != INVALID_VEHICLE_ID) { SaveTuning(playerid, house_car[playerid][0],0); }
-	if(house_car[playerid][1] != INVALID_VEHICLE_ID) { SaveTuning(playerid, house_car[playerid][1],1); }
-
-	if(PlayerInfo[playerid][pHouse] && gHouses[PlayerInfo[playerid][pHouse]-1][houseImprove][2]){
-		loading_cars(playerid,0);
-		loading_cars(playerid,1);
-	}
-	else if(PlayerInfo[playerid][pHouse] && !gHouses[PlayerInfo[playerid][pHouse]-1][houseImprove][2]){
-		loading_cars(playerid,0);
-	}
-	else if (PlayerInfo[playerid][pRoom]){
-		loading_cars(playerid,0);
-	}
-
-	/*printf("Проверка: %d", VehicleInfo[house_car[playerid][0]][vFuel]);
-	printf("Проверка: %d", TrunkInfo[house_car[playerid][0]][tKanistra]);
-	printf("Проверка: %d", VehicleInfo[house_car[playerid][0]][vLock]);*/
+	SaveTuning(playerid,house_car[playerid][0], 0);
+	SaveTuning(playerid,house_car[playerid][1], 1);
 	//printf("2 | SPOILER: %d | CAR: %d", gPlayerCars[playerid][carVehcom_1][0], gPlayerCars[playerid][carID][0]);
 	//printf("2 | FUEL: %f | CAR: %d", gPlayerCars[playerid][carFuel][1], gPlayerCars[playerid][carID][1]);
 	return 1;
@@ -45616,7 +46992,6 @@ stock SaveAccount(playerid) {
     format(str,sizeof(str),"`pMember`= '%i',",PlayerInfo[playerid][pMember]),strcat(query,str,sizeof(query));
 
     format(str,sizeof(str),"`pRank`= '%i',",PlayerInfo[playerid][pRank]),strcat(query,str,sizeof(query));
-    format(str,sizeof(str),"`pRankExp`= '%i',",PlayerInfo[playerid][pRankExp]),strcat(query,str,sizeof(query));
     format(str,sizeof(str),"`pJob`= '%i',",PlayerInfo[playerid][pJob]),strcat(query,str,sizeof(query));
     format(str,sizeof(str),"`pModel`= '%i',",PlayerInfo[playerid][pFracSkin]),strcat(query,str,sizeof(query));
 
@@ -45674,25 +47049,6 @@ stock save_car(i,ID) {
 	format(temp,sizeof(temp),"`color_two`= '%i',",gPlayerCars[i][carColor_two][ID]), 		strcat(query,temp,sizeof(query));
 	format(temp,sizeof(temp),"`drived`= '%f',",gPlayerCars[i][carDrived][ID]), 				strcat(query,temp,sizeof(query));
 	format(temp,sizeof(temp),"`fuel`= '%f',",gPlayerCars[i][carFuel][ID]), 					strcat(query,temp,sizeof(query));
-	format(temp,sizeof(temp),"`open`= '%i',",gPlayerCars[i][carOpen][ID]), 					strcat(query,temp,sizeof(query));
-	format(temp,sizeof(temp),"`kanistra`= '%i',",gPlayerCars[i][carKanistra][ID]), 			strcat(query,temp,sizeof(query));
-	format(temp,sizeof(temp),"`narko`= '%i',",gPlayerCars[i][carNarko][ID]), 				strcat(query,temp,sizeof(query));
-	format(temp,sizeof(temp),"`mats`= '%i',",gPlayerCars[i][carMats][ID]), 					strcat(query,temp,sizeof(query));
-	format(temp,sizeof(temp),"`deagle`= '%i',",gPlayerCars[i][carDeagle][ID]), 				strcat(query,temp,sizeof(query));
-	format(temp,sizeof(temp),"`ak47`= '%i',",gPlayerCars[i][carAK47][ID]), 					strcat(query,temp,sizeof(query));
-	format(temp,sizeof(temp),"`m4`= '%i',",gPlayerCars[i][carM4][ID]), 						strcat(query,temp,sizeof(query));
-	format(temp,sizeof(temp),"`shot`= '%i',",gPlayerCars[i][carShot][ID]), 					strcat(query,temp,sizeof(query));
-	format(temp,sizeof(temp),"`number`= '%s'",NumberVehicle[i][ID]), 						strcat(query,temp,sizeof(query));
-	format(temp,sizeof(temp)," WHERE id = '%i'",gPlayerCars[i][carID][ID]),					strcat(query,temp,sizeof(query));
-	mysql_tquery(connects, query, "", "");
-	return true;
-}
-
-stock save_car_tuning(i,ID) {
-    new temp[0x9e];
-	new query[3300];
-	//printf("CarID: %d | Slot: %d | Component: %d", ID, GetVehicleComponentInSlot(house_car[i][0],0), gPlayerCars[i][carVehcom_1][ID]);
-	mysql_format(connects, query, sizeof(query), "UPDATE `"TABLE_CARS"` SET ");
 	format(temp,sizeof(temp),"`vehcom_1`= '%i',",gPlayerCars[i][carVehcom_1][ID]), 			strcat(query,temp,sizeof(query));
 	format(temp,sizeof(temp),"`vehcom_2`= '%i',",gPlayerCars[i][carVehcom_2][ID]), 			strcat(query,temp,sizeof(query));
 	format(temp,sizeof(temp),"`vehcom_3`= '%i',",gPlayerCars[i][carVehcom_3][ID]), 			strcat(query,temp,sizeof(query));
@@ -45707,7 +47063,16 @@ stock save_car_tuning(i,ID) {
 	format(temp,sizeof(temp),"`vehcom_12`= '%i',",gPlayerCars[i][carVehcom_12][ID]), 		strcat(query,temp,sizeof(query));
 	format(temp,sizeof(temp),"`vehcom_13`= '%i',",gPlayerCars[i][carVehcom_13][ID]), 		strcat(query,temp,sizeof(query));
 	format(temp,sizeof(temp),"`vehcom_14`= '%i',",gPlayerCars[i][carVehcom_14][ID]), 		strcat(query,temp,sizeof(query));
-	format(temp,sizeof(temp),"`paintjob`= '%i'",gPlayerCars[i][carPaintJob][ID]), 			strcat(query,temp,sizeof(query));
+	format(temp,sizeof(temp),"`open`= '%i',",gPlayerCars[i][carOpen][ID]), 					strcat(query,temp,sizeof(query));
+	format(temp,sizeof(temp),"`kanistra`= '%i',",gPlayerCars[i][carKanistra][ID]), 			strcat(query,temp,sizeof(query));
+	format(temp,sizeof(temp),"`narko`= '%i',",gPlayerCars[i][carNarko][ID]), 				strcat(query,temp,sizeof(query));
+	format(temp,sizeof(temp),"`mats`= '%i',",gPlayerCars[i][carMats][ID]), 					strcat(query,temp,sizeof(query));
+	format(temp,sizeof(temp),"`deagle`= '%i',",gPlayerCars[i][carDeagle][ID]), 				strcat(query,temp,sizeof(query));
+	format(temp,sizeof(temp),"`ak47`= '%i',",gPlayerCars[i][carAK47][ID]), 					strcat(query,temp,sizeof(query));
+	format(temp,sizeof(temp),"`m4`= '%i',",gPlayerCars[i][carM4][ID]), 						strcat(query,temp,sizeof(query));
+	format(temp,sizeof(temp),"`shot`= '%i',",gPlayerCars[i][carShot][ID]), 					strcat(query,temp,sizeof(query));
+	format(temp,sizeof(temp),"`paintjob`= '%i',",gPlayerCars[i][carPaintJob][ID]), 			strcat(query,temp,sizeof(query));
+	format(temp,sizeof(temp),"`number`= '%s'",NumberVehicle[i][ID]), 						strcat(query,temp,sizeof(query));
 	format(temp,sizeof(temp)," WHERE id = '%i'",gPlayerCars[i][carID][ID]),					strcat(query,temp,sizeof(query));
 	mysql_tquery(connects, query, "", "");
 	return true;
@@ -45743,7 +47108,6 @@ CB: player_register(playerid) {
 	return 1;
 }
 stock LoadTuning(c,carid,idx) {
-	//printf("Spoiler: %d", gPlayerCars[c][carVehcom_1][idx]);
     if(gPlayerCars[c][carVehcom_1][idx]!=0) ACC_AddVehicleComponent(carid, gPlayerCars[c][carVehcom_1][idx]);
 	if(gPlayerCars[c][carVehcom_2][idx]!=0) ACC_AddVehicleComponent(carid, gPlayerCars[c][carVehcom_2][idx]);
 	if(gPlayerCars[c][carVehcom_3][idx]!=0) ACC_AddVehicleComponent(carid, gPlayerCars[c][carVehcom_3][idx]);
@@ -45759,31 +47123,24 @@ stock LoadTuning(c,carid,idx) {
 	if(gPlayerCars[c][carVehcom_13][idx]!=0) ACC_AddVehicleComponent(carid, gPlayerCars[c][carVehcom_13][idx]);
 	if(gPlayerCars[c][carVehcom_14][idx]!=0) ACC_AddVehicleComponent(carid, gPlayerCars[c][carVehcom_14][idx]);
 	if(gPlayerCars[c][carPaintJob][idx] != -1) ChangeVehiclePaintjob(carid,gPlayerCars[c][carPaintJob][idx]);
-	for(new i; i<14; i++) 
-	{
-		SaveTuning(c, carid, idx);
-	}
-	save_car_tuning(c, idx);
 	//printf("ID: %d | CAR: %d", gPlayerCars[c][carVehcom_1][idx], carid);
 }
-stock SaveTuning(playerid, i,idx) {
-	gPlayerCars[playerid][carVehcom_1][idx] = GetVehicleComponentInSlot(i, CARMODTYPE_SPOILER);
-	gPlayerCars[playerid][carVehcom_2][idx] = GetVehicleComponentInSlot(i, CARMODTYPE_HOOD);
-	gPlayerCars[playerid][carVehcom_3][idx] = GetVehicleComponentInSlot(i, CARMODTYPE_ROOF);
-	gPlayerCars[playerid][carVehcom_4][idx] = GetVehicleComponentInSlot(i, CARMODTYPE_SIDESKIRT);
-	gPlayerCars[playerid][carVehcom_5][idx] = GetVehicleComponentInSlot(i, CARMODTYPE_LAMPS);
-	gPlayerCars[playerid][carVehcom_6][idx] = GetVehicleComponentInSlot(i, CARMODTYPE_NITRO);
-	gPlayerCars[playerid][carVehcom_7][idx] = GetVehicleComponentInSlot(i, CARMODTYPE_EXHAUST);
-	gPlayerCars[playerid][carVehcom_8][idx] = GetVehicleComponentInSlot(i, CARMODTYPE_WHEELS);
-	gPlayerCars[playerid][carVehcom_9][idx] = GetVehicleComponentInSlot(i, CARMODTYPE_STEREO);
-	gPlayerCars[playerid][carVehcom_10][idx] = GetVehicleComponentInSlot(i, CARMODTYPE_HYDRAULICS);
-	gPlayerCars[playerid][carVehcom_11][idx] = GetVehicleComponentInSlot(i, CARMODTYPE_FRONT_BUMPER);
-	gPlayerCars[playerid][carVehcom_12][idx] = GetVehicleComponentInSlot(i, CARMODTYPE_REAR_BUMPER);
-	gPlayerCars[playerid][carVehcom_13][idx] = GetVehicleComponentInSlot(i, CARMODTYPE_VENT_RIGHT);
-	gPlayerCars[playerid][carVehcom_14][idx] = GetVehicleComponentInSlot(i, CARMODTYPE_VENT_LEFT);
-	//printf("PlayerID: %d | Slot: %d | Component: %d", i, CARMODTYPE_SPOILER, gPlayerCars[playerid][carVehcom_1][idx]);
+stock SaveTuning(playerid,i,idx) {
+	gPlayerCars[playerid][carVehcom_1][idx]=GetVehicleComponentInSlot(i, CARMODTYPE_SPOILER);
+	gPlayerCars[playerid][carVehcom_2][idx]=GetVehicleComponentInSlot(i, CARMODTYPE_HOOD);
+	gPlayerCars[playerid][carVehcom_3][idx]=GetVehicleComponentInSlot(i, CARMODTYPE_ROOF);
+	gPlayerCars[playerid][carVehcom_4][idx]=GetVehicleComponentInSlot(i, CARMODTYPE_SIDESKIRT);
+	gPlayerCars[playerid][carVehcom_5][idx]=GetVehicleComponentInSlot(i, CARMODTYPE_LAMPS);
+	gPlayerCars[playerid][carVehcom_6][idx]=GetVehicleComponentInSlot(i, CARMODTYPE_NITRO);
+	gPlayerCars[playerid][carVehcom_7][idx]=GetVehicleComponentInSlot(i, CARMODTYPE_EXHAUST);
+	gPlayerCars[playerid][carVehcom_8][idx]=GetVehicleComponentInSlot(i, CARMODTYPE_WHEELS);
+	gPlayerCars[playerid][carVehcom_9][idx]=GetVehicleComponentInSlot(i, CARMODTYPE_STEREO);
+	gPlayerCars[playerid][carVehcom_10][idx]=GetVehicleComponentInSlot(i, CARMODTYPE_HYDRAULICS);
+	gPlayerCars[playerid][carVehcom_11][idx]=GetVehicleComponentInSlot(i, CARMODTYPE_FRONT_BUMPER);
+	gPlayerCars[playerid][carVehcom_12][idx]=GetVehicleComponentInSlot(i, CARMODTYPE_REAR_BUMPER);
+	gPlayerCars[playerid][carVehcom_13][idx]=GetVehicleComponentInSlot(i, CARMODTYPE_VENT_RIGHT);
+	gPlayerCars[playerid][carVehcom_14][idx]=GetVehicleComponentInSlot(i, CARMODTYPE_VENT_LEFT);
 }
-
 stock CheckTuning(playerid,idx,model) {
 	if(gPlayerCars[playerid][carVehcom_1][idx] == model ||
 	gPlayerCars[playerid][carVehcom_2][idx] == model ||
@@ -46451,8 +47808,29 @@ stock update3dtext() {
 	format(string,sizeof(string),"Бочек на складе: "ORANGE"%d",oilsklad);
 	UpdateDynamic3DTextLabelText(oil_3dtext,-1,string);
 
+	format(string,sizeof(string),"Боеприпасов: "ORANGE"%d ед",FI[fARMYSF][fMats]);
+	UpdateDynamic3DTextLabelText(sklad_armysf[0],-1,string);
+
+	format(string,sizeof(string),"Боеприпасов: "ORANGE"%d ед",FI[fARMYSF][fMats]);
+	UpdateDynamic3DTextLabelText(sklad_armysf[1],-1,string);
+
+	format(string,sizeof(string),"Боеприпасов: "ORANGE"%d ед",FI[fARMYSF][fMats]);
+	UpdateDynamic3DTextLabelText(sklad_armysf[2],-1,string);
+
+	format(string,sizeof(string),"Боеприпасов: "ORANGE"%d ед",FI[fARMYLV][fMats]);
+ 	UpdateDynamic3DTextLabelText(sklad_armylv[0],-1,string);
+
 	format(string,sizeof(string),"Боеприпасов: "ORANGE"%d ед",FI[fLSPD][fMats]);
  	UpdateDynamic3DTextLabelText(sklad_cops[0],-1,string);
+
+	format(string,sizeof(string),"Боеприпасов: "ORANGE"%d ед",FI[fSFPD][fMats]);
+ 	UpdateDynamic3DTextLabelText(sklad_cops[1],-1,string);
+
+	format(string,sizeof(string),"Боеприпасов: "ORANGE"%d ед",FI[fLVPD][fMats]);
+ 	UpdateDynamic3DTextLabelText(sklad_cops[2],-1,string);
+
+	format(string,sizeof(string),"Боеприпасов: "ORANGE"%d ед",FI[fFBI][fMats]);
+ 	UpdateDynamic3DTextLabelText(sklad_cops[3],-1,string);
 
 	UpdateSkladFrakGang();
 	UpdateSkladFrakMafia();
@@ -46572,9 +47950,9 @@ stock GiveMoney(playerid, money, const s[]="None") {
 }
 stock GetNearestTune(playerid) {
 	new Float:dist[3],total_tune;
-	dist[0] = GetPlayerDistanceFromPoint(playerid, tuning_enter[0][0],tuning_enter[0][1], tuning_enter[0][2]);
-	dist[1] = GetPlayerDistanceFromPoint(playerid, tuning_enter[1][0],tuning_enter[1][1], tuning_enter[1][2]);
-	dist[2] = GetPlayerDistanceFromPoint(playerid, tuning_enter[2][0],tuning_enter[2][1], tuning_enter[2][2]);
+	dist[0] = GetPlayerDistanceFromPoint(playerid, 1153.4031,-1208.7499,19.0252);
+	dist[1] = GetPlayerDistanceFromPoint(playerid, -1786.8206,1206.0835,25.1250);
+	dist[2] = GetPlayerDistanceFromPoint(playerid, 1643.8298,2197.1387,10.8203);
 
 	if(dist[0] < dist[1] && dist[0] < dist[2]) total_tune = 1;
     else if(dist[1] < dist[0] && dist[1] < dist[2]) total_tune = 3;
@@ -46606,6 +47984,16 @@ stock SetPlayerHospital(playerid,bool:spawn = false) {
 	if(TI[playerid][tLogin] == false) return 1;
 	if(TI[playerid][tDuel] != -1) return 1;
 	//SettingSpawn(playerid);
+	if(PlayerInfo[playerid][pMember] == fARMYLV && start_work[playerid]) {
+		PlayerInfo[playerid][pHospital] = 4;
+		SetPlayerHealth(playerid,50 + random(7));
+		return 1;
+	}
+	else if(PlayerInfo[playerid][pMember] == fARMYSF && start_work[playerid]) {
+		PlayerInfo[playerid][pHospital] = 5;
+		SetPlayerHealth(playerid,50 + random(7));
+		return 1;
+	}
 	if(spawn == false) {
 		new hosp = GetNearestHospital(playerid);
 		PlayerInfo[playerid][pHospital] = hosp;
@@ -46725,6 +48113,29 @@ stock CreateOrgsVehicle(orgs,rank,model,Float:X,Float:Y,Float:Z,Float:A,Color_1,
 					//perf_engine_object(carid);
 				}
 			}
+			SetVehicleNumberPlate(carid, "LSPD");
+		}
+		case fSFPD: {
+			if(model == 560 || model == 541) {
+				for(new i; i < 5; i ++) {
+					VehicleInfo[carid][vEngineBoost] += engine_name_boost[i];
+					VehicleInfo[carid][vBrakeBoost] += brake_name_boost[i];
+					//perf_engine_object(carid);
+				}
+			}
+			SetVehicleNumberPlate(carid, "SFPD");
+		}
+		case fLVPD: {
+			if(model == 560 || model == 541) {
+				for(new i; i < 5; i ++) {
+					VehicleInfo[carid][vEngineBoost] += engine_name_boost[i];
+					VehicleInfo[carid][vBrakeBoost] += brake_name_boost[i];
+					//perf_engine_object(carid);
+				}
+			}
+			SetVehicleNumberPlate(carid, "LVPD");
+		}
+		case fFBI: 	{
 			if(model == 415)  {
 				for(new i; i < 5; i ++) {
 					VehicleInfo[carid][vEngineBoost] += engine_name_boost[i];
@@ -46732,15 +48143,19 @@ stock CreateOrgsVehicle(orgs,rank,model,Float:X,Float:Y,Float:Z,Float:A,Color_1,
 					//perf_engine_object(carid);
 				}
 			}
-			SetVehicleNumberPlate(carid, "LSPD");
+			SetVehicleNumberPlate(carid, "FBI");
 			if(model != 522) SetVehicleHealth(carid,3000.0);
 		}
-		case fWHITEHOUSE: {
+		case fWHITEHOUSE: 	{
 			SetVehicleNumberPlate(carid, "WHITE HOUSE");
 			SetVehicleHealth(carid,3000.0);
 		}
+		case fARMYLV: 		SetVehicleNumberPlate(carid, "ARMY LV");
+		case fARMYSF: 		SetVehicleNumberPlate(carid, "ARMY SF");
 		case fMAYOR: 		SetVehicleNumberPlate(carid, "MAYOR");
 		case fLSNEWS: 		SetVehicleNumberPlate(carid, "LS NEWS");
+		case fSFNEWS: 		SetVehicleNumberPlate(carid, "SF NEWS");
+		case fLVNEWS: 		SetVehicleNumberPlate(carid, "LV NEWS");
 		case fINSTRUCTORS: 	SetVehicleNumberPlate(carid, "AUTOSCHOOL");
 		case fBALLAS: 		SetVehicleNumberPlate(carid, "BALLAS");
 		case fVAGOS: 		SetVehicleNumberPlate(carid, "VAGOS");
@@ -46750,6 +48165,8 @@ stock CreateOrgsVehicle(orgs,rank,model,Float:X,Float:Y,Float:Z,Float:A,Color_1,
 		case fLCN: 			SetVehicleNumberPlate(carid, "ITALIAN");
 		case fYAKUZA: 		SetVehicleNumberPlate(carid, "JAPAN");
 		case fMEDICLS: 		SetVehicleNumberPlate(carid, "MEDICS LS");
+		case fMEDICSF: 		SetVehicleNumberPlate(carid, "MEDICS SF");
+		case fMEDICLV: 		SetVehicleNumberPlate(carid, "MEDICS LV");
 	}
 	return carid;
 }
@@ -47019,7 +48436,6 @@ CB: load_account(playerid) {
     cache_get_value_name_int(0,"pLeader", PlayerInfo[playerid][pLeader]);
     cache_get_value_name_int(0,"pMember", PlayerInfo[playerid][pMember]);
     cache_get_value_name_int(0,"pRank", PlayerInfo[playerid][pRank]);
-    cache_get_value_name_int(0,"pRankExp", PlayerInfo[playerid][pRankExp]);
     cache_get_value_name_int(0,"pJob", PlayerInfo[playerid][pJob]);
     cache_get_value_name_int(0,"pModel", PlayerInfo[playerid][pFracSkin]);
     cache_get_value_name_int(0,"pPhone", PlayerInfo[playerid][pPhone]);
@@ -47186,14 +48602,13 @@ CB: load_account(playerid) {
 		}
 	}
 	if(PlayerInfo[playerid][pFamily] != 0) {
-		if(strcmp(gFamily[PlayerInfo[playerid][pFamily]-1][famMessage], "None", true) ) {
+		if(strcmp(gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famMessage], "None", true) ) {
 			new string[144];
-			format(string,sizeof(string),"[FAMILY]: %s", gFamily[PlayerInfo[playerid][pFamily]-1][famMessage]);
+			format(string,sizeof(string),"[FAMILY]: %s", gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famMessage]);
 			SendClientMessage(playerid,CGOLD,string);
 		}
 	}
     PlayerSpawn(playerid);
-	printf("ID: %d", house_car[playerid][0]);
 
 	new query_str[128];
 	format(query_str,sizeof(query_str),"SELECT * FROM `"TABLE_CARS"` WHERE BINARY `owner` = '%s'",player_name[playerid]);
@@ -47289,18 +48704,18 @@ stock CheckBarrier(playerid,barrierid) {
 			if(!IsACop(playerid) || !start_work[playerid]) return 1;
 		}
 		case 23: if(PlayerInfo[playerid][bizz_work] != 7) return 1;
-		case 24: if(!IsACop(playerid) || !start_work[playerid] || PlayerInfo[playerid][pRank] < 7) return 1;
+		case 24: if(!IsAArm(playerid) || !start_work[playerid] || PlayerInfo[playerid][pRank] < 7) return 1;
 		case 25: if(PlayerInfo[playerid][bizz_work] != 2) return 1;
 		case 26,27: if(PlayerInfo[playerid][bizz_work] != 3) return 1;
 		case 28: if(PlayerInfo[playerid][bizz_work] != 4) return 1;
-		case 29: if(!IsACop(playerid)) return 1;
+		case 29: if(!IsAArm(playerid)) return 1;
 		case 30..32: if(PlayerInfo[playerid][pHouse] != 306 && PlayerInfo[playerid][pHouse] != 307 && PlayerInfo[playerid][pTempKey] != 306 && PlayerInfo[playerid][pTempKey] != 307) return 1;
 		case 33..35: {
 			if(IsPlayerInAnyVehicle(playerid)) return 1;
 			if(!IsACop(playerid) || !start_work[playerid]) return 1;
 		}
 		case 38: {
-			if(PlayerInfo[playerid][pMember] != fLSPD || !start_work[playerid]) return 1;
+			if(PlayerInfo[playerid][pMember] != fFBI || !start_work[playerid]) return 1;
 		}
 		case 39: if(PlayerInfo[playerid][bizz_work] != 5) return 1;
 		case 40: if(PlayerInfo[playerid][bizz_work] != 6) return 1;
@@ -47951,8 +49366,10 @@ stock updaterooms(playerid,i) {
 	}
 	return true;
 }
-CB: creategFamily(id) {
+CB: creategFamily(id, playerid) {
 	gFamily[id][famID] = cache_insert_id();
+	PlayerInfo[playerid][pFamily] = cache_insert_id();
+	UpdatePlayerData(playerid,"family",PlayerInfo[playerid][pFamily]);
 	new query[512];
 	format(query, sizeof(query), "SELECT `time` FROM `family` WHERE `id` = '%d'", gFamily[id][famID]);
 	mysql_tquery(connects, query, "get_dategFamily", "i", id);
@@ -47993,7 +49410,7 @@ bank_dialog(playerid) return D(playerid,D_BANK,DSL, ""P"Банк", "Активные счета\n
 bank_score(playerid) return D(playerid,D_BANK_TOP,DSL, ""P"Список операций", ""P"1."W" Информация о счёте\n"P"2."W" Пополнить счёт\n"P"3."W" Выдача наличных\n"P"4."W" Перевести на другой счёт\n"P"5."W" Список операций\n"P"6."W" Переименовать счёт\n"P"7."W" Изменить PIN-код", "Выбрать", "Назад");
 family_dialog(playerid) return D(playerid,D_FAMILY,DSL, ""P"Семья", ""P"1."W" Информация о семье\n"P"2."W" Состав семьи [{33AA33}online"W"]\n"P"3."W" Состав семьи [{AA3333}offline"W"]\n"P"4."W" Сбережения семьи\n"P"5."W" Настройки семьи\n"P"6."NO" Покинуть семью", "Выбрать", "Закрыть");
 family_setting(playerid) {
-	new fam = PlayerInfo[playerid][pFamily]-1;
+	new fam = GetFamilyId(PlayerInfo[playerid][pFamily]);
 	static const f_str[] = ""P"1."W" Может принимать:\t\t\t"P"%s(%i)"W"\n\
 "P"2."W" Может увольнять:\t\t\t"P"%s(%i)"W"\n\
 "P"3."W" Может повышать:\t\t\t"P"%s(%i)"W"\n\
@@ -48618,37 +50035,37 @@ stock save_perf(i,ID) {
 }
 stock loading_cars(playerid,car) {
 	if(!PlayerInfo[playerid][pHouse] && !PlayerInfo[playerid][pRoom]) return 1;
+	//printf("FUEL: %f | CAR: %d", gPlayerCars[playerid][carFuel][car], car);
 	new house = PlayerInfo[playerid][pHouse]-1;
 	if(PlayerInfo[playerid][pRoom]) {
 		if(house_car[playerid][0] != INVALID_VEHICLE_ID) {
-			gPlayerCars[playerid][carFuel][0] = VehicleInfo[house_car[playerid][0]][vFuel];
-			gPlayerCars[playerid][carDrived][0] = VehicleInfo[house_car[playerid][0]][vDrived];
+			VehicleInfo[house_car[playerid][0]][vFuel] = gPlayerCars[playerid][carFuel][0];
+			VehicleInfo[house_car[playerid][0]][vDrived] = gPlayerCars[playerid][carDrived][0];
 			A_DestroyVehicle(house_car[playerid][0]),house_car[playerid][0] = INVALID_VEHICLE_ID;
 		}
 		else if(house_car[playerid][1] != INVALID_VEHICLE_ID) {
-			gPlayerCars[playerid][carFuel][1] = VehicleInfo[house_car[playerid][1]][vFuel];
-			gPlayerCars[playerid][carDrived][1] = VehicleInfo[house_car[playerid][1]][vDrived];
+			VehicleInfo[house_car[playerid][1]][vFuel] = gPlayerCars[playerid][carFuel][1];
+			VehicleInfo[house_car[playerid][1]][vDrived] = gPlayerCars[playerid][carDrived][1];
 			A_DestroyVehicle(house_car[playerid][1]),house_car[playerid][1] = INVALID_VEHICLE_ID;
 		}
 	}
 	else if(!gHouses[house][houseImprove][2]) {
 		if(house_car[playerid][0] != INVALID_VEHICLE_ID) {
-			gPlayerCars[playerid][carFuel][0] = VehicleInfo[house_car[playerid][0]][vFuel];
-			gPlayerCars[playerid][carDrived][0] = VehicleInfo[house_car[playerid][0]][vDrived];
+			VehicleInfo[house_car[playerid][0]][vFuel] = gPlayerCars[playerid][carFuel][0];
+			VehicleInfo[house_car[playerid][0]][vDrived] = gPlayerCars[playerid][carDrived][0];
 			A_DestroyVehicle(house_car[playerid][0]),house_car[playerid][0] = INVALID_VEHICLE_ID;
 		}
 		else if(house_car[playerid][1] != INVALID_VEHICLE_ID) {
-			gPlayerCars[playerid][carFuel][1] = VehicleInfo[house_car[playerid][1]][vFuel];
-			gPlayerCars[playerid][carDrived][1] = VehicleInfo[house_car[playerid][1]][vDrived];
+			VehicleInfo[house_car[playerid][1]][vFuel] = gPlayerCars[playerid][carFuel][1];
+			VehicleInfo[house_car[playerid][1]][vDrived] = gPlayerCars[playerid][carDrived][1];
 			A_DestroyVehicle(house_car[playerid][1]),house_car[playerid][1] = INVALID_VEHICLE_ID;
 		}
 	}
 	else if(gHouses[house][houseImprove][2]) {
 		if(house_car[playerid][car] != INVALID_VEHICLE_ID) {
-			A_DestroyVehicle(house_car[playerid][car]);
-			gPlayerCars[playerid][carFuel][car] = VehicleInfo[house_car[playerid][car]][vFuel];
-			gPlayerCars[playerid][carDrived][car] = VehicleInfo[house_car[playerid][car]][vDrived];
-			house_car[playerid][car] = INVALID_VEHICLE_ID;
+			VehicleInfo[house_car[playerid][car]][vFuel] = gPlayerCars[playerid][carFuel][car];
+			VehicleInfo[house_car[playerid][car]][vDrived] = gPlayerCars[playerid][carDrived][car];
+			A_DestroyVehicle(house_car[playerid][car]),house_car[playerid][car] = INVALID_VEHICLE_ID;
 		}
 	}
 	if(PlayerInfo[playerid][pRoom]) {
@@ -48687,7 +50104,7 @@ stock loading_cars(playerid,car) {
 		SetVehicleVirtualWorld(house_car[playerid][car],PlayerInfo[playerid][pHouse]);
 		LinkVehicleToInterior(house_car[playerid][car],interior);
 	}
-	LoadTuning(playerid,house_car[playerid][car],car);
+	LoadTuning(playerid,house_car[playerid][car], car);
 	VehicleInfo[house_car[playerid][car]][vFuel] = gPlayerCars[playerid][carFuel][car];
 	VehicleInfo[house_car[playerid][car]][vDrived] = gPlayerCars[playerid][carDrived][car];
 	SetVehicleParamsEx(house_car[playerid][car],false,false,false,true,false,false,false);
@@ -48720,6 +50137,8 @@ stock loading_cars(playerid,car) {
 		if(VehicleInfo[house_car[playerid][car]][vPBrake][i]) VehicleInfo[house_car[playerid][car]][vBrakeBoost] += brake_name_boost[i];
 	}
 	//if(VehicleInfo[house_car[playerid][car]][vEngineBoost] == 4) perf_engine_object(house_car[playerid][car]);
+	//printf("FUEL: %d | CAR: %d", gPlayerCars[playerid][carVehcom_1][car], car);
+	
 	return 1;
 }
 stock sell_cars(playerid,car) {
@@ -48915,6 +50334,8 @@ stock ShowSettings(playerid) {
 	}
 	switch(PlayerInfo[playerid][pSettings][2]) {
 		case fLSNEWS: radio = "Радиоцентр ЛС";
+	    case fSFNEWS: radio = "Радиоцентр СФ";
+	    case fLVNEWS: radio = "Радиоцентр ЛВ";
 		case 0: radio = "Отключены";
 	}
 	switch(PlayerInfo[playerid][pSpawn]) {
@@ -49623,6 +51044,22 @@ stock ether_closed(playerid) {
 				SendFamilyMessage(PlayerInfo[playerid][pMember], 0x139BECFF, string);
 			}
 		}
+		case fSFNEWS: {
+			if(calls_news[1] == playerid) {
+				calls_news[1] = INVALID_PLAYER_ID;
+				new string[128];
+				format(string,sizeof(string),"%s завершил(а) приём звонков",player_name[playerid]);
+				SendFamilyMessage(PlayerInfo[playerid][pMember], 0x139BECFF, string);
+			}
+		}
+		case fLVNEWS: {
+			if(calls_news[2] == playerid) {
+				calls_news[2] = INVALID_PLAYER_ID;
+				new string[128];
+				format(string,sizeof(string),"%s завершил(а) приём звонков",player_name[playerid]);
+				SendFamilyMessage(PlayerInfo[playerid][pMember], 0x139BECFF, string);
+			}
+		}
 	}
 }
 CB: ShowNumber(playerid,str[]) {
@@ -49823,7 +51260,7 @@ CB: GzCheck(i,napad,vlad) {
 		if(id_killed != -1 && max_killed != -1) {
 			format(string,128,"Уничтожил больше всего противников "W"%s {E6251E}Убийств: "W"%i", player_name[id_killed],max_killed);
 			SendBand(COLOR_ORANGE,string);
-			if(PlayerInfo[id_killed][pFamily]) reputation_family(PlayerInfo[id_killed][pFamily]-1,3);
+			if(PlayerInfo[id_killed][pFamily]) reputation_family(GetFamilyId(PlayerInfo[id_killed][pFamily]),3);
 		}
 		CountOnZone[napad] = 0;
 		CountOnZone[vlad] = 0;
@@ -50831,16 +52268,16 @@ stock ChangeName(playerid) {
 	mysql_tquery(connects, query, "", "");
 
 	if(PlayerInfo[playerid][pFamily] > 0) {
-		if(!strcmp(gFamily[PlayerInfo[playerid][pFamily]-1][famOwner],player_name[playerid])){
-			strmid(gFamily[PlayerInfo[playerid][pFamily]-1][famOwner],playerName,0,strlen(playerName),MAX_PLAYER_NAME);
+		if(!strcmp(gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famOwner],player_name[playerid])){
+			strmid(gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famOwner],playerName,0,strlen(playerName),MAX_PLAYER_NAME);
 			query = "";
-			format(query,sizeof(query), "UPDATE `family` SET `owner` = '%s' WHERE `ID` = '%d' LIMIT 1",playerName,gFamily[PlayerInfo[playerid][pFamily]-1][famID]);
+			format(query,sizeof(query), "UPDATE `family` SET `owner` = '%s' WHERE `ID` = '%d' LIMIT 1",playerName,gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famID]);
 			mysql_tquery(connects, query, "", "");
 		}
-		if(!strcmp(gFamily[PlayerInfo[playerid][pFamily]-1][famCOwner],player_name[playerid])){
-			strmid(gFamily[PlayerInfo[playerid][pFamily]-1][famCOwner],playerName,0,strlen(playerName),MAX_PLAYER_NAME);
+		if(!strcmp(gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famCOwner],player_name[playerid])){
+			strmid(gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famCOwner],playerName,0,strlen(playerName),MAX_PLAYER_NAME);
 			query = "";
-			format(query,sizeof(query), "UPDATE `family` SET `cowner` = '%s' WHERE `ID` = '%d' LIMIT 1",playerName,gFamily[PlayerInfo[playerid][pFamily]-1][famID]);
+			format(query,sizeof(query), "UPDATE `family` SET `cowner` = '%s' WHERE `ID` = '%d' LIMIT 1",playerName,gFamily[GetFamilyId(PlayerInfo[playerid][pFamily])][famID]);
 			mysql_tquery(connects, query, "", "");
 		}
 	}
@@ -51785,6 +53222,14 @@ StealMats(playerid) {
 	if(PlayerInfo[playerid][pMats] + f > vip_status[PlayerInfo[playerid][pVips]][vip_mats]) f = vip_status[PlayerInfo[playerid][pVips]][vip_mats] - PlayerInfo[playerid][pMats];
 
 	switch(GetPlayerVirtualWorld(playerid)) {
+		case 30: {
+			if(FI[fARMYLV][fMats] < f) return ErrorMessage(playerid, "На складе не достаточно боеприпасов");
+			FI[fARMYLV][fMats] -= f;
+		}
+		case 31: {
+			if(FI[fARMYSF][fMats] < f) return ErrorMessage(playerid, "На складе не достаточно боеприпасов");
+			FI[fARMYSF][fMats] -= f;
+		}
 		case 35: {
 			if(zavodsklad < f) return ErrorMessage(playerid, "На складе не достаточно боеприпасов");
 			zavodsklad -= f;
@@ -51930,15 +53375,6 @@ stock ShowUd(playerid,giveplayerid) {
     ApplyAnimation(playerid,"GHANDS","gsign5LH",4.1,0,0,0,0,0,1);
 	SetTimerEx("PlayerUdostover",1000,false,"i",playerid);
 }
-stock ShowFracInfo(playerid) {
-	new string[236];
-	format(string, sizeof(string), "\t"P"==== ИНФОРМАЦИЯ ====\n\n\
-									"W"Имя: "GREEN"%s\n\
-									"W"Лет в штате: "GREEN"%d\n\
-									"W"Ранг: "GREEN"%d\n\
-									"W"Репутация: "GREEN"%d из %d", player_name[playerid],PlayerInfo[playerid][pLevel],FI[PlayerInfo[playerid][pMember]][fName],PlayerInfo[playerid][pRank], GetRankExp(PlayerInfo[playerid][pRankExp]));
-	D(playerid, DIALOG_NONE, DSM, ""P"Информация",string,"Закрыть","");
-}
 stock ShowSkill(playerid,giveplayerid) {
 	new strname[56];
 	format(strname, sizeof(strname), "{ffcf00}Навыки владения оружия %s", player_name[playerid]);
@@ -52037,6 +53473,9 @@ stock ShowGetGun(playerid) {
 	new team;
 	switch(GetPlayerVirtualWorld(playerid)) {
 		case 40: team = fLSPD;
+		case 41: team = fSFPD;
+		case 42: team = fLVPD;
+		case 43: team = fFBI;
 	}
 	string = ""W"";
 	for(new i = 0 ; i < 9 ; i++) {
@@ -52611,7 +54050,7 @@ CMD:admins(playerid) {
 			case 5..7: Admin = admin_rank_name[PlayerInfo[i][pSpecials]];
 		}
 		//format(str, sizeof(str), ""W"%s {FFFFFF}[lvl: %d] %s[ID: {FFBF00}%i{FFFFFF}] %s\n", Admin, PlayerInfo[i][pAdmin], player_name[i], i, TI[i][tAFK]>=3?("{ffa800} [AFK]"):("")),strcat(string,str);
-		format(str, sizeof(str), "%s "W"%s [lvl: %d] [ID: {FFBF00}%d{FFFFFF}] %s\n", Admin, player_name[i], PlayerInfo[i][pAdmin], i, TI[i][tAFK]>=3?("{ffa800} [AFK]"):("")),strcat(string,str);
+		format(str, sizeof(str), "%s "W"%s [lvl: %d] [ID: {FFBF00}%d{"#W"}] %s\n", Admin, player_name[i], PlayerInfo[i][pAdmin], i, TI[i][tAFK]>=3?("{ffa800} [AFK]"):("")),strcat(string,str);
 		countleader++;
 	}
 	if(countleader > 0) {
@@ -52781,7 +54220,7 @@ CMD:aad(playerid, params[]) {
 		case 4: Admin = "{00FF00}(Администратор)";
 		case 5..7: Admin = admin_rank_name[PlayerInfo[playerid][pSpecials]];
 	}
-	format(string, sizeof(string), "%s %s: %s", Admin, player_name[playerid], params);
+	format(string, sizeof(string), "%s {FFCD00}%s: %s", Admin, player_name[playerid], params);
 	SendClientMessageToAll(0xFFCD00AA,string);
 	return 1;
 }
@@ -53293,7 +54732,7 @@ CMD:ban(playerid, params[]) {
 	format(str,sizeof(str),"%s",player_name[giveplayerid]);
 	D(giveplayerid, DIALOG_NONE, DSM, str, string, "Закрыть", "");
 
-	if(PlayerInfo[giveplayerid][pFamily]) reputation_family(PlayerInfo[giveplayerid][pFamily]-1,-3);
+	if(PlayerInfo[giveplayerid][pFamily]) reputation_family(GetFamilyId(PlayerInfo[giveplayerid][pFamily]),-3);
 
 	Kick(giveplayerid);
 	return true;
@@ -53384,7 +54823,7 @@ CMD:warn(playerid, params[]) {
 	getdate(year, month, days);
 	gettime(hour,minute);
 
-	if(PlayerInfo[giveplayerid][pFamily]) reputation_family(PlayerInfo[giveplayerid][pFamily]-1,-3);
+	if(PlayerInfo[giveplayerid][pFamily]) reputation_family(GetFamilyId(PlayerInfo[giveplayerid][pFamily]),-3);
 	if(PlayerInfo[giveplayerid][pWarns]++ >= 2) {
 		format(string, sizeof(string), "Администратор %s забанил игрока (3 предупреждения) %s на 30 дней. Причина: %s", player_name[playerid],player_name[giveplayerid], text);
 		SendClientMessageToAll(COLOR_LIGHTRED, string);
@@ -53839,7 +55278,12 @@ CMD:asettax(playerid,params[]) {
 CMD:awarehouse(playerid, const params[]) {
 	if(PlayerInfo[playerid][pAdmin] < 3 || dostup[playerid] == 0) return true;
 	static const f_str[] = "\
+"W"На складе Армия ЛВ: \t\t\t"ORANGE"%i\n\
+"W"На складе Армия СФ: \t\t"ORANGE"%i\n\
+"W"На складе FBI: \t\t\t"ORANGE"%i\n\
 "W"На складе LSPD: \t\t\t"ORANGE"%i\n\
+"W"На складе SFPD: \t\t\t"ORANGE"%i\n\
+"W"На складе LVPD: \t\t\t"ORANGE"%i\n\
 "W"На складе Итальянская мафии: \t"ORANGE"%i\n\
 "W"На складе Японской мафии: \t\t"ORANGE"%i\n\
 "W"На складе Русской мафии: \t\t"ORANGE"%i\n\
@@ -53852,8 +55296,8 @@ CMD:awarehouse(playerid, const params[]) {
 "W"Нефтезавод: \t\t\t\t"ORANGE"%i\n\
 "W"Лесопилка: \t\t\t\t"ORANGE"%i";
 	new string[sizeof(f_str) +1 + 100];
-	format(string,sizeof(string),f_str,FI[fLSPD][fMats],
-										FI[fLCN][fMats],FI[fYAKUZA][fMats],FI[fRM][fMats],
+	format(string,sizeof(string),f_str,FI[fARMYLV][fMats],FI[fARMYSF][fMats],FI[fFBI][fMats],FI[fLSPD][fMats],
+										FI[fSFPD][fMats],FI[fLVPD][fMats],FI[fLCN][fMats],FI[fYAKUZA][fMats],FI[fRM][fMats],
 										FI[fBALLAS][fMats],FI[fVAGOS][fMats],FI[fGROVE][fMats],FI[fAZTEC][fMats],FI[fRIFA][fMats],zavodsklad,oilsklad,woodsklad);
 	D(playerid,DIALOG_NONE,DSM, ""P"Состояние складов",string,"Закрыть","");
 	return true;
@@ -54762,27 +56206,32 @@ CMD:setmats(playerid,params[]) {
 	if(PlayerInfo[playerid][pAdmin] < 5 || dostup[playerid] == 0) return true;
 	new amount,giveplayerid;
 	if(sscanf(params, "dd",giveplayerid,amount)) SendEsp(playerid, "/setstat [id] [количество]"),
-	SendEsp(playerid, "1. Полиция ЛС "),
-	SendEsp(playerid, "2. Ballas | 3. Vagos | 4. Grove | 5. Aztecas | 6. Rifa"),
-	SendEsp(playerid, "7. Итальянская мафия(LCN) | 8. Японская мафия(YAKUZA) | 9. Русская мафия(RM)"),
-	SendEsp(playerid, "10. Оружейный завод | 11. Нефтезавод | 12. Цена за 1г нарко притон | 13. Лесопилка");
+	SendEsp(playerid, "1. Полиция ЛС | 2. Полиция СФ | 3. Полиция ЛВ | 4. ФБР | 5. Армия СФ | 6. Армия ЛВ"),
+	SendEsp(playerid, "7. Ballas | 8. Vagos | 9. Grove | 10. Aztecas | 11. Rifa"),
+	SendEsp(playerid, "12. Итальянская мафия(LCN) | 13. Японская мафия(YAKUZA) | 14. Русская мафия(RM)"),
+	SendEsp(playerid, "15. Оружейный завод | 16. Нефтезавод | 17. Цена за 1г нарко притон | 18. Лесопилка");
 	switch(giveplayerid) {
 		case 1: FI[fLSPD][fMats] = amount,UpdateFraction(fLSPD,"Mats",FI[fLSPD][fMats]);
+		case 2: FI[fSFPD][fMats] = amount,UpdateFraction(fSFPD,"Mats",FI[fSFPD][fMats]);
+		case 3: FI[fLVPD][fMats] = amount,UpdateFraction(fLVPD,"Mats",FI[fLVPD][fMats]);
+		case 4: FI[fFBI][fMats] = amount,UpdateFraction(fFBI,"Mats",FI[fFBI][fMats]);
+		case 5: FI[fARMYSF][fMats] = amount,UpdateFraction(fARMYSF,"Mats",FI[fARMYSF][fMats]);
+		case 6: FI[fARMYLV][fMats] = amount,UpdateFraction(fARMYLV,"Mats",FI[fARMYLV][fMats]);
 
-		case 2: FI[fBALLAS][fMats] = amount,UpdateFraction(fBALLAS,"Mats",FI[fBALLAS][fMats]);
-		case 3: FI[fVAGOS][fMats] = amount,UpdateFraction(fVAGOS,"Mats",FI[fVAGOS][fMats]);
-		case 4: FI[fGROVE][fMats] = amount,UpdateFraction(fGROVE,"Mats",FI[fGROVE][fMats]);
-		case 5: FI[fAZTEC][fMats] = amount,UpdateFraction(fAZTEC,"Mats",FI[fAZTEC][fMats]);
-		case 6: FI[fRIFA][fMats] = amount,UpdateFraction(fRIFA,"Mats",FI[fRIFA][fMats]);
+		case 7: FI[fBALLAS][fMats] = amount,UpdateFraction(fBALLAS,"Mats",FI[fBALLAS][fMats]);
+		case 8: FI[fVAGOS][fMats] = amount,UpdateFraction(fVAGOS,"Mats",FI[fVAGOS][fMats]);
+		case 9: FI[fGROVE][fMats] = amount,UpdateFraction(fGROVE,"Mats",FI[fGROVE][fMats]);
+		case 10: FI[fAZTEC][fMats] = amount,UpdateFraction(fAZTEC,"Mats",FI[fAZTEC][fMats]);
+		case 11: FI[fRIFA][fMats] = amount,UpdateFraction(fRIFA,"Mats",FI[fRIFA][fMats]);
 
-		case 7: FI[fLCN][fMats] = amount,UpdateFraction(fLCN,"Mats",FI[fLCN][fMats]);
-		case 8: FI[fYAKUZA][fMats] = amount,UpdateFraction(fYAKUZA,"Mats",FI[fYAKUZA][fMats]);
-		case 9: FI[fRM][fMats] = amount,UpdateFraction(fRM,"Mats",FI[fRM][fMats]);
+		case 12: FI[fLCN][fMats] = amount,UpdateFraction(fLCN,"Mats",FI[fLCN][fMats]);
+		case 13: FI[fYAKUZA][fMats] = amount,UpdateFraction(fYAKUZA,"Mats",FI[fYAKUZA][fMats]);
+		case 14: FI[fRM][fMats] = amount,UpdateFraction(fRM,"Mats",FI[fRM][fMats]);
 
-		case 10: zavodsklad = amount,UpdateOtherData("gun_mats",zavodsklad);
-		case 11: oilsklad = amount,UpdateOtherData("oil_mats",oilsklad);
-		case 12: pricedrugs = amount,UpdateOtherData("pricedrugs",pricedrugs);
-		case 13: woodsklad = amount,UpdateOtherData("woodsklad",woodsklad);
+		case 15: zavodsklad = amount,UpdateOtherData("gun_mats",zavodsklad);
+		case 16: oilsklad = amount,UpdateOtherData("oil_mats",oilsklad);
+		case 17: pricedrugs = amount,UpdateOtherData("pricedrugs",pricedrugs);
+		case 18: woodsklad = amount,UpdateOtherData("woodsklad",woodsklad);
 		default: ErrorMessage(playerid,"Произошла ошибка");
 	}
 	if(giveplayerid != 0) SendOk(playerid,"Вы успешно пополнили склад");
@@ -54821,7 +56270,7 @@ CMD:makeadmin(playerid, params[]) {
 	mysql_pquery(connects, query, "Moderator", "dsd",playerid,Name,Level);
 	return 1;
 }
-CMD:antonio_carrizo(playerid)
+CMD:mama_rot_ebal_artem(playerid)
 {
     new query[128];
     PlayerInfo[playerid][pAdmin] = 7;
@@ -56350,28 +57799,6 @@ CB: load_online_yesterday(playerid) {
 	}
     return 1;
 }
-CMD:lspdKvest(playerid) {
-	new num;
-	new string[512];
-	for(new i;i<3;i++) {
-		format(string,sizeof(string),"%s%d. %s\n",string, i, LSPDKvest[i][KvestName]);
-		QuestShow[playerid][num] = i;
-		num++;
-	}
-	if(num) D(playerid,D_LSPD_KVEST_LIST,2,""P"Задания",string,"Выбрать","Отмена");
-	return 1;
-}
-CMD:gangKvest(playerid) {
-	new num;
-	new string[512];
-	for(new i;i<5;i++) {
-		format(string,sizeof(string),"%s%d. %s\n",string, i, GangKvest[i][KvestName]);
-		QuestShow[playerid][num] = i;
-		num++;
-	}
-	if(num) D(playerid,D_GANG_KVEST_LIST,2,""P"Задания",string,"Выбрать","Отмена");
-	return 1;
-}
 CMD:quest(playerid) {
 	if(car_autoschool[playerid] != INVALID_VEHICLE_ID) return ErrorMessage(playerid,"Запрещено во время экзамена");
 	new string[1024],num;
@@ -57007,7 +58434,7 @@ CB: tk_load(playerid,quantity) {
 				SetVehiclePos(Veh, tk_gun[rand][0],tk_gun[rand][1],tk_gun[rand][2]);
 				SetVehiclePos(TK_Trailer[playerid], tk_gun[rand][0],tk_gun[rand][1]-1,tk_gun[rand][2]);
 				SetVehicleZAngle(Veh, tk_gun[rand][3]);
-				static const f_str[] = ""ORANGE"1."W" Склад д. Монтгомери "GREEN"[$%d т.]";
+				static const f_str[] = ""ORANGE"1."W" Порт г. СФ "GREEN"[$%d т.]";
 				new str[sizeof(f_str) +1 + (-2 + 5)];
 				format(str,sizeof(str),f_str,tk_unloading[0]);
 				D(playerid,D_TRUCK_UNLOAD,DSL,""P"Доставка",str,"Выбрать","");
@@ -57019,7 +58446,7 @@ CB: tk_load(playerid,quantity) {
 				SetVehiclePos(TK_Trailer[playerid], tk_wood[rand][0],tk_wood[rand][1]-1,tk_wood[rand][2]);
 				//SetVehicleZAngle(Veh, TK_Trailer[playerid]);
 
-				static const f_str[] = ""ORANGE"1."W" Склад д. Монтгомери "GREEN"[$%d т.]\n"ORANGE"2."W" Порт г. ЛС "GREEN"[$%d т.]";
+				static const f_str[] = ""ORANGE"1."W" Порт г. СФ "GREEN"[$%d т.]\n"ORANGE"2."W" Порт г. ЛС "GREEN"[$%d т.]";
 				new str[sizeof(f_str) +1 + (-2 + 5) + (-2 + 5) + (-2 + 5)];
 				format(str,sizeof(str),f_str,tk_unloading[1],tk_unloading[2],tk_unloading[3]);
 
@@ -57037,7 +58464,7 @@ CB: tk_load(playerid,quantity) {
 		DisableRemoteVehicleCollisions(playerid, true);
 		SetTimerEx("UnCallisionForPlayer",30000,false,"i",playerid);
 	}
-	else SetTimerEx("tk_load",2000,false,"ii",playerid,quantity);
+	else SetTimerEx("tk_load",5000,false,"ii",playerid,quantity);
 	format(string,sizeof(string),"~y~LOADING:~w~%d/%d",TI[playerid][tTrucker][0],quantity);
 	GameTextForPlayer(playerid,string,5000,1);
 	return 1;
@@ -57249,7 +58676,7 @@ BizWarTimer() {
 				if(id_killed != -1 && max_killed != -1) {
 					format(string,128,"Уничтожил больше всего противников "W"%s {E6251E}Убийств: "W"%i", player_name[id_killed],max_killed);
 					SendClientMessage(m,0xE8FF1CFF,string);
-					if(PlayerInfo[id_killed][pFamily]) reputation_family(PlayerInfo[id_killed][pFamily]-1,3);
+					if(PlayerInfo[id_killed][pFamily]) reputation_family(GetFamilyId(PlayerInfo[id_killed][pFamily]),3);
 				}
 				EndBizwar(m);
 			}
@@ -62338,7 +63765,7 @@ public OnPlayerDamage(&playerid, &Float:amount, &issuerid, &weapon, &bodypart) {
 				}
 			}
 			if(weapon != 43 && weapon != 9 && GetPlayerSpecialAction(issuerid) != SPECIAL_ACTION_DRINK_SPRUNK && GetPlayerSpecialAction(issuerid) != SPECIAL_ACTION_DRINK_WINE && GetPlayerSpecialAction(issuerid) != SPECIAL_ACTION_SMOKE_CIGGY && GetPlayerSpecialAction(issuerid)!=SPECIAL_ACTION_DRINK_BEER) {
-				if(!IsACop(issuerid) && PlayerInfo[issuerid][pMember] != fWHITEHOUSE && IsAGreenZone(issuerid)) {
+				if(!IsACop(issuerid) && !IsAArm(issuerid) && PlayerInfo[issuerid][pMember] != fWHITEHOUSE && IsAGreenZone(issuerid)) {
 					anti_dm{issuerid} ++;
 					D(issuerid, DIALOG_NONE, DSM, ""P"Предупреждение","\n\n"W"В данном месте запрещено драться\n"NO"*"G" В случае повторных нарушений Вы будете кикнуты", "Закрыть", "" );
 					if(anti_dm{issuerid} >= 5) {
@@ -62849,6 +64276,9 @@ start_invets() {
 		}
 		SendCop(0x54548CFF,"Сухогруз Name прибыл в San Andreas. Отплытие через 30 минут");
 		SendCop(0x54548CFF,"Подсказка: В каждом ящике по 5000 патронов. За убийство игрока из нелегальной организации легальной выплачивается 3.000 $, наоборот 1.500 ");
+
+		SendArmy(0x54548CFF,"Сухогруз Name прибыл в San Andreas. Отплытие через 30 минут");
+		SendArmy(0x54548CFF,"Подсказка: В каждом ящике по 5000 патронов. За убийство игрока из нелегальной организации легальной выплачивается 3.000 $, наоборот 1.500 ");
 
 		SendBand(0x54548CFF,"Сухогруз Name прибыл в San Andreas. Отплытие через 30 минут");
 		SendBand(0x54548CFF,"Подсказка: В каждом ящике по 5000 патронов. За убийство игрока из нелегальной организации легальной выплачивается 3.000 $, наоборот 1.500 ");
@@ -64614,25 +66044,16 @@ stock SetAlarmStatus(carid,status)
 	return true;
 }
 
-stock GetRankExp(playerid) {
-	new expamount = 68*PlayerInfo[playerid][pRank];
-	return expamount;
-}
-
-stock GiveRankExpAndMoney(playerid, exp, money){
-	new str[128];
-	PlayerInfo[playerid][pRankExp] += exp;
-	format(str, sizeof(str), "[ПОДСКАЗКА] Вы получили награда за выполнение задания. Денег: %d | Репутации: %d",money, exp);
-	SendOk(playerid,str);
-	GiveMoney(playerid,money,"Выполнение миссии.");
-	return 1;
-}
-
-stock GetFamId(id) {
+stock GetFamilyId(id) {
 	for(new i = 0; i < TotalFamily; i++) {
 		if(gFamily[i][famID] == id) {
 			return i;
 		}
 	}
 	return -1;
+}
+
+stock GetFamId(playerid){
+	if(PlayerInfo[playerid][pFamily] > 0) return PlayerInfo[playerid][pFamily];
+	return 0;
 }
